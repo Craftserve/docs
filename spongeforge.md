@@ -1,8 +1,6 @@
 SpongeForge
 ===========
-Czysty silnik **Forge** nie obsługuje żadnych pluginów, jednak godząc się na pewne ustępstwa, jesteśmy w stanie uruchomić na nim pluginy przeznaczone na silnik **Sponge**. Wystarczy ściągnąć i zainstalować mod **SpongeForge**.
-
-Aby to zrobić, ściągamy odpowiednią wersję [**SpongeForge** ze strony SpongePowered](https://www.spongepowered.org/downloads/spongeforge/stable/1.12.2), pamiętając by wersja modu była kompatybilna z naszym **Forge** - znaczek z czerwonym tłem:
+Czysty silnik **Forge** nie obsługuje żadnych pluginów, jednak godząc się na pewne ustępstwa, jesteśmy w stanie uruchomić na nim pluginy przeznaczone na silnik **Sponge**. Wystarczy ściągnąć i zainstalować mod **SpongeForge**. Aby to zrobić, ściągamy odpowiednią wersję [**SpongeForge** ze strony SpongePowered](https://www.spongepowered.org/downloads/spongeforge/stable/1.12.2), pamiętając by wersja modu była kompatybilna z naszym **Forge** - znaczek z czerwonym tłem:
 
 ![SpongeForge](img/spongeforge1.jpg)
 
@@ -16,5 +14,5 @@ Jeśli plugin korzysta z **MIXIN** musi on znajdować się w **/mods/**.
 
 Instalacja
 ----------
-Do zarządzania plikami można wykorzystać zakładkę **Pliki** w panelu CraftServe lub protokół **FTP** i obsługującego go klienta, np. **FileZilla**:
+Do zarządzania plikami można wykorzystać zakładkę **Pliki** w panelu Craftserve lub protokół **FTP** i obsługującego go klienta, np. **FileZilla**:
 ![FileZilla](img/filezilla.png)

@@ -9,6 +9,7 @@ Aby to zrobić, ściągamy odpowiednią wersję [**SpongeForge** ze strony Spong
 **Forge** ładuje mody w porządku alfabetycznym, dlatego najlepiej jest zmienić nazwę pobranego pliku na np. **0spongeforge.jar**, a następnie wrzucić ją do folderu **/mods/** na naszym serwerze.
 
 Pluginy **Sponge** można ściągnąć ze strony [SpongePowered](https://ore.spongepowered.org/). Pobrane pliki można wrzucać do folderu **/mods/** lub **/mods/plugins/**. 
+
 Uwaga!
 --------
 Jeśli plugin korzysta z **MIXIN** musi on znajdować się w **/mods/**.

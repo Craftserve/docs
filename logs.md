@@ -9,4 +9,4 @@ Każdy plik w folderze **/logs/** zawiera pełny log z danego uruchomienia Twoje
 Raporty z crashy znajdziesz natomiast w folderze **crash-reports** - ich nazwy opatrzone są datą i godziną crashu. Crash-report zawiera to skróconą wersję logu oraz okoliczności w jakich serwer scrashował.
 
 # PAMIĘTAJ!
-**Wyślij plik *latest.log*** zanim zadasz jakiekolwiek pytanie o scrashowany serwer lub niedziałający plugin na naszym Discordzie. Znajomość języka angielskiego bardzo czesto wystarczy, by samemu dowiedzieć się w czym problem. Warto samemu czytać logi.
+**Wyślij plik *latest.log*** zanim zadasz jakiekolwiek pytanie o scrashowany serwer lub niedziałający plugin na naszym Discordzie. Znajomość języka angielskiego bardzo czesto wystarczy, by samemu dowiedzieć się w czym problem - warto samodzielnie czytać logi.

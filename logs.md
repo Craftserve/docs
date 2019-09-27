@@ -1,8 +1,8 @@
 Logi
 ====
-Twój serwer scrashował albo wykrzaczył się plugin? Pierwszym miejscem do którego powinieneś się udać są foldery **/logs/** i **/crash-reports/** na Twoim serwerze:
+Twój serwer nie chce się uruchomić albo świeżo wgrany plugin lub mod nie działa? Pierwszym miejscem do którego powinieneś się udać są foldery **/logs/** i **/crash-reports/** na Twoim serwerze:
 
-![Logi i crash reporty](img/logs.jpg)
+![Logi i crash reporty](img/logi.png)
 
 Każdy plik w folderze **/logs/** zawiera pełny log z danego uruchomienia Twojego serwera. Najważniejszy jest plik **latest.log** (**fml-server-latest.log** na niektórych wersjach Forge) - zawiera on informacji z najnowszej sesji serwera. 
 

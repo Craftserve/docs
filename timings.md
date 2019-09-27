@@ -15,7 +15,7 @@ Timings
 
 **Spigot** i **Paper** wyposażone są w bardzo przydatne narzędzie diagnostyczne jakim jest komenda **/timings**. **Bukkit** nie posiada tej, jak i wielu innych funkcji, dlatego zachęcamy do przesiadki na wcześniej wspomniane.
 
-Jeśli chcesz dowiedzieć się czemu Twój serwer ledwo zipie użyj komendy **/timings on**. Następnie, przez **co najmniej 10 minut, graj aktywnie** wykonując te same czynności co zwykle. Po tym czasie wykonaj **/timings paste**. Otrzymasz link do strony ze szczegółowymi (szczególnie w przypadku papera) statystykami.
+Jeśli chcesz dowiedzieć się czemu Twój serwer działa zbyt wolno, użyj komendy **/timings on**. Następnie, przez **co najmniej 10 minut, graj aktywnie** wykonując te same czynności co zwykle. Po tym czasie wpisz **/timings paste** - otrzymasz link do strony ze szczegółowymi (szczególnie w przypadku papera) statystykami.
 
 Dla **Sponge** są to odpowiednio **/sponge timings on** oraz **/sponge timings paste**.
 

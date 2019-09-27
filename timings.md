@@ -1,13 +1,14 @@
 Lagi na serwerze Sponge, Bukkit, Spigot lub Paper
 ===============
 Pierwszym krokiem jaki należy podjąć w przypadku problemów z lagami jest określenie ich natury - czy winna jest strona klienta, serwera czy może dostawca łącza internetowego.
+
 Ticks per second
 ----------------
 Domyślnie, serwer Minecraft jest zaprojektowany tak, że **w ciągu sekundy**, główna pętla gry wykonuje **20 cykli** (zwanych **tickami**) - jeśli tak jest, mówimy wtedy, że serwer ma **TPS=20**. Pod dużym obciążeniem może on jednak nie dać rady przeprowadzić obliczeń na czas, w związku z czym liczba cykli może spaść poniżej 20 i w takiej sytuacji mamy do czynienia z lagami serwerowymi.
 
 By sprawdzić czy lagi są winą serwera użyj komendy **/tps** wyświetli Ci liczbę ticków na sekundę. Jeśli wartość ta jest mniejsza niż 20, znaczy to, że problem jest po stronie serwera, któremu obliczenia zajmują zbyt wiele czasu.
 
-W przypadku **Sponge** jest to komenda **/sponge tps**.
+W przypadku **Sponge** jest to komenda **/sponge tps**, a dla **Forge** jest to **/forge tps**
 
 Timings
 --------

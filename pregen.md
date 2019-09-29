@@ -7,5 +7,34 @@ O ile w grze single-player ma to małe znaczenie, to na serwerze kilku-kilkunast
 
 **Mapa o rozmiarze 10 000x10 000 bloków powinna w zupełności wystarczyć pod Survival na kilkunastu graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy o wymiarach 2200x2200 bloków. 
 
+Zanim zaczniemy!
+----------------
+**Uwaga!** Puste (bez graczy) serwery Craftserve są usypiane. Przez **cały okres** generowania mapy **należy mieć otwartą konsolę serwera w panelu Craftserve** - to zapobiegnie jego uśpieniu.
+
 Bukkit, Spigot i Paper
 ----------------------
+
+W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainstalować **plugin [WorldBorder](https://www.spigotmc.org/resources/worldborder.60905/)**. Jego obsługa jest bardzo prosta (parametry w `<>` są obowiązkowe, w `[]` opcjonalne):
+
+* `/wb set <promienX> [promienZ]` - ustala granicę świata **wyśrodkowaną na Twojej postaci**, gdzie <`promienX`> jest promieniem w osi X, a `<promienZ>` w osi Z - oba **wyrażone w blokach**. Jeśli `promienZ` nie będzie podany, użyta zostanie wartość `promienX`.
+* `/wb shape <elliptic|rectangular>` - pozwala wybrać kształt granicy. `elliptic` to eliptyczna/okrągła, `rectangular` - prostokątna.
+* `/wb fill [czestotliwosc]` - rozpoczyna generowanie chunków z domyślną częstotliwością 20 prób na sekundę. Dla serwerów Grass należy ją zmniejszyć do 5. Na serwerach Diamond można spróbować nawet wartość 100. **Im mniejsza wartość, tym mniejsze lagi w trakcie generowania świata, ale też dłużej to trwa.**
+* `/wb confirm` - komenda ta jest potrzebna do potwierdzenia rozpoczęcia `/wb fill`.
+
+Polecane zestawy komend:
+
+# Grass
+
+```
+/wb set 2000
+/wb fill 5
+/wb confirm
+```
+
+# Diamond
+
+```
+/wb set 4000
+/wb fill 1000
+/wb confirm
+```

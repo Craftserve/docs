@@ -33,29 +33,45 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 * `/wb fill [czestotliwosc]` - rozpoczyna generowanie chunków z domyślną częstotliwością 20 prób na sekundę. Dla serwerów Grass należy ją zmniejszyć do 5. Na serwerach Diamond można spróbować nawet wartość 100. **Im mniejsza wartość, tym mniejsze lagi w trakcie generowania świata, ale też dłużej to trwa.**
 * `/wb confirm` - komenda ta jest potrzebna do potwierdzenia rozpoczęcia `/wb fill`.
 
-Polecane zestawy komend:
+### Gotowe do wpisania zestawy komend:
 
-#### Grass
 
-```
-/wb set 2000
-/wb fill 5
-/wb confirm
-```
-
-#### Diamond
-
-```
-/wb set 4000
-/wb fill 1000
-/wb confirm
-```
-
+| Grass         | Diamond        |
+|---------------|----------------|
+|`/wb set 2000` |`/wb set 4000`  |
+|`/wb fill 5 `  |`/wb fill 1000` |
+|`/wb confirm`  |`/wb confirm`   |
 <a name="forge"><h2>Forge</h2></a>
 
-### 1.12.2
+Pregenerowanie mapy na serwerach **Forge** jest odrobinę bardziej skomplikowane, ponieważ mody ingerujące w wygląd świata niekoniecznie są ze sobą kompatybilne.
+
+### Wersje od 1.10 do 1.12.2
+
+**Jeśli na Twoim serwerze jest już zainstalowany [OpenTerrainGenerator](https://www.curseforge.com/minecraft/mc-mods/open-terrain-generator)** wystarczy, że uruchomisz generowanie komendą: 
+
+`/otg pregen 300` - wygeneruje ona obszar o promieniu 300 chunków, co przekłada się na około 9500x9500 bloków.
 
 
-### 1.7.10
+**Jeśli nie masz zainstalowanego OTG** bezpieczniejszą opcją będzie [**Chunk-Pregenerator**](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator):
+
+`/pregen gen startexpansion circle 0 0 300 300` - wygeneruje kolisty obszar o promieniu 300 chunków. Jeśli wolisz kształt kwadratu, zamiast `circle` wpisz `square`.
+
+*Oba pluginy zainstalowane na kliencie Forge Minecrafta dodadzą graficzny interfejs ułatwiający ich obsługę.*
+
+### Wersje od 1.6 do 1.7.10
+
+Te, dość stare wersje, oferują jedynie plugin **[Admin Command Toolbox](https://www.curseforge.com/minecraft/mc-mods/admin-commands-toolbox)**, który nie posiada graficznego interfesju. Do poprawnego działania należy też zainstalować **[Mobius Core](https://www.curseforge.com/minecraft/mc-mods/mobiuscore)**.
+
+By wygenerować świat należy wpisać:
+
+`/pregenspawn 300` - co wygeneruje kwadrat o wymiarach 600x600 chunków - 300 w każdą z 4 stron od spawnu.
 
 <a name="sponge"><h2>Sponge</h2></a>
+
+Na Sponge, natomiast, można wykorzystać odpowiednik pluginu Essentials - **[Plugin Nucleus](https://ore.spongepowered.org/Nucleus/Nucleus)**, którego szczegółowa dokumentacja znajduje się **[tutaj](https://nucleuspowered.org/)**.
+
+Żeby wygenerować świat należy najpierw ustanowić jego granicę (którą można znieść po zakończeniu generowania) i rozpocząć proces:
+
+* `/world border set <world> <x> <z> <srednica>` - gdzie `<world>` to nazwa naszego swiata, a `<x>` i `<z>` to koordynaty środka granicy.
+
+* `world border gen -r <world>` - rozpoczyna tworzenie nowych chunków.

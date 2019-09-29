@@ -16,7 +16,7 @@ Minecraft jest grą z losowo generowanym, masywnym światem - jego granice sięg
 
 O ile w grze single-player ma to małe znaczenie, to na serwerze kilku-kilkunastu graczy eksplorujących świat powoduje, że generator chunków znacznie **obciąża CPU** i w konsekwencji **spadek TPS**. By temu zapobiec wystarczy przed **rozpoczęciem zabawy wygenerować obszar świata o rozmiarze odpowiadający naszym potrzebom**.
 
-**Mapa o rozmiarze 10 000x10 000 bloków powinna w zupełności wystarczyć pod Survival na kilkunastu graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy o wymiarach 2200x2200 bloków. 
+**Mapa o rozmiarze 8 000x8 000 bloków powinna w zupełności wystarczyć pod Survival na kilkunastu graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy skłądający się z 1 780x1 780 bloków - 12 500 chunków. 
 
 <a name="zanim"><h2>Zanim zaczniemy!</h2></a>
 
@@ -39,7 +39,7 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 | Grass         | Diamond        |
 |---------------|----------------|
 |`/wb set 2000` |`/wb set 4000`  |
-|`/wb fill 5 `  |`/wb fill 1000` |
+|`/wb fill 5 `  |`/wb fill 100` |
 |`/wb confirm`  |`/wb confirm`   |
 
 <a name="forge"><h2>Forge</h2></a>

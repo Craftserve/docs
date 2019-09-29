@@ -41,6 +41,7 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 |`/wb set 2000` |`/wb set 4000`  |
 |`/wb fill 5 `  |`/wb fill 1000` |
 |`/wb confirm`  |`/wb confirm`   |
+
 <a name="forge"><h2>Forge</h2></a>
 
 Pregenerowanie mapy na serwerach **Forge** jest odrobinę bardziej skomplikowane, ponieważ mody ingerujące w wygląd świata niekoniecznie są ze sobą kompatybilne.

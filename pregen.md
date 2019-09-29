@@ -21,7 +21,7 @@ O ile w grze single-player ma to małe znaczenie, to na serwerze kilku-kilkunast
 <a name="zanim"><h2>Zanim zaczniemy!</h2></a>
 
 1. Proces generowania mapy powoduje lagi w trakcie jego trwania i trwa bardzo długo - nawet 8 godzin. Dlatego warto to zrobić przed otwarciem serwera.
-2. Mapę można wygenerować też **na domowym komputerze** a potem wgrać ją na serwer **przez FTP**. Trwa to nieporównywalnie krócej. Wystarczy podążąć za instrukcjami dla **[Forge](#forge)** lub (dla wersji 1.13+) tutorialem z **[tego filmu](https://www.youtube.com/watch?v=5yRnGpcIoS8).**
+2. Mapę można wygenerować też **na domowym komputerze** a potem wgrać ją na serwer **przez FTP**. Trwa to nieporównywalnie krócej. Wystarczy podążąć za instrukcjami dla **[Forge](#forge)** lub (dla wersji 1.13+) tutorialem z **[tego filmu](https://www.youtube.com/watch?v=5yRnGpcIoS8).** Z doświadczenia jednak wiemy, że dla wielu osób wrzucenie mapy na serwer jest problematyczne - opcja ta jest więc niepolecana.
 3. **Uwaga! Puste (bez graczy) serwery Craftserve są usypiane. Przez cały okres generowania mapy należy mieć otwartą konsolę serwera w panelu Craftserve - to zapobiegnie jego uśpieniu.**
 
 <a name="bukkit"><h2>Bukkit, Spigot i Paper</h2></a>

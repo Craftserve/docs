@@ -36,11 +36,11 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 ### Gotowe do wpisania zestawy komend:
 
 
-| Grass         | Diamond        |
-|---------------|----------------|
-|`/wb set 2000` |`/wb set 4000`  |
-|`/wb fill 5 `  |`/wb fill 100` |
-|`/wb confirm`  |`/wb confirm`   |
+| Grass              | Diamond             |
+|--------------------|---------------------|
+|`/wb set 2000`      |`/wb set 4000`       |
+|`/wb fill 5 `       |`/wb fill 100`       |
+|`/wb fill confirm`  |`/wb fill confirm`   |
 
 <a name="forge"><h2>Forge</h2></a>
 

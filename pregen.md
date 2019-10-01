@@ -55,7 +55,7 @@ Pregenerowanie mapy na serwerach **Forge** jest odrobinę bardziej skomplikowane
 
 **Jeśli nie masz zainstalowanego OTG** bezpieczniejszą opcją będzie [**Chunk-Pregenerator**](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator):
 
-`/pregen gen startexpansion circle 0 0 300 300` - wygeneruje kolisty obszar o promieniu 300 chunków. Jeśli wolisz kształt kwadratu, zamiast `circle` wpisz `square`.
+`/pregen gen startradius circle 0 0 300` - wygeneruje kolisty obszar o promieniu 300 chunków. Jeśli wolisz kształt kwadratu, zamiast `circle` wpisz `square`.
 
 *Oba pluginy zainstalowane na kliencie Forge Minecrafta dodadzą graficzny interfejs ułatwiający ich obsługę.*
 

@@ -3,7 +3,7 @@
 - [x] Pregeneracja mapy
 - [ ] Jak wgrać mapę
 - [ ] OP oraz podstawowe komendy
-- [ ] Offline-mode i Skin-restorer
+- [x] Offline-mode i Skin-restorer
 
 ## Diagnostyka:
 - [x] Logi and crash reporty
@@ -21,12 +21,13 @@
 #### Bukkit, Spigot, Paper:
 
 - [ ] AuthMeReloaded
-- [ ] EssentialsX
+- [x] EssentialsX
 - [ ] WorldEdit i jego forki
 - [ ] Vault i rangi
 - [ ] LWC
 - [ ] PreciousStones
 - [ ] PlotSquared
+- [ ] LogBlock 
 
 #### Sponge:
 

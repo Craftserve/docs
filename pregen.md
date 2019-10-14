@@ -16,11 +16,11 @@ Minecraft jest grą z losowo generowanym, masywnym światem - jego granice sięg
 
 O ile w grze single-player ma to małe znaczenie, to na serwerze kilku-kilkunastu graczy eksplorujących świat powoduje, że generator chunków znacznie **obciąża CPU** i w konsekwencji **spadek TPS**. By temu zapobiec wystarczy przed **rozpoczęciem zabawy wygenerować obszar świata o rozmiarze odpowiadający naszym potrzebom**.
 
-**Mapa o rozmiarze 8 000x8 000 bloków powinna w zupełności wystarczyć pod Survival na kilkunastu graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy skłądający się z 1 780x1 780 bloków - 12 500 chunków. 
+**Mapa o rozmiarze 8 000x8 000 bloków powinna w zupełności wystarczyć pod Survival na 20+ graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy skłądający się z 1 780x1 780 bloków - 12 500 chunków. Dodatkowo, bez problemu możną tę powierzchnię w przyszłości powiększyć.
 
 <a name="zanim"><h2>Zanim zaczniemy!</h2></a>
 
-1. Proces generowania mapy powoduje lagi w trakcie jego trwania i trwa bardzo długo - nawet 8 godzin. Dlatego warto to zrobić przed otwarciem serwera.
+1. Proces generowania mapy powoduje lagi w trakcie jego trwania i trwa bardzo długo - nawet 3 godziny. Dlatego warto to zrobić przed otwarciem serwera.
 2. Mapę można wygenerować też **na domowym komputerze** a potem wgrać ją na serwer **przez FTP**. Trwa to nieporównywalnie krócej. Wystarczy podążąć za instrukcjami dla **[Forge](#forge)** lub (dla wersji 1.13+) tutorialem z **[tego filmu](https://www.youtube.com/watch?v=5yRnGpcIoS8).** Z doświadczenia jednak wiemy, że dla wielu osób wrzucenie mapy na serwer jest problematyczne - opcja ta jest więc niepolecana.
 3. **Uwaga! Puste (bez graczy) serwery Craftserve są usypiane. Przez cały okres generowania mapy należy mieć otwartą konsolę serwera w panelu Craftserve - to zapobiegnie jego uśpieniu.**
 
@@ -38,7 +38,7 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 
 | Grass              | Diamond             |
 |--------------------|---------------------|
-|`/wb set 2000`      |`/wb set 4000`       |
+|`/wb set 1500`      |`/wb set 2500`       |
 |`/wb fill 5 `       |`/wb fill 100`       |
 |`/wb fill confirm`  |`/wb fill confirm`   |
 
@@ -50,12 +50,12 @@ Pregenerowanie mapy na serwerach **Forge** jest odrobinę bardziej skomplikowane
 
 **Jeśli na Twoim serwerze jest już zainstalowany [OpenTerrainGenerator](https://www.curseforge.com/minecraft/mc-mods/open-terrain-generator)** wystarczy, że uruchomisz generowanie komendą: 
 
-`/otg pregen 300` - wygeneruje ona obszar o promieniu 300 chunków, co przekłada się na około 9500x9500 bloków.
+`/otg pregen 150` - wygeneruje ona obszar o promieniu 150 chunków, co przekłada się na około 4800x4800 bloków.
 
 
 **Jeśli nie masz zainstalowanego OTG** bezpieczniejszą opcją będzie [**Chunk-Pregenerator**](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator):
 
-`/pregen gen startradius circle 0 0 300` - wygeneruje kolisty obszar o promieniu 300 chunków. Jeśli wolisz kształt kwadratu, zamiast `circle` wpisz `square`.
+`/pregen gen startradius circle 0 0 150` - wygeneruje kolisty obszar o promieniu 150 chunków. Jeśli wolisz kształt kwadratu, zamiast `circle` wpisz `square`.
 
 *Oba pluginy zainstalowane na kliencie Forge Minecrafta dodadzą graficzny interfejs ułatwiający ich obsługę.*
 
@@ -65,7 +65,7 @@ Te, dość stare wersje, oferują jedynie plugin **[Admin Command Toolbox](https
 
 By wygenerować świat należy wpisać:
 
-`/pregenspawn 300` - co wygeneruje kwadrat o wymiarach 600x600 chunków - 300 w każdą z 4 stron od spawnu.
+`/pregenspawn 150` - co wygeneruje kwadrat o wymiarach 300x300 chunków - 150 każdą z 4 stron od spawnu.
 
 <a name="sponge"><h2>Sponge</h2></a>
 

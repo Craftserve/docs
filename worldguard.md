@@ -74,13 +74,14 @@ Jeśli nie podasz stanu flagi, zostanie on ustawiony na domyślny, czyli flaga z
 Komenda obsługuje dodawanie flag obowiązujących tylko konkretne grupy, w formacie `g:admin`.
 
 ### Najpopularniejsze flagi
-* `passthrough` (allow/deny) - flaga pozwala na jakiekolwiek interakcje z regionem, czyli budowanie, niszczenie, otwieranie drzwi itp.
+* `passthrough` (allow/deny) - flaga sprawia, że region używa flag z regionu nadrzędnego.
 * `build` (allow/deny) - flaga pozwala na budowanie na terenie regionu.
 * `interact` (allow/deny) - flaga pozwala na interakcję, czyli otwieranie drzwi, skrzynek, wciskanie przycisków itp.
 * `use` (allow/deny) - flaga pozwala na otwieranie drzwi, wciskanie przycisków itp, jednak **nie** pozwala na otwieranie skrzynek.
 * `pvp` (allow/deny) - flaga umożliwia zadawanie obrażeń graczom.
 * `tnt` (allow/deny) - flaga umożliwia wysadzanie TNT.
 * `mob-spawning` (allow/deny) - flaga umożliwia pojawianie się mobów.
+* `deny-spawn` (lista) - flaga określa listę mobów, które nie mogą spawnować się na danym cuboidzie, np. `pig,cow`.
 * `enderman-grief` (allow/deny) - flaga umożliwia niszczenie terenu przez endermany.
 * `fire-spread` (allow/deny) - flaga umożliwia rozprzestrzenianie się ognia.
 * `creeper-explosion` (allow/deny) - flaga umozliwia wybuchy creeperów.
@@ -88,16 +89,18 @@ Komenda obsługuje dodawanie flag obowiązujących tylko konkretne grupy, w form
 * `snow-melt` (allow/deny) - flaga umożliwia roztapianie się śniegu.
 * `ice-melt` (allow/deny) - flaga umożliwia roztapianie się lodu.
 * `leaf-decay` (allow/deny) - flaga umożliwia znikanie liści.
-* `entry` (allow/deny) - flaga umożliwia wchodzenie graczy na teren regionu. Przydatne gdy chcemy na przykład stworzyć region dostępny tylko dla konkretnej grupy graczy.
 * `enderpearl` (allow/deny) - flaga umożliwia teleportację przy użyciu pereł.
 * `chorus-fruit-teleport` (allow/deny) - flaga umożliwia teleportację przy użyciu owoców chorusa.
 * `item-pickup` (allow/deny) - flaga umożliwia podnoszenie przedmiotów.
 * `item-drop` (allow/deny) - flaga umożliwia upuszczanie przedmiotów.
 * `invincible` (allow/deny) - flaga sprawia, że gracze na terenie regionu są nieśmiertelni.
 * `fall-damage` (allow/deny) - flaga sprawia, że gracze nie odczuwają obrażeń od upadku na terenie regionu.
-* `blocked-cmds` (lista) - komendy, których użycie nie będzie dostępne na terenie regionu, np. `spawn, warp, home`.
+* `blocked-cmds` (lista) - komendy, których użycie nie będzie dostępne na terenie regionu, np. `spawn,warp,home`.
+* `greeting` (tekst) - wiadomość, która wyświetli się graczowi gdy wejdzie na region.
+* `farewell` (tekst) - wiadomość, która wyświetli się graczowi gdy wyjdzie z regionu.
 
 Listę wszystkich flag możesz sprawdzić przy użyciu komendy `/rg flags [nazwa regionu]`.
+Istnieją także [pluginy](https://www.spigotmc.org/resources/worldguard-extra-flags.4823/) dodawające więcej flag.
 
 ## Priorytet regionów
 
@@ -137,7 +140,7 @@ W celu przeteleportowania się do konkretnego regionu użyj komendy `/rg telepor
 
 ## Region globalny
 
-Istnieje region `__global__`, który obejmuje cały świat. Domyślnie nie ma żadnych flag.
+Istnieje region `__global__`, który obejmuje cały świat. Domyślnie nie ma żadnych flag. Ma najniższy priorytet, więc utworzenie jakiegokolwiek regionu go nadpisze.
 Możesz go wykorzystać gdy chcesz zabronić graczom walczyć lub budować na konkretnym świecie, np. `/rg flag __global__ pvp deny`, `/rg flag __global__ build deny`.
 
 Przykładowe wykorzystanie:

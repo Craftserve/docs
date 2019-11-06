@@ -1,6 +1,6 @@
 # WorldGuard - poradnik
 
-Głównym zastosowaniem WorldGuarda jest tworzenie regionów, które chronią dane budowle.
+Głównym zastosowaniem WorldGuarda jest ochrona świata.
 
 
 ## Instalacja
@@ -26,7 +26,7 @@ Po zaznaczeniu terenu użyj komendy `/rg define <nazwa regionu> [właściciel]`.
 Nazwa regionu to unikalne ID regionu, nie można stworzyć dwóch regionów z tą samą nazwą na jednym świecie. Nazwa regionu nie może zawierać spacji.
 Podaniu argumentu `właściciel` spowoduje ustalenie właściciela regionu (więcej informacji poniżej).
 
-Po utworzeniu regionu automatycznie gracze nie będą mogli budować i edytować bloków (w tym otwierać skrzynek, drzwi itp.) na jego terenie. Domyślnie modyfikować region może tylko administracja z odpowiednim uprawnieniem i gracze dodani do niego jako członkowie lub właściciele.
+Po utworzeniu regionu automatycznie gracze nie będą mogli wykonywać żadnych niepożądanych akcji, w tym edytować bloków, otwierać skrzynek, drzwi, wsiadać na zwierzęta, do wagoników itp. na jego terenie. Domyślnie modyfikować region może tylko administracja z odpowiednim uprawnieniem i gracze dodani do niego jako członkowie lub właściciele.
 
 ### Edycja terenu regionu
 Jeśli chcesz zedytować obszar, który obejmuje dany region, utwórz nowe zaznaczenie przy użyciu pluginu WorldEdit, a następnie wpisz komendę `/rg redefine <nazwa regionu>`.
@@ -97,7 +97,7 @@ Komenda obsługuje dodawanie flag obowiązujących tylko konkretne grupy, w form
 * `fall-damage` (allow/deny) - flaga sprawia, że gracze nie odczuwają obrażeń od upadku na terenie regionu.
 * `blocked-cmds` (lista) - komendy, których użycie nie będzie dostępne na terenie regionu, np. `spawn, warp, home`.
 
-Listę wszystkich flag możesz sprawdzić przy użyciu komendy `/rg flags`.
+Listę wszystkich flag możesz sprawdzić przy użyciu komendy `/rg flags [nazwa regionu]`.
 
 ## Priorytet regionów
 

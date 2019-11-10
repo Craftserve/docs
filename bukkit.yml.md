@@ -1,6 +1,6 @@
 # bukkit.yml - poradnik
  
-Plik bukkit.yml jest jednym z plików konfiguracyjnych silników bukkit, craftbukkit, spigot i paper. Wiele osób nie zwraca na niego uwagi, a można w nim skonfigurować wiele przydatnych ustawień, które mogą poprawić wydajność serwera, lub troche zmienić jego zachowanie. Plik składa się z kilku sekcji, na które podzielone są konkretne ustawienia silnika. Niestety, ale w zależności od wersji serwera i silnika ustawienia mogą pojawiać się w różnej kolejności, a niektóre, jeżeli chcemy je zmienić, musimy samodzielnie .
+Plik bukkit.yml jest jednym z plików konfiguracyjnych silników bukkit, craftbukkit, spigot i paper. Wiele osób nie zwraca na niego uwagi, a można w nim skonfigurować wiele przydatnych ustawień, które mogą poprawić wydajność serwera, lub troche zmienić jego zachowanie. Plik składa się z kilku sekcji, na które podzielone są konkretne ustawienia silnika. Niestety, ale w zależności od wersji serwera i silnika ustawienia mogą pojawiać się w różnej kolejności, a niektóre, jeżeli chcemy je zmienić, musimy samodzielnie dopisać je do pliku.
 
 ## settings
 Sekcja ta odpowiada za dość ogólne ustawienia dotyczące działania serwera.

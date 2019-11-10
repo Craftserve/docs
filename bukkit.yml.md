@@ -129,18 +129,25 @@ Sekcja ta odpowiada za ustawienia dotyczące częstotliwości z którą będą s
 
 ### animal-spawns
 Opcja ta odpowiada za ilość ticków, które serwer powinien odczekać między kolejnymi próbami spawnowania zwierząt (krowy, konie, koty, papugi itp.) w świecie gry.
+
 Wpisanie wartości mniejszej od zera sprawi, że zostanie użyta wartość `400`.
+
 Domyślną wartością jest **400**.
 
 ### monster-spawns
 Opcja ta odpowiada za ilosć ticków, które serwer powinien odczekać między kolejnymi próbami spawnowania potworów (szkielety, zombie, creepery itp.) w świecie gry.
+
 Wpisanie wartości mniejszej od zera sprawi, że zostanie użyta wartość `1`.
+
 Domyślną wartością jest **1**.
 
 ### autosave
 Opcja ta odpowiada za ilość ticków, któ©e serwer odczeka między kolejnymi zapisami wszystkiego na dysk.
+
 **W Wypadku serwerów na craftserve to ustawienie niewiele zmieni, bo panel sam i tak wymusi zapis na dysk co jakiś czas. Tym ustawieniem można jedynie sprawic, że zapis będzie następował częściej!**
+
 Wpisanie wartości mneijszej od zera sprawi, że zostanie użyta wartość `0`.
+
 Domyślną wartością jest **6000**.
 
 ## aliases
@@ -153,4 +160,3 @@ Sekcja ta służy do ustawiania danych dostępowych bazy danych dla pluginów, k
 Sekcja ta służy do konfigurowania ustawień światów, które domyślnie są ładowane przez silnik. Jako, że można to równie dobrze skonfigurować w pliku server.properties, to nie bedziemy omawiać tej sekcji.
 
 ###### źródło: https://bukkit.gamepedia.com/Bukkit.yml
-

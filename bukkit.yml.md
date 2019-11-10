@@ -151,7 +151,7 @@ Wpisanie wartości mneijszej od zera sprawi, że zostanie użyta wartość `0`.
 Domyślną wartością jest **6000**.
 
 ## aliases
-Sekcja ta jest "odpadem" po dawniejszej formie zapisywania aliasów do komend w grze. Teraz aliasy te znajdują się w pliku commands.yml.
+Sekcja ta jest pozostałością po dawniejszej formie zapisywania aliasów do komend w grze. Teraz aliasy te znajdują się w pliku commands.yml.
 
 ## database
 Sekcja ta służy do ustawiania danych dostępowych bazy danych dla pluginów, które chcą używać bazy danych którą poda im silnik serwera. Niestety, ale takich pluginów jest garstka, więc nie będziemy jej tutaj omawiać.

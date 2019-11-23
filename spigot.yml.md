@@ -108,71 +108,7 @@ Opcja ta odpowiada za ustawienie czy serwer powinien zapisywać postępy graczy.
 Opcja ta odpowiada za ustawienie które postępy powinny zostać wyłączone na serwerze. Wyłączone postępy nie będą się wyświetlały w menu postępów. Jeżeli zablokujesz postęp wymagany przez inne postępy, które nie będą zablokowane, w konsoli serwera pojawią się błędy i postępy mogą nie działać poprawnie. Pamiętaj żeby blokować wszystkie postępy zależne od innych blokowanych postępów.
 
 * Wpisz `[]` żeby nie wyłączać żadnych postępów.
-* Wpisz to, co znajduje się w poniższym spoilerze, żeby zablokować wszystkie standardowe postępy.
-
-    <details>
-    <summary>Kliknij tutaj aby rozwinąć listę</summary>
-    
-    ```yml
-  disabled:
-  - minecraft:story/root
-  - minecraft:nether/root
-  - minecraft:end/root
-  - minecraft:adventure/root
-  - minecraft:husbandry/root
-  - minecraft:story/shiny_gear
-  - minecraft:end/elytra
-  - minecraft:adventure/summon_iron_golem
-  - minecraft:husbandry/break_diamond_hoe
-  - minecraft:story/obtain_armor
-  - minecraft:nether/return_to_sender
-  - minecraft:adventure/sleep_in_bed
-  - minecraft:story/lava_bucket
-  - minecraft:end/dragon_breath
-  - minecraft:end/kill_dragon
-  - minecraft:adventure/kill_all_mobs
-  - minecraft:story/enchant_item
-  - minecraft:nether/all_potions
-  - minecraft:story/follow_ender_eye
-  - minecraft:husbandry/tame_an_animal
-  - minecraft:nether/create_beacon
-  - minecraft:story/deflect_arrow
-  - minecraft:story/iron_tools
-  - minecraft:adventure/totem_of_undying
-  - minecraft:adventure/kill_a_mob
-  - minecraft:adventure/adventuring_time
-  - minecraft:nether/brew_potion
-  - minecraft:husbandry/plant_seed
-  - minecraft:end/dragon_egg
-  - minecraft:adventure/sniper_duel
-  - minecraft:end/levitate
-  - minecraft:nether/create_full_beacon
-  - minecraft:nether/summon_wither
-  - minecraft:husbandry/balanced_diet
-  - minecraft:nether/all_effects
-  - minecraft:nether/fast_travel
-  - minecraft:nether/get_wither_skull
-  - minecraft:husbandry/bred_all_animals
-  - minecraft:story/mine_stone
-  - minecraft:story/enter_the_nether
-  - minecraft:adventure/trade
-  - minecraft:nether/uneasy_alliance
-  - minecraft:story/mine_diamond
-  - minecraft:story/upgrade_tools
-  - minecraft:nether/find_fortress
-  - minecraft:story/cure_zombie_villager
-  - minecraft:story/form_obsidian
-  - minecraft:end/find_end_city
-  - minecraft:end/enter_end_gateway
-  - minecraft:nether/obtain_blaze_rod
-  - minecraft:adventure/shoot_arrow
-  - minecraft:story/enter_the_end
-  - minecraft:husbandry/breed_an_animal
-  - minecraft:end/respawn_dragon
-  - minecraft:story/smelt_iron
-    ```
-    </details>
-
+* Wpisz`- '*'` żeby zablokować wszystkie standardowe postępy.
 * Domyślną wartością jest **[]**.
 
 ## world settings

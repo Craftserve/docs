@@ -30,8 +30,8 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 
 * `/wb set <promienX> [promienZ]` - ustala granicę świata **wyśrodkowaną na Twojej postaci**, gdzie <`promienX`> jest promieniem w osi X, a `<promienZ>` w osi Z - oba **wyrażone w blokach**. Jeśli `promienZ` nie będzie podany, użyta zostanie wartość `promienX`.
 * `/wb shape <elliptic|rectangular>` - pozwala wybrać kształt granicy. `elliptic` to eliptyczna/okrągła, `rectangular` - prostokątna.
-* `/wb fill [czestotliwosc]` - rozpoczyna generowanie chunków z domyślną częstotliwością 20 prób na sekundę. Dla serwerów Grass należy ją zmniejszyć do 5. Na serwerach Diamond można spróbować nawet wartość 100. **Im mniejsza wartość, tym mniejsze lagi w trakcie generowania świata, ale też dłużej to trwa.**
-* `/wb confirm` - komenda ta jest potrzebna do potwierdzenia rozpoczęcia `/wb fill`.
+* `/wb fill [częstotliwość]` - rozpoczyna generowanie chunków z domyślną częstotliwością 20 prób na sekundę. Dla serwerów Grass należy ją zmniejszyć do 5. Na serwerach Diamond można spróbować nawet wartość 100. **Im mniejsza wartość, tym mniejsze lagi w trakcie generowania świata, ale też dłużej to trwa.**
+* `/wb fill confirm` - komenda ta jest potrzebna do potwierdzenia rozpoczęcia `/wb fill`.
 
 ### Gotowe do wpisania zestawy komend:
 
@@ -39,7 +39,7 @@ W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainst
 | Grass              | Diamond             |
 |--------------------|---------------------|
 |`/wb set 1500`      |`/wb set 2500`       |
-|`/wb fill 5 `       |`/wb fill 100`       |
+|`/wb fill 5 `       |`/wb fill 40`       |
 |`/wb fill confirm`  |`/wb fill confirm`   |
 
 <a name="forge"><h2>Forge</h2></a>

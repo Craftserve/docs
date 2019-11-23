@@ -14,6 +14,7 @@ Opcja ta odpowiada za ustawienie ilości liter wpisanych z nazwy komendy, aby mo
 ### send-namespaced
 Opcja ta odpowiada za ustawienie czy serwer powinien podpowiadać również komendy z tzw. namespace, czyli najczęściej nazwą pluginu, z którego pochodzi komenda, np. `/essentials:tpa` w wypadku komendy `/tpa`.
 
+* Aby dowiedzieć się czym dokładnie jest namespace, zobacz ten ([>>klik<<](https://minecraft.gamepedia.com/Namespaced_ID)) artykuł (po angielsku).
 * Wpisz `false` żeby wyłączyć podpowiedzi komend z namespacem.
 * Wpisz `true` żeby włączyć podpowiedzi komend z namespacem.
 * Domyślną wartością jest **true**.

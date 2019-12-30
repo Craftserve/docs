@@ -9,7 +9,7 @@
 - [x] Logi and crash reporty
 - [x] Timings
 - [ ] Interpretacja timingów
-- [ ] Forge debug profiler oraz jego interpretacja
+- [x] Forge debug profiler oraz jego interpretacja
 
 ## Pluginy:
 - [x] Instalowanie pluginów

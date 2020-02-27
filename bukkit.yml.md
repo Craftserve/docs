@@ -60,7 +60,7 @@ Opcja ta odpowiada za ustawianie ilości milisekund między rozłączeniem gracz
 * Domyślną wartością jest **4000**.
 
 ### query-plugins
-Opcja ta odpowiada za ustawianie czy serwer przy tzw. query (_np za pomocą strony https://dinnerbone.com/minecraft/tools/status/_)powinien podawać listę swoich pluginów. Jeżeli z jakiegoś powodu chcesz ukryć pluginy na swoim serwerze, to wyłączenie tej opcji jest dobrym pomysłem.
+Opcja ta odpowiada za ustawianie czy serwer przy tzw. query (_np. za pomocą strony https://dinnerbone.com/minecraft/tools/status/_) powinien podawać listę swoich pluginów. Jeżeli z jakiegoś powodu chcesz ukryć pluginy na swoim serwerze, to wyłączenie tej opcji jest dobrym pomysłem.
 
 * Wpisz `false` aby wyłączyć wyświetlanie pluginów przy zapytaniu.
 * Wpisz `true` aby włączyć wyświetlanie pluginów przy zapytaniu.

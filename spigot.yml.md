@@ -12,9 +12,9 @@ Opcja ta odpowiada za ustawienie ilości liter wpisanych z nazwy komendy, aby mo
 * Domyślną wartością jest **0**.
 
 ### send-namespaced
-Opcja ta odpowiada za ustawienie czy serwer powinien podpowiadać również komendy z tzw. namespace, czyli najczęściej nazwą pluginu, z którego pochodzi komenda, np. `/essentials:tpa` w wypadku komendy `/tpa`.
+Opcja ta odpowiada za ustawienie czy serwer powinien podpowiadać również komendy z tzw. namespace, czyli najczęściej nazwą pluginu, z którego pochodzi komenda, np. `/essentials:tpa` w przypadku komendy `/tpa`.
 
-* Aby dowiedzieć się czym dokładnie jest namespace, zobacz ten ([>>klik<<](https://minecraft.gamepedia.com/Namespaced_ID)) artykuł (po angielsku).
+* Aby dowiedzieć się czym dokładnie jest namespace, zobacz ten [artykuł](https://minecraft.gamepedia.com/Namespaced_ID) (po angielsku).
 * Wpisz `false` żeby wyłączyć podpowiedzi komend z namespacem.
 * Wpisz `true` żeby włączyć podpowiedzi komend z namespacem.
 * Domyślną wartością jest **true**.
@@ -109,7 +109,7 @@ Opcja ta odpowiada za ustawienie czy serwer powinien zapisywać postępy graczy.
 Opcja ta odpowiada za ustawienie które postępy powinny zostać wyłączone na serwerze. Wyłączone postępy nie będą się wyświetlały w menu postępów. Jeżeli zablokujesz postęp wymagany przez inne postępy, które nie będą zablokowane, w konsoli serwera pojawią się błędy i postępy mogą nie działać poprawnie. Pamiętaj żeby blokować wszystkie postępy zależne od innych blokowanych postępów.
 
 * Wpisz `[]` żeby nie wyłączać żadnych postępów.
-* Wpisz`- '*'` żeby zablokować wszystkie standardowe postępy.
+* Wpisz `- '*'` żeby zablokować wszystkie standardowe postępy.
 * Domyślną wartością jest **[]**.
 
 ## world settings
@@ -375,17 +375,17 @@ Opcja ta posiada dwie podopcje, które odpowiadają za ustawienie czasu w milise
 ##### tile
 Opcja ta odpowiada za ustawienie maksymalnego czasu przeznaczonego na analize mapy.
 
-* **Zmniejszenie tej wartości może podnieść wydajność serwera, ale też może sprawić, że niektóre rzeczy będą działały wolniej, np zegary redstone lub hoppery.**
+* **Zmniejszenie tej wartości może podnieść wydajność serwera, ale też może sprawić, że niektóre rzeczy będą działały wolniej, np. zegary redstone lub hoppery.**
 * Domyślną wartością jest **50**.
 
 ##### entity
 Opcja ta odpowiada za ustawienie maksymalnego czasu przeznaczonego na analize otoczenia mobów.
 
-* **Zmniejszenie tej wartości może podnieść wydajność serwera, ale też może sprawić, że niektóre rzeczy będą działały wolniej, np potwory będą później reagowały na obecność gracza.**
+* **Zmniejszenie tej wartości może podnieść wydajność serwera, ale też może sprawić, że niektóre rzeczy będą działały wolniej, np. potwory będą później reagowały na obecność gracza.**
 * Domyślną wartością jest **50**.
 
 ### clear-tick-list
-Opcja ta odpowiada za ustawienie czy serwer powinien czyścić listy tickowanych stworzeń i przedmiotów. Z czasem listy te potrafią urosnąć do znacznych rozmiarów, ale czyszczenie listy może zepsuć wiele rzeczy, np czasy rośnięcia roślin. Włączenie tej opcji nie jest zalecane dopóki nie będziesz znał się dobrze na tym, co się dzieje wewnętrznie w silniku.
+Opcja ta odpowiada za ustawienie czy serwer powinien czyścić listy tickowanych stworzeń i przedmiotów. Z czasem listy te potrafią urosnąć do znacznych rozmiarów, ale czyszczenie listy może zepsuć wiele rzeczy, np. czasy rośnięcia roślin. Włączenie tej opcji nie jest zalecane dopóki nie będziesz znał się dobrze na tym, co się dzieje wewnętrznie w silniku.
 
 * Wpisz `false` żeby wyłączyć czyszczenie listy.
 * Wpisz `true` żeby włączyć czyszczenie listy.
@@ -539,13 +539,13 @@ Opcja ta odpowiada za ustawienie czy serwer po crashu powinien podjąć próbę 
 
 * Wpisz `false` żeby wyłączyć automatyczne próby restartu.
 * Wpisz `true` żeby włączyć automatyczne próby restartu.
-* **W wypadku serwerów na craftserve opcja ta nic nie zmienia, nawet jeżeli wyłączysz w konfiguracji automatyczny restart serwera to serwer będzie uruchamiany ponownie.**
+* **W przypadku serwerów na craftserve opcja ta nic nie zmienia, nawet jeżeli wyłączysz w konfiguracji automatyczny restart serwera to serwer będzie uruchamiany ponownie.**
 * Domyślną wartością jest **true**.
 
 ### restart-script
 Opcja ta odpowiada za ustawienie lokalizacji skryptu służącego do restartu serwera.
 
-* **W wypadku serwerów na craftserve opcja ta nic nie zmienia, niezależnie od tego ustawienia serwer będzie restartowany standardową metodą craftserve.**
+* **W przypadku serwerów na craftserve opcja ta nic nie zmienia, niezależnie od tego ustawienia serwer będzie restartowany standardową metodą craftserve.**
 * Domyślną wartością jest **./start.sh**.
 
 ### late-bind

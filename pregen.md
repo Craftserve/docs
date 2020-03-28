@@ -16,12 +16,12 @@ Minecraft jest grą z losowo generowanym, masywnym światem - jego granice sięg
 
 O ile w grze single-player ma to małe znaczenie, to na serwerze kilku-kilkunastu graczy eksplorujących świat powoduje, że generator chunków znacznie **obciąża CPU** i w konsekwencji **spadek TPS**. By temu zapobiec wystarczy przed **rozpoczęciem zabawy wygenerować obszar świata o rozmiarze odpowiadający naszym potrzebom**.
 
-**Mapa o rozmiarze 8 000x8 000 bloków powinna w zupełności wystarczyć pod Survival na 20+ graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy skłądający się z 1 780x1 780 bloków - 12 500 chunków. Dodatkowo, bez problemu możną tę powierzchnię w przyszłości powiększyć.
+**Mapa o rozmiarze 8 000x8 000 bloków powinna w zupełności wystarczyć pod Survival na 20+ graczy.** Przy tych parametrach, zakładając 20 graczy, na każdego przypada średni wycinek mapy skłądający się z 1 780x1 780 bloków - 12 500 chunków. Dodatkowo, bez problemu można tę powierzchnię w przyszłości powiększyć.
 
 <a name="zanim"><h2>Zanim zaczniemy!</h2></a>
 
 1. Proces generowania mapy powoduje lagi w trakcie jego trwania i trwa bardzo długo - nawet 3 godziny. Dlatego warto to zrobić przed otwarciem serwera.
-2. Mapę można wygenerować też **na domowym komputerze** a potem wgrać ją na serwer **przez FTP**. Trwa to nieporównywalnie krócej. Wystarczy podążąć za instrukcjami dla **[Forge](#forge)** lub (dla wersji 1.13+) tutorialem z **[tego filmu](https://www.youtube.com/watch?v=5yRnGpcIoS8).** Z doświadczenia jednak wiemy, że dla wielu osób wrzucenie mapy na serwer jest problematyczne - opcja ta jest więc niepolecana.
+2. Mapę można wygenerować też **na domowym komputerze** a potem wgrać ją na serwer **przez FTP**. Trwa to nieporównywalnie krócej. Wystarczy podążać za instrukcjami dla **[Forge](#forge)** lub (dla wersji 1.13+) tutorialem z **[tego filmu](https://www.youtube.com/watch?v=5yRnGpcIoS8).** Z doświadczenia jednak wiemy, że dla wielu osób wrzucenie mapy na serwer jest problematyczne - opcja ta jest więc niepolecana.
 3. **Uwaga! Puste (bez graczy) serwery Craftserve są usypiane. Przez cały okres generowania mapy należy mieć otwartą konsolę serwera w panelu Craftserve - to zapobiegnie jego uśpieniu.**
 
 <a name="bukkit"><h2>Bukkit, Spigot i Paper</h2></a>

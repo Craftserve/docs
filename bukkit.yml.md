@@ -1,6 +1,6 @@
 # bukkit.yml - poradnik
  
-Plik bukkit.yml jest jednym z plików konfiguracyjnych silników bukkit, craftbukkit, spigot i paper. Wiele osób nie zwraca na niego uwagi, a można w nim skonfigurować wiele przydatnych ustawień, które mogą poprawić wydajność serwera, lub troche zmienić jego zachowanie. Plik składa się z kilku sekcji, na które podzielone są konkretne ustawienia silnika. Niestety, ale w zależności od wersji serwera i silnika ustawienia mogą pojawiać się w różnej kolejności, a niektóre, jeżeli chcemy je zmienić, musimy samodzielnie dopisać je do pliku.
+Plik bukkit.yml jest jednym z plików konfiguracyjnych silników bukkit, craftbukkit, spigot i paper. Wiele osób nie zwraca na niego uwagi, a można w nim skonfigurować wiele przydatnych ustawień, które mogą poprawić wydajność serwera, lub trochę zmienić jego zachowanie. Plik składa się z kilku sekcji, na które podzielone są konkretne ustawienia silnika. Niestety, ale w zależności od wersji serwera i silnika ustawienia mogą pojawiać się w różnej kolejności, a niektóre, jeżeli chcemy je zmienić, musimy samodzielnie dopisać je do pliku.
 
 ## settings
 Sekcja ta odpowiada za dość ogólne ustawienia dotyczące działania serwera.
@@ -22,19 +22,19 @@ Opcja ta odpowiada za włączanie i wyłączanie wyskakujących w konsoli serwer
 ### permissions-file
 Opcja ta odpowiada za ustawianie nazwy pliku wykorzystywanego przez silnik do obsługi uprawnień.
 
-**To nie jest plik w którym możesz ustawić uprawnienia dla graczy. Nie powinieneś go modyfikować, bo możesz potencjalnie zepsuć sobie serwer. Do tworzenia rang na serwerze użyj pluginu, np luckperms.**
+**To nie jest plik w którym możesz ustawić uprawnienia dla graczy. Nie powinieneś go modyfikować, bo możesz potencjalnie zepsuć sobie serwer. Do tworzenia rang na serwerze użyj pluginu, np. [LuckPerms](https://www.spigotmc.org/resources/luckperms-an-advanced-permissions-plugin.28140/).**
 
 * Domyślną wartością jest **permissions.yml**.
 
 ### update-folder
 Opcja ta odpowiada za ustawianie nazwy katalogu w katalogu _plugins/_, z którego serwer skopiuje pliki pluginów przy restartcie serwera. 
 
-Możesz do tego folderu wrzucić pliki .jar pluginów, które chcesz dograć, ale nie chcesz restartować serwera w danej chwili. Po prostu umieść w katalogu o tej nazwie pliki pluginów, a serwer sam powinien je załadować, gdy będzie od nowa włączany lub restartowany.
+Możesz do tego folderu wrzucić pliki `.jar` pluginów, które chcesz dograć, ale nie chcesz restartować serwera w danej chwili. Po prostu umieść w katalogu o tej nazwie pliki pluginów, a serwer sam powinien je załadować, gdy będzie od nowa włączany lub restartowany.
 
 * Domyślną wartością jest **update** co sprawia, że ścieżką w której powinieneś wrzucić pluginy jest _plugins/update/_.
 
 ### use-exact-login-location
-Opcja ta odpowiada za ustawianie zachowania serwera przy logowaniu gracza. W normalnych warunkach gra przy logowaniu sprawdza, czy miejsce w którym wylogował się gracz jest bezpieczne do zalogowania, np nie pojawiły się tam bloki, które mogą uwięzić gracza i udusić. Jeżeli takie znaki się tam znajdą, to gracz zostanie przeniesiony wyżej, aż będzie tak wysoko, że nie będzie kolidował z blokami i będzie mógł się bezpiecznie pojawić.
+Opcja ta odpowiada za ustawianie zachowania serwera przy logowaniu gracza. W normalnych warunkach gra przy logowaniu sprawdza, czy miejsce w którym wylogował się gracz jest bezpieczne do zalogowania, np. nie pojawiły się tam bloki, które mogą uwięzić gracza i udusić. Jeżeli takie znaki się tam znajdą, to gracz zostanie przeniesiony wyżej, aż będzie tak wysoko, że nie będzie kolidował z blokami i będzie mógł się bezpiecznie pojawić.
 
 * Opcja ta nie pojawia się domyślnie w pliku _bukkit.yml_ generowanym przez silnik spigot na wersję 1.14.4. Jeżeli chcesz zmienić wartość domyślną, musisz dopisać tę opcję ręcznie do sekcji. Pamiętaj, żeby uważać na prawidłową ilość spacji!
 * Wpisz `false`, jeżeli chcesz, żeby gra zachowywała się standardowo
@@ -77,7 +77,7 @@ Opcja ta odpowiada za ustawianie czy serwer powinien informować w logach, gdy p
 ### shutdown-message
 Opcja ta odpowiada za ustawianie wiadomości z którą gracze zostaną wyrzuceni z serwera gdy ten zostanie wyłączony za pomocą komendy _/stop_.
 
-* Kolory do wiadomości można dodać za pomocą kodu koloru wg wzorca ([>>KLIK<<](https://static.planetminecraft.com/files/resource_media/screenshot/1807/example2-1518839184.png)), lecz zamiast symbolu ampersandu `&` należy użyć symbolu paragrafu `§`.
+* Kolory do wiadomości można dodać za pomocą kodu koloru wg. [wzorca](https://static.planetminecraft.com/files/resource_media/screenshot/1807/example2-1518839184.png), lecz zamiast symbolu ampersandu `&` należy użyć symbolu paragrafu `§`.
 * Domyślną wartością jest **Server closed**.
 
 
@@ -106,7 +106,7 @@ Opcja ta odpowiada za ustawianie limitu spawnowanych zwierząt wprowadzających 
 
 
 ## chunk-gc
-Sekcja ta odpowiada za ustawienia dotyczące narzędzia od sprzątania pamięci RAM serwera z chunków, które nie powinny być załadowane, ale z jakiegoś powodu po użyciu nie zostały z tej pamięci usunięte. W dzisiejszych czasach zdarza się to niezwykle rzadko, jeżeli jednak serwer z niewyjasnionych przyczyn potrafi sam z siebie zjadać coraz więcej pamięci to można rozważyć włączenie tej opcji jako jedną z metod na zapobieganiu takiego marnowania pamięci.
+Sekcja ta odpowiada za ustawienia dotyczące narzędzia od sprzątania pamięci RAM serwera z chunków, które nie powinny być załadowane, ale z jakiegoś powodu po użyciu nie zostały z tej pamięci usunięte. W dzisiejszych czasach zdarza się to niezwykle rzadko, jeżeli jednak serwer z niewyjaśnionych przyczyn potrafi sam z siebie zjadać coraz więcej pamięci to można rozważyć włączenie tej opcji jako jedną z metod na zapobieganiu takiego marnowania pamięci.
 
 ### period-in-ticks
 Opcja ta odpowiada za czas który serwer będzie czekał między kolejnymi sprawdzeniami, czy są jakieś niepotrzebne chunki świata załadowane w pamięci. Czas wyraża się w tickach, a sprawnie działający serwer wykonuje 20 ticków na sekundę. Jest to niezbyt lekka operacja, więc uruchamianie tego zbyt często może niepotrzebnie obciążyć Ci serwer.
@@ -137,9 +137,9 @@ Opcja ta odpowiada za ilosć ticków, które serwer powinien odczekać między k
 * Domyślną wartością jest **1**.
 
 ### autosave
-Opcja ta odpowiada za ilość ticków, któ©e serwer odczeka między kolejnymi zapisami wszystkiego na dysk.
+Opcja ta odpowiada za ilość ticków, które serwer odczeka między kolejnymi zapisami wszystkiego na dysk.
 
-**W Wypadku serwerów na craftserve to ustawienie niewiele zmieni, bo panel sam i tak wymusi zapis na dysk co jakiś czas. Tym ustawieniem można jedynie sprawic, że zapis będzie następował częściej!**
+**W przypadku serwerów na craftserve to ustawienie niewiele zmieni, bo panel sam i tak wymusi zapis na dysk co jakiś czas. Tym ustawieniem można jedynie sprawić, że zapis będzie następował częściej!**
 
 * Wpisanie wartości mniejszej od zera sprawi, że zostanie użyta wartość `0`.
 * Domyślną wartością jest **6000**.

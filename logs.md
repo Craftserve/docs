@@ -25,7 +25,7 @@ Raporty z crashy znajdziesz natomiast w folderze **crash-reports** - ich nazwy o
 
 <h3>Czym są logi?</h3>
 
-Log (po polsku "dziennik") jest uporządkowaną chronologicznie listą najważniejszych zdarzeń z pojedynczego uruchomienia serwera.Każdy wpis do logu opatrzony jest datą oraz godziną, tak aby łatwo było zlokalizować interesujące nas wydarzenia.
+Log (po polsku "dziennik") jest uporządkowaną chronologicznie listą najważniejszych zdarzeń z pojedynczego uruchomienia serwera. Każdy wpis do logu opatrzony jest datą oraz godziną, tak aby łatwo było zlokalizować interesujące nas wydarzenia.
 W pliku dziennika znajdziesz takie informacje jak parametry startowe serwera, ładowanie każdego modu czy pluginu, światów, a nawet ich populację mobami.
 
 Główną cechą logów jest ich czytelność - dobrze skonstruowane mają być zrozumiałem dla przeciętnego administratora niebędącego programistą, dlatego podstawowa znajomość języka angielskiego w połączeniu z Google zazwyczaj są wystarczające.
@@ -72,7 +72,7 @@ Jeśli nasz serwer nie działa tak jak powinien, pierwszym co powinniśmy zrobi�
 
 Załóżmy, że udało nam się zainstalować AuthMe, sam plugin poprawnie obsługuje rejestrację, ale jedna z jego funkcji - protectInventory - nie działa. W rezultacie ekwipunek postaci przed zalogowaniem nie jest chroniony. Jeśli uśmiercimy taką postać, to straci ona swój dobytek (co nie powinno mieć miejsca).
 
-Szukając wyrażen zawierających `WARN` natrafiamy na:
+Szukając wyrażeń zawierających `WARN` natrafiamy na:
 
     [17:23:17] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-SNAPSHOT-b2325
     [17:23:18] [Server thread/INFO]: [AuthMe] SQLite Setup finished
@@ -83,7 +83,7 @@ Szukając wyrażen zawierających `WARN` natrafiamy na:
 
 Jak widzimy w ostatniej linijce, tej oznaczonej tagiem `WARN`, protectInventory do działania wymaga pluginu ProtocolLib. Wystarczy go zainstalować, a ekwipunek niezalogowanych postaci będzie bezpieczny!
 
-<h5>Przykład 3. WARN - AuthMe i nieuruchomiający się serwer</h5>
+<h5>Przykład 3. WARN - AuthMe i nieuruchamiający się serwer</h5>
 
 Wgraliśmy na nasz serwer AuthMeReloaded, lecz ten nie chce się uruchomić. Szukając `WARN` znajdujemy:
 
@@ -96,7 +96,7 @@ Wgraliśmy na nasz serwer AuthMeReloaded, lecz ten nie chce się uruchomić. Szu
 
 Przedostatnia z grubsza wyjaśniają nam w czym problem. AuthMe nie mógł wywołać konstruktora (metody inicjującej) obiektu obsługującego komendy, przez co dalsze ładowanie pluginu było niemożliwe (a raczej bezcelowe).
 
-Ostatnia linijka mówi nam, natomiast, że by zabezpieczyć nasz serwer przed grieferami, AuthMe nie mogąc obsługiwać rejestracji i logowania po prostu go wyłączyło.
+Ostatnia linijka mówi nam natomiast, żeby zabezpieczyć nasz serwer przed grieferami, AuthMe nie mogąc obsługiwać rejestracji i logowania po prostu go wyłączyło.
 
 Jako, że całe zajście jest rezultatem błędu programisty, w tym wypadku wystarczy zainstalować nowszą wersję AuthMeReloaded.
 
@@ -112,7 +112,7 @@ Szukając `ERROR` natriafiamy na:
     [22:50:04] [Server thread/ERROR]: LogBlock-Connection-Pool - Exception during pool initialization.
     com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
-Linijka oznaczona tagiem `ERROR` (ostatnia) informuje nasz, że nastąpił wyjątek podczas inicjalizacji puli połączeń, a czytając kilka linijek wyżej dowiadujemy się, że podać danych do bazy MySQL, przez co LogBlock próbował połączyć się z nią korzystając z przykładowych danych `username@jdbc:mysql://localhost:3306/minecraft`.
+Linijka oznaczona tagiem `ERROR` (ostatnia) informuje nas, że nastąpił wyjątek podczas inicjalizacji puli połączeń, a czytając kilka linijek wyżej dowiadujemy się, że musimy podać dane do bazy MySQL, ponieważ LogBlock próbował połączyć się z nią korzystając z przykładowych danych `username@jdbc:mysql://localhost:3306/minecraft`.
 
 <h5>Przykład 5. ERROR - Błędy mapy</h5>
 

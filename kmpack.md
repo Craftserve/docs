@@ -6,7 +6,7 @@ Możesz skorzystać z naszego serwera testowego, jego IP to `kmtesty.csrv.pl`, w
 
 ### Czy w pakiecie KM Pack są najnowsze wyspy?
 
-Tak, pakiet został zaktualizowany do najnowszej wersji.
+Najnowsze wyspy dodajemy na bieżąco po ich premierze na Kwadratowej Masakry.
 
 ### Jak zmienić wersję na gry na inną?
 

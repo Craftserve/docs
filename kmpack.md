@@ -19,11 +19,13 @@ W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**,
 
 ### Jak zmienić mapę na własną?
 
-W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**, a następnie znaleźć folder `world`. Usuń go (uwaga, dotychczasowy świat utraci się na stałe, jeśli chcesz go zachować nie zapomnij go pobrać). Zmień nazwę swojej własnej mapy na `world` i wgraj ją na serwer. Włącz serwer.
+W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**, a następnie znaleźć folder `world`. Usuń go (uwaga, dotychczasowy świat utraci się na stałe, jeśli chcesz go zachować nie zapomnij go pobrać). Zmień nazwę swojej własnej mapy na `world` i wgraj ją na serwer. Włącz serwer.\
+*Uwaga, zmiana mapy na inną niż domyślna skutkuje brakiem możliwości przeprowadzania eventów!*
 
 ### Jak zmienić mapę na [świat vanilla](https://minecraft-pl.gamepedia.com/Powierzchnia) (zwykłą Minecraftową)?
 
 W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**, a następnie znaleźć folder `world`. Usuń go (uwaga, dotychczasowy świat utraci się na stałe, jeśli chcesz go zachować nie zapomnij go pobrać). Włącz serwer, standardowa mapa zostanie wygenerowana automatycznie.
+*Uwaga, zmiana mapy na inną niż domyślna skutkuje brakiem możliwości przeprowadzania eventów!*
 
 ### Jak zresetować mapę na świat Kwadratowej Masakry i wszystkie pozostałe pliki?
 
@@ -98,7 +100,8 @@ Dla przykładu `/rg flag domek radiation no` sprawi, że w domku utworzonym na t
 
 ### Skąd gracze mogą wziąć płyn lugola i eliksir życia?
 
-Można je zakupić w domu aukcyjnym (po wejściu po schodach, na piętrze), który znajduje się na koordynatach `X: 300 Z: 450`.
+Można je zakupić w domu aukcyjnym (po wejściu po schodach, na piętrze), który znajduje się na koordynatach `X: 300 Z: 450`.\
+Administrator może przyznać komuś eliksir życia przy użyciu komendy `/potionoflife NICK ILOŚĆ-ŻYĆ` (więcej informacji w kolejnym punkcie).
 
 ### Jakich komend specyficznych dla KM packa mogę używać jako administrator?
 

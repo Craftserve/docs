@@ -21,7 +21,7 @@ W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**,
 
 W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**, a następnie znaleźć folder `world`. Usuń go (uwaga, dotychczasowy świat utraci się na stałe, jeśli chcesz go zachować nie zapomnij go pobrać). Zmień nazwę swojej własnej mapy na `world` i wgraj ją na serwer. Włącz serwer.
 
-### Jak zmienić mapę na świat vanilla (zwykłą Minecraftową)?
+### Jak zmienić mapę na [świat vanilla](https://minecraft-pl.gamepedia.com/Powierzchnia) (zwykłą Minecraftową)?
 
 W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**, a następnie znaleźć folder `world`. Usuń go (uwaga, dotychczasowy świat utraci się na stałe, jeśli chcesz go zachować nie zapomnij go pobrać). Włącz serwer, standardowa mapa zostanie wygenerowana automatycznie.
 

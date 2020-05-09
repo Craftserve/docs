@@ -142,4 +142,11 @@ Rozpoczyna się wtedy 60 sekundowe odliczanie, po których gracze mogą wystarto
 Wyścig można opuścić przy użyciu komendy `/rc leave`.\
 Administrator może przerwać wyścig klikając `[Stop race]`.
 
+##### Kolejne eventy
+\
+Nowsze eventy, na przykład `Szara-Góra` możesz uruchamiać przy użyciu komendy `/kmevent` (wymaga uprawnień administratora lub wpisania w konsoli).\
+W celu sprawdzenia listy dostępnych eventów użyj komendy `/kmevent list`.\
+Po zdecydowaniu się na konkretny event użyj komendy `/kmevent start NAZWA`, na przykład `/kmevent start Szara-Góra`.\
+Po zakończeniu eventu użyj komendy `/kmevent stop`.
+
 #### Życzymy świetnej rozgrywki i niezapomnianych przygód ze znajomymi na paczce Kwadratowej Masakry!

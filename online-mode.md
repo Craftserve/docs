@@ -1,8 +1,8 @@
 ## Serwer w trybie offline
-Jeśli na Twoim serwerze nie wyświetlają się skiny graczy premium lub nie dostają oni uprawnien OPa mimo wpisania na listę, to najprawdopodobniej jest on uruchomiony w trybie offline. Oznacza to, że Twój serwer nie łączy się z serwerami Mojangu w celu uwierzytelniania graczy. Dodatkowo warto wspomnieć o tym, że przy tej opcji łatwo można się pod kogoś podszyć, dlatego zalecamy również pobranie pluginu [AuthMe](https://www.spigotmc.org/resources/authmereloaded.6269/) który obsłuży system logowania.
+Jeśli na Twoim serwerze nie wyświetlają się skiny graczy premium lub nie dostają oni uprawnien OPa mimo wpisania na listę, to najprawdopodobniej jest on uruchomiony w trybie offline. Oznacza to, że Twój serwer nie łączy się z serwerami Mojangu w celu uwierzytelniania graczy. Dodatkowo warto wspomnieć o tym, że przy tej opcji łatwo można się pod kogoś podszyć, dlatego zalecamy również pobranie pluginu [AuthMe](https://www.spigotmc.org/resources/authmereloaded.6269/), który obsłuży system logowania.
 
 ## Skiny w trybie offline
-Jeśli chcesz by serwer pozostał non-premium, [ten plugin](https://www.spigotmc.org/resources/skinsrestorer.2124/) pozwoli graczom mieć swoje skiny. Komendy oraz listę uprawnień znajdziecie [tutaj](https://github.com/SkinsRestorer/SkinsRestorerX/wiki/cmds-&-perms).
+Jeśli chcesz by serwer pozostał non-premium, [ten plugin](https://www.spigotmc.org/resources/skinsrestorer.2124/) pozwoli graczom mieć swoje skiny. Komendy oraz listę uprawnień znajdziesz [tutaj](https://github.com/SkinsRestorer/SkinsRestorerX/wiki/cmds-&-perms).
 #### Instalacja na Bukkit/Spigot/Paperspigot
 1. Wgraj plik **SkinsRestorer.jar** do folderu `plugins`.
 2. Zrestartuj serwer w panelu, bądź komendami `/restart` lub `/stop`. Używanie komendy `/reload` **nie jest zalecane** ponieważ może spowodować różne błędy lub niektóre pluginy mogą się źle załadować.

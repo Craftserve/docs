@@ -152,4 +152,8 @@ W celu sprawdzenia listy dostępnych eventów użyj komendy `/kmevent list`.\
 Po zdecydowaniu się na konkretny event użyj komendy `/kmevent start NAZWA`, na przykład `/kmevent start Szara-Góra`.\
 Po zakończeniu eventu użyj komendy `/kmevent stop`.
 
+### W jaki sposób włączyć farmy zero tickowe?
+
+Od wersji 1.15 farmy zero tickowe zostały naprawione przez Mojang, więc nie jest to możliwe.
+
 #### Życzymy świetnej rozgrywki i niezapomnianych przygód ze znajomymi na paczce Kwadratowej Masakry!

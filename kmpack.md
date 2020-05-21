@@ -152,4 +152,13 @@ W celu sprawdzenia listy dostępnych eventów użyj komendy `/kmevent list`.\
 Po zdecydowaniu się na konkretny event użyj komendy `/kmevent start NAZWA`, na przykład `/kmevent start Szara-Góra`.\
 Po zakończeniu eventu użyj komendy `/kmevent stop`.
 
+### W jaki sposób włączyć farmy zero tickowe?
+\
+Od wersji 1.15 farmy zero tickowe zostały naprawione przez Mojang, więc nie jest to możliwe na nowszych paczkach. Mimo to działają na wcześniejszej wersji - pakiecie Kwadratowa Masakra 1.0 z września 2019 (KM 2019.09 - 1.0).\
+W celu jego instalacji należy zalogować się do panelu, wyłączyć serwer, przejść do zakładki `ustawienia`, następnie `silniki` i wybrać pakiet `KM 2019.09 - 1.0`, kliknąć zapisz. Przejść do zakładki `formatuj`, wybrać `wszystkie pliki` i zatwierdzić `formatuj`. Następnie włączyć serwer.\
+**UWAGA** Spowoduje to zresetowanie wszystkich dotychczasowych plików i zainstalowaniu pakietu Kwadratowa Masakra z pierwszego sezonu.\
+Po zainstalowaniu pakietu należy przejść do zakładki `pliki`, otworzyć plik `paper.yml`. Odnaleźć linię `fix-zero-tick-instant-grow-farms: true` (domyślnie numer 93) i zamienić `true` na `false`. Następnie należy kliknąć `Zapisz` w górnej części strony i przeładować serwer wyłączając go i włączając.\
+\
+W celu szybkiego zdobywania przedmiotów z farm na najnowszej wersji pakietu możliwe jest utworzenie farmy opartej o [detektory (observer block)](https://minecraft-pl.gamepedia.com/Detektor), jednak nie polecamy tego ze względu na zaburzanie gospodarki serwera.
+
 #### Życzymy świetnej rozgrywki i niezapomnianych przygód ze znajomymi na paczce Kwadratowej Masakry!

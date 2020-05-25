@@ -1,4 +1,4 @@
-[![EssentialsX](https://i.imgur.com/CP4SZpB.png)](https://essentialsx.github.io)
+[![EssentialsX](https://i.imgur.com/CP4SZpB.png)](https://essentialsx.cf/)
 
 Owy plugin jest podzielony na różne moduły, poniżej znajduje się ich lista oraz opisy.
 
@@ -26,4 +26,4 @@ Obsługuje protokół komunikacji tekstowej [XMPP](https://pl.wikipedia.org/wiki
 Pozwala sprawdzić skąd loguje dany gracz.
 
 ### Instalacja
-Główny moduł (EssentialsX) wgrywamy do folderu plugins, a następnie dodajemy dodatki które potrzebujemy. Cały zestaw modułów możemy pobrać [tutaj](https://www.spigotmc.org/resources/essentialsx.9089), a tutaj znajdują się wersje [deweloperskie](https://ci.ender.zone/job/EssentialsX).
+Główny moduł (EssentialsX) wgrywamy do folderu plugins, a następnie dodajemy dodatki które potrzebujemy. Cały zestaw modułów możemy pobrać [tutaj](https://www.spigotmc.org/resources/essentialsx.9089), [tutaj](https://essentialsx.cf/downloads.html) można pobrać każdy moduł z osobna, a tutaj znajdują się wersje [deweloperskie](https://ci.ender.zone/job/EssentialsX).

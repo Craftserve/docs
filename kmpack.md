@@ -152,6 +152,12 @@ W celu sprawdzenia listy dostępnych eventów użyj komendy `/kmevent list`.\
 Po zdecydowaniu się na konkretny event użyj komendy `/kmevent start NAZWA`, na przykład `/kmevent start Szara-Góra`.\
 Po zakończeniu eventu użyj komendy `/kmevent stop`.
 
+### Jak dostać się do netheru?
+\
+Domyślnie nether jest wyłączony. Włącza się automatycznie po uruchomieniu eventu `Baron-Somedi`. W tym celu należy użyć komendy `/kmevent start Baron-Somedi`, na chacie wyświetli się informacja o włączeniu netheru. Portale z obsydianu są całkowicie wyłączone, w celu dostania się do netheru należy wskoczyć do pustki w dowolnym miejscu (po prostu zeskoczyć z wyspy), teleport znajduje się na wysokości `y=-64`.\
+Używany jest tutaj taki sam przelicznik jak na vanilli, `*8`. Oznacza to, że jeśli wskoczy się do netheru w normalnym świecie na koordynatach `X: 800, Z: 400`, to pojawi się w netherze na koordynatach 8 razy mniejszych, tj. `X: 100, Z: 50`. W drugą stronę działa to odwrotnie, mnoży się razy 8.\
+Pamiętaj o tym, że w netherze grawitacja jest odwrócona! W związku z tym będziesz domyślnie "spadał" do góry, jeśli chcesz udać się w dół przytrzymaj shift (działa jak skakanie spacją w normalnym świecie, ale w dół).
+
 ### W jaki sposób włączyć farmy zero tickowe?
 \
 Od wersji 1.15 farmy zero tickowe zostały naprawione przez Mojang, więc nie jest to możliwe na nowszych paczkach. Mimo to działają na wcześniejszej wersji - pakiecie Kwadratowa Masakra 1.0 z września 2019 (KM 2019.09 - 1.0).\

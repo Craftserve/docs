@@ -145,6 +145,15 @@ Rozpoczyna się wtedy 60 sekundowe odliczanie, po których gracze mogą wystarto
 Wyścig można opuścić przy użyciu komendy `/rc leave`.\
 Administrator może przerwać wyścig klikając `[Stop race]`.
 
+##### Wyścig Złotej Trufli
+\
+Event odbywa się na nowej wyspie o tematyce grzybowej. Znajduje się na niej tor wyścigowy, na którym gracze ścigają się na świnkach.\
+Początek tory znajduje się na koordynatach `X:-1450 Z:750`. Osoba z uprawnieniami administratora musi wpisać komendę `/kmevent start Wyścig-Złotej-Trufli`, na czas event radiacja zostaje wyłączona, a gracze mogą dołączać do wyścigu. Wyścig wystartuje samoczynnie po zapełnieniu 14 miejsc. Jeżeli nie ma wystarczającej liczby graczy należy użyć komendy `/rc skipwait WyścigZłotejTrufli`.\
+\
+Wyścig polega na 3 okrążeniach na torze na którym znajdują się półpłytki dające różne efekty. Półpłytki złote dają efekty pozytywne, takie jak szybkość, czy strzały z efektami, zaś żelazne negatywne, na przykład zatrzymanie w miejscu. Efekt "odporność na efekty" uniemożliwia nadanie nam jakichkolwiek efektów w czasie jego trwania. Na torze ukryty jest jeden skrót, który uruchamia się dźwignią. Skrót resetuje się po zakończeniu wyścigu. Wyścig można powtarzać dowolną ilość razy używając komendy `/rc start WyścigZłotejTrufli <ilość okrążeń>`. Nagrodą w evencie była specjalna korona dająca bonus do szybkości poruszania się. Aby ją przywołać należy użyć komendy `/givemodel Korona` i dać ją zwycięzcy. W celu założenia korony trzeba wpisać `/hat` trzymając ją w ręce.\
+Po zakończeniu eventu należy użyć komendy `/kmevent stop` - to przywróci radiację na wyspie grzybowej.
+
+
 ##### Kolejne eventy
 \
 Nowsze eventy, na przykład `Szara-Góra` możesz uruchamiać przy użyciu komendy `/kmevent` (wymaga uprawnień administratora lub wpisania w konsoli).\

@@ -25,10 +25,16 @@ O ile w grze single-player ma to małe znaczenie, to na serwerze kilku-kilkunast
 3. **Uwaga! Puste (bez graczy) serwery Craftserve są usypiane. Przez cały okres generowania mapy należy mieć otwartą konsolę serwera w panelu Craftserve - to zapobiegnie jego uśpieniu.**
 
 <a name="bukkit"><h2>Bukkit, Spigot i Paper</h2></a>
+### 1.14 i wyżej
+Aby wykonać proces generowania świata, wystarczy ściągnąć i zainstalować **plugin [ChunkMaster](https://www.spigotmc.org/resources/chunkmaster.71351/)**. Jego obsługa jest bardzo prosta (parametry w `<>` są obowiązkowe, w `[]` opcjonalne):
 
-W przypadku silników bazujących na API Bukkita wystarczy ściągnąć i zainstalować **plugin [WorldBorder](https://www.spigotmc.org/resources/worldborder.60905/)**. Jego obsługa jest bardzo prosta (parametry w `<>` są obowiązkowe, w `[]` opcjonalne):
+* `/chm generate <mapa> <promien>` - ustala granicę świata **wyśrodkowaną na Twojej postaci**, gdzie `<mapa>` jest nazwą świata (najczęściej `world`), a `<promien>` ilością kratek wygenerowanych w każdą stronę.
+* `/chm resume` - Uruchamia proces generowania świata (domyślnie świat nie generuje się kiedy na serwerze znajdują się gracze).
 
-* `/wb set <promienX> [promienZ]` - ustala granicę świata **wyśrodkowaną na Twojej postaci**, gdzie <`promienX`> jest promieniem w osi X, a `<promienZ>` w osi Z - oba **wyrażone w blokach**. Jeśli `promienZ` nie będzie podany, użyta zostanie wartość `promienX`.
+### Starsze wersje
+Aby wykonać proces generowania świata, wystarczy ściągnąć i zainstalować **plugin [WorldBorder](https://www.spigotmc.org/resources/worldborder.60905/)**. Jego obsługa jest bardzo prosta (parametry w `<>` są obowiązkowe, w `[]` opcjonalne):
+
+* `/wb set <promienX> [promienZ]` - ustala granicę świata **wyśrodkowaną na Twojej postaci**, gdzie `<promienX>` jest promieniem w osi X, a `<promienZ>` w osi Z - oba **wyrażone w blokach**. Jeśli `promienZ` nie będzie podany, użyta zostanie wartość `promienX`.
 * `/wb shape <elliptic|rectangular>` - pozwala wybrać kształt granicy. `elliptic` to eliptyczna/okrągła, `rectangular` - prostokątna.
 * `/wb fill [częstotliwość]` - rozpoczyna generowanie chunków z domyślną częstotliwością 20 prób na sekundę. Dla serwerów Grass należy ją zmniejszyć do 5. Na serwerach Diamond można spróbować nawet wartość 100. **Im mniejsza wartość, tym mniejsze lagi w trakcie generowania świata, ale też dłużej to trwa.**
 * `/wb fill confirm` - komenda ta jest potrzebna do potwierdzenia rozpoczęcia `/wb fill`.

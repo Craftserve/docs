@@ -20,5 +20,4 @@ Niestety, biblioteka pluginów Sponge'a jest zdecydowanie uboższa, niż ta Bukk
 
 Instalacja
 ----------
-Do zarządzania plikami można wykorzystać zakładkę **Pliki** w panelu Craftserve lub protokół **FTP** i obsługującego go klienta, np. **FileZilla**:
-![FileZilla](img/filezilla.png)
+Do zarządzania plikami można wykorzystać zakładkę **Pliki** w panelu Craftserve lub protokół **FTP** i obsługującego go klienta, np. **[WinSCP](https://github.com/Craftserve/docs/blob/master/ftp.md)**

@@ -19,28 +19,33 @@ Jeśli jednak go nie mamy albo przypadkowo je zamkniemy należy, je włączyć k
 Żeby połączyć się z naszym serwerem trzeba:
 - Wybrać w **Protokół pliku**: FTP
 - Wpisać w **Nazwa hosta**: craftserve.pl
-- Wpisać w **Nazwa użytkownika**: adres e-mail naszego konta craftserve
-- Wpisać w **Hasło**: hasło do naszego konta craftserve
+- Wpisać w **Nazwa użytkownika**: adres e-mail naszego konta Craftserve
+- Wpisać w **Hasło**: hasło do naszego konta Craftserve
 - Wybrać port **21**
 Przykład poprawnego uzupełnienia:
 
 ![1](img/ftp/3.png)
 
-Po wypełnieniu logujemy się klikając przycisk **Logowanie**. Jeśli wszystko zostało poprawnie wykonane powinniśmy widzieć nasz serwer.
+Po wypełnieniu formularza logujemy się klikając przycisk **Logowanie**. Jeśli wszystko zostało poprawnie wykonane powinniśmy połączyć się z serwerem.
 
 ## Jak korzystać
+Okno WinSCP podzielone jest na dwie części - część plików lokalnych (nasz komputer) oraz zdalnych (serwer):
 ![1](img/ftp/4.png)
 
 W oknie oznaczonym numerem **1** znajdują się pliki, które są na naszym komputerze. Możemy dzięki temu szybko dostać się do jakiegoś folderu albo dysku.
 
-W oknie oznaczonym numerem **2** są pliki serwerowe. 
+Okno **2** to pliki serwerowe - każdy folderów z numeryczną nazwą odpowiada serwerowi przypisanemu do konta (np. `000001` to pliki serwera `s000001.csrv.pl`). 
 
-Żeby się do nich dostać wystarczy otworzyć folder, który jest nazwany liczbą. Jest to jego numer. Każdy serwer ma swój unikalny numer. Aby wgrać jakiś plik na serwer wystarczy go przenieść z okna pierwszego do drugiego lub z pulpitu do okna drugiego. Klikając dwa razy na plik tekstowy możemy go edytować. Po zmianach trzeba pamiętać o zapisaniu go. Można to zrobić za pomocą skrótu klawiszowego **Ctrl + S** lub za pomocą przycisku w lewym górnym rogu. 
+Żeby dostać się do plików danego serwera należy otworzyć odpowiedni folder folder. Aby wgrać jakiś plik na serwer wystarczy go przenieść z okna pierwszego do drugiego lub z pulpitu do okna drugiego. 
+
+Klikając dwa razy na **plik tekstowy** możemy go edytować. Po zmianach trzeba pamiętać o zapisaniu go. Można to zrobić za pomocą skrótu klawiszowego **Ctrl + S** lub za pomocą przycisku w lewym górnym rogu: 
 
 ![1](img/ftp/5.png)
 
-Żeby serwer wczytał wszystkie nasze zmiany należy go zrestartować.
+## Uwagi
 
-Aby pobrać plik z serwera na nasz komputer trzeba zaznaczyć plik i kliknąć **F5** albo przeciągnąć go na nasz pulpit lub do jakiegoś folderu.
+Żeby serwer wczytał wszystkie nasze zmiany należy go **zrestartować**. Używanie komendy `/reload` **nie jest bezpieczne** na serwerach z modami lub pluginami, często powodując błędy.
 
-**UWAGA** Wgrywanie własnego silnika zakończy się niepowodzeniem. Craftserve pozwala korzystać wyłącznie z silników, które znajdują się w zakładce **Ustawienia/Silniki**. Jeśli potrzebny na serwer jest silnik, którego nie ma w tej zakładce, można napisać do supportu z prośbą o wgranie go.
+Aby pobrać plik z serwera na nasz komputer trzeba zaznaczyć plik i kliknąć **F5** - to przerzuci zaznaczony plik do katalogu otwartego w lewej części WinSCP. Bardziej intuicyjną jest też możliwość przeciągnięcia danego pliku na nasz pulpit lub do jakiegoś folderu.
+
+**UWAGA** Wgrywanie własnego silnika zakończy się niepowodzeniem. Craftserve zezwala wyłącznie na używanie silników znajdujących się w zakładce **Ustawienia/Silniki**. Jeśli potrzebny jest silnik, którego nie ma w tej zakładce, można napisać do supportu z prośbą o wgranie go.

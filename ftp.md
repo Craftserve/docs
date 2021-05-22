@@ -36,7 +36,10 @@ W oknie oznaczonym numerem **1** znajdują się pliki, które są na naszym komp
 
 Okno **2** to pliki serwerowe - każdy folderów z numeryczną nazwą odpowiada serwerowi przypisanemu do konta (np. `000001` to pliki serwera `s000001.csrv.pl`). 
 
-Żeby dostać się do plików danego serwera należy otworzyć odpowiedni folder. Aby wgrać jakiś plik na serwer wystarczy go przenieść z okna pierwszego do drugiego lub z pulpitu do okna drugiego. 
+Żeby dostać się do plików danego serwera należy otworzyć odpowiedni folder:
+![1](img/WinSCP_server_example.png)
+
+Aby wgrać jakiś plik na serwer wystarczy go przenieść z okna pierwszego do drugiego lub z pulpitu do okna drugiego. 
 
 Klikając dwa razy na **plik tekstowy** możemy go edytować. Po zmianach trzeba pamiętać o zapisaniu go. Można to zrobić za pomocą skrótu klawiszowego **Ctrl + S** lub za pomocą przycisku w lewym górnym rogu: 
 

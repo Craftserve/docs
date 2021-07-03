@@ -152,4 +152,4 @@ Wgraliśmy plugin na serwer, ale ten nie chce się załadować. W logach znajduj
 
 <h3>Zakończenie</h3>
 
-Jak zobaczyliśmy w przykładach, diagnostyka problemów z pomocą logów nie jest trudna. Wystarczy znać podstawy angielskiego, a jeśli mamy jakiś problem, jest niemal pewne, że ktoś już go wcześniej miał oraz, że **kopiując linijkę błędu do Google**, znajdziemy rozwiązanie. A w razie trudności, zapraszamy z plikiem **lastest.log** na Discord **Craftserve**.
+Jak zobaczyliśmy w przykładach, diagnostyka problemów z pomocą logów nie jest trudna. Wystarczy znać podstawy angielskiego, a jeśli mamy jakiś problem, jest niemal pewne, że ktoś już go wcześniej miał oraz, że **kopiując linijkę błędu do Google**, znajdziemy rozwiązanie. A w razie trudności, zapraszamy z plikiem **latest.log** na Discord **Craftserve**.

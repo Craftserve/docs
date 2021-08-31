@@ -1,5 +1,7 @@
 # Instalacja datapacków
-Żeby wgrać na serwer datapacka, musimy go najpierw skądś pobrać. Znajdziemy je m. in. na stronach [Planet Minecraft](https://www.planetminecraft.com/data-packs/), [Vanilla Tweaks](https://vanillatweaks.net/picker/datapacks/) oraz [VoodooBeard](http://mc.voodoobeard.com/).
+Żeby wgrać na serwer datapacka, musimy go najpierw skądś pobrać. Znajdziemy je m. in. na stronach [Planet Minecraft](https://www.planetminecraft.com/data-packs/), [Vanilla Tweaks](https://vanillatweaks.net/picker/datapacks/) oraz [VoodooBeard](http://mc.voodoobeard.com/). Jeżeli wybraliśmy stronę **Vanillatweaks**, to należy wypakować pobrany plik klikając na niego prawym przyciskiem myszy oraz wybierając opcję **wypakuj tutaj**.
+
+![1](img/datapack4.png)
 
 Następnie w plikach serwera otwieramy folder **world**, a w nim folder **datapacks**. Tam wgrywamy nasze datapacki **w formacie .zip**. Żeby to zrobić, należy nacisnąć przycisk **Plik** z zakładki **Wgraj pliki**.
 

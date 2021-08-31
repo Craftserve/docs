@@ -31,4 +31,4 @@ Szukamy linijki **resource-pack=** i tam go wklejamy.
 
 ![1](img/rescp/6.png)
 # WAŻNE
-Jeśli korzystamy z dropboxa, to na końcu linku trzeba zamienić **0** na **1**.
+Jeśli korzystamy z Dropboxa, to na końcu linku trzeba zamienić **0** na **1**.

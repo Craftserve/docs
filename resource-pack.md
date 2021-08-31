@@ -8,7 +8,7 @@ który spowoduje pobranie danej paczki zasobów. Następnie kopiujemy adres link
 
 ### Resource packa z komputera
 
-Jeśli chcemy wgrać na serwer własną paczkę zasobów, to trzeba przesłać ją na jakąś stronę, która umożliwia pobieranie jej innym osobom np. na [dropboxa](https://www.dropbox.com/). 
+Jeśli chcemy wgrać na serwer własną paczkę zasobów, to trzeba ją przesłać na dowolny serwis, ale musi on udostępniać możliwość bezpośredniego permalinku do pobrania. Można skorzystać np. z [Dropboxa](https://www.dropbox.com/). 
 Żeby to zrobić należy:
 * Przeciągnąć naszego resource packa na środek strony lub kliknąć przycisk **prześlij**
 

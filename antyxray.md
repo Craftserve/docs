@@ -1,6 +1,6 @@
 ## Wybór odpowiedniego silnika
-Aby używać anty-xray'a, bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**Purpur, Tuinity, Yatopia**)
-oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**CraftServe**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia** *(Zdjęcie 1)*
+Aby używać anty-xray'a, bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**Purpur, Yatopia**)
+oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia** *(Zdjęcie 1)*
 a następnie wybrać `Silniki`. Aby wybrać silnik, który nas interesuje należy przejść do zakładki `Spigot - alternatywne wersje` oraz go wybrać i zatwierdzić *(Zdjęcie 2)*
 W celu poradnika, wybiorę silnik `Paper - Build #187`, lecz ty możesz wybrać inny. Następnie należy zrestartować serwer.
 
@@ -16,7 +16,7 @@ W celu poradnika wybiorę właśnie ten tryb.
 
 ## Konfiguracja pliku `paper.yml`
 Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić) W tym przypadku jest to konfiguracja na wersję `1.17+`
-```
+```yml
     anti-xray:
       enabled: false
       engine-mode: 1
@@ -53,7 +53,7 @@ Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się 
 
 Wybierając opcje `engine-mode: 2` wasza konfiguracja powinna wyglądać tak: *(Poniższa konfiguracja dotyczy wersji 1.17+)*
 
-```
+```yml
     anti-xray:
       enabled: true
       engine-mode: 2
@@ -106,6 +106,5 @@ Aby zobaczyć zmiany na twoim serwerze, należy zapisać plik oraz zrestartować
 
 
 ## Linki użyte w poradniku
-   • **[Hosting Craftserve.pl](https://craftserve.pl/)**
-
-   • **[Recommended Paper Anti-Xray settings by stonar96](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e)**
+   - **[Hosting Craftserve.pl](https://craftserve.pl/)**
+   - **[Recommended Paper Anti-Xray settings by stonar96](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e)**

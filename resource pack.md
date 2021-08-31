@@ -29,6 +29,7 @@ Teraz kopiujemy link do naszej paczki klikając przycisk **kopiuj łączę**.
 Gdy mamy już nasz link przechodzimy do serwerowego pliku **server.properties**. Znajduje się on w głównym katalogu naszego serwera.
 Szukamy linijki **resource-pack=** i tam go wklejamy.
 
-![1](img/rescp/6.png)
+![1](img/rscp/6.png)
+
 # WAŻNE
 Jeśli korzystamy z Dropboxa, to na końcu linku trzeba zamienić **0** na **1**.

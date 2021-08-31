@@ -9,7 +9,7 @@ W celu poradnika, wybiorę silnik `Paper - Build #187`, lecz ty możesz wybrać 
 ## Wytłumaczenie zależności
 Aby skonfigurować anty-xray'a, należy wybrać zakładkę `Pliki` oraz przejść do pliku `paper.yml`. Następnie szukamy linijki `anti-xray`.
 *(Do konfiguracji będę wspomagał się [tym poradnikiem](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e#recommended-settings))*.
-Konfiguracja anty-xray'a dzieli się na 2 tryby (`engine-mode: 1 oraz 2`) *(Zdjęcie 3)* Najczęściej zalecane jest użycie `engine-mode: 2`, lecz ty możesz wybrać inną.
+Konfiguracja anty-xray'a dzieli się na 2 tryby (`engine-mode: 1 oraz 2`) *(Zdjęcie 3)* Najczęściej zalecane jest użycie `engine-mode: 2`, lecz ty możesz wybrać inną opcję.
 W celu poradnika wybiorę właśnie ten tryb.
 
 ![3](img/antyxray/3.png)

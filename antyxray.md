@@ -15,11 +15,9 @@ W tym poradniku wybiorę właśnie ten tryb.
 ![3](img/antyxray/3.png)
 
 ## Opis trybów
-* `engine-mode: 1`: Nie jest idealny, ponieważ tylko rudy, które są całkowicie pokryte przez bloki mogą być ukryte. Oznacza to, że rudy w np. jaskiniach, będą nadal widoczne
-dla cheaterów
+* `engine-mode: 1`: Rudy zostają zamienione na stone, ale tylko te, które nie sąsiadują z powietrzem lub płynem (wodą lub lawą). Po włączeniu x-raya widać tylko te rudy, które nie mogły zostać ukryte przez właśnie swoje sąsiedztwo.
 
-* `engine-mode: 2`: Ten tryb działa lepiej. Pokazuje fałszywe rudy, które zasłaniają widok prawdziwych, przez co można łatwiej zapobiec oszukiwaniu graczy. Osobiście
-polecam wybrać ten tryb.
+* `engine-mode: 2`: Rudy nie są ukrywane, lecz stone, andesite, diorite są zamieniane na losowe złoża rud, gracz nie jest w stanie rozpoznać prawdziwych od oszukanych rud. Oszukane rudy zamieniają się na bloki prawdziwe gdy blok obok nich zostanie odkryty poprzez sąsiedztwo płynu lub powietrza. Gdy serwer ma lagi można czasem zauważyć losowe rudy które pojawiają się przy kopaniu. Po włączeniu x-raya widać wszędzie losowe rudy, nierozróżnialne od tych prawdziwych.
 
 ## Konfiguracja pliku `paper.yml`
 Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić) W tym przypadku jest to konfiguracja na wersję `1.17+`

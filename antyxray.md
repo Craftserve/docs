@@ -2,7 +2,7 @@
 Aby używać anty-xray'a, bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**Purpur, Yatopia**)
 oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia** *(Zdjęcie 1)*
 a następnie wybrać `Silniki`. Aby wybrać silnik, który nas interesuje należy przejść do zakładki `Spigot - alternatywne wersje` oraz go wybrać i zatwierdzić *(Zdjęcie 2)*
-W celu poradnika, wybiorę silnik `Paper - Build #187`, lecz ty możesz wybrać inny. Następnie należy zrestartować serwer.
+W tym poradniku, wybiorę silnik `Paper - Build #187`, lecz ty możesz wybrać inny. Następnie należy zrestartować serwer.
 
 ![1](img/antyxray/1.PNG) ![2](img/antyxray/2.png)
 
@@ -10,9 +10,16 @@ W celu poradnika, wybiorę silnik `Paper - Build #187`, lecz ty możesz wybrać 
 Aby skonfigurować anty-xray'a, należy wybrać zakładkę `Pliki` oraz przejść do pliku `paper.yml`. Następnie szukamy linijki `anti-xray`.
 *(Do konfiguracji będę wspomagał się [tym poradnikiem](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e#recommended-settings))*.
 Konfiguracja anty-xray'a dzieli się na 2 tryby (`engine-mode: 1 oraz 2`) *(Zdjęcie 3)* Najczęściej zalecane jest użycie `engine-mode: 2`, lecz ty możesz wybrać inną opcję.
-W celu poradnika wybiorę właśnie ten tryb.
+W tym poradniku wybiorę właśnie ten tryb.
 
 ![3](img/antyxray/3.png)
+
+## Opis trybów
+* `engine-mode: 1`: Nie jest idealny, ponieważ tylko rudy, które są całkowicie pokryte przez bloki mogą być ukryte. Oznacza to, że rudy w np. jaskiniach, będą nadal widoczne
+dla cheaterów
+
+* `engine-mode: 2`: Ten tryb działa lepiej. Pokazuje fałszywe rudy, które zasłaniają widok prawdziwych, przez co można łatwiej zapobiec oszukiwaniu graczy. Osobiście
+polecam wybrać ten tryb.
 
 ## Konfiguracja pliku `paper.yml`
 Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić) W tym przypadku jest to konfiguracja na wersję `1.17+`

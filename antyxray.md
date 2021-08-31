@@ -15,7 +15,7 @@ W celu poradnika wybiorę właśnie ten tryb.
 ![3](img/antyxray/3.png)
 
 ## Konfiguracja pliku `paper.yml`
-Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić)
+Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić) W tym przypadku jest to konfiguracja na wersję `1.17+`
 ```
     anti-xray:
       enabled: false

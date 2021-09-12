@@ -2,7 +2,7 @@
 ## Link do pobrania
 ### Publicznego resource packa
 
-Żeby wgrać na serwer resource packa potrzebujemy bezpośredniego linku do pobrania go. Aby go zdobyć, należy kliknąć prawym przyciskiem myszyn na przycisk, 
+Żeby wgrać na serwer resource packa potrzebujemy bezpośredniego linku do pobrania go. Aby go zdobyć, należy kliknąć prawym przyciskiem myszy na przycisk, 
 który spowoduje pobranie danej paczki zasobów. Następnie kopiujemy adres linku.
 ![1](img/rscp/1.png)
 

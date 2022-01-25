@@ -1,7 +1,7 @@
 # TODO:
 ## Podstawy admnistracji:
 - [x] Pregeneracja mapy
-- [ ] Jak wgrać mapę
+- [X] Jak wgrać mapę
 - [ ] OP oraz podstawowe komendy
 - [x] Offline-mode i Skin-restorer
 
@@ -22,7 +22,7 @@
 
 - [ ] AuthMeReloaded
 - [x] EssentialsX
-- [ ] WorldEdit i jego forki
+- [X] WorldEdit i jego forki
 - [ ] Vault i rangi
 - [ ] LWC
 - [ ] PreciousStones

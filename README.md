@@ -19,5 +19,5 @@
 - [Timingi - jak ograniczyć lagi na serwerze](https://github.com/Craftserve/docs/blob/master/timings.md)
 - [Światy - jak wgrać świat, świat na własnym seedzie](https://github.com/Craftserve/docs/blob/master/world.md)
 - [WorldEdit - kompleksowy poradnik](https://github.com/Craftserve/docs/blob/master/worldedit.md)
-- [WorldGuard - dodatek to world edita - kompleksowy poradnik]
+- [WorldGuard - dodatek to world edita - kompleksowy poradnik](https://github.com/Craftserve/docs/blob/master/worldguard.md)
 - [Todo: Poradniki które kiedyś powstaną](https://github.com/Craftserve/docs/blob/master/todo.md)

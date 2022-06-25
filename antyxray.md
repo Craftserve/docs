@@ -16,93 +16,274 @@ a następnie wybrać `Silniki`. Aby wybrać silnik, który nas interesuje, nale�
 
 ![4](img/antyxray/4.png)
 
-## Konfiguracja plików
+## Konfiguracja plików `1.19`
 Istnieją 4 pliki, w których konfiguruje się antyxray'a:
-* `paper-world-defaults` .Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić) W tym przypadku jest to konfiguracja na wersję `1.17+`
+* `paper-world-defaults` - Znajduje on się w folderze **config** w głównym katalogu serwera. Znajdują się tu ustawienia dla wszystkich światów tzn. jeśli dodamy tu jakiś blok, to będzie on ukrywany w normalnym świecie, netherze itp. Domyślnie po wejściu do pliku w 16 linijce powinniśmy zobaczyć poniższy tekst:
 ```yml
-    anti-xray:
-      enabled: false
-      engine-mode: 1
-      max-block-height: 64
-      update-radius: 2
-      lava-obscures: false
-      use-permission: false
-      hidden-blocks:
-      - copper_ore
-      - deepslate_copper_ore
-      - gold_ore
-      - deepslate_gold_ore
-      - iron_ore
-      - deepslate_iron_ore
-      - coal_ore
-      - deepslate_coal_ore
-      - lapis_ore
-      - deepslate_lapis_ore
-      - mossy_cobblestone
-      - obsidian
-      - chest
-      - diamond_ore
-      - deepslate_diamond_ore
-      - redstone_ore
-      - deepslate_redstone_ore
-      - clay
-      - emerald_ore
-      - deepslate_emerald_ore
-      - ender_chest
-      replacement-blocks:
-      - stone
-      - oak_planks
+anticheat:
+  anti-xray:
+    enabled: false
+    engine-mode: 1
+    hidden-blocks:
+    - copper_ore
+    - deepslate_copper_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - coal_ore
+    - deepslate_coal_ore
+    - lapis_ore
+    - deepslate_lapis_ore
+    - mossy_cobblestone
+    - obsidian
+    - chest
+    - diamond_ore
+    - deepslate_diamond_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - clay
+    - emerald_ore
+    - deepslate_emerald_ore
+    - ender_chest
+```
+* `paper-world`  
+  * Z folderu **world**
+  * Z folderu **world_nether**
+  * Z folderu **world_the_end**  
+
+  W każdym z powyższych plików znajdują się ustawienia dla oddzielnych światów. Jeden nie wpływa w żaden sposób na działanie drugiego.
+
+## Zalecane ustawienia dla Engine-mode: 1
+### Dla `paper-world-defaults`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 1
+    hidden-blocks:
+    - chest
+    - coal_ore
+    - deepslate_coal_ore
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - emerald_ore
+    - deepslate_emerald_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - ancient_debris
+    - nether_gold_ore
+    - nether_quartz_ore
+    lava-obscures: false
+    max-block-height: 90
+    update-radius: 2
+    use-permission: false
+```
+### Dla `paper-world`
+- z `world`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 1
+    hidden-blocks:
+    - chest
+    - coal_ore
+    - deepslate_coal_ore
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - emerald_ore
+    - deepslate_emerald_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    lava-obscures: false
+    max-block-height: 64
+    update-radius: 2
+    use-permission: false
+```
+- z `world_nether`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 1
+    hidden-blocks:
+    - ancient_debris
+    - nether_gold_ore
+    - nether_quartz_ore
+    max-block-height: 128
+```
+- z `world_the_end`
+```yml
+anticheat:
+  anti-xray:
+    enabled: false
+```
+## Zalecane ustawienia dla Engine-mode: 2
+### Dla `paper-world-defaults`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    hidden-blocks:
+    - air
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - ancient_debris
+    - bone_block
+    - glowstone
+    - magma_block
+    - nether_bricks
+    - nether_gold_ore
+    - nether_quartz_ore
+    - polished_blackstone_bricks
+    lava-obscures: false
+    max-block-height: 64
+    replacement-blocks:
+    - chest
+    - amethyst_block
+    - andesite
+    - budding_amethyst
+    - calcite
+    - coal_ore
+    - deepslate_coal_ore
+    - deepslate
+    - diorite
+    - dirt
+    - emerald_ore
+    - deepslate_emerald_ore
+    - granite
+    - gravel
+    - oak_planks
+    - smooth_basalt
+    - stone
+    - tuff
+    - netherrack
+    - soul_sand
+    - soul_soil
+    - basalt
+    - blackstone
+    update-radius: 2
+    use-permission: false
+```
+### Dla `paper-world`
+
+- z `world`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    hidden-blocks:
+    - air
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    lava-obscures: false
+    max-block-height: 64
+    replacement-blocks:
+    - chest
+    - amethyst_block
+    - andesite
+    - budding_amethyst
+    - calcite
+    - coal_ore
+    - deepslate_coal_ore
+    - deepslate
+    - diorite
+    - dirt
+    - emerald_ore
+    - deepslate_emerald_ore
+    - granite
+    - gravel
+    - oak_planks
+    - smooth_basalt
+    - stone
+    - tuff
+    update-radius: 2
+    use-permission: false
+```
+- z `world_nether`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    hidden-blocks:
+    - air
+    - ancient_debris
+    - bone_block
+    - glowstone
+    - magma_block
+    - nether_bricks
+    - nether_gold_ore
+    - nether_quartz_ore
+    - polished_blackstone_bricks
+    max-block-height: 128
+    replacement-blocks:
+    - basalt
+    - blackstone
+    - gravel
+    - netherrack
+    - soul_sand
+    - soul_soil
+```
+- z `world_the_end`
+```yml
+anticheat:
+  anti-xray:
+    enabled: false
 ```
 
-Wybierając opcje `engine-mode: 2` wasza konfiguracja powinna wyglądać tak: *(Poniższa konfiguracja dotyczy wersji 1.17+)*
+## Jak to powinno wyglądać w plikach
+- `paper-world-defaults` <br>
+![p1](img/antyxray/p1.png)
 
-```yml
-    anti-xray:
-      enabled: true
-      engine-mode: 2
-      chunk-edge-mode: 2
-      max-chunk-section-index: 2
-      max-block-height: 48
-      update-radius: 2
-      lava-obscures: false
-      use-permission: false
-      hidden-blocks:
-      # You can add air here such that many holes are generated.
-      # This works well against cave finders but may cause client FPS drops for all players.
-      - air
-      - copper_ore
-      - deepslate_copper_ore
-      - diamond_ore
-      - deepslate_diamond_ore
-      - emerald_ore
-      - deepslate_emerald_ore
-      - gold_ore
-      - deepslate_gold_ore
-      - iron_ore
-      - deepslate_iron_ore
-      - lapis_ore
-      - deepslate_lapis_ore
-      - mossy_cobblestone
-      - redstone_ore
-      - deepslate_redstone_ore
-      replacement-blocks:
-      # Chest is a tile entity and can't be added to hidden-blocks in engine-mode: 2.
-      # But adding chest here will hide buried treasures, if max-chunk-section-index is increased.
-      - chest
-      - amethyst_block
-      - andesite
-      - budding_amethyst
-      - calcite
-      - deepslate
-      - diorite
-      - dirt
-      - granite
-      - gravel
-      - oak_planks
-      - smooth_basalt
-      - stone
-      - tuff
-```
+- `paper-world` (tutaj nether) <br> 
+![p2](img/antyxray/p2.png)
 
-Jeżeli jednak zdecydowowałeś się na wybór `engine-mode: 1`, najlepszą dla niego konfiguracje znajdziesz [tutaj](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e#recommended-settings)
-Aby zobaczyć zmiany na twoim serwerze, należy zapisać pl
+

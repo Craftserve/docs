@@ -281,7 +281,7 @@ anticheat:
 
 ## Jak to powinno wyglądać w plikach
 - `paper-world-defaults` <br>
-![p](img/antyxray/p1.png)
+![p](img/antyxray/p.png)
 
 - `paper-world` (tutaj nether) <br> 
 ![p2](img/antyxray/p2.png)

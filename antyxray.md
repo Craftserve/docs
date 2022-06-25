@@ -281,9 +281,12 @@ anticheat:
 
 ## Przykłady skonfigurowanych plików
 - `paper-world-defaults` <br>
-![p](img/antyxray/p.png)
+![p](img/antyxray/1p.png)
 
 - `paper-world` (tutaj nether) <br> 
 ![p2](img/antyxray/p2.png)
+
+## Źródło
+https://docs.papermc.io/paper/anti-xray
 
 

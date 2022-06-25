@@ -3,7 +3,7 @@ Aby używać anty-xray'a bez konieczności wgrywania dodatkowych pluginów, nale
 oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia** *(Zdjęcie 1)*
 a następnie wybrać `Silniki`. Aby wybrać silnik, który nas interesuje, należy przejść do zakładki `Spigot - alternatywne wersje`, wybrać go i zatwierdzić *(Zdjęcie 2)*. Następnie należy zrestartować serwer.
 
-![1](img/antyxray/1.png)
+![1](img/antyxray/1..png)
 
 ## Opis trybów
 * `engine-mode: 1`: Rudy zostają zamienione na kamień, ale tylko te, które nie sąsiadują z blokiem powietrza lub cieczą (wodą lub lawą). Po włączeniu x-ray'a widać tylko te rudy, które nie mogły zostać ukryte przez bloki stojące obok.

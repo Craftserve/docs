@@ -279,7 +279,7 @@ anticheat:
     enabled: false
 ```
 
-## Jak to powinno wyglądać w plikach
+## Przykłady skonfigurowanych plików
 - `paper-world-defaults` <br>
 ![p](img/antyxray/p.png)
 

@@ -290,7 +290,7 @@ anticheat:
 
 ## Przykłady skonfigurowanych plików
 - `paper-world-defaults` <br>
-- 
+
 ![p](img/antyxray/e1.png)
 
 - `paper-world` (tutaj nether) <br> 

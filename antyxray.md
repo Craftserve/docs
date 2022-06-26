@@ -99,7 +99,7 @@ anticheat:
     use-permission: false
 ```
 ### Dla `paper-world`
-- z `world`
+- z **world**
 ```yml
 anticheat:
   anti-xray:
@@ -130,7 +130,7 @@ anticheat:
     update-radius: 2
     use-permission: false
 ```
-- z `world_nether`
+- z **world_nether**
 ```yml
 anticheat:
   anti-xray:
@@ -142,7 +142,7 @@ anticheat:
     - nether_quartz_ore
     max-block-height: 128
 ```
-- z `world_the_end`
+- z **world_the_end**
 ```yml
 anticheat:
   anti-xray:
@@ -210,7 +210,7 @@ anticheat:
 ```
 ### Dla `paper-world`
 
-- z `world`
+- z **world**
 ```yml
 anticheat:
   anti-xray:
@@ -256,7 +256,7 @@ anticheat:
     update-radius: 2
     use-permission: false
 ```
-- z `world_nether`
+- z **world_nether**
 ```yml
 anticheat:
   anti-xray:
@@ -281,7 +281,7 @@ anticheat:
     - soul_sand
     - soul_soil
 ```
-- z `world_the_end`
+- z **world_the_end**
 ```yml
 anticheat:
   anti-xray:

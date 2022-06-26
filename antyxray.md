@@ -52,7 +52,7 @@ anticheat:
   * Z folderu **world_nether**
   * Z folderu **world_the_end**  
 
-  W każdym z powyższych plików znajdują się ustawienia dla oddzielnych światów. Jeden nie wpływa w żaden sposób na działanie drugiego. W porównaniu z poprzednim plikiem, po otwarciu widzimy tylko kilka linijek np. dla `paper-world` i **world**:
+  W każdym z powyższych plików znajdują się ustawienia dla oddzielnych światów. Jeden nie wpływa w żaden sposób na działanie drugiego. W porównaniu z poprzednim plikiem, po otwarciu widzimy tylko kilka linijek np. dla `paper-world` z **world**:
 ```yml
 # This is a world configuration file for Paper.
 # This file may start empty but can be filled with settings to override ones in the config/paper-world-defaults.yml

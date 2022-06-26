@@ -4,8 +4,6 @@ oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**
 
 ![1](img/antyxray/1.png)
 
-![2](img/antyxray/2..png)
-
 ## Opis trybów
 Antyxray może działać na dwa różne sposoby:
 * `engine-mode: 1`: Rudy zostają zamienione na kamień, ale tylko te, które nie sąsiadują z blokiem powietrza lub cieczą (wodą lub lawą). Po włączeniu x-ray'a widać tylko te rudy, które nie mogły zostać ukryte przez bloki stojące obok.

@@ -48,7 +48,7 @@ anticheat:
     - ender_chest
 ```
 * `paper-world`  
-  * Z folderu **world**
+  * Z folderu `world`
   * Z folderu **world_nether**
   * Z folderu **world_the_end**  
 

@@ -2,7 +2,7 @@
 Aby używać antyxray'a bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**Purpur, Yatopia**)
 oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia**, a następnie wybrać `Silniki`. W kolejnym kroku przechodzimy do kategorii `Spigot - alternatywne wersje`, wybieramy interesujący nas silnik i na samym dole strony zapisujemy zmianę.
 
-![1](img/antyxray/1..png)
+![1](img/antyxray/1.png)
 ![2](img/antyxray/2.png)
 
 ## Opis trybów

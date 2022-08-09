@@ -1,115 +1,303 @@
 ## Wybór odpowiedniego silnika
-Aby używać anty-xray'a, bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**Purpur, Yatopia**)
-oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia** *(Zdjęcie 1)*
-a następnie wybrać `Silniki`. Aby wybrać silnik, który nas interesuje należy przejść do zakładki `Spigot - alternatywne wersje` oraz go wybrać i zatwierdzić *(Zdjęcie 2)*
-W tym poradniku, wybiorę silnik `Paper - Build #187`, lecz ty możesz wybrać inny. Następnie należy zrestartować serwer.
+Aby używać antyxray'a bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**Purpur, Yatopia**)
+oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.pl/), należy przejść do zakładki **Ustawienia**, a następnie wybrać `Silniki`. W kolejnym kroku przechodzimy do kategorii `Spigot - alternatywne wersje`, wybieramy interesujący nas silnik i na samym dole strony zapisujemy zmianę.
 
-![1](img/antyxray/1.PNG) ![2](img/antyxray/2.png)
-
-## Wytłumaczenie zależności
-Aby skonfigurować anty-xray'a, należy wybrać zakładkę `Pliki` oraz przejść do pliku `paper.yml`. Następnie szukamy linijki `anti-xray`.
-*(Do konfiguracji będę wspomagał się [tym poradnikiem](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e#recommended-settings))*.
-Konfiguracja anty-xray'a dzieli się na 2 tryby (`engine-mode: 1 oraz 2`) *(Zdjęcie 3)* Najczęściej zalecane jest użycie `engine-mode: 2`, lecz ty możesz wybrać inną opcję.
-W tym poradniku wybiorę właśnie ten tryb.
-
-![3](img/antyxray/3.png)
+![1](img/antyxray/1.png)
 
 ## Opis trybów
-* `engine-mode: 1`: Rudy zostają zamienione na stone, ale tylko te, które nie sąsiadują z powietrzem lub płynem (wodą lub lawą). Po włączeniu x-raya widać tylko te rudy, które nie mogły zostać ukryte przez właśnie swoje sąsiedztwo.
+Antyxray może działać na dwa różne sposoby:
+* `engine-mode: 1`: Rudy zostają zamienione na kamień, ale tylko te, które nie sąsiadują z blokiem powietrza lub cieczą (wodą lub lawą). Po włączeniu x-ray'a widać tylko te rudy, które nie mogły zostać ukryte przez bloki stojące obok.
 
-* `engine-mode: 2`: Rudy nie są ukrywane, lecz stone, andesite, diorite są zamieniane na losowe złoża rud, gracz nie jest w stanie rozpoznać prawdziwych od oszukanych rud. Oszukane rudy zamieniają się na bloki prawdziwe gdy blok obok nich zostanie odkryty poprzez sąsiedztwo płynu lub powietrza. Gdy serwer ma lagi można czasem zauważyć losowe rudy które pojawiają się przy kopaniu. Po włączeniu x-raya widać wszędzie losowe rudy, nierozróżnialne od tych prawdziwych.
+* `engine-mode: 2`: Rudy nie są ukrywane, lecz kamień, andezyt, dioryt są zamieniane na losowe złoża rud, których gracz nie jest w stanie rozróżnić od tych prawdzinych. Oszukane rudy zamieniają się na bloki prawdziwe, gdy blok obok nich znajdzie się blok powietrza lub cieczy. Gdy na serwerze występują lagi, czasami można odkryć losowe rudy które pojawiają się przy kopaniu, jednak gracz nie będzie w stanie ich wydobyć.
 
-## Konfiguracja pliku `paper.yml`
-Domyślnie po wejściu do pliku, powinniśmy zobaczyć tresć znajdującą się poniżej (W zależności od wersji może się ona różnić) W tym przypadku jest to konfiguracja na wersję `1.17+`
+### Wybrane tryby dla normalnego świata
+![3](img/antyxray/3.png)
+### Wybrane tryby dla netheru
+
+![4](img/antyxray/4.png)
+
+## Konfiguracja plików `1.19`
+Istnieją 4 pliki, w których konfiguruje się antyxray'a:
+* `paper-world-defaults` - Znajduje on się w folderze **config** w głównym katalogu serwera. Są tam ustawienia dla wszystkich światów tzn. jeśli dodamy tu jakiś blok, to będzie on ukrywany w normalnym świecie, netherze itp. Domyślnie po wejściu do pliku w 16 linijce powinniśmy zobaczyć poniższy tekst:
 ```yml
-    anti-xray:
-      enabled: false
-      engine-mode: 1
-      max-block-height: 64
-      update-radius: 2
-      lava-obscures: false
-      use-permission: false
-      hidden-blocks:
-      - copper_ore
-      - deepslate_copper_ore
-      - gold_ore
-      - deepslate_gold_ore
-      - iron_ore
-      - deepslate_iron_ore
-      - coal_ore
-      - deepslate_coal_ore
-      - lapis_ore
-      - deepslate_lapis_ore
-      - mossy_cobblestone
-      - obsidian
-      - chest
-      - diamond_ore
-      - deepslate_diamond_ore
-      - redstone_ore
-      - deepslate_redstone_ore
-      - clay
-      - emerald_ore
-      - deepslate_emerald_ore
-      - ender_chest
-      replacement-blocks:
-      - stone
-      - oak_planks
+anticheat:
+  anti-xray:
+    enabled: false
+    engine-mode: 1
+    hidden-blocks:
+    - copper_ore
+    - deepslate_copper_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - coal_ore
+    - deepslate_coal_ore
+    - lapis_ore
+    - deepslate_lapis_ore
+    - mossy_cobblestone
+    - obsidian
+    - chest
+    - diamond_ore
+    - deepslate_diamond_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - clay
+    - emerald_ore
+    - deepslate_emerald_ore
+    - ender_chest
+```
+* `paper-world`  
+  * Z folderu **world**
+  * Z folderu **world_nether**
+  * Z folderu **world_the_end**  
+
+  W każdym z powyższych plików znajdują się ustawienia dla oddzielnych światów. Jeden nie wpływa w żaden sposób na działanie drugiego. W porównaniu z poprzednim plikiem, po otwarciu widzimy tylko kilka linijek np. dla `paper-world` z **world**:
+```yml
+# This is a world configuration file for Paper.
+# This file may start empty but can be filled with settings to override ones in the config/paper-world-defaults.yml
+# 
+# World: world (minecraft:overworld)
+
+_version: 28
+```
+Aby Włączyć antyxray'a wystarczy skopiować i wkleić do plików poniższe ustawienia.
+
+## Zalecane ustawienia dla Engine-mode: 1
+### Dla `paper-world-defaults`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 1
+    hidden-blocks:
+    - chest
+    - coal_ore
+    - deepslate_coal_ore
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - emerald_ore
+    - deepslate_emerald_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - ancient_debris
+    - nether_gold_ore
+    - nether_quartz_ore
+    lava-obscures: false
+    max-block-height: 90
+    update-radius: 2
+    use-permission: false
+```
+### Dla `paper-world`
+- z **world**
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 1
+    hidden-blocks:
+    - chest
+    - coal_ore
+    - deepslate_coal_ore
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - emerald_ore
+    - deepslate_emerald_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    lava-obscures: false
+    max-block-height: 64
+    update-radius: 2
+    use-permission: false
+```
+- z **world_nether**
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 1
+    hidden-blocks:
+    - ancient_debris
+    - nether_gold_ore
+    - nether_quartz_ore
+    max-block-height: 128
+```
+- z **world_the_end**
+```yml
+anticheat:
+  anti-xray:
+    enabled: false
+```
+## Zalecane ustawienia dla Engine-mode: 2
+### Dla `paper-world-defaults`
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    hidden-blocks:
+    - air
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    - ancient_debris
+    - bone_block
+    - glowstone
+    - magma_block
+    - nether_bricks
+    - nether_gold_ore
+    - nether_quartz_ore
+    - polished_blackstone_bricks
+    lava-obscures: false
+    max-block-height: 64
+    replacement-blocks:
+    - chest
+    - amethyst_block
+    - andesite
+    - budding_amethyst
+    - calcite
+    - coal_ore
+    - deepslate_coal_ore
+    - deepslate
+    - diorite
+    - dirt
+    - emerald_ore
+    - deepslate_emerald_ore
+    - granite
+    - gravel
+    - oak_planks
+    - smooth_basalt
+    - stone
+    - tuff
+    - netherrack
+    - soul_sand
+    - soul_soil
+    - basalt
+    - blackstone
+    update-radius: 2
+    use-permission: false
+```
+### Dla `paper-world`
+
+- z **world**
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    hidden-blocks:
+    - air
+    - copper_ore
+    - deepslate_copper_ore
+    - raw_copper_block
+    - diamond_ore
+    - deepslate_diamond_ore
+    - gold_ore
+    - deepslate_gold_ore
+    - iron_ore
+    - deepslate_iron_ore
+    - raw_iron_block
+    - lapis_ore
+    - deepslate_lapis_ore
+    - redstone_ore
+    - deepslate_redstone_ore
+    lava-obscures: false
+    max-block-height: 64
+    replacement-blocks:
+    - chest
+    - amethyst_block
+    - andesite
+    - budding_amethyst
+    - calcite
+    - coal_ore
+    - deepslate_coal_ore
+    - deepslate
+    - diorite
+    - dirt
+    - emerald_ore
+    - deepslate_emerald_ore
+    - granite
+    - gravel
+    - oak_planks
+    - smooth_basalt
+    - stone
+    - tuff
+    update-radius: 2
+    use-permission: false
+```
+- z **world_nether**
+```yml
+anticheat:
+  anti-xray:
+    enabled: true
+    engine-mode: 2
+    hidden-blocks:
+    - air
+    - ancient_debris
+    - bone_block
+    - glowstone
+    - magma_block
+    - nether_bricks
+    - nether_gold_ore
+    - nether_quartz_ore
+    - polished_blackstone_bricks
+    max-block-height: 128
+    replacement-blocks:
+    - basalt
+    - blackstone
+    - gravel
+    - netherrack
+    - soul_sand
+    - soul_soil
+```
+- z **world_the_end**
+```yml
+anticheat:
+  anti-xray:
+    enabled: false
 ```
 
-Wybierając opcje `engine-mode: 2` wasza konfiguracja powinna wyglądać tak: *(Poniższa konfiguracja dotyczy wersji 1.17+)*
+## Przykłady skonfigurowanych plików
+- `paper-world-defaults` <br>
 
-```yml
-    anti-xray:
-      enabled: true
-      engine-mode: 2
-      chunk-edge-mode: 2
-      max-chunk-section-index: 2
-      max-block-height: 48
-      update-radius: 2
-      lava-obscures: false
-      use-permission: false
-      hidden-blocks:
-      # You can add air here such that many holes are generated.
-      # This works well against cave finders but may cause client FPS drops for all players.
-      - air
-      - copper_ore
-      - deepslate_copper_ore
-      - diamond_ore
-      - deepslate_diamond_ore
-      - emerald_ore
-      - deepslate_emerald_ore
-      - gold_ore
-      - deepslate_gold_ore
-      - iron_ore
-      - deepslate_iron_ore
-      - lapis_ore
-      - deepslate_lapis_ore
-      - mossy_cobblestone
-      - redstone_ore
-      - deepslate_redstone_ore
-      replacement-blocks:
-      # Chest is a tile entity and can't be added to hidden-blocks in engine-mode: 2.
-      # But adding chest here will hide buried treasures, if max-chunk-section-index is increased.
-      - chest
-      - amethyst_block
-      - andesite
-      - budding_amethyst
-      - calcite
-      - deepslate
-      - diorite
-      - dirt
-      - granite
-      - gravel
-      - oak_planks
-      - smooth_basalt
-      - stone
-      - tuff
-```
+![p](img/antyxray/e1.png)
 
-Jeżeli jednak zdecydowowałeś się na wybór `engine-mode: 1`, najlepszą dla niego konfiguracje znajdziesz [tutaj](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e#recommended-settings)
-Aby zobaczyć zmiany na twoim serwerze, należy zapisać plik oraz zrestartować twój serwer.
+- `paper-world` (tutaj nether) <br> 
+
+![p2](img/antyxray/e2.png)
+
+## Źródło
+https://docs.papermc.io/paper/anti-xray
 
 
-## Linki użyte w poradniku
-   - **[Hosting Craftserve.pl](https://craftserve.pl/)**
-   - **[Recommended Paper Anti-Xray settings by stonar96](https://gist.github.com/stonar96/ba18568bd91e5afd590e8038d14e245e)**

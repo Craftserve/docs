@@ -9,6 +9,7 @@ Spis treści
 * [Bukkit, Spigot i Paper](#bukkit)
 * [Forge](#forge)
 * [Sponge](#sponge)
+* [Fabric](#fabric)
 
 <a name="podstawy"><h2>Podstawy</h2></a>
 
@@ -82,3 +83,24 @@ Na Sponge, natomiast, można wykorzystać odpowiednik pluginu Essentials - **[Pl
 * `/world border set <world> <x> <z> <srednica>` - gdzie `<world>` to nazwa naszego swiata, a `<x>` i `<z>` to koordynaty środka granicy.
 
 * `world border gen -r <world>` - rozpoczyna tworzenie nowych chunków.
+
+<a name="fabric"><h2>Fabric</h2></a>
+
+Jeżeli chodzi o Fabric, można znaleść tą modyfikację nazwaną Chunky: 
+https://www.curseforge.com/minecraft/mc-mods/chunky-pregenerator
+
+By wygenerować świat na dystans 1000 bloków od środka trzeba wpisać:
+`chunky radius 1000` - ustawia generator na 1000 bloków od 0x 0z.
+`chunky start` - zaczyna generację
+Można oczywiście zmienić liczbę by wygenerować więcej powierzchni.
+
+By zmienić środek generacji, należy użyć `chunky center X Z` gdzie zamieniasz **X** i **Z** z koordynatami na świecie.
+Też można ustawić świat który wygeneruje, używając `chunky world the_nether` (lub `the_end` na The End, czasem zwany Kresem) 
+
+Ostatecznie jeżeli chcesz wygenerować wszystko na terenie wyznaczonym przez world border, należy wpisać:
+`worldborder center 0 0` - ustawia środek granicy świata na x0 i z0
+`worldborder set 20000` - ustawia wielkość granicy świata na 20'000x20'000, czyli 10'000 bloków od środka
+`chunky worldborder` - ustawia generator na tryb granicy świata
+`chunky start` - zaczyna generację
+
+Ostrożnie z ilością bloków!

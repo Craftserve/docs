@@ -18,7 +18,7 @@ Jeśli jednak go nie mamy albo przypadkowo je zamkniemy należy, je włączyć k
 
 Żeby połączyć się z naszym serwerem trzeba:
 - Wybrać w **Protokół pliku**: FTP
-- Wpisać w **Nazwa hosta**: craftserve.pl
+- Wpisać w **Nazwa hosta**: ftp.craftserve.pl
 - Wpisać w **Nazwa użytkownika**: adres e-mail naszego konta Craftserve
 - Wpisać w **Hasło**: hasło do naszego konta Craftserve
 - Wybrać port **21**

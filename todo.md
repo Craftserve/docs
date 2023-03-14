@@ -37,3 +37,4 @@
 - [ ] Client-side i server-side
 - [ ] Instalacja modpacków
 - [ ] Instalacja poszczególnych modów i problemy z tym związane
+- [ ] [Dlaczego nie warto używać rozwiązań typu mody+pluginy na serwerze](https://essentialsx.net/do-not-use-mohist.html)

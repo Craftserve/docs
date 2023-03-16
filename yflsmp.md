@@ -27,6 +27,7 @@
 
 ### Instalacja na komputerach graczy
 
+By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę YFLsmp. Podążaj za poniższymi krokami:
 1. [Pobierz TechnicLauncher](https://www.technicpack.net/download).
 2. Zainstaluj TechnicLauncher. Do uruchomienia wymagana jest Java wersji 8, najlepiej w środowisku [Adoptium](https://adoptium.net/en-GB/temurin/releases/?version=8).
 3. Uruchom TechnicLauncher i zaloguj się do niego.
@@ -35,6 +36,7 @@
     https://www.technicpack.net/modpack/yflsmp-csrv.1959773
     ```
 5. Zainstaluj paczkę za pomocą przycisku **Install**.
+
    ![image](img/bettermc/yfl_technic.png)
 
 ### Uwagi

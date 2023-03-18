@@ -32,6 +32,10 @@
 By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę YFLsmp. Podążaj za poniższymi krokami:
 1. [Pobierz TechnicLauncher](https://www.technicpack.net/download).
 2. Zainstaluj TechnicLauncher. Do uruchomienia wymagana jest Java wersji 8, najlepiej w środowisku [Adoptium](https://adoptium.net/en-GB/temurin/releases/?version=8).
+   - Warto wspomnieć, że **wymagana jest wersja Javy dla architektury x64**.
+   - W przypadku systemu Windows, należy wybrać tę wersję:
+     
+     ![image](img/bettermc/adoptium.png)
 3. Uruchom TechnicLauncher i zaloguj się do niego.
 4. W zakładce **Modpacks** w wyszukiwarce wklej poniższy link: 
     ```
@@ -40,11 +44,13 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
 5. Zainstaluj paczkę za pomocą przycisku **Install**.
 
    ![image](img/bettermc/yfl_technic.png)
-6. Warto upewnić się, że przypisana została odpowiednia ilość pamięci RAM dla paczki. W przypadku YFLsmp zalecane jest przypisanie **8GB pamięci RAM**.
+6. Warto upewnić się, że przypisana została odpowiednia ilość pamięci RAM dla paczki. 
+   - W przypadku YFLsmp zalecane jest przypisanie **8GB pamięci RAM**(jeśli posiadasz co najmniej 16GB w komputerze, w przeciwnym razie rekomendowane jest co najmniej **5GB**).
    - W TechnicLauncher, aby zmienić ilość pamięci RAM, należy wybrać **Launcher Options**, a następnie **Java Settings**.
-   - W polu **Memory** wybierz wartość 8GB.
+   - W polu **Memory** wybierz odpowiednią wartość.
 
      ![image](img/bettermc/yfl_technic_ram.png)
+   - Przy okazji warto sprawdzić czy została wybrana odpowiednia wersja Javy. Wybierz tą pobraną w kroku 2.
 7. Uruchom paczkę YFLsmp.
 
 ### Uwagi

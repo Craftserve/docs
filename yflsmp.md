@@ -4,6 +4,7 @@
 
 * Serwer Minecraft na Craftserve działający na pakiecie Diamond 
 
+<a id="server"></a>
 ### Instalacja na serwerze
 
 1. Usuń obecne pliki map z serwera. Można posłużyć się funkcją **Formatuj** -> **Wszystkie pliki**, znajdziesz ją w ustawieniach.
@@ -25,6 +26,7 @@
      ![image](img/bettermc/voice_udp_port.png)
 5. Uruchom serwer.
 
+<a id="client"></a>
 ### Instalacja na komputerach graczy
 
 By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę YFLsmp. Podążaj za poniższymi krokami:
@@ -38,6 +40,12 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
 5. Zainstaluj paczkę za pomocą przycisku **Install**.
 
    ![image](img/bettermc/yfl_technic.png)
+6. Warto upewnić się, że przypisana została odpowiednia ilość pamięci RAM dla paczki. W przypadku YFLsmp zalecane jest przypisanie **8GB pamięci RAM**.
+   - W TechnicLauncher, aby zmienić ilość pamięci RAM, należy wybrać **Launcher Options**, a następnie **Java Settings**.
+   - W polu **Memory** wybierz wartość 8GB.
+
+     ![image](img/bettermc/yfl_technic_ram.png)
+7. Uruchom paczkę YFLsmp.
 
 ### Uwagi
 - W przypadku problemów z dołączeniem do serwera, spróbuj powtórzyć instalację na serwerze.

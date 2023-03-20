@@ -50,8 +50,41 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
    - W polu **Memory** wybierz odpowiednią wartość.
 
      ![image](img/bettermc/yfl_technic_ram.png)
-   - Przy okazji warto sprawdzić czy została wybrana odpowiednia wersja Javy. Wybierz tą pobraną w kroku 2.
+   - Przy okazji warto sprawdzić, czy została wybrana odpowiednia wersja Javy. Wybierz tą pobraną w kroku 2.
 7. Uruchom paczkę YFLsmp.
 
+#### Najczęściej występujące problemy
+   * Zła wersja Java (x32), należy zainstalować wersję x64.
+   * Zalogowanie się do launchera, należy upewnić się, czy dane są poprawne i próbować zalogować się ponownie.
+   * Crash na etapie ładowania, trzeba pamiętać o ustawieniu zalecanych wartości RAM.
+   * Nie działający voice chat (nie słychać innych lub Ciebie), należy skonfigurować PlasmoVoice pod siebie (zobacz niżej).
+   * Po wejściu na serwer dźwięk jest cichy, należy w ustawieniach gry zmienić poziom głośności o parę procent.
+   ![image](img/bettermc/mastervolume.gif)
+
+#### Konfiguracja PlasmoVoice
+Domyślnie ustawienia PlasmoVoice są pod przyciskiem `MouseButton4`(dolny boczny przycisk myszy), aby to zmienić należy wejść w menu gry, `Options` -> `Controls` -> `Key Binds` i wyszukać `voice` i zmienić przycisk, na którym mają uruchamiać się ustawienia voice chatu.
+![image](img/bettermc/keybinds.png)
+
+Po otwarciu ustawień voice chatu widoczne jest wiele opcji, które można dostosować do swoich potrzeb. Warto zwrócić uwagę na:
+- `Output Device` - urządzenie wyjściowe, na którym będzie słychać głos graczy.
+- `Voice chat volume` - 100% - poziom głośności innych graczy.
+- `Priority volume` - 100%.
+- `Microphone` - mikrofon, którego chcesz używać do porozumiewania się z innymi graczami.
+- `Microphone volume` - 100% - poziom głośności mikrofonu.
+- `Voice distance` - 16 - odległość w blokach, w której gracze będą słyszalni.
+- `Activation type` - Push-to-talk - tryb przechwytywania twojego głosu.
+
+W zakładce `Advanced` ustaw wszystko na `OFF` oprócz:
+- `Visualise voice distance`: ON
+- `Separate priority volume`: ON
+
+`HRTF` - powinno być ustawione na `OFF`, przez to często inni gracze są ledwo słyszalni.
+Jeśli występują problemy z dźwiękiem, należy włączyć i wyłączyć `HRTF`.
+
 ### Uwagi
-- W przypadku problemów z dołączeniem do serwera, spróbuj powtórzyć instalację na serwerze.
+- W przypadku problemów z dołączeniem do serwera spróbuj powtórzyć instalację na serwerze.
+- Mob **stalker z dodatku deeperdarker crashuje** graczy w pobliżu (wyrzuca im minecrafta) można go znaleźć w 'dzbankach', które są w warden city - jeśli się zrespi, trzeba go zabić komendą 
+   ```
+  /kill @e[type=deeperdarker:stalker]
+   ```
+- Nie można respić Poltergaista, jeśli go zrespimy niektóre chunki mogą przywrócić się do stanu pierwotnego

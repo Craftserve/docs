@@ -15,10 +15,6 @@ Nasz datapack po tym powinien pojawić się w panelu serwera.
 
 Następnie włączamy serwer i wpisujemy komendę **/minecraft:reload** lub jeśli taka nie istnieje to **/reload**.
 
-## Jaskinie 1.18
-
-Mojang opublikował datapack, który dodaje do gry nowy generator jakiń oraz rud. Można go pobrać [tutaj](https://launcher.mojang.com/v1/objects/622bf0fd298e1e164ecd05d866045ed5941283cf/CavesAndCliffsPreview.zip). Wgrywamy go tak jak inne datapacki. Gdy to zrobimy, to musimy jednak usunąć całą zawartość folderu świata (domyślnie jest to plik **world**) z wyjątkiem folderu **datapacks**
-
 
 
 ## Datapacki można również wgrać za pomocą [FTP](https://github.com/Craftserve/docs/blob/master/ftp.md). Większość osób uważa tę formę wgrywania plików za wygodniejszą.

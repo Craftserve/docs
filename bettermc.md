@@ -2,16 +2,16 @@
 
 ### Wymagania
 
-* Serwer Minecraft wspierający modyfikacje Fabric (w przypadku Craftserve: pakiet Diamond, KM)
+* Serwer Minecraft wspierający modyfikacje Fabric (w przypadku Craftserve: pakiet Amethyst).
 
 ### Instalacja
 
-1. Usuń obecne pliki map z serwera. Można posłużyć się funkcją **Formatuj** -> **Wszystkie pliki**, znajdziesz ją w ustawieniach.
+1. Usuń obecne pliki map z serwera. Można posłużyć się funkcją **Formatowanie serwera** -> **Formatuj Serwer**, znajdziesz ją w ustawieniach.
 *Uwaga: Formatowanie serwera spowoduje utratę wszystkich plików, w tym wszystkich elementów zapisanych na mapie.*
 
     ![image](img/bettermc/format.png)
 2. Wybierz odpowiedni silnik Fabric dla wersji modpacka BetterMC (w tym przypadku: 1.19.2).
-   - Silnik Fabric możesz ustawić w zakładce **Ustawienia** -> **Silniki** -> **Cauldron** panelu Craftserve.
+   - Silnik Fabric możesz ustawić w zakładce **Ustawienia** -> **Silnik** -> **Cauldron** panelu Craftserve.
    
      ![image](img/bettermc/select_engine.png)
    - Należy pamiętać o zapisaniu silnika po jego wyborze. W tym celu udaj się na dół strony i kliknij przycisk **Zapisz**.

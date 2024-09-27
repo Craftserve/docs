@@ -1,7 +1,7 @@
 ## Wybór odpowiedniego silnika
 Aby używać antyxray'a bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**na przykład Purpur**). oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.com/), należy przejść do zakładki **Ustawienia** w **Panelu głównym**, a następnie wybrać `Silnik`. Z listy silników wybieramy interesujący nas silnik i klikamy `Zainstaluj`.
 
-![1](img/antyxray/1.png)
+![1](img/antyxray/a1.png)
 
 ## Opis trybów
 Antyxray może działać na dwa różne sposoby:

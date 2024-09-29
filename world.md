@@ -14,7 +14,7 @@ Aby utworzyć nową mapę należy:
 * Wejść w pliki serwera
 * Usunąć obecny świat na serwerze, usuwając foldery **world**, **world_nether** oraz **world_the_end**. Jeśli nazwa świata została zmieniona w pliku **server.properties**, to usuwamy foldery **<c. nazwa>**, **<c. nazwa>_nether** oraz **<c. nazwa>_the_end**. (Jeżeli chcemy zachować mapę, to najlepiej będzie ją pobrać na nasz komputer najlepiej za pomocą **[FTP](https://github.com/Craftserve/docs/blob/master/ftp.md)**).
 
-![1](img/world/1-updated.png)
+![1](img/world/1.png)
 
 * Jeżeli w pliku **server.properties** w linijce **level-seed** jest ustawiony seed świata, należy go usunąć, a następnie zapisać plik, żeby wygenerował się nowy, inny. Inaczej zresetuje się tylko nasz postęp.
 * Włączamy serwer
@@ -25,7 +25,7 @@ Aby wgrać swój własny świat należy:
 * Wyłączyć serwer
 * Wejść w pliki serwera
 * Usunąć stary świat (Informacje jak to zrobić znajdują sie powyżej)
-* Wgrać swój do głównego folderu serwera
+* Wgrać swój nowy świat do głównego folderu serwera
 
 ![1](img/world/3.png)
 

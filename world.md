@@ -31,13 +31,9 @@ Aby wgrać swój własny świat należy:
 
 ![1](img/world/4.png)
 
-(Gdy postęp wgrywania będzie wynosił 100%, to oznacza to, że plik został wgrany. Trzeba wtedy kliknąć **X**. Inaczej informacja ta nie zniknie.)
-
 * Następnie zmienić nazwę folderu na **world**
 
 ![1](img/world/5.png)
-
-![1](img/world/6.png)
 
 * Włączyć serwer
 

@@ -10,7 +10,7 @@ Pluginy na te silniki można pobrać ze stron [Bukkit.org](https://dev.bukkit.or
 
 Przed pobraniem pluginu należy się upewnić, że działa on na naszej wersji Minecrafta, a już pobrane pluginy z rozszerzeniem **.jar** należy przekopiować do folderu **/plugins/** na naszym serwerze:
 
-![Folder plugins](img/pluginy/plugins.png)
+![Folder plugins](img/pluginy/pluginy.png)
 
 Sponge
 --------------------

@@ -23,7 +23,7 @@ Jeśli jednak takie okno się nie wyświetli lub przypadkowo je zamkniemy, nale�
 - Wybrać port **21**
 Przykład poprawnego uzupełnienia:
 
-![1](img/ftp/3-updated.png)
+![1](img/ftp/3.png)
 
 Po wypełnieniu formularza logujemy się klikając przycisk **Logowanie**. Jeśli wszystko zostało poprawnie wykonane powinniśmy połączyć się z serwerem.
 

@@ -13,7 +13,3 @@
 7. Kliknij przycisk "Formatuj i reinstaluj serwer".
 8. Poczekaj do końca procesu. 
 9. Gotowe!
-
-## Czy mogę wgrać własny silnik?
-
-Tak, możesz go wrzucić na Marketplace! Aby dowiedzieć się więcej na ten temat, sprawdź nasz [poradnik do Marketplace](marketplace.md).

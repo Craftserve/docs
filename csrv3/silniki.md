@@ -10,6 +10,6 @@
 5. Po wybraniu silnika, zjedź na dół strony.
 6. Potwierdź usunięcie wszystkich plików ze swojego serwera oraz wykonanie kopii zapasowej. Jeśli potrzebujesz, możesz pominąć wybrane pliki i foldery podczas formatowania, by nie zostały one usunięte. **Zalecamy używanie tej opcji wyłącznie gdy posiadasz ważne dane na serwerze, np. postępy w folderze `world`.**
 ![4](/img/silniki/4.png)
-7. Kliknij przycisk "Formatuj i reinstaluj serwer".
-8. Poczekaj do końca procesu. 
-9. Gotowe!
+1. Kliknij przycisk **Formatuj i reinstaluj serwer**.
+2. Poczekaj do końca procesu. 
+3. Gotowe!

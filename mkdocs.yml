@@ -1,0 +1,7 @@
+site_name: Craftserve
+repo_url: https://github.com/Craftserve/docs
+theme:
+  name: dracula
+  logo: img/logo.png
+exclude_docs: |
+  todo.md

@@ -2,8 +2,7 @@ name: ci
 on:
   push:
     branches:
-      - master
-      - main
+      - c3-beta
 permissions:
   contents: write
 jobs:

@@ -1,0 +1,3379 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../resource-pack/">
+      
+      
+        <link rel="next" href="../spongeforge/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>spigot.yml - poradnik - Craftserve</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <script async src="https://umami.craftserve.com/script.js" data-website-id="4cfb66a9-3bcf-4bd4-a61c-7892b7d9ed7b"></script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spigotyml-poradnik" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Craftserve" class="md-header__button md-logo" aria-label="Craftserve" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Craftserve
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              spigot.yml - poradnik
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Craftserve/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Craftserve" class="md-nav__button md-logo" aria-label="Craftserve" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    Craftserve
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Craftserve/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oficjalny zestaw dokumentacji, poradników i zasobów Craftseve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antyxray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Antyxray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bettermc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja modpacka BetterMC (Fabric)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bukkit.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bukkit.yml - poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datapacki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja datapacków
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugprofiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forge Debug Profiler oraz jego interpretacja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domena/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ustawianie własnej domeny do serwera minecraft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essentialsx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essentialsx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poradnik FTP - Łączenie się z Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kmpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KM Pack - FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logblock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja i konfiguracja LogBlocka na Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logi i raporty z crashy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja modpacka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../online-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Online mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pluginy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja pluginów
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pregen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pregenerowanie Świata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-pack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serwerowy resource pack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    spigot.yml - poradnik
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    spigot.yml - poradnik
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tab-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      tab-complete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-namespaced" class="md-nav__link">
+    <span class="md-ellipsis">
+      send-namespaced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silent-commandblock-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      silent-commandblock-console
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    <span class="md-ellipsis">
+      log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      replace-commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whitelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      whitelist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      unknown-command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-full" class="md-nav__link">
+    <span class="md-ellipsis">
+      server-full
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outdated-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      outdated-client
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outdated-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      outdated-server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stats
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      disable-saving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forced-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      forced-stats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advancements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advancements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-saving_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      disable-saving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      disabled
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      world settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="world settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verbose" class="md-nav__link">
+    <span class="md-ellipsis">
+      verbose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      view-distance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge-radius
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="merge-radius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exp" class="md-nav__link">
+    <span class="md-ellipsis">
+      exp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item" class="md-nav__link">
+    <span class="md-ellipsis">
+      item
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunks-per-tick" class="md-nav__link">
+    <span class="md-ellipsis">
+      chunks-per-tick
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-despawn-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      item-despawn-rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mob-spawn-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      mob-spawn-range
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      growth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-activation-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      entity-activation-range
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="entity-activation-range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animals" class="md-nav__link">
+    <span class="md-ellipsis">
+      animals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      misc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monsters" class="md-nav__link">
+    <span class="md-ellipsis">
+      monsters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raiders" class="md-nav__link">
+    <span class="md-ellipsis">
+      raiders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="raiders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tick-inactive-villagers" class="md-nav__link">
+    <span class="md-ellipsis">
+      tick-inactive-villagers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-tracking-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      entity-tracking-range
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="entity-tracking-range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#players" class="md-nav__link">
+    <span class="md-ellipsis">
+      players
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      animals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monsters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      monsters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      misc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    <span class="md-ellipsis">
+      other
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-structure-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      save-structure-info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random-light-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      random-light-updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nerf-spawner-mobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      nerf-spawner-mobs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zombie-aggressive-towards-villager" class="md-nav__link">
+    <span class="md-ellipsis">
+      zombie-aggressive-towards-villager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-zombie-pigmen-portal-spawns" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable-zombie-pigmen-portal-spawns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-entity-collisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      max-entity-collisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragon-death-sound-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      dragon-death-sound-radius
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wither-spawn-sound-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      wither-spawn-sound-radius
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-tick-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      max-tick-time
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="max-tick-time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tile" class="md-nav__link">
+    <span class="md-ellipsis">
+      tile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      entity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-tick-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      clear-tick-list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hopper-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      hopper-amount
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-village" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-village
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-desert" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-desert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-monument" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-monument
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-slime" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-slime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-igloo" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-igloo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-jungle" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-jungle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-ocean" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-ocean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-outpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-outpost
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-shipwreck" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-shipwreck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-swamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-swamp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hunger" class="md-nav__link">
+    <span class="md-ellipsis">
+      hunger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hunger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jump-walk-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      jump-walk-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-sprint-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      jump-sprint-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      combat-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regen-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      regen-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swim-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      swim-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      sprint-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      other-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hanging-tick-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      hanging-tick-frequency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticks-per" class="md-nav__link">
+    <span class="md-ellipsis">
+      ticks-per
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ticks-per">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hopper-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      hopper-transfer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hopper-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      hopper-check
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#niezgrupowane-opcje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Niezgrupowane opcje
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Niezgrupowane opcje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#netty-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      netty-threads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bungeecord" class="md-nav__link">
+    <span class="md-ellipsis">
+      bungeecord
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeout-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      timeout-time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-on-crash" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart-on-crash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart-script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#late-bind" class="md-nav__link">
+    <span class="md-ellipsis">
+      late-bind
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-count" class="md-nav__link">
+    <span class="md-ellipsis">
+      sample-count
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-shuffle" class="md-nav__link">
+    <span class="md-ellipsis">
+      player-shuffle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-creative-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      filter-creative-items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-cache-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      user-cache-size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-user-cache-on-stop-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      save-user-cache-on-stop-only
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moved-wrongly-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      moved-wrongly-threshold
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moved-too-quickly-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      moved-too-quickly-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-dirty-ticks" class="md-nav__link">
+    <span class="md-ellipsis">
+      item-dirty-ticks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="item-dirty-ticks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zrodo-httpswwwspigotmcorgwikispigot-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      źródło: https://www.spigotmc.org/wiki/spigot-configuration/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spongeforge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SpongeForge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lagi na serwerze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Świat serwerowy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../worldedit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldEdit - kompletny poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../worldguard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldGuard - poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yflsmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja paczki YFLsmp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_26" >
+        
+          
+          <label class="md-nav__link" for="__nav_26" id="__nav_26_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beta
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_26_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_26">
+            <span class="md-nav__icon md-icon"></span>
+            Beta
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beta/backupy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kopie zapasowe, czyli Backupy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beta/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Craftserve Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beta/silniki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silniki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Commands
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tab-complete" class="md-nav__link">
+    <span class="md-ellipsis">
+      tab-complete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#send-namespaced" class="md-nav__link">
+    <span class="md-ellipsis">
+      send-namespaced
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#silent-commandblock-console" class="md-nav__link">
+    <span class="md-ellipsis">
+      silent-commandblock-console
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#log" class="md-nav__link">
+    <span class="md-ellipsis">
+      log
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      replace-commands
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Messages
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#whitelist" class="md-nav__link">
+    <span class="md-ellipsis">
+      whitelist
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unknown-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      unknown-command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-full" class="md-nav__link">
+    <span class="md-ellipsis">
+      server-full
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outdated-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      outdated-client
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outdated-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      outdated-server
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stats
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Stats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-saving" class="md-nav__link">
+    <span class="md-ellipsis">
+      disable-saving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#forced-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      forced-stats
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advancements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advancements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advancements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#disable-saving_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      disable-saving
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      disabled
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#world-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      world settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="world settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verbose" class="md-nav__link">
+    <span class="md-ellipsis">
+      verbose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#view-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      view-distance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merge-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge-radius
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="merge-radius">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exp" class="md-nav__link">
+    <span class="md-ellipsis">
+      exp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item" class="md-nav__link">
+    <span class="md-ellipsis">
+      item
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chunks-per-tick" class="md-nav__link">
+    <span class="md-ellipsis">
+      chunks-per-tick
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-despawn-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      item-despawn-rate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mob-spawn-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      mob-spawn-range
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      growth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-activation-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      entity-activation-range
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="entity-activation-range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#animals" class="md-nav__link">
+    <span class="md-ellipsis">
+      animals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc" class="md-nav__link">
+    <span class="md-ellipsis">
+      misc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monsters" class="md-nav__link">
+    <span class="md-ellipsis">
+      monsters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raiders" class="md-nav__link">
+    <span class="md-ellipsis">
+      raiders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="raiders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tick-inactive-villagers" class="md-nav__link">
+    <span class="md-ellipsis">
+      tick-inactive-villagers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-tracking-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      entity-tracking-range
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="entity-tracking-range">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#players" class="md-nav__link">
+    <span class="md-ellipsis">
+      players
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#animals_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      animals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monsters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      monsters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#misc_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      misc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other" class="md-nav__link">
+    <span class="md-ellipsis">
+      other
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-structure-info" class="md-nav__link">
+    <span class="md-ellipsis">
+      save-structure-info
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#random-light-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      random-light-updates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nerf-spawner-mobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      nerf-spawner-mobs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zombie-aggressive-towards-villager" class="md-nav__link">
+    <span class="md-ellipsis">
+      zombie-aggressive-towards-villager
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enable-zombie-pigmen-portal-spawns" class="md-nav__link">
+    <span class="md-ellipsis">
+      enable-zombie-pigmen-portal-spawns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-entity-collisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      max-entity-collisions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dragon-death-sound-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      dragon-death-sound-radius
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wither-spawn-sound-radius" class="md-nav__link">
+    <span class="md-ellipsis">
+      wither-spawn-sound-radius
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#max-tick-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      max-tick-time
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="max-tick-time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tile" class="md-nav__link">
+    <span class="md-ellipsis">
+      tile
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      entity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clear-tick-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      clear-tick-list
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hopper-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      hopper-amount
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-village" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-village
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-desert" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-desert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-monument" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-monument
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-slime" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-slime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-igloo" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-igloo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-jungle" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-jungle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-ocean" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-ocean
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-outpost" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-outpost
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-shipwreck" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-shipwreck
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seed-swamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      seed-swamp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hunger" class="md-nav__link">
+    <span class="md-ellipsis">
+      hunger
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hunger">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jump-walk-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      jump-walk-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jump-sprint-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      jump-sprint-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combat-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      combat-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regen-exhaustion" class="md-nav__link">
+    <span class="md-ellipsis">
+      regen-exhaustion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#swim-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      swim-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      sprint-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      other-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hanging-tick-frequency" class="md-nav__link">
+    <span class="md-ellipsis">
+      hanging-tick-frequency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ticks-per" class="md-nav__link">
+    <span class="md-ellipsis">
+      ticks-per
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ticks-per">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hopper-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      hopper-transfer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hopper-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      hopper-check
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#niezgrupowane-opcje" class="md-nav__link">
+    <span class="md-ellipsis">
+      Niezgrupowane opcje
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Niezgrupowane opcje">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#netty-threads" class="md-nav__link">
+    <span class="md-ellipsis">
+      netty-threads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bungeecord" class="md-nav__link">
+    <span class="md-ellipsis">
+      bungeecord
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeout-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      timeout-time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-on-crash" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart-on-crash
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restart-script" class="md-nav__link">
+    <span class="md-ellipsis">
+      restart-script
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#late-bind" class="md-nav__link">
+    <span class="md-ellipsis">
+      late-bind
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sample-count" class="md-nav__link">
+    <span class="md-ellipsis">
+      sample-count
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#player-shuffle" class="md-nav__link">
+    <span class="md-ellipsis">
+      player-shuffle
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-creative-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      filter-creative-items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-cache-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      user-cache-size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-user-cache-on-stop-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      save-user-cache-on-stop-only
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moved-wrongly-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      moved-wrongly-threshold
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#moved-too-quickly-multiplier" class="md-nav__link">
+    <span class="md-ellipsis">
+      moved-too-quickly-multiplier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#item-dirty-ticks" class="md-nav__link">
+    <span class="md-ellipsis">
+      item-dirty-ticks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="item-dirty-ticks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#zrodo-httpswwwspigotmcorgwikispigot-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      źródło: https://www.spigotmc.org/wiki/spigot-configuration/
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="spigotyml-poradnik">spigot.yml - poradnik</h1>
+<p>Plik spigot.yml jest jednym z plików konfiguracyjnych silników spigot i paper. Wiele osób nie zwraca na niego uwagi, a można w nim skonfigurować wiele przydatnych ustawień, które mogą poprawić wydajność serwera, lub trochę zmienić jego zachowanie. Plik składa się z kilku sekcji, na które podzielone są konkretne ustawienia silnika. Niestety, ale w zależności od wersji serwera i silnika ustawienia mogą pojawiać się w różnej kolejności, a niektóre, jeżeli chcemy je zmienić, musimy samodzielnie dopisać do pliku.</p>
+<h2 id="commands">Commands</h2>
+<p>Sekcja ta odpowiada za ustawienia dotyczące komend wykonywanych przez graczy i konsolę.</p>
+<h3 id="tab-complete">tab-complete</h3>
+<p>Opcja ta odpowiada za ustawienie ilości liter wpisanych z nazwy komendy, aby można było uzupełnić ją klawiszem <em>TAB</em>.</p>
+<ul>
+<li>Wpisz <code>-1</code> żeby wyłączyć uzupełnianie komend klawiszem TAB.</li>
+<li>Domyślną wartością jest <strong>0</strong>.</li>
+</ul>
+<h3 id="send-namespaced">send-namespaced</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien podpowiadać również komendy z tzw. namespace, czyli najczęściej nazwą pluginu, z którego pochodzi komenda, np. <code>/essentials:tpa</code> w przypadku komendy <code>/tpa</code>.</p>
+<ul>
+<li>Aby dowiedzieć się czym dokładnie jest namespace, zobacz ten <a href="https://minecraft.gamepedia.com/Namespaced_ID">artykuł</a> (po angielsku).</li>
+<li>Wpisz <code>false</code> żeby wyłączyć podpowiedzi komend z namespacem.</li>
+<li>Wpisz <code>true</code> żeby włączyć podpowiedzi komend z namespacem.</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="silent-commandblock-console">silent-commandblock-console</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien wypisywać informacje o komendach wykonanych przez commandblocki do konsoli.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć wypisywanie informacji o commandblockowych komendach w konsoli.</li>
+<li>Wpisz <code>true</code> żeby włączyć wypisywanie informacji o commandblockowych komendach w konsoli.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+</ul>
+<h3 id="log">log</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien wypisywać informacje o komendach wykonanych przez graczy do konsoli.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć wypisywanie informacji o komendach graczy w konsoli.</li>
+<li>Wpisz <code>true</code> żeby włączyć wypisywanie informacji o komendach graczy w konsoli.</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="replace-commands">replace-commands</h3>
+<p>Niektóre polecenia silnika gry zostały zmienione w bukkicie i spigocie względem ich wersji ze standardowego silnika. Dzięki temu działają one znacznie szybciej, za to czasem są lekko uproszczone i mogą tracić część funkcjonalności. Opcja ta odpowiada za ustawienie które komendy zamienione przez bukkit i spigot powinny zostać przywrócone do ich standardowych wersji.</p>
+<ul>
+<li>Wpisz <code>[]</code> żeby nie zamieniać żadnych komend.</li>
+<li>Wpisz <code>[setblock, summon]</code> żeby przywrócić działanie poleceń <em>setblock</em> i <em>summon</em>.</li>
+<li>Domyślną wartością jest <strong>[setblock, summon, testforblock]</strong>.</li>
+</ul>
+<h2 id="messages">Messages</h2>
+<p>Sekcja ta odpowiada za ustawienia dotyczące wiadomości które może zobaczyć gracz w konkretnych sytuacjach. Stanowi to rozwinięcie wiadomości dostępnych z poziomu pliku bukkit.yml.</p>
+<h3 id="whitelist">whitelist</h3>
+<p>Opcja ta odpowiada za wiadomość którą zobaczy gracz próbujący zalogować się na serwer, ale niebędący na whiteliście, kiedy ta jest włączona.</p>
+<ul>
+<li>Domyślną wartością jest <strong>You are not whitelisted on this server!</strong>.</li>
+</ul>
+<h3 id="unknown-command">unknown-command</h3>
+<p>Opcja ta odpowiada za wiadomość którą zobaczy gracz gdy wpisze komendę która nie jest dostępna na serwerze.</p>
+<ul>
+<li>Domyślną wartością jest <strong>Unknown command. Type "help" for help.</strong>.</li>
+</ul>
+<h3 id="server-full">server-full</h3>
+<p>Opcja ta odpowiada za wiadomość którą zobaczy gracz próbujący zalogować się na serwer gdy ten jest pełny.</p>
+<ul>
+<li>Domyślną wartością jest <strong>The server is full!</strong>.</li>
+</ul>
+<h3 id="outdated-client">outdated-client</h3>
+<p>Opcja ta odpowiada za wiadomość którą zobaczy gracz próbujący wejść na serwer, ale ma starszą wersję gry niż serwer obsługuje.</p>
+<ul>
+<li>Napis <code>{0}</code> w tekście zostanie automatycznie zamieniony na wersję gry obsługiwaną przez serwer.</li>
+<li>Domyślną wartością jest <strong>Outdated client! Please use {0}</strong>.</li>
+</ul>
+<h3 id="outdated-server">outdated-server</h3>
+<p>Opcja ta odpowiada za wiadomość którą zobaczy gracz próbujący wejść na serwer, ale ma nowszą wersję gry niż serwer obsługuje.</p>
+<ul>
+<li>Napis <code>{0}</code> w tekście zostanie automatycznie zamieniony na wersję gry obsługiwaną przez serwer.</li>
+<li>Domyślną wartością jest <strong>Outdated server! I'm still on {0}</strong>.</li>
+</ul>
+<h3 id="restart">restart</h3>
+<p>Opcja ta odpowiada za wiadomość którą zobaczą wszyscy gracze online gdy serwer będzie restartowany poleceniem <code>/restart</code>.</p>
+<ul>
+<li>Domyślną wartością jest <strong>Server is restarting</strong>.</li>
+</ul>
+<h2 id="stats">Stats</h2>
+<p>Sekcja ta odpowiada za ustawienia dotyczące statystyk i ich przechowywania przez serwer.</p>
+<h3 id="disable-saving">disable-saving</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien zapisywać statystyki graczy i ich osiągnięcia (przed minecraftem 1.12).</p>
+<ul>
+<li>Wpisz <code>false</code> żeby statystyki były zapisywane.</li>
+<li>Wpisz <code>true</code> żeby statystyki nie były zapisywane.</li>
+</ul>
+<h3 id="forced-stats">forced-stats</h3>
+<p>Opcja ta odpowiada za ustawienie które statystyki i osiągnięcia (przed minecraftem 1.12) gracz powinien mieć wymuszone przez serwer.</p>
+<ul>
+<li>Wpisz <code>{}</code> żeby nie wymuszać żadnych statystyk.</li>
+<li>Wpisz 
+    <code>yml
+    forced-stats:
+    achievement.openInventory: 1</code>
+    aby ustawić osiągnięcie <code>open inventory</code> jako od razu zaliczone dla każdego gracza.</li>
+<li>Domyślną wartością jest <strong>{}</strong>.</li>
+</ul>
+<h2 id="advancements">Advancements</h2>
+<p>Sekcja ta odpowiada za ustawienia dotyczące postępów i ich przechowywania przez serwer.</p>
+<h3 id="disable-saving_1">disable-saving</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien zapisywać postępy graczy.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby postępy nie były zapisywane.</li>
+<li>Wpisz <code>true</code> żeby postępy były zapisywane.</li>
+</ul>
+<h3 id="disabled">disabled</h3>
+<p>Opcja ta odpowiada za ustawienie które postępy powinny zostać wyłączone na serwerze. Wyłączone postępy nie będą się wyświetlały w menu postępów. Jeżeli zablokujesz postęp wymagany przez inne postępy, które nie będą zablokowane, w konsoli serwera pojawią się błędy i postępy mogą nie działać poprawnie. Pamiętaj żeby blokować wszystkie postępy zależne od innych blokowanych postępów.</p>
+<ul>
+<li>Wpisz <code>[]</code> żeby nie wyłączać żadnych postępów.</li>
+<li>Wpisz <code>- '*'</code> żeby zablokować wszystkie standardowe postępy.</li>
+<li>Domyślną wartością jest <strong>[]</strong>.</li>
+</ul>
+<h2 id="world-settings">world settings</h2>
+<p>Sekcja ta odpowiada za ustawienia konkretnych światów załadowanych na serwerze. Domyślnie znajduje się w niej podsekcja <code>default</code>, która przechowuje domyślne ustawienia dla światów, dla których nie ma dodatkowych ustawień zdefiniowanych w tej sekcji.</p>
+<ul>
+<li>
+<p>Aby utworzyć ustawienia dla konkretnego świata, skopiuj i wklej treść z poniższego spoilera i zamień <code>NAZWAŚWIATA</code> na nazwę katalogu w którym znajdują się pliki świata co do którego chcesz zmienić ustawienia.</p>
+<p><details>
+<summary>Kliknij tutaj aby rozwinąć listę</summary></p>
+<p>```yml
+  NAZWAŚWIATA:
+arrow-despawn-rate: 1200
+dragon-death-sound-radius: 0
+enable-zombie-pigmen-portal-spawns: true
+entity-activation-range:
+  animals: 32
+  misc: 16
+  monsters: 32
+  raiders: 48
+  tick-inactive-villagers: true
+entity-tracking-range:
+  animals: 48
+  misc: 32
+  monsters: 48
+  other: 64
+  players: 48
+growth:
+  bamboo-modifier: 100
+  beetroot-modifier: 100
+  cactus-modifier: 100
+  cane-modifier: 100
+  carrot-modifier: 100
+  cocoa-modifier: 100
+  kelp-modifier: 100
+  melon-modifier: 100
+  mushroom-modifier: 100
+  netherwart-modifier: 100
+  potato-modifier: 100
+  pumpkin-modifier: 100
+  sapling-modifier: 100
+  sweetberry-modifier: 100
+  vine-modifier: 100
+  wheat-modifier: 100
+hanging-tick-frequency: 100
+hopper-amount: 1
+hunger:
+  combat-exhaustion: 0.1
+  jump-sprint-exhaustion: 0.2
+  jump-walk-exhaustion: 0.05
+  other-multiplier: 0.0
+  regen-exhaustion: 6.0
+  sprint-multiplier: 0.1
+  swim-multiplier: 0.01
+item-despawn-rate: 6000
+max-tick-time:
+  entity: 50
+  tile: 50
+max-tnt-per-tick: 100
+merge-radius:
+  exp: 3.0
+  item: 2.5
+mob-spawn-range: 6
+nerf-spawner-mobs: false
+seed-desert: 14357617
+seed-igloo: 14357618
+seed-jungle: 14357619
+seed-monument: 10387313
+seed-ocean: 14357621
+seed-outpost: 165745296
+seed-shipwreck: 165745295
+seed-slime: 987234911
+seed-swamp: 14357620
+seed-village: 10387312
+squid-spawn-range:
+  min: 45.0
+ticks-per:
+  hopper-check: 1
+  hopper-transfer: 8
+verbose: true
+view-distance: default
+wither-spawn-sound-radius: 0
+zombie-aggressive-towards-villager: true</p>
+<p>```
+</details></p>
+</li>
+</ul>
+<h3 id="verbose">verbose</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien przy starcie wypisywać w konsoli informacje na temat ustawień ładowanych światów do konsoli i logów.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć wypisywanie informacji o świecie.</li>
+<li>Wpisz <code>true</code> żeby włączyć wypisywanie informacji o świecie.</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="view-distance">view-distance</h3>
+<p>Opcja ta odpowiada za ustawienie odległości w chunkach (<em>pola 16 na 16 bloków</em>) od gracza  z której świat będzie wysyłany do gracza przez serwer. Im większa wartość tym więcej może zobaczyć gracz bez zbędnego biegania po mapie, aby ją sobie załadować.</p>
+<ul>
+<li>Najmniejszą dopuszczalną wartością jest <code>1</code>.</li>
+<li>Największą dopuszczalną wartością jest <code>15</code>.</li>
+<li>Wpisanie wartości <code>default</code> sprawi, że dla danego świata użyta zostanie wartość z pliku <em>server.properties</em>.</li>
+<li>Domyślną wartością jest <strong>10</strong> dla wersji minecrafta przed <em>1.14.4</em> i <strong>default</strong> dla wersji nowszych lub równych <em>1.14.4</em>.</li>
+<li><strong>View distance ma duży wpływ na wydajność serwera. Jeżeli masz problem z niską wydajnością serwera, lagami, spróbuj zmniejszyć wartość w tym polu.</strong></li>
+</ul>
+<h3 id="merge-radius">merge-radius</h3>
+<p>Opcja ta zawiera dwie podopcje, dotyczące odległości w blokach między dwoma <em>stackami</em> przedmiotów lub kulek doświadczenia, która musi być mniejsza od podanej, aby <em>stacki</em> zostały połączone w jeden większy, oszczędzając w ten sposób moc serwera.</p>
+<h5 id="exp">exp</h5>
+<p>Opcja ta odpowiada za ustawienie odległości w blokach wymaganej aby dwa stacki kulek doświadczenia zostały połączone.</p>
+<ul>
+<li>Domyślna wartość to <strong>3.0</strong>.</li>
+</ul>
+<h5 id="item">item</h5>
+<p>Opcja ta odpowiada za ustawienie odległości w blokach wymaganej aby dwa stacki przedmiotów zostały połączone.</p>
+<ul>
+<li>Domyślna wartość to <strong>2.5</strong>.</li>
+</ul>
+<h3 id="chunks-per-tick">chunks-per-tick</h3>
+<p>Opcja ta odpowiada za ustawienie maksymalnej ilości chunków które w jednym ticku (1/20 sekundy) zostaną sprawdzone pod kątem rosnących roślin. Jeżeli ilość załadowanych chunków przez graczy i teren wokół nich będzie w sumie stanowił więcej chunków niż ustalony limit, niektóre z nich zostaną pominięte w danym sprawdzeniu.</p>
+<ul>
+<li><em>Funkcjonalność ta została usunięta i nie jest obecna w silnikach spigot dla wersji 1.10 wzwyż.</em></li>
+<li>Domyślną wartością jest <strong>650</strong>.</li>
+<li><strong>Zmniejszenie wartości na dużych serwerach (kilkudziesięciu graczy rozsianych po mapie) może spowolnić wzrost upraw, za to pozwoli zaoszczędzić trochę mocy, jeżeli serwer ma problem z lagami i powolnym działaniem.</strong></li>
+</ul>
+<h3 id="item-despawn-rate">item-despawn-rate</h3>
+<p>Opcja ta odpowiada za ustawienie ilości <em>ticków</em> (<em>1/20 sekundy</em>) która musi upłynąć zanim wyrzucony na ziemię przedmiot bezpowrotnie zniknie. Czas nie jest liczony, jeżeli w pobliżu nie ma innych graczy, czyli jak <em>chunk</em> na którym znajduje się przedmiot nie jest załadowany.</p>
+<ul>
+<li>Domyślną wartością jest <strong>6000</strong> (5 minut).</li>
+<li><strong>Zmniejszenie tej wartości, dzięki przyspieszeniu znikania przedmiotów, może pomóc w oszczędzeniu mocy, jeżeli serwer ma problem z lagami i powolnym działaniem.</strong></li>
+</ul>
+<h3 id="mob-spawn-range">mob-spawn-range</h3>
+<p>Opcja ta odpowiada za odległość w <em>chunkach</em> od gracza w jakiej zaczną pojawiać się moby. Zwiększenie odległości spowoduje, że ilość agresywnych mobów wokół gracza na otwartej przestrzeni może wydawać się dziwnie mniejsza, natomiast zmniejszenie tej odległości może sprawić, że eksplorowanie jaskiń będzie bezpieczniejsze.</p>
+<ul>
+<li>Domyślną wartością jest <strong>4</strong>.</li>
+</ul>
+<h3 id="growth">growth</h3>
+<p>Opcja ta zawiera siedem podopcji, które odpowiadają za prędkość rośnięcia konkretnych roślin. Kolejno są to cactus (kaktus), melon (arbuz), pumpkin (dynia), sapling (sadzonka drzewa), cane (trzcina cukrowa), mushroom (grzyby), wheat (zboża, warzywa itp.).</p>
+<ul>
+<li>Wartość wyrażana jest procentowo.</li>
+<li>Wpisz wartość <code>100</code> aby rośliny rosły ze standardową prędkością minecrafta.</li>
+<li>Wpisz wartość <code>200</code> aby rośliny rosły dwa razy szybciej.</li>
+<li>Wpisz wartość <code>50</code> aby rośliny rosły dwa razy wolniej.</li>
+<li>Domyślną wartością jest <strong>100</strong>.</li>
+</ul>
+<h3 id="entity-activation-range">entity-activation-range</h3>
+<p>Opcja ta zawiera pięć podopcji, które odpowiadają za odległość w blokach w której najdalej od gracza mogą znajdować się stworzenia, aby były one "aktywowane", a więc <em>tickowane</em> za każdym razem. Moby które znajdą się dalej niż w tej odległości będą wydawały się nieco przymrożone, ponieważ serwer będzie się nimi zajmował mniej często niż tymi, które znajdują się blisko gracza.</p>
+<h5 id="animals">animals</h5>
+<p>Opcja ta odpowiada za ustawienie odległości od zwierząt (krowy, konie, koty, papugi itp.), w której będą one uznane za aktywowane.</p>
+<ul>
+<li>Domyślną wartością jest <strong>32</strong>.</li>
+</ul>
+<h5 id="misc">misc</h5>
+<p>Opcja ta odpowiada za ustawienie odległości od zwierząt otoczenia, wprowadzających nastrój (nietoperze itp.), w której będą one uznane za aktywowane.</p>
+<ul>
+<li>Domyślną wartością jest <strong>16</strong>.</li>
+</ul>
+<h5 id="monsters">monsters</h5>
+<p>Opcja ta odpowiada za ustawienie odległości od potworów (szkielety, zombie, creepery itp.), w której będą one uznane za aktywowane.</p>
+<ul>
+<li>Domyślną wartością jest <strong>32</strong>.</li>
+</ul>
+<h4 id="raiders">raiders</h4>
+<p>Opcja ta odpowiada za ustawienie odległości od pillagerów biorących udział w rajdzie, w której będą one uznane za aktywowane.</p>
+<ul>
+<li>Domyślną wartością jest <strong>48</strong>.</li>
+</ul>
+<h5 id="tick-inactive-villagers">tick-inactive-villagers</h5>
+<p>Opcja ta odpowiada za ustawienie czy wieśniacy powinni zostać zawsze aktywni, niezależnie od odległości od gracza.</p>
+<ul>
+<li>Wpisz <code>true</code> żeby włączyć aktywację wszystkich wieśniaków.</li>
+<li>Wpisz <code>false</code> żeby aktywni stali się tylko wieśniacy blisko graczy.</li>
+<li>Wyłączenie tej opcji sprawi, że trzeba będzie cały czas siedzieć obok wieśniaka, żeby odświeżyły się jego oferty handlu!</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="entity-tracking-range">entity-tracking-range</h3>
+<p>Opcja ta zawiera pięć podopcji, które odpowiadają za odległość w blokach w której najwyżej może być stworzenie od gracza, aby gracz je widział. Jeżeli stworzenie jest w większej odległości, to serwer nie wyśle do gracza informacji o stworzeniu.</p>
+<h5 id="players">players</h5>
+<p>Opcja ta odpowiada za ustawienie ilości bloków między graczem a innym graczem, aby mogli się widzieć.</p>
+<ul>
+<li>Domyślną wartością jest <strong>48</strong>.</li>
+</ul>
+<h5 id="animals_1">animals</h5>
+<p>Opcja ta odpowiada za ustawienie ilości bloków między graczem a zwierzętami (krowy, konie, koty, papugi itp.), aby gracz mógł je widzieć.</p>
+<ul>
+<li>Domyślną wartością jest <strong>48</strong>.</li>
+</ul>
+<h5 id="monsters_1">monsters</h5>
+<p>Opcja ta odpowiada za ustawienie ilości bloków między graczem a potworami (szkielety, zombie, creepery itp.), aby gracz mógł je widzieć.</p>
+<ul>
+<li>Domyślną wartością jest <strong>48</strong>.</li>
+</ul>
+<h5 id="misc_1">misc</h5>
+<p>Opcja ta odpowiada za ustawienie ilości bloków między graczem a stworzeniami nastrojowymi (nietoperze itp.) i obiektami traktowanymi jako nieruchome stworzneia (obrazy, stojaki na zbroję, ramki na przedmioty, itp.), aby gracz mógł je widzieć.</p>
+<ul>
+<li>Domyślną wartością jest <strong>32</strong>.</li>
+</ul>
+<h5 id="other">other</h5>
+<p>Opcja ta odpowiada za ustawienie ilości bloków między graczem a wszystkimi pozostałymi stworzeniami, aby gracz mógł je widzieć.</p>
+<ul>
+<li>Dodatkowo pełni funkcję maksymalnego limitu odległości widzenia rzeczy z pozostałych grup.</li>
+<li>Domyślną wartością jest <strong>64</strong>.</li>
+</ul>
+<h3 id="save-structure-info">save-structure-info</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien razem z mapą zapisywać informacje o strukturach, takich jak twierdze, netherowe twierdze, chatki wiedźm itp.</p>
+<ul>
+<li>Wyłączenie tej opcji sprawi, że moby mogą nieprawidłowo się spawnować w tych strukturach, np witherowe szkielety nie będą pojawiały się w netherowych twierdzach.</li>
+<li>Wpisz <code>false</code> żeby wyłączyć zapisywanie informacji o strukturach.</li>
+<li>Wpisz <code>true</code> żeby włączyć zapisywanie informacji o strukturach.</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="random-light-updates">random-light-updates</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien losowo sprawdzać chunki pod kątem błędów oświetlenia (np. pasy ciemności pod górami, gdzie nie powinno być aż tak ciemno) i naprawiać je.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć losowe sprawdzanie oświetlenia.</li>
+<li>Wpisz <code>true</code> żeby włączyć losowe sprawdzanie oświetlenia.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+</ul>
+<h3 id="nerf-spawner-mobs">nerf-spawner-mobs</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien wyłączać AI mobów spawnowanych przez mobspawnery.</p>
+<ul>
+<li>Jeżeli ta opcja jest włączona, to moby spawnowane przez mobspawnery nie będą się w ogóle poruszały ani atakowały.</li>
+<li>Wpisz <code>false</code> żeby zostawić włączone AI mobów z mobspawnerów.</li>
+<li>Wpisz <code>true</code> żeby wyłączyć AI mobów z mobspawnerów.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+<li><strong>Włączenie tej opcji może pomóc w oszczędzaniu mocy, jeżeli serwer ma problem z lagami i powolnym działaniem.</strong></li>
+</ul>
+<h3 id="zombie-aggressive-towards-villager">zombie-aggressive-towards-villager</h3>
+<p>Opcja ta odpowiada za ustawienie czy zombie na danym świecie powinny być agresywne wobec wieśniaków.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć agresywność zombie wobec wieśniaków.</li>
+<li>Wpisz <code>true</code> żeby włączyć agresywność zombie wobec wieśniaków.</li>
+<li>Domyślną wartością jest <code>true</code>.</li>
+<li><strong>Wyłączenie tej opcji może pomóc w oszczędzaniu mocy, jeżeli serwer ma problem z lagami i powolnym działaniem.</strong></li>
+</ul>
+<h3 id="enable-zombie-pigmen-portal-spawns">enable-zombie-pigmen-portal-spawns</h3>
+<p>Opcja ta odpowiada za ustawienie czy z portalu do netheru powinny losowo spawnować się zombie pigmany.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć spawn zombie pigmanów z portali.</li>
+<li>Wpisz <code>true</code> żeby włączyć spawn zombie pigmanów z portali.</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="max-entity-collisions">max-entity-collisions</h3>
+<p>Opcja ta odpowiada za ustawienie limitu ilości kolizji (<em>sytuacji, gdy jeden mob odpycha drugiego</em>) które dotyczą jednego stworzenia w czasie jednego ticku.</p>
+<ul>
+<li>Domyślną wartością jest <strong>8</strong>.</li>
+</ul>
+<h3 id="dragon-death-sound-radius">dragon-death-sound-radius</h3>
+<p>Opcja ta odpowiada za ustawienie odległości w blokach w której musi znajdować się gracz aby usłyszeć odgłos śmierci smoka.</p>
+<ul>
+<li>Wpisz <code>0</code> żeby usłyszał go każdy gracz na serwerze.</li>
+<li>Domyślną wartością jest <strong>0</strong>.</li>
+</ul>
+<h3 id="wither-spawn-sound-radius">wither-spawn-sound-radius</h3>
+<p>Opcja ta odpowiada za ustawienie odległości w blokach w której musi znajdować się gracz aby usłyszeć odgłos spawnowania withera.</p>
+<ul>
+<li>Wpisz <code>0</code> żeby usłyszał go każdy gracz na serwerze.</li>
+<li>Domyślną wartością jest <strong>0</strong>.</li>
+</ul>
+<h3 id="max-tick-time">max-tick-time</h3>
+<p>Opcja ta posiada dwie podopcje, które odpowiadają za ustawienie czasu w milisekundach którego najwięcej mogą dostać w ramach jednego ticku konkretne rzeczy.</p>
+<h5 id="tile">tile</h5>
+<p>Opcja ta odpowiada za ustawienie maksymalnego czasu przeznaczonego na analize mapy.</p>
+<ul>
+<li><strong>Zmniejszenie tej wartości może podnieść wydajność serwera, ale też może sprawić, że niektóre rzeczy będą działały wolniej, np. zegary redstone lub hoppery.</strong></li>
+<li>Domyślną wartością jest <strong>50</strong>.</li>
+</ul>
+<h5 id="entity">entity</h5>
+<p>Opcja ta odpowiada za ustawienie maksymalnego czasu przeznaczonego na analize otoczenia mobów.</p>
+<ul>
+<li><strong>Zmniejszenie tej wartości może podnieść wydajność serwera, ale też może sprawić, że niektóre rzeczy będą działały wolniej, np. potwory będą później reagowały na obecność gracza.</strong></li>
+<li>Domyślną wartością jest <strong>50</strong>.</li>
+</ul>
+<h3 id="clear-tick-list">clear-tick-list</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien czyścić listy tickowanych stworzeń i przedmiotów. Z czasem listy te potrafią urosnąć do znacznych rozmiarów, ale czyszczenie listy może zepsuć wiele rzeczy, np. czasy rośnięcia roślin. Włączenie tej opcji nie jest zalecane dopóki nie będziesz znał się dobrze na tym, co się dzieje wewnętrznie w silniku.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć czyszczenie listy.</li>
+<li>Wpisz <code>true</code> żeby włączyć czyszczenie listy.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+</ul>
+<h3 id="hopper-amount">hopper-amount</h3>
+<p>Opcja ta odpowiada za ustawienie maksymalnej ilości przedmiotów które hopper może obsłużyć w czasie jednego ticku. </p>
+<ul>
+<li>Domyślną wartością jest <strong>1</strong>.</li>
+</ul>
+<h3 id="seed-village">seed-village</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla wiosek.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, wioski pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>10387312</strong>.</li>
+</ul>
+<h3 id="seed-desert">seed-desert</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla struktur pustynnych.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, struktury pustynne pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>14357617</strong>.</li>
+</ul>
+<h3 id="seed-monument">seed-monument</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla monumentów.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, monumenty pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>10387313</strong>.</li>
+</ul>
+<h3 id="seed-slime">seed-slime</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla slimowych chunków.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, slimowe chunki pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>987234911</strong>.</li>
+</ul>
+<h3 id="seed-igloo">seed-igloo</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla igloo.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, wioski pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>14357618</strong>.</li>
+</ul>
+<h3 id="seed-jungle">seed-jungle</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla struktur dżunglowych.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, struktury dżunglowe pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>14357619</strong>.</li>
+</ul>
+<h3 id="seed-ocean">seed-ocean</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla struktur podwodnych.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, struktury podwodne pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>14357621</strong>.</li>
+</ul>
+<h3 id="seed-outpost">seed-outpost</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla baz pillagerów.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, bazy pillagerów pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>165745296</strong>.</li>
+</ul>
+<h3 id="seed-shipwreck">seed-shipwreck</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla zniszczonych statków.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, zniszczone statki pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>165745295</strong>.</li>
+</ul>
+<h3 id="seed-swamp">seed-swamp</h3>
+<p>Opcja ta służy do ustalenia ziarna generatora dla struktur bagiennych.</p>
+<ul>
+<li>Jeżeli zmienisz domyślną wartość, struktury bagienne pojawiać się będą w inny sposób pomimo użycia tego samego seeda całego świata w pliku server.properties lub okienku na seed przy generowaniu nowego świata w trybie gry jednoosobowej.</li>
+<li>Domyślną wartością jest <strong>14357620</strong>.</li>
+</ul>
+<h3 id="hunger">hunger</h3>
+<p>Opcja ta zawiera siedem subopcji, które odpowiadają za ilość punktów najedzenia którą straci gracz za wykonywanie konkretnych akcji w czasie trwania jednego ticku.</p>
+<ul>
+<li>1 punkt najedzenia odpowiada połowie ikony mięsa na pasku statusu.</li>
+</ul>
+<h5 id="jump-walk-exhaustion">jump-walk-exhaustion</h5>
+<p>Opcja ta odpowiada za ustawienie ilości punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku szedł lub skakał idąc.</p>
+<ul>
+<li>Domyślną wartością jest <strong>0.05</strong>.</li>
+</ul>
+<h5 id="jump-sprint-exhaustion">jump-sprint-exhaustion</h5>
+<p>Opcja ta odpowiada za ustawienie ilości punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku biegł lub skakał biegnąc.</p>
+<ul>
+<li>Domyślną wartością jest <strong>0.2</strong>.</li>
+</ul>
+<h5 id="combat-exhaustion">combat-exhaustion</h5>
+<p>Opcja ta odpowiada za ustawienie ilości punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku walczył.</p>
+<ul>
+<li>Domyślną wartością jest <strong>0.1</strong>.</li>
+</ul>
+<h5 id="regen-exhaustion">regen-exhaustion</h5>
+<p>Opcja ta odpowiada za ustawienie ilości punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku regenerował zdrowie.</p>
+<ul>
+<li>Domyślną wartością jest <strong>6.0</strong>.</li>
+</ul>
+<h5 id="swim-multiplier">swim-multiplier</h5>
+<p>Opcja ta odpowiada za ustawienie dodatkowego mnożnika ilości traconych punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku płynął.</p>
+<ul>
+<li>Domyślną wartością jest <strong>0.01</strong>.</li>
+</ul>
+<h5 id="sprint-multiplier">sprint-multiplier</h5>
+<p>Opcja ta odpowiada za ustawienie dodatkowego mnożnika ilości traconych ilości punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku biegł.</p>
+<ul>
+<li>Domyślną wartością jest <strong>0.1</strong>.</li>
+</ul>
+<h5 id="other-multiplier">other-multiplier</h5>
+<p>Opcja ta odpowiada za ustawienie dodatkowego mnożnika ilości traconych ilości punktów najedzenia które straci gracz, jeżeli w trakcie ostatniego ticku robił coś, co nie jest przewidziane w poprzednich mnożnikach.</p>
+<ul>
+<li>Domyślną wartością jest <strong>0.0</strong>.</li>
+</ul>
+<h3 id="hanging-tick-frequency">hanging-tick-frequency</h3>
+<p>Opcja ta odpowiada za ustawienie ilości ticków co którą serwer będzie sprawdzał, czy wszystkie wiszące rzeczy (obrazy, ramki na przedmioty, itp.) nadal mają na czym wisieć, tj. czy blok do którego są przytwierdzone nadal istnieje.</p>
+<ul>
+<li>Domyślną wartością jest <strong>100</strong>.</li>
+</ul>
+<h3 id="ticks-per">ticks-per</h3>
+<p>Opcja ta zawiera dwie subopcje, które odpowiadają za ilość ticków serwera które muszą upłynąć, żeby stała się określona akcja.</p>
+<h5 id="hopper-transfer">hopper-transfer</h5>
+<p>Opcja ta odpowiada za ilość ticków które muszą upłynąć między kolejnymi transferami przedmiotów z hoppera.</p>
+<ul>
+<li>Domyślną wartością jest <strong>8</strong></li>
+</ul>
+<h5 id="hopper-check">hopper-check</h5>
+<p>Opcja ta odpowiada za ilość ticków która musi minąć między kolejnymi sprawdzeniami czy na hopperze znajduje się coś z czego może zebrać nowe przedmioty i czy ma dokąd je odłożyć.</p>
+<ul>
+<li>Domyślną wartością jest <strong>1</strong>.</li>
+</ul>
+<h2 id="niezgrupowane-opcje">Niezgrupowane opcje</h2>
+<p>Poza opcjami zgrupowanymi w sekcje, jest jeszcze trochę opcji które nie są podzielone w sekcje. W tej "sekcji" artykułu będą one opisane.</p>
+<h3 id="netty-threads">netty-threads</h3>
+<p>Opcja ta odpowiada za ustawienie ilości wątków netty do komunikacji z internetem. Nie zmieniaj tej wartości, jeżeli nie wiesz jak to działa.</p>
+<ul>
+<li>Domyślną wartością jest <strong>4</strong>.</li>
+</ul>
+<h3 id="bungeecord">bungeecord</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien ładować rozwiązania służące do komunikacji z bungeecordem.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć wsparcie dla bungeecorda.</li>
+<li>Wpisz <code>true</code> żeby włączyć wsparcie dla bungeecorda.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+</ul>
+<h3 id="timeout-time">timeout-time</h3>
+<p>Opcja ta odpowiada za ustawienie ile sekund serwer powinien czekać na ukończenie ticku, zanim postanowi jednak uznać, że coś idzie bardzo nie tak i scrashować serwer.</p>
+<ul>
+<li>Domyślną wartością jest <strong>60</strong>.</li>
+</ul>
+<h3 id="restart-on-crash">restart-on-crash</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer po crashu powinien podjąć próbę restartu.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć automatyczne próby restartu.</li>
+<li>Wpisz <code>true</code> żeby włączyć automatyczne próby restartu.</li>
+<li><strong>W przypadku serwerów na craftserve opcja ta nic nie zmienia, nawet jeżeli wyłączysz w konfiguracji automatyczny restart serwera to serwer będzie uruchamiany ponownie.</strong></li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="restart-script">restart-script</h3>
+<p>Opcja ta odpowiada za ustawienie lokalizacji skryptu służącego do restartu serwera.</p>
+<ul>
+<li><strong>W przypadku serwerów na craftserve opcja ta nic nie zmienia, niezależnie od tego ustawienia serwer będzie restartowany standardową metodą craftserve.</strong></li>
+<li>Domyślną wartością jest <strong>./start.sh</strong>.</li>
+</ul>
+<h3 id="late-bind">late-bind</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien otwierać się na internet już po załadowaniu wszystkich rzeczy potrzebnych do wpuszczania graczy.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby serwer otwierał się na internet tak szybko jak to możliwe.</li>
+<li>Wpisz <code>true</code> żeby serwer otwierał się na internet tak późno jak to możliwe.</li>
+<li>Otwieranie się jak najpóźniej może powodować problemy z pluginami i lepiej tego nie robić dopóki nie ma się dobrego powodu.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+</ul>
+<h3 id="sample-count">sample-count</h3>
+<p>Opcja ta odpowiada za ustawienie ilu losowych graczy serwera serwer powinien wysyłać do gracza gdy ten przegląda liste serwerów w oknie gry wieloosobowej.</p>
+<ul>
+<li>Domyślną wartością jest <strong>12</strong>.</li>
+</ul>
+<h3 id="player-shuffle">player-shuffle</h3>
+<p>Opcja ta odpowiada za ustawienie ilości ticków która musi minąć aby serwer zmienił kolejność graczy. Serwer przetwarza dane od graczy w konkretnej kolejności. Jeżeli dwóch graczy jednocześnie uderzy jedno stworzenie, to zostanie zaliczone uderzenie tylko od gracza, który znalazł się wcześniej w kolejce przetwarzania danych. Zmiana kolejności na losową uniemożliwia wykorzystanie tej mechaniki do przewagi nad innymi graczami.</p>
+<ul>
+<li>Wpisz <code>0</code> żeby wyłączyć losowanie kolejności.</li>
+<li>Domyślną wartością jest <strong>0</strong>.</li>
+</ul>
+<h3 id="filter-creative-items">filter-creative-items</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer powinien pilnować graczy w trybie kreatywnym, aby nie próbowali za pomocą cheatów dodawać sobie przedmiotów które nie są możliwe w grze.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby wyłączyć pilnowanie graczy (możliwe jest bardzo proste crashowanie serwera przez graczy w trybie kreatywnym).</li>
+<li>Wpisz <code>true</code> żeby włączyć pilnowanie graczy.</li>
+<li>Domyślną wartością jest <strong>true</strong>.</li>
+</ul>
+<h3 id="user-cache-size">user-cache-size</h3>
+<p>Opcja ta odpowiada za ustawienie limitu ilości graczy przechowywanych w pliku <em>usercache.json</em>. Plik ten umożliwia szybszą prace serwera, ale jeżeli stanie się zbyt duży, to przestanie się to opłacać.</p>
+<ul>
+<li>Domyślną waartością jest <strong>1000</strong>.</li>
+</ul>
+<h3 id="save-user-cache-on-stop-only">save-user-cache-on-stop-only</h3>
+<p>Opcja ta odpowiada za ustawienie czy serwer ma zapisywać plik <em>usercache.json</em> tylko na zatrzymaniu serwera czy co jakiś czas.</p>
+<ul>
+<li>Wpisz <code>false</code> żeby serwer automatycznie zapisywał plik <em>usercache.json</em> co jakiś czas.</li>
+<li>Wpisz <code>true</code> żeby serwer zapisywał plik <em>usercache.json</em> tylko przy wyłączaniu serwera.</li>
+<li>Domyślną wartością jest <strong>false</strong>.</li>
+</ul>
+<h3 id="moved-wrongly-threshold">moved-wrongly-threshold</h3>
+<p>Opcja ta odpowiada za ustawienie jak dokładnie serwer powinien pilnować czy gracze poruszają się prawidłowo.</p>
+<ul>
+<li>Im większa wartość tym mniej często pojawi się komunikat w stylu <code>player moved wrongly</code> w konsoli serwera, za to wprawny cheater będzie umiał wykorzystać to na swoją korzyść.</li>
+<li>Domyślną wartością jest <strong>0.0625</strong>.</li>
+</ul>
+<h3 id="moved-too-quickly-multiplier">moved-too-quickly-multiplier</h3>
+<p>Opcja ta odpowiada za ustawienie jak dokładnie serwer powinien pilnować czy gracze nie poruszają się z jakiegoś powodu zbyt szybko.</p>
+<ul>
+<li>Im większa wartość tym mniej często pojawi się komunikat w stylu <code>player moved too quickly</code> w konsoli serwera, za to wprawny cheater będzie umiał wykorzystać to na swoją korzyść.</li>
+<li>Domyślną wartością jest <strong>10</strong>.</li>
+</ul>
+<h3 id="item-dirty-ticks">item-dirty-ticks</h3>
+<p>Opcja ta odpowiada za ilość ticków która musi upłynąć między dwoma pełnymi sprawdzeniami czy rzeczy leżące na ziemi się nie zmieniły. Nie jest to zbyt częsta sytuacja.</p>
+<ul>
+<li>Spigot sam z siebie sprawdza przedmioty pobieżnie co tick, a w tej opcji możemy ustalić co ile ticków ma wykonać pełne dogłębne sprawdzenie.</li>
+<li>Domyślną wartością jest <strong>20</strong>.</li>
+</ul>
+<h6 id="zrodo-httpswwwspigotmcorgwikispigot-configuration">źródło: https://www.spigotmc.org/wiki/spigot-configuration/</h6>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1448 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../worldedit/">
+      
+      
+        <link rel="next" href="../yflsmp/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>WorldGuard - poradnik - Craftserve</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <script async src="https://umami.craftserve.com/script.js" data-website-id="4cfb66a9-3bcf-4bd4-a61c-7892b7d9ed7b"></script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#worldguard-poradnik" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Craftserve" class="md-header__button md-logo" aria-label="Craftserve" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Craftserve
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              WorldGuard - poradnik
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Craftserve/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Craftserve" class="md-nav__button md-logo" aria-label="Craftserve" data-md-component="logo">
+      
+  <img src="../img/logo.png" alt="logo">
+
+    </a>
+    Craftserve
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Craftserve/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oficjalny zestaw dokumentacji, poradników i zasobów Craftseve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../antyxray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Antyxray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bettermc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja modpacka BetterMC (Fabric)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bukkit.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bukkit.yml - poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datapacki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja datapacków
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../debugprofiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forge Debug Profiler oraz jego interpretacja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../domena/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ustawianie własnej domeny do serwera minecraft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../essentialsx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Essentialsx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Poradnik FTP - Łączenie się z Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../kmpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KM Pack - FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logblock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja i konfiguracja LogBlocka na Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logi i raporty z crashy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja modpacka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../online-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Online mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pluginy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja pluginów
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pregen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pregenerowanie Świata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resource-pack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serwerowy resource pack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spigot.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    spigot.yml - poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spongeforge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SpongeForge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lagi na serwerze
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Świat serwerowy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../worldedit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldEdit - kompletny poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    WorldGuard - poradnik
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    WorldGuard - poradnik
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalacja
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tworzenie-i-edycja-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tworzenie i edycja regionów
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tworzenie i edycja regionów">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tworzenie regionów
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edycja-terenu-regionu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edycja terenu regionu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuwanie-regionu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usuwanie regionu
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sprawdzanie-informacji-na-temat-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprawdzanie informacji na temat regionów
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czonkowie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Członkowie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Członkowie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dodawanie-czonkow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dodawanie członków
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuwanie-czonkow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usuwanie członków
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wasciciele" class="md-nav__link">
+    <span class="md-ellipsis">
+      Właściciele
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Właściciele">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dodawanie-wascicieli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dodawanie właścicieli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuwanie-wascicieli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usuwanie właścicieli
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flagi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flagi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#najpopularniejsze-flagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Najpopularniejsze flagi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorytet-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorytet regionów
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dziedziczenie-parent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dziedziczenie (parent)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teleportacja-do-regionu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teleportacja do regionu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region-globalny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Region globalny
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../yflsmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja paczki YFLsmp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_26" >
+        
+          
+          <label class="md-nav__link" for="__nav_26" id="__nav_26_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beta
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_26_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_26">
+            <span class="md-nav__icon md-icon"></span>
+            Beta
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beta/backupy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kopie zapasowe, czyli Backupy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beta/marketplace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Craftserve Marketplace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../beta/silniki/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silniki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#instalacja" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instalacja
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tworzenie-i-edycja-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tworzenie i edycja regionów
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tworzenie i edycja regionów">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tworzenie-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tworzenie regionów
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edycja-terenu-regionu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edycja terenu regionu
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuwanie-regionu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usuwanie regionu
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sprawdzanie-informacji-na-temat-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sprawdzanie informacji na temat regionów
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#czonkowie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Członkowie
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Członkowie">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dodawanie-czonkow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dodawanie członków
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuwanie-czonkow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usuwanie członków
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wasciciele" class="md-nav__link">
+    <span class="md-ellipsis">
+      Właściciele
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Właściciele">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dodawanie-wascicieli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dodawanie właścicieli
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuwanie-wascicieli" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usuwanie właścicieli
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flagi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flagi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#najpopularniejsze-flagi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Najpopularniejsze flagi
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priorytet-regionow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priorytet regionów
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dziedziczenie-parent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dziedziczenie (parent)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#teleportacja-do-regionu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teleportacja do regionu
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#region-globalny" class="md-nav__link">
+    <span class="md-ellipsis">
+      Region globalny
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="worldguard-poradnik">WorldGuard - poradnik</h1>
+<p>Głównym zastosowaniem WorldGuarda jest ochrona świata.</p>
+<h2 id="instalacja">Instalacja</h2>
+<p><em>WorldGuard wymaga do poprawnego działania pluginu WorldEdit.</em></p>
+<ol>
+<li>Pobierz plugin WorldEdit z <a href="https://dev.bukkit.org/projects/worldedit">oficjalnej strony</a>.</li>
+<li>Skopiuj plik WorldEdit.jar do folderu plugins.</li>
+<li>Pobierz plugin WorldGuard z <a href="https://dev.bukkit.org/projects/worldguard">oficjalnej strony</a>.</li>
+<li>Skopiuj plik WorldGuard.jar do folderu plugins.</li>
+<li>Włącz serwer.</li>
+</ol>
+<h2 id="tworzenie-i-edycja-regionow">Tworzenie i edycja regionów</h2>
+<h3 id="tworzenie-regionow">Tworzenie regionów</h3>
+<p>W celu stworzenia regionu, musisz najpierw zaznaczyć teren przy użyciu pluginu WorldEdit.
+Trzymając drewnianą siekierę zaznacz pierwszy punkt klikając LPM i następnie zaznacz drugi punkt klikając PPM. Drewnianą siekierę możesz stworzyć samemu lub otrzymać ją za pomocą komendy <code>//wand</code>.
+Zaznaczenie powstanie w wyniku połączenia tych dwóch punktów.
+<img alt="1" src="../img/worldguard/1.png" /></p>
+<p>WorldGuard obsługuje regiony będące wielokątami, więcej informacji na temat użycia WorldEdita znajdziesz w dedykowanym do niego <a href="https://github.com/Craftserve/docs/blob/master/worldedit.md">poradniku</a>.</p>
+<p>Po zaznaczeniu terenu użyj komendy <code>/rg define &lt;nazwa regionu&gt; [właściciel]</code>.
+Nazwa regionu to unikalne ID regionu, nie można stworzyć dwóch regionów z tą samą nazwą na jednym świecie. Nazwa regionu nie może zawierać spacji.
+Podaniu argumentu <code>właściciel</code> spowoduje ustalenie właściciela regionu (więcej informacji poniżej).</p>
+<p>Po utworzeniu regionu automatycznie gracze nie będą mogli wykonywać żadnych niepożądanych akcji, w tym edytować bloków, otwierać skrzynek, drzwi, wsiadać na zwierzęta, do wagoników itp. na jego terenie. Domyślnie modyfikować region może tylko administracja z odpowiednim uprawnieniem i gracze dodani do niego jako członkowie lub właściciele.</p>
+<h3 id="edycja-terenu-regionu">Edycja terenu regionu</h3>
+<p>Jeśli chcesz zedytować obszar, który obejmuje dany region, utwórz nowe zaznaczenie przy użyciu pluginu WorldEdit, a następnie wpisz komendę <code>/rg redefine &lt;nazwa regionu&gt;</code>.</p>
+<h3 id="usuwanie-regionu">Usuwanie regionu</h3>
+<p>W celu usunięcie regionu użyj komendy <code>/rg delete &lt;nazwa regionu&gt;</code>.</p>
+<h2 id="sprawdzanie-informacji-na-temat-regionow">Sprawdzanie informacji na temat regionów</h2>
+<ul>
+<li><code>/rg info &lt;nazwa regionu&gt;</code> komenda wyświetli wszystkie informacje na temat konkretnego regionu.</li>
+</ul>
+<p><img alt="1" src="../img/worldguard/2.png" />
+* <code>/rg list [-p gracz] [strona]</code> komenda wyświetli listę wszystkich regionów. Obsługuję flagę <code>-p gracz</code> (np. <code>/rg list -p jahumen</code>), która umożliwia sprawdzanie listy regionów, do których dodany jest konkretny gracz.
+<img alt="1" src="../img/worldguard/3.png" />
+<img alt="1" src="../img/worldguard/4.png" />
+* Trzymając w ręce <em>domyślnie</em> skórę, kliknij PPM na dowolny blok - spowoduje to wyświetlenie informacji na temat znajdującego się tam regionu.</p>
+<h2 id="czonkowie">Członkowie</h2>
+<p>Członkowie to osoby, które mają uprawnienia do edycji bloków na terenie regionu, otwierania skrzynek itp, jednak nie mogą modyfikować flag, dodawać innych członków itp.</p>
+<h3 id="dodawanie-czonkow">Dodawanie członków</h3>
+<p><code>/rg addmember &lt;nazwa regionu&gt; &lt;członek&gt;</code>
+W polu <code>członek</code> możesz wpisać zarówno nick gracza jak i grupę, w formacie <code>g:admin</code>.</p>
+<h3 id="usuwanie-czonkow">Usuwanie członków</h3>
+<p><code>/rg removemember &lt;nazwa regionu&gt; &lt;członek&gt;</code></p>
+<h2 id="wasciciele">Właściciele</h2>
+<p>Właściciele regionu mają uprawnienia do edycji innych właścicieli, członków, flag itp. (zarządzają regionem).
+Pierwszy właściciel jest domyślnie dodawany w komendzie <code>/rg define &lt;nazwa regionu&gt; [właściciel]</code>.</p>
+<h3 id="dodawanie-wascicieli">Dodawanie właścicieli</h3>
+<p><code>/rg addowner &lt;nazwa regionu&gt; &lt;właściciel&gt;</code>
+W polu <code>właściciel</code> możesz wpisać zarówno nick gracza jak i grupę, w formacie <code>g:admin</code>.</p>
+<h3 id="usuwanie-wascicieli">Usuwanie właścicieli</h3>
+<p><code>/rg removeowner &lt;nazwa regionu&gt; &lt;właściciel&gt;</code></p>
+<h2 id="flagi">Flagi</h2>
+<p>Domyślnie na terenie stworzonego regionu nie można budować, edytować bloków itp, jednak możesz to zmodyfikować dla konkretnego regionu za pomocą flag.
+<code>/rg flag &lt;nazwa regionu&gt; &lt;flaga&gt; [stan]</code>
+Jeśli nie podasz stanu flagi, zostanie on ustawiony na domyślny, czyli flaga zostanie usunięta.
+Komenda obsługuje dodawanie flag obowiązujących tylko konkretne grupy, w formacie <code>g:admin</code>.</p>
+<h3 id="najpopularniejsze-flagi">Najpopularniejsze flagi</h3>
+<ul>
+<li><code>passthrough</code> (allow/deny) - flaga sprawia, że region używa flag z regionu nadrzędnego.</li>
+<li><code>build</code> (allow/deny) - flaga pozwala na budowanie na terenie regionu.</li>
+<li><code>interact</code> (allow/deny) - flaga pozwala na interakcję, czyli otwieranie drzwi, skrzynek, wciskanie przycisków itp.</li>
+<li><code>use</code> (allow/deny) - flaga pozwala na otwieranie drzwi, wciskanie przycisków itp, jednak <strong>nie</strong> pozwala na otwieranie skrzynek.</li>
+<li><code>pvp</code> (allow/deny) - flaga umożliwia zadawanie obrażeń graczom.</li>
+<li><code>tnt</code> (allow/deny) - flaga umożliwia wysadzanie TNT.</li>
+<li><code>mob-spawning</code> (allow/deny) - flaga umożliwia pojawianie się mobów.</li>
+<li><code>deny-spawn</code> (lista) - flaga określa listę mobów, które nie mogą spawnować się na danym cuboidzie, np. <code>pig,cow</code>.</li>
+<li><code>enderman-grief</code> (allow/deny) - flaga umożliwia niszczenie terenu przez endermany.</li>
+<li><code>fire-spread</code> (allow/deny) - flaga umożliwia rozprzestrzenianie się ognia.</li>
+<li><code>creeper-explosion</code> (allow/deny) - flaga umozliwia wybuchy creeperów.</li>
+<li><code>snow-fall</code> (allow/deny) - flaga umożliwia powstawanie śniegu.</li>
+<li><code>snow-melt</code> (allow/deny) - flaga umożliwia roztapianie się śniegu.</li>
+<li><code>ice-melt</code> (allow/deny) - flaga umożliwia roztapianie się lodu.</li>
+<li><code>leaf-decay</code> (allow/deny) - flaga umożliwia znikanie liści.</li>
+<li><code>enderpearl</code> (allow/deny) - flaga umożliwia teleportację przy użyciu pereł.</li>
+<li><code>chorus-fruit-teleport</code> (allow/deny) - flaga umożliwia teleportację przy użyciu owoców chorusa.</li>
+<li><code>item-pickup</code> (allow/deny) - flaga umożliwia podnoszenie przedmiotów.</li>
+<li><code>item-drop</code> (allow/deny) - flaga umożliwia upuszczanie przedmiotów.</li>
+<li><code>invincible</code> (allow/deny) - flaga sprawia, że gracze na terenie regionu są nieśmiertelni.</li>
+<li><code>fall-damage</code> (allow/deny) - flaga sprawia, że gracze nie odczuwają obrażeń od upadku na terenie regionu.</li>
+<li><code>blocked-cmds</code> (lista) - komendy, których użycie nie będzie dostępne na terenie regionu, np. <code>spawn,warp,home</code>.</li>
+<li><code>greeting</code> (tekst) - wiadomość, która wyświetli się graczowi gdy wejdzie na region.</li>
+<li><code>farewell</code> (tekst) - wiadomość, która wyświetli się graczowi gdy wyjdzie z regionu.</li>
+</ul>
+<p>Listę wszystkich flag możesz sprawdzić przy użyciu komendy <code>/rg flags [nazwa regionu]</code>.
+Istnieją także <a href="https://www.spigotmc.org/resources/worldguard-extra-flags.4823/">pluginy</a> dodawające więcej flag.</p>
+<h2 id="priorytet-regionow">Priorytet regionów</h2>
+<p>W pewnych miejscach może znajdować się równocześnie więcej niż jeden region. W takiej sytuacji gracz musi być dodany do każdego z nich, by móc na przykład niszczyć bloki. Jeśli regiony mają rózne priorytety, w danym miejscu będą obowiązywały zasady tylko regionu, który znajduje się tam i ma najwyższy priorytet.</p>
+<p><code>/rg setpriority &lt;nazwa regionu&gt; &lt;priorytet&gt;</code>
+Domyślnym priorytetem jest <code>0</code>, możesz go zedytować dla konkretnych regionów (zarówno na wartości dodatnie jak i ujemne).</p>
+<p>Przykładowe wykorzystanie:
+* Utworzenie skrzynki na spawnie, którą gracze mogą otwierać, podczas gdy wszystkie inne są zablokowane. W tym celu utwórz region <code>skrzynka</code> obejmujący tylko skrzynkę, następnie ustaw flagę umożliwiającą korzystanie ze skrzynek, <code>/rg flag skrzynka use allow</code> i ustaw priorytet tego regionu na wyższy niż w przypadku spawnu, np. <code>/rg setpriority skrzynka 10</code>.
+<img alt="1" src="../img/worldguard/5.png" />
+* Utworzenie strefy PVP na spawnie, gdzie gracze mogą ze sobą walczyć. W tym celu utwórz region <code>arena</code> obejmujący arenę, następnie ustaw flagę umożliwiającą walkę graczy <code>/rg flag arena pvp allow</code> i ustaw priorytet tego regionu na wyższy niż w przypadku spawnu, np. <code>/rg setpriority arena 10</code>.</p>
+<h2 id="dziedziczenie-parent">Dziedziczenie (parent)</h2>
+<p>W przypadku dziedziczenia określana jest struktura regionów (rodzic &lt;- dziecko). Dziedziczenie działa podobnie jak priorytety, jednak regiony znajdujące się niżej w strukturze dziedziczą zasady z regionów wyżej (parent).
+<code>/rg setparent &lt;nazwa regionu&gt; [nazwa regionu rodzica]</code>
+<code>nazwa regionu</code> to nazwa regionu, który będzie znajdował się niżej w strukturze (dziedziczył flagi i członków).
+<code>nazwa regionu rodzica</code> to nazwa regionu, który będzie znajdował się wyżej w strukturze (udostępniał flagi i członków).
+W celu usunięcia rodzica (odłączenia regionu), po prostu nie podawaj <code>nazwy regionu rodzica</code>.</p>
+<p>Przykładowe utworzenie hierarchii:
+<img alt="1" src="../img/worldguard/6.png" />
+1. Utwórz wszystkie zaplanowane regiony i ustaw dla nich odpowiednie flagi.
+2. Ustaw rodzica <code>miasto</code> dla regionów <code>sklep</code>, <code>centrum-handlowe</code>, <code>dzialki</code> i <code>salon</code>, np. <code>/rg setparent dzialki miasto</code>.
+3. Ustaw rodzica <code>sklep</code> dla regionów <code>sklep-1</code>, <code>sklep-2</code>, <code>sklep-3</code>, np. <code>/setparent sklep-1 sklep</code>.
+4. Ustaw rodzica <code>dzialki</code> dla regionów <code>dzialka-1</code>, <code>dzialka-2</code>, <code>dzialka3</code>, np. <code>/setparent dzialka-1 dzialki</code>.</p>
+<p>Przykładowe wykorzystanie:
+* Stworzenie sklepów na terenie centrum handlowego, z których mogą korzystać tylko konkretni gracze, jednak zarząd centrum powinien mieć także dostęp do wszystkich znajdujących się tam sklepów. W tym celu utwórz najpierw region <code>centrum-handlowe</code>, ustaw odpowiednie flagi i dodaj do niego członków zarządu. Następnie stwórz na jego terenie mniejsze regiony, obejmujące konkretne sklepy <code>sklep-1</code>, <code>sklep-2</code> i tak dalej. Dodaj właścicieli sklepów do konkretnych regionów i ustaw odpowiednie flagi. Przyporządkuj regiony sklepów jako dzieci centrum handlowego - <code>/rg setparent sklep-1 centrum-handlowe</code>, <code>/rg setparent sklep-2 centrum-handlowe</code> itp.
+* Utworzenie działek dla graczy na terenie miasta, do których powinni mieć dostęp osoby zajmujące się miastem - sposób postępowania jak wyżej.</p>
+<h2 id="teleportacja-do-regionu">Teleportacja do regionu</h2>
+<p>W celu przeteleportowania się do konkretnego regionu użyj komendy <code>/rg teleport &lt;nazwa regionu&gt;</code>.</p>
+<h2 id="region-globalny">Region globalny</h2>
+<p>Istnieje region <code>__global__</code>, który obejmuje cały świat. Domyślnie nie ma żadnych flag. Ma najniższy priorytet, więc utworzenie jakiegokolwiek regionu go nadpisze.
+Możesz go wykorzystać gdy chcesz zabronić graczom walczyć lub budować na konkretnym świecie, np. <code>/rg flag __global__ pvp deny</code>, <code>/rg flag __global__ build deny</code>.</p>
+<p>Przykładowe wykorzystanie:
+* Zablokowanie wybuchów spowodowanych przez creepery na świecie <code>world</code>. W tym celu przeteleportuj się na świat <code>world</code> i użyj komendy <code>/rg flag __global__ creeper-explosion deny</code>.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

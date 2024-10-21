@@ -5,11 +5,11 @@ Uwaga: Tworzenie projektów i wersji wymaga zakupionej usługi
 1.1 Wejdź do panelu zarządzania serwerem, następnie w marketplace, oraz kliknij
 odnośnik “Utwórz projekt”
 
-![image](img/marketplace/create_new_project.png)
+![image](img/marketplace_form/create_new_project.png)
 
 1.2 W kreatorze projektu wypełnij poszczególne pola
 
-![image](img/marketplace/new_project_form.png)
+![image](img/marketplace_form/new_project_form.png)
 
 1.2.1 **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu
 użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
@@ -44,7 +44,7 @@ projekt.
   problem rozwiązuje. Jeśli nie wiesz dokładnie jak działa Markdown skorzystaj z
   https://www.markdownguide.org/cheat-sheet/
 
-  ![image](img/marketplace/marketplace.png)
+  ![image](img/marketplace_form/marketplace.png)
 
   1.3 Gdy uzupełnisz swój projekt, kliknij przycisk “Opublikuj”, aby zatwierdzić zmiany.
 
@@ -56,7 +56,7 @@ projekt.
   zainstalować na swoim serwerze. Aby dodać wersję wejdź w swój projekt, następnie
   kliknij “Lista wersji”
 
-  ![image](img/marketplace/release_list.png)
+  ![image](img/marketplace_form/release_list.png)
 
   1.6 Kliknij “Dodaj wersję”
 
@@ -87,7 +87,7 @@ projekt.
   wymagane od użytkownika była powyższa wersja, ponieważ jeśli będzie posiadał
   starszą to mapa może zostać źle wczytana. Wybieram więc:
 
-  ![image](img/marketplace/provides_list.png)
+  ![image](img/marketplace_form/provides_list.png)
 
 Jeśli wiesz, że Twoje pliki wymagają przykładowo silnika spigot w wersji 1.21.1 to zaznacz spigot-api w wersji 1.21.1. Jeśli
 natomiast chcesz, aby zależność była weryfikowana razem z wersją builda wybierz opcję która kończy się "-" przykład: paper:1.12.1-97

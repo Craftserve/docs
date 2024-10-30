@@ -1,6 +1,6 @@
 # Kopie zapasowe, czyli Backupy
 
-Nieraz zdarza się, że pliki serwera ulegną uszkodzeniu, zostaną przypadkowo usunięte, wessane do czarnej dziury przez grieferów lub zjedzone przez psa\* (razem z pracą domową). Z pomocą przychodzą wtedy **kopie zapasowe**.
+Nieraz zdarza się, że pliki serwera ulegną uszkodzeniu, zostaną przypadkowo usunięte, wessane do czarnej dziury przez grieferów lub zjedzone przez psa (razem z pracą domową). Z pomocą przychodzą wtedy **kopie zapasowe**.
 
 Nie zrobimy za Ciebie kopii ważnych plików na Twoim komputerze (a warto!), ale wyręczymy Cię w kwestii Twojego serwera Minecraft na Craftserve.
 

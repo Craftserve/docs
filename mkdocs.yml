@@ -1,5 +1,5 @@
-site_name: Craftserve
-repo_url: https://github.com/Craftserve/docs
+site_name: Dokumentacja Craftserve
+repo_url: https://github.com/Craftserve/docs/tree/c3
 theme:
   name: material
   custom_dir: theme

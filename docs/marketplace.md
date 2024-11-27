@@ -220,10 +220,19 @@ split(version, "-")[0] > "1.19.2" ||
     (split(version, "-")[0] == "1.19.2" && int(split(version, "-")[1]) > 29);
 ```
 
+-   **semverInRange** (gotowa funkcja):
+
+> -   `semverInRange(tag, {WARTOŚĆ})` to funkcja pomocnicza, która pozwala sprawdzać wersje semantyczne (bez numeru builda np. 1.12.1, 1.23.2).
+> -   **`WARTOŚĆ`**: Wprowadzony warunek, który musi zostać spełniony względem wersji semantycznej paczki. np. gdy wersja semantyczna musi być większa, bądź równa 1.12.1 wtedy wartość powinna posiadać wartość `">=1.12.1"``.
+
+```js
+semverInRange(tag, ">=1.12.1");
+```
+
 -   Więcej o możliwościach [Expr](https://expr-lang.org/#documentation). dowiesz się [klikając tutaj](https://expr-lang.org/docs/language-definition), lub skorzystaj z pomocy na naszym [discordzie](https://discord.gg/craftserve-387222965131149313)
 
 -   **tag** jeśli wymagasz konkretnej wersji powinieneś użyć tego pola. Dla wartości pola **tag** np. 1.12.1 i wartości pola **nazwa** np. paper-api wymagasz paper-api w wersji 1.21.1 - `paper-api:1.12.1`,
-    **UWAGA! Pole tag powinno być puste, jeśli w pole "Wyrażenie" zawiera wartość.**
+    **UWAGA! Pole tag powinno być puste, jeśli pole "Wyrażenie" zawiera wartość.**
 
 -   **Etykiety** Możesz uwzględnić dodatkowo jakie etykiety (labels patrz: **przykład paczki**) muszą się znajdować, w paczce z pola **name**. Przykładowo dla klucza `craftserve.com/mod-loader` musi być to wartość `minecraft-java`,
 

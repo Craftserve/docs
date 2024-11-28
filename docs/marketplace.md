@@ -1,149 +1,106 @@
 ### Jak stworzyć paczkę na Craftserve Dodatki?
 
-Uwaga: Tworzenie projektów i wersji wymaga zakupionej usługi
+###### Uwaga: Tworzenie projektów i wersji wymaga zakupionej usługi. Zakup usługę już na teraz na [craftserve.com](https://craftserve.com/#offers)
 
-1.1 Wejdź do panelu zarządzania serwerem, następnie w marketplace, oraz kliknij
+-   [Tworzenie nowego projektu](#1-tworzenie-projektu)
+-   [Dodawanie wersji do projektu](#2-tworzenie-wersji)
+    -   [Opcje zaawansowane](#advanced)
+-   [Sekcja 2: Zaawansowane funkcje](#sekcja-2-zaawansowane-funkcje)
 
-odnośnik “Utwórz projekt”
+#### 1. Tworzenie projektu
 
-![image](img/marketplace_form/marketplace_create_project_button.png)
+##### Aby Twój projekt był możliwy do pobrania, oraz aby użytkownicy mogli ją zobaczyć w galerii dodatków należy najpierw utworzyć nowy projekt.
 
-1.2 W kreatorze projektu wypełnij poszczególne pola
+&nbsp;&nbsp;1.1 Wejdź do panelu zarządzania serwerem, następnie w marketplace, oraz kliknij odnośnik “Utwórz projekt”
+&nbsp;&nbsp;![image](img/marketplace_form/marketplace_create_project_button.png)
 
-![image](img/marketplace_form/marketplace_create_project.png)
+&nbsp;&nbsp;1.2 W kreatorze projektu wypełnij poszczególne pola
+&nbsp;&nbsp;![image](img/marketplace_form/marketplace_create_project.png)
 
-1.2.1 **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
 
-użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.2 **Skrót** &bull; te pole wypełnia się automatycznie względem nazwy którą wypełnisz,odpowiada ono za identyfikacje projektu w linku.
 
-1.2.2 **Skrót** - te pole wypełnia się automatycznie względem nazwy którą wypełnisz,
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.3 **Krótki opis** – Pojawia się po kliknięciu w projekt nad przyciskiem "Zagraj teraz" lub "Zainstaluj najnowszą wersję" (w zależności od typu projektu). Wyświetla się również w kafelku w liście zainstalowanych paczek w widoku ustawień serwera.
 
-odpowiada ono za identyfikacje projektu w linku.
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.4 **Ikona projektu** &bull; przyciąga uwagę i jest niejako wizytówką Twojej paczki! Pojawia się w kafelku w liście zainstalowanych paczek w widoku ustawień, oraz na podstronie "Dodatki", gdy paczka ma inną kategorię projektu niż "Paczka serwera"
 
-1.2.3 **Krótki opis** – Pojawia się po kliknięciu w projekt nad przyciskiem "Zagraj teraz" lub "Zainstaluj najnowszą wersję" (w zależności od typu projektu). Wyświetla się również w kafelku w liście zainstalowanych paczek w widoku ustawień serwera.
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.5 **Widoczność projektu**
 
-1.2.4 **Ikona projektu** - przyciąga uwagę i jest niejako wizytówką Twojej paczki! Pojawia się w kafelku w liście zainstalowanych paczek w widoku ustawień, oraz na podstronie "Dodatki", gdy paczka ma inną kategorię projektu niż "Paczka serwera"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Publiczny** : Dostępny dla każdego, wyświetla się w liście paczek
+w galerii dodatków
 
-1.2.5 **Widoczność projektu**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Niepubliczny** : Nie wyświetla się w liście paczek w galerii dodatków, ale jest możliwy
+do udostępnienia przez link.
 
--   **Publiczny** : Dostępny dla każdego, wyświetla się w liście paczek
-    w galerii dodatków
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Prywatny** : Dostępny tylko dla Ciebie.
 
--   **Niepubliczny** : Nie wyświetla się w liście paczek w galerii dodatków, ale jest możliwy
-    do udostępnienia przez link.
+> Jako autor projektu, zawsze będziesz widział swój projekt w liście
+> projektów w galerii dodatków. Bez względu jaką widoczność wybierzesz
 
--   **Prywatny** : Dostępny tylko dla Ciebie.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.6 **Kategoria projektu** – powinna jak najbliżej precyzować czym jest Twoja paczka. Służy do wyszukiwania paczek w galerii dodatków, oraz uzależnia w jakim wariancie wyświetli się Twój projekt. Wyróżniamy dwa warianty.
 
-\*\*Jako autor projektu, zawsze będziesz widział swój projekt w liście
-projektów w galerii dodatków. Bez względu jaką widoczność wybierzesz.\*\*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_NIEOZNACZONYCH_** jako "Paczka serwera"
+&nbsp;&nbsp;&nbsp;&nbsp;![image](img/marketplace_form/marketplace_row_variant.png)
 
-1.2.6 **Kategoria projektu** – powinna jak najbliżej precyzować czym jest Twoja paczka. Służy do wyszukiwania paczek w galerii dodatków, oraz uzależnia w jakim wariancie wyświetli się Twój projekt. Wyróżniamy dwa warianty.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_OZNACZONYCH_** jako "Paczka serwera"
+&nbsp;&nbsp;&nbsp;&nbsp;![image](img/marketplace_form/marketplace_card_variant.png)
 
--   Wariant dla projektów NIEOZNACZONYCH jako "Paczka serwera"
+&nbsp;&nbsp;&nbsp;&nbsp;**Uwaga:** Gdy projekt ma ustawioną kategorię jako "Paczka serwera" to w przypadku, gdy użytkownik będzie chciał zainstalować dany projekt wymuszona zostanie reinstalacja i formatowanie serwera przed instalacją docelowej paczki.
 
-[image](img/marketplace_form/marketplace_card_variant.png)
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.7 **Gra** - Określa do jakiej gry jest przeznaczona Twoja paczka.
 
--   Wariant dla projektów OZNACZONYCH jako "Paczka serwera"
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.8 **Wideo** - Odtwarza się po najechaniu na kafelek projektu, oraz na podstronie Twojego projektu (opcjonalne). Powinno być w formacie WebM, być w maksymalnej rozdzielczości 720p, maks. 30fps, oraz rozmiar pliku nie powinien przekraczać 50 MiB.
 
-[image](img/marketplace_form/marketplace_row_variant.png)
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.9 **Miniatura** - Wyświetla się na kafelku projektu w galerii dodatków, oraz w widoku wybranego projektu, gdy nie zostało dodane wideo.
 
-**Uwaga:** Gdy projekt ma ustawioną kategorię jako "Paczka serwera" to w przypadku, gdy użytkownik będzie chciał zainstalować dany projekt wymuszona zostanie reinstalacja i formatowanie serwera przed instalacją docelowej paczki.
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.10 **Galeria** - Wyświetla się na podstronie Twojego projektu (opcjonalne).
 
-1.2.7 **Gra** - Określa do jakiej gry jest przeznaczona Twoja paczka.
+&nbsp;&nbsp;&nbsp;&nbsp;1.2.11 **Szczegółowy opis projektu** – skorzystaj z przyjaznego edytora markdown, aby w pełni opisać swój projekt. Uwzględnij czego wymaga Twoja paczka, oraz na czym się skupia, lub jaki problem rozwiązuje.
 
-1.2.8 **Wideo** - Odtwarza się po najechaniu na kafelek projektu, oraz na podstronie Twojego projektu (opcjonalne). Powinno być w formacie WebM, być w maksymalnej rozdzielczości 720p, maks. 30fps, oraz rozmiar pliku nie powinien przekraczać 50 MiB.
+&nbsp;&nbsp;&nbsp;&nbsp;![image](img/marketplace_form/marketplace_project_details.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](img/marketplace_form/marketplace_landing.png)
 
-1.2.9 **Miniatura** - Wyświetla się na kafelku projektu w galerii dodatków, oraz w widoku wybranego projektu, gdy nie zostało dodane wideo.
+&nbsp;&nbsp;1.3 Gdy uzupełnisz swój projekt, kliknij przycisk “Opublikuj”, aby zatwierdzić zmiany.
 
-1.2.10 **Galeria** - Wyświetla się na podstronie Twojego projektu (opcjonalne).
-
-1.2.11 **Szczegółowy opis projektu** – skorzystaj z przyjaznego edytora markdown, aby w pełni opisać
-
-swój projekt. Uwzględnij czego wymaga Twoja paczka, oraz na czym się skupia, lub jaki
-
-problem rozwiązuje.
-
-![image](img/marketplace_form/marketplace_project_details.png)
-![image](img/marketplace_form/marketplace_landing.png)
-
-1.3 Gdy uzupełnisz swój projekt, kliknij przycisk “Opublikuj”, aby zatwierdzić zmiany.
-
-1.4 Gotowe! Aby zobaczyć swój projekt wejdź na "Dodatki" i wyszukaj go w
+&nbsp;&nbsp;1.4 Gotowe! Aby zobaczyć swój projekt wejdź na "Dodatki" i wyszukaj go w
 wyszukiwarce.
 
-1.5 Masz już swój projekt, ale brakuje w nim wersji, czyli brakuje dodanych plików do
+#### 2. Tworzenie wersji
 
-projektu, które zostaną pobrane w momencie gdy użytkownik będzie chciał ją
+###### Masz już swój projekt, ale brakuje w nim wersji, czyli brakuje dodanych plików do projektu, które zostaną pobrane w momencie gdy użytkownik będzie chciał ją zainstalować na swoim serwerze. Aby dodać wersję wejdź w swój projekt, następnie kliknij “Lista wersji”
 
-zainstalować na swoim serwerze. Aby dodać wersję wejdź w swój projekt, następnie
+&nbsp;&nbsp;![image](img/marketplace_form/marketplace_project_details_releases.png)
 
-kliknij “Lista wersji”
+&nbsp;&nbsp;2.1 Kliknij “Dodaj wersję”
 
-![image](img/marketplace_form/marketplace_project_details_releases.png)
+&nbsp;&nbsp;![image](img/marketplace_form/marketplace_add_release_button.png)
 
-1.6 Kliknij “Dodaj wersję”
+&nbsp;&nbsp;2.2 Kreator wersji projektu składa się z następujących pól:
 
-![image](img/marketplace_form/marketplace_add_release_button.png)
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.1 **Typ wersji**
 
-1.7 Kreator wersji projektu składa się z następujących pól:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Stable** oznacza wersję stabilną, która przeszła pełne testy. Jest ona skierowana do użytkowników którzy oczekują w pełni działającej paczki.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Private** oznacza, że wersja jest prywatna, skierowana dla danej grupy odbiorców np. Programistów, lub Twoich testerów. Nie musi być stabilna, może wymagać np. Dodatkowych testów.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Latest** to najnowsza wersja, może być stabilna lub nie. Kierowana dla użytkowników, którzy chcą najnowszych funkcji.
 
-1.7.1 **Typ wersji**
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.2 **Wersja projektu** np. Numer. To twoja decyzja jak oznaczasz swoje wersje. Te pole ma swoje ograniczenia i nie pozwala na użycie białych znaków (np. spacji) i znaków specjalnych (np. $, @, !).
 
--   **Stable** oznacza wersję stabilną, która przeszła pełne testy. Jest ona
+&nbsp;&nbsp;&nbsp;&nbsp;2.2.3 **Serwer** – wybierz serwer z którego chcesz udostępnić pliki do paczki. Wybrane
+pliki zostaną zainstalowane na serwerze użytkownika, który zainstaluje Twoją paczkę. 1.7.4 **Wybierz paczki**, które mają zostać zainstalowane przed zainstalowaniem Twojej paczki. Wykrywamy automatycznie jakie paczki posiadasz zainstalowane na swoim serwerze z którego wgrywasz pliki. Zaznacz jeśli Twoja paczka wymaga do działania jakiejś innej paczki, lub konkretnej wersji silnika.
 
-skierowana do użytkowników którzy oczekują w pełni działającej paczki.
-
--   **Private** oznacza, że wersja jest prywatna, skierowana dla danej grupy
-
-odbiorców np. Programistów, lub Twoich testerów. Nie musi być stabilna, może
-
-wymagać np. Dodatkowych testów.
-
--   **Latest** to najnowsza wersja, może być stabilna lub nie. Kierowana dla
-
-użytkowników, którzy chcą najnowszych funkcji.
-
-1.7.2 **Wersja projektu** np. Numer. To twoja decyzja jak oznaczasz swoje wersje. Te pole ma swoje ograniczenia i nie pozwala na użycie białych znaków (np. spacji) i znaków specjalnych (np. $, @, !).
-
-1.7.3 **Serwer** – wybierz serwer z którego chcesz udostępnić pliki do paczki. Wybrane
-
-pliki zostaną zainstalowane na serwerze użytkownika, który zainstaluje Twoją paczkę.
-
-1.7.4 **Wybierz paczki**, które mają zostać zainstalowane przed zainstalowaniem Twojej
-
-paczki. Wykrywamy automatycznie jakie paczki posiadasz zainstalowane na swoim
-
-serwerze z którego wgrywasz pliki. Zaznacz jeśli Twoja paczka wymaga do działania
-
-jakiejś innej paczki, lub konkretnej wersji silnika.
-
--   **Przykład** : Moja paczka to mapa serwera z kilkoma dodatkowymi pluginami. Wiem, że
-
-moje pluginy wymagają silnika Paper na wersji 1.12.1. Dodatkowo chciałbym, aby
-
-wymagane od użytkownika była powyższa wersja, ponieważ jeśli będzie posiadał
-
-starszą to mapa może zostać źle wczytana. Wybieram więc:
+> **Przykład** : Moja paczka to mapa serwera z kilkoma dodatkowymi pluginami. Wiem, że moje pluginy wymagają silnika Paper na wersji 1.12.1. Dodatkowo chciałbym, aby wymagane od użytkownika była powyższa wersja, ponieważ jeśli będzie posiadał starszą to mapa może zostać źle wczytana. Wybieram więc:
 
 ![image](img/marketplace_form/provides_list.png)
 
-Jeśli wiesz, że Twoje pliki wymagają przykładowo silnika spigot w wersji 1.21.1 to zaznacz spigot-api w wersji 1.21.1. Jeśli
+&nbsp;&nbsp;&nbsp;&nbsp;Jeśli wiesz, że Twoje pliki wymagają przykładowo silnika spigot w wersji 1.21.1 to zaznacz spigot-api w wersji 1.21.1. Jeśli natomiast chcesz, aby zależność była weryfikowana razem z wersją builda wybierz opcję która kończy się "-" przykład: paper:1.12.1-97 Wymagane wtedy będzie, aby użytkownik posiadał paczkę spigot w wersji 1.21.1 o buildzie 97. Gdy użytkownik będzie chciał zainstalować Twoją paczkę zostanie sprawdzona kompatybilność z jego serwerem względem tego jakie wymagania zaznaczysz.
 
-natomiast chcesz, aby zależność była weryfikowana razem z wersją builda wybierz opcję która kończy się "-" przykład: paper:1.12.1-97
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a id="advanced"></a> 2.2.4 **Opcje zaawansowane (opcjonalne)** - Po kliknięciu w **"Pokaż opcje zaawansowane"** pojawi się przycisk "Dodaj zależność". Po kliknięciu masz możliwość **dodania własnej zależności**. Formularz składa się z 4 pól:
 
-Wymagane wtedy będzie, aby użytkownik posiadał paczkę spigot w wersji 1.21.1 o buildzie 97.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Nazwa** - Powinna określać nazwę paczki do której będziesz konfigurował niestandardowe wymagania np. "paper-api".
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Wyrażenie** odpowiada za logikę odnośnie weryfikowania zależności. Pole korzysta z składni języka wyrażeń [Expr](https://expr-lang.org/#documentation). W tym polu masz dostęp do wszystkich wartości paczki, którą wybrałeś w polu **nazwa**. Wyrażenie ZAWSZE powinno zwracać wartość logiczną (true/false). Przykładowy obiekt paczki paper:
 
-Gdy użytkownik będzie chciał zainstalować Twoją paczkę zostanie sprawdzona
-
-kompatybilność z jego serwerem względem tego jakie wymagania zaznaczysz.
-
-1.7.4.1 **Opcje zaawansowane (opcjonalne)** - Po kliknięciu w **"Pokaż opcje zaawansowane"** pojawi się przycisk "Dodaj zależność". Po kliknięciu masz możliwość **dodania własnej zależności**. Formularz składa się z 4 pól:
-
--   **nazwa** - Powinna określać nazwę paczki do której będziesz konfigurował niestandardowe wymagania np. "paper-api".
-
--   **Wyrażenie** odpowiada za logikę odnośnie weryfikowania zależności. Pole korzysta z składni języka wyrażeń [Expr](https://expr-lang.org/#documentation). W tym polu masz dostęp do wszystkich wartości paczki, którą wybrałeś w polu **nazwa**. Wyrażenie ZAWSZE powinno zwracać wartość logiczną (true/false). Przykładowy obiekt paczki paper:
-
-**Przykład paczki**
+> **Przykład paczki**
 
 ```json
 {
@@ -194,9 +151,9 @@ kompatybilność z jego serwerem względem tego jakie wymagania zaznaczysz.
 }
 ```
 
-Korzystając z wiedzy jak wygląda struktura paczki możemy **zadeklarować zależności** przykładowo:
+> Korzystając z wiedzy jak wygląda struktura paczki możemy **zadeklarować zależności** przykładowo:
 
--   Sprawdź czy paczka zawiera któreś z api ładujących pluginy.
+&nbsp;&nbsp;&bull; Sprawdź czy paczka zawiera któreś z api ładujących pluginy.
 
 > -   **||** - Operator OR - oznacza on, że wyrażenie zwróci `true`, jeśli **przynajmniej jeden z warunków** połączonych tym operatorem jest prawdziwy.
 > -   **`wartość`**: Element, który chcesz sprawdzić (np. `"spigot-api"`).
@@ -207,7 +164,7 @@ Korzystając z wiedzy jak wygląda struktura paczki możemy **zadeklarować zale
 "spigot-api" in provides || "bukkit-api" in provides || "paper-api" in provides; // Zwraca wartość logiczną
 ```
 
--   Sprawdź czy paczka ma wersje nowszą niż (włącznie z numerem builda).
+&nbsp;&nbsp;-&bull; Sprawdź czy paczka ma wersje nowszą niż (włącznie z numerem builda).
 
 > -   **&&** - Operator AND - oznacza on, że wyrażenie zwróci `true` tylko w tedy gdy A i B są prawdziwe **A && B**. np. dla wyrażenia A: 10 > 5 i dla wyrażenia B: 3 < 4 `10 > 5 && 3 < 4` zwróci **true**.
 > -   **`split(version, "-")`**: Dzieli ciąg `version` na części. Wynik to tablica: `"1.21.3-29"` → `["1.21.3", "29"]`.
@@ -220,7 +177,7 @@ split(version, "-")[0] > "1.19.2" ||
     (split(version, "-")[0] == "1.19.2" && int(split(version, "-")[1]) > 29);
 ```
 
--   **semverInRange** (gotowa funkcja):
+&nbsp;&nbsp;&bull; **semverInRange** (gotowa funkcja):
 
 > -   `semverInRange(tag, {WARTOŚĆ})` to funkcja pomocnicza, która pozwala sprawdzać wersje semantyczne (bez numeru builda np. 1.12.1, 1.23.2).
 > -   **`WARTOŚĆ`**: Wprowadzony warunek, który musi zostać spełniony względem wersji semantycznej paczki. np. gdy wersja semantyczna musi być większa, bądź równa 1.12.1 wtedy wartość powinna posiadać wartość `">=1.12.1"``.
@@ -229,15 +186,15 @@ split(version, "-")[0] > "1.19.2" ||
 semverInRange(tag, ">=1.12.1");
 ```
 
--   Więcej o możliwościach [Expr](https://expr-lang.org/#documentation). dowiesz się [klikając tutaj](https://expr-lang.org/docs/language-definition), lub skorzystaj z pomocy na naszym [discordzie](https://discord.gg/craftserve-387222965131149313)
+&bull; Więcej o możliwościach [Expr](https://expr-lang.org/#documentation). dowiesz się [klikając tutaj](https://expr-lang.org/docs/language-definition), lub skorzystaj z pomocy na naszym [discordzie](https://discord.gg/craftserve-387222965131149313)
 
--   **tag** jeśli wymagasz konkretnej wersji powinieneś użyć tego pola. Dla wartości pola **tag** np. 1.12.1 i wartości pola **nazwa** np. paper-api wymagasz paper-api w wersji 1.21.1 - `paper-api:1.12.1`,
-    **UWAGA! Pole tag powinno być puste, jeśli pole "Wyrażenie" zawiera wartość.**
+&bull; **tag** jeśli wymagasz konkretnej wersji powinieneś użyć tego pola. Dla wartości pola **tag** np. 1.12.1 i wartości pola **nazwa** np. paper-api wymagasz paper-api w wersji 1.21.1 - `paper-api:1.12.1`,
+**UWAGA! Pole tag powinno być puste, jeśli pole "Wyrażenie" zawiera wartość.**
 
--   **Etykiety** Możesz uwzględnić dodatkowo jakie etykiety (labels patrz: **przykład paczki**) muszą się znajdować, w paczce z pola **name**. Przykładowo dla klucza `craftserve.com/mod-loader` musi być to wartość `minecraft-java`,
+&bull; **Etykiety** Możesz uwzględnić dodatkowo jakie etykiety (labels patrz: **przykład paczki**) muszą się znajdować, w paczce z pola **name**. Przykładowo dla klucza `craftserve.com/mod-loader` musi być to wartość `minecraft-java`,
 
-1.7.5 **Szczegółowy opis** : Tutaj możesz opisać dokładnie czego wymaga Twoja wersja, oraz opisać co zmieniło się np. Względem starszej wersji. Pamiętaj, aby dokładnie uzupełniać swoje opisy.
+&nbsp;&nbsp;2.2.5 **Szczegółowy opis** : Tutaj możesz opisać dokładnie czego wymaga Twoja wersja, oraz opisać co zmieniło się np. Względem starszej wersji. Pamiętaj, aby dokładnie uzupełniać swoje opisy.
 
-1.7.6 Gdy wszystkie pola zostały uzupełnione, kliknij przycisk “ **Dodaj wersję** ”.
+&nbsp;&nbsp;2.2.6 Gdy wszystkie pola zostały uzupełnione, kliknij przycisk “ **Dodaj wersję** ”.
 
-1.8 Wersja została utworzona i jest teraz dostępna do pobrania. **Gratulacje**!
+2.3 Wersja została utworzona i jest teraz dostępna do pobrania. **Gratulacje**!

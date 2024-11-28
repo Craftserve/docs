@@ -2,10 +2,10 @@
 
 ###### Uwaga: Tworzenie projektów i wersji wymaga zakupionej usługi. Zakup usługę już na teraz na [craftserve.com](https://craftserve.com/#offers)
 
--   [Tworzenie nowego projektu](#1-tworzenie-projektu)
--   [Dodawanie wersji do projektu](#2-tworzenie-wersji)
+-   [Tworzenie nowego projektu galerii dodatków](#1-tworzenie-projektu)
+    -   [Pola formularza, wstawianie filmów i zdjęć](#form_fields)
+-   [Dodawanie wersji do utworzonego projektu](#2-tworzenie-wersji)
     -   [Opcje zaawansowane](#advanced)
--   [Sekcja 2: Zaawansowane funkcje](#sekcja-2-zaawansowane-funkcje)
 
 #### 1. Tworzenie projektu
 
@@ -40,14 +40,14 @@ do udostępnienia przez link.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.6 **Kategoria projektu** – powinna jak najbliżej precyzować czym jest Twoja paczka. Służy do wyszukiwania paczek w galerii dodatków, oraz uzależnia w jakim wariancie wyświetli się Twój projekt. Wyróżniamy dwa warianty.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_NIEOZNACZONYCH_** jako "Paczka serwera"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_NIEOZNACZONYCH_** jako "Paczka serwera"
 &nbsp;&nbsp;&nbsp;&nbsp;![image](img/marketplace_form/marketplace_row_variant.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_OZNACZONYCH_** jako "Paczka serwera"
 &nbsp;&nbsp;&nbsp;&nbsp;![image](img/marketplace_form/marketplace_card_variant.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Uwaga:** Gdy projekt ma ustawioną kategorię jako "Paczka serwera" to w przypadku, gdy użytkownik będzie chciał zainstalować dany projekt wymuszona zostanie reinstalacja i formatowanie serwera przed instalacją docelowej paczki.
-
+<a id="form_fields"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.7 **Gra** - Określa do jakiej gry jest przeznaczona Twoja paczka.
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.8 **Wideo** - Odtwarza się po najechaniu na kafelek projektu, oraz na podstronie Twojego projektu (opcjonalne). Powinno być w formacie WebM, być w maksymalnej rozdzielczości 720p, maks. 30fps, oraz rozmiar pliku nie powinien przekraczać 50 MiB.
@@ -186,12 +186,12 @@ split(version, "-")[0] > "1.19.2" ||
 semverInRange(tag, ">=1.12.1");
 ```
 
-&bull; Więcej o możliwościach [Expr](https://expr-lang.org/#documentation). dowiesz się [klikając tutaj](https://expr-lang.org/docs/language-definition), lub skorzystaj z pomocy na naszym [discordzie](https://discord.gg/craftserve-387222965131149313)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Więcej o możliwościach [Expr](https://expr-lang.org/#documentation). dowiesz się [klikając tutaj](https://expr-lang.org/docs/language-definition), lub skorzystaj z pomocy na naszym [discordzie](https://discord.gg/craftserve-387222965131149313)
 
-&bull; **tag** jeśli wymagasz konkretnej wersji powinieneś użyć tego pola. Dla wartości pola **tag** np. 1.12.1 i wartości pola **nazwa** np. paper-api wymagasz paper-api w wersji 1.21.1 - `paper-api:1.12.1`,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **tag** jeśli wymagasz konkretnej wersji powinieneś użyć tego pola. Dla wartości pola **tag** np. 1.12.1 i wartości pola **nazwa** np. paper-api wymagasz paper-api w wersji 1.21.1 - `paper-api:1.12.1`,
 **UWAGA! Pole tag powinno być puste, jeśli pole "Wyrażenie" zawiera wartość.**
 
-&bull; **Etykiety** Możesz uwzględnić dodatkowo jakie etykiety (labels patrz: **przykład paczki**) muszą się znajdować, w paczce z pola **name**. Przykładowo dla klucza `craftserve.com/mod-loader` musi być to wartość `minecraft-java`,
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Etykiety** Możesz uwzględnić dodatkowo jakie etykiety (labels patrz: **przykład paczki**) muszą się znajdować, w paczce z pola **name**. Przykładowo dla klucza `craftserve.com/mod-loader` musi być to wartość `minecraft-java`,
 
 &nbsp;&nbsp;2.2.5 **Szczegółowy opis** : Tutaj możesz opisać dokładnie czego wymaga Twoja wersja, oraz opisać co zmieniło się np. Względem starszej wersji. Pamiętaj, aby dokładnie uzupełniać swoje opisy.
 

@@ -81,7 +81,9 @@ wyszukiwarce.
 &nbsp;&nbsp;&nbsp;&nbsp;2.2.1 **Typ wersji**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Stable** oznacza wersję stabilną, która przeszła pełne testy. Jest ona skierowana do użytkowników którzy oczekują w pełni działającej paczki.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Private** oznacza, że wersja jest prywatna, skierowana dla danej grupy odbiorców np. Programistów, lub Twoich testerów. Nie musi być stabilna, może wymagać np. Dodatkowych testów.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; **Latest** to najnowsza wersja, może być stabilna lub nie. Kierowana dla użytkowników, którzy chcą najnowszych funkcji.
 
 &nbsp;&nbsp;&nbsp;&nbsp;2.2.2 **Wersja projektu** np. Numer. To twoja decyzja jak oznaczasz swoje wersje. Te pole ma swoje ograniczenia i nie pozwala na użycie białych znaków (np. spacji) i znaków specjalnych (np. $, @, !).

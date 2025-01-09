@@ -2,7 +2,7 @@
 
 ### Wymagania
 
-* Serwer Minecraft na Craftserve działający na pakiecie Diamond 
+* Serwer Minecraft na Craftserve działający na pakiecie Amethyst 
 
 <a id="server"></a>
 ### Instalacja na serwerze

@@ -7,16 +7,16 @@
 <a id="server"></a>
 ### Instalacja na serwerze
 
-1. Zainstaluj paczkę YFLsmp z marketplace.
+1. Zainstaluj paczkę [YFLsmp z marketplace](https://craftserve.com/m/yflsmp-s1).
     - Możesz to zrobić w zakładce **Dodatki** wyszukując frazę `yfl`.
 
-      ![image](img/bettermc/select_yfl_engine.png)
-    - Po wejściu w odpowiednią paczkę należy kliknąć zielony przycisk **Zainstaluj najnowszą wersję**.
+      ![image](img/yfl/marketplace_search_yfl.png)
+    - Po wejściu w odpowiednią paczkę należy kliknąć zielony przycisk **ZAGRAJ TERAZ**.
 
-      ![image](img/bettermc/save_engine.png)
+      ![image](img/yfl/marketplace_install_version.png)
 
-2. Jeśli chciałbyś skorzystać z voicechatu, powiadom o tym support([utwórz nowe zgłoszenie](https://craftserve.com/contact)).
-3. Uruchom serwer.
+2. Uruchom serwer.
+3. Jeśli chciałbyś skorzystać z voicechatu, powiadom o tym support([utwórz nowe zgłoszenie](https://craftserve.com/contact)).
 
 <a id="client"></a>
 ### Instalacja na komputerach graczy

@@ -6,7 +6,9 @@
 
 <hr><br><br/>
 
-# --> [Instalacja NA NOWYM PANELU CRAFTSERVE.COM](https://github.com/Craftserve/docs/blob/c3/docs/yflsmp.md) <--
+# --> [Instalacja NA NOWYM PANELU CRAFTSERVE.COM](https://craftserve.com/m/yflsmp-s1) <--
+
+Więcej szczegółów tutaj: [KLIK](https://github.com/Craftserve/docs/blob/c3/docs/yflsmp.md)
 <br><br><hr/>
 
 <a id="server"></a>

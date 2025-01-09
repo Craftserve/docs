@@ -7,24 +7,16 @@
 <a id="server"></a>
 ### Instalacja na serwerze
 
-1. Usuń obecne pliki map z serwera. Można posłużyć się funkcją **Formatuj** -> **Wszystkie pliki**, znajdziesz ją w ustawieniach.
-   *Uwaga: Formatowanie serwera spowoduje utratę wszystkich obecnych plików, w tym wszystkich elementów zapisanych na mapie.*
-
-   ![image](img/bettermc/format.png)
-2. Wybierz silnik YFLsmp.
-    - Silnik ten możesz ustawić w zakładce **Ustawienia** -> **Silniki** -> **Kwadratowa Masakra** panelu Craftserve.
+1. Zainstaluj paczkę YFLsmp z marketplace.
+    - Możesz to zrobić w zakładce **Dodatki** wyszukując frazę `yfl`.
 
       ![image](img/bettermc/select_yfl_engine.png)
-    - Należy pamiętać o zapisaniu silnika po jego wyborze. W tym celu udaj się na dół strony i kliknij przycisk **Zapisz**.
+    - Po wejściu w odpowiednią paczkę należy kliknąć zielony przycisk **Zainstaluj najnowszą wersję**.
 
       ![image](img/bettermc/save_engine.png)
 
-3. Przejdź do panelu Craftserve i wybierz zakładkę **Pliki**.
-4. Odszukaj folder `config/PlasmoVoice` oraz otwórz plik `server.yml`.
-   - w polu `udp.port` ustaw wartość pomiędzy 8000 a 10000.
-   
-     ![image](img/bettermc/voice_udp_port.png)
-5. Uruchom serwer.
+2. Jeśli chciałbyś skorzystać z voicechatu, powiadom o tym support([utwórz nowe zgłoszenie](https://craftserve.com/contact)).
+3. Uruchom serwer.
 
 <a id="client"></a>
 ### Instalacja na komputerach graczy

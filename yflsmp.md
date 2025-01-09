@@ -2,7 +2,12 @@
 
 ### Wymagania
 
-* Serwer Minecraft na Craftserve działający na pakiecie Diamond 
+* Serwer Minecraft na Craftserve działający na pakiecie Diamond
+
+<hr><br><br/>
+
+# --> [Instalacja NA NOWYM PANELU CRAFTSERVE.COM](https://github.com/Craftserve/docs/blob/c3/docs/yflsmp.md) <--
+<br><br><hr/>
 
 <a id="server"></a>
 ### Instalacja na serwerze

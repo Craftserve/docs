@@ -9,18 +9,18 @@
 1. Wybierz odpowiedni silnik Fabric dla wersji modpacka BetterMC (w tym przypadku: 1.19.2).
    - Silnik Fabric możesz ustawić w zakładce **Ustawienia** -> **Silnik** -> **Fabric** panelu Craftserve.
    
-     ![image](img/bettermc/select_engine.png)
+     ![image](../img/bettermc/select_engine.png)
    - Potwierdź formatowanie serwera, aby zapewnić brak problemów w dalszym toku instalacji. Jeśli naprawdę potrzebujesz zapisać jakieś pliki, 
    *Uwaga: Formatowanie serwera spowoduje utratę wszystkich plików, w tym wszystkich elementów zapisanych na mapie.*
    
-     ![image](img/bettermc/save_engine.png)
+     ![image](../img/bettermc/save_engine.png)
 2. Pobierz BetterMC z [**TEJ STRONY**](https://www.curseforge.com/minecraft/modpacks/better-mc-fabric/files). Pamiętaj, aby pobrać serwerową wersję paczki, czyli "Server Pack".
 
-    ![image](img/bettermc/download_serverpack.png)
+    ![image](../img/bettermc/download_serverpack.png)
 3. Pobranego zipa wgraj na serwer przy użyciu [FTP](ftp.md).
 4. Przejdź do panelu Craftserve i wybierz zakładkę **Pliki**.
 5. Odszukaj wgrany plik zip i kliknij na niego prawym przyciskiem myszy. Z listy wybierz opcję **Rozpakuj**.
-    ![image](img/bettermc/unzip.png)
+    ![image](../img/bettermc/unzip.png)
 
 6. Po rozpakowaniu możesz usunąć plik zip.
 7.  Uruchom serwer i poczekaj na jego uruchomienie.

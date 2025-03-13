@@ -25,7 +25,7 @@ Możesz je stworzyć na trzy sposoby:
 * Wpisać `//hpos1` dla punktu pierwszego i `//hpos2` dla punktu drugiego. Są one tworzone w miejscach gdzie patrzysz w czasie wpisywania komend.
 
 Prostopadłościan powstanie w wyniku połączenia tych dwóch punktów.
-![1](img/worldedit/1.png)
+![1](../img/worldedit/1.png)
 
 #### Edycja zaznaczenia
 Jeśli chcesz zedytować stworzony wcześniej prostopadłościan możesz zrobić to na kilka różnych sposobów:
@@ -50,7 +50,7 @@ Bloki możesz wpisać w następujące sposoby:
 * `25%stone,25%dirt,50%bedrock` - zamieni się na 25% kamienia, 25% ziemii i 50% bedrocka
 
 Dla przykładu: `//set dirt`, `//set 10%glass,90%stone`, `//set air`
-![1](img/worldedit/2.png)
+![1](../img/worldedit/2.png)
 
 
 #### Zamienianie zaznaczenia
@@ -62,22 +62,22 @@ Dla przykładu `//replace dirt,stone 20%dirt,20%sand,60%stone` zamieni wszystkie
 Używając komendy `//walls <bloki>` tworzysz ściany wokół zaznaczenia.
 
 Dla przykładu `//walls stone,dirt` stworzy ścianę z losowo występującego kamienia i ziemii.
-![1](img/worldedit/3.png)
+![1](../img/worldedit/3.png)
 
 #### Kopiowanie i schowek
 Po zaznaczeniu terenu, używając komendy `//copy` możesz go skopiować.
 
 Używając komendy `//paste` wklejasz go.
 * **UWAGA** Ważne jest to w którym miejscu stoisz wpisując komendę `//copy` - gdy stałeś np. 5 bloków przez strukturą, po wpisaniu komendy `//paste` struktura wklei się 5 bloków przed tobą.
-![1](img/worldedit/4.png)
+![1](../img/worldedit/4.png)
 
 Używając komendy `//rotate <ilość-stopni>` obracasz strukturę w schowku.
 Dla przykładu `//copy`, `//rotate 90`, `//paste`.
-![1](img/worldedit/5.png)
+![1](../img/worldedit/5.png)
 
 Używając komendy `//flip [kierunek]` przewracasz strukturę w danym kierunku (np. lustrzanie).
 Dla przykładu `//copy`, `//flip`, `//paste`.
-![1](img/worldedit/6.png)
+![1](../img/worldedit/6.png)
 
 ### Generowanie
 Istnieją także komendy umożliwiające generowanie danych struktur w miejscu gdzie stoisz, nie wymagają one zaznaczania.
@@ -85,20 +85,20 @@ Istnieją także komendy umożliwiające generowanie danych struktur w miejscu g
 #### Tworzenie kulii/sfery
 Używając komendy `//sphere <bloki> <promień>` stworzysz kulę, jej środek będzie w miejscu gdzie stoisz.
 Dla przykładu `//sphere stone 5` stworzy kulę z kamienia o promieniu równym 5.
-![1](img/worldedit/7.png)
+![1](../img/worldedit/7.png)
 
 Używając komendy `//hsphere <bloki> <promień>` stworzysz sferę (kulę pustą w środku), jej środek będzie w miejscu gdzie stoisz.
 Dla przykładu `//hsphere glass 7` stworzy sferę ze szkła o promieniu równym 7.
-![1](img/worldedit/8.png)
+![1](../img/worldedit/8.png)
 
 #### Tworzenie walca/cylindra
 Używając komendy `//cyl <bloki> <promień> [wysokość]` stworzysz walec, jego środek będzie w miejscu gdzie stoisz, jego wysokość jest liczona w górę.
 Dla przykładu `//cyl glass 7 10` stworzy walec ze szkła o promieniu równym 5 i wysokości 10.
-![1](img/worldedit/9.png)
+![1](../img/worldedit/9.png)
 
 Używając komendy `//hcyl <bloki> <promień> [wysokość]` stworzysz cylinder (walec pusty w środku), jego środek będzie w miejscu gdzie stoisz, jego wysokość jest liczona w górę.
 Dla przykładu `//hcyl stone,dirt 3 12` stworzy cylinder z kamienia i ziemii o promieniu równym 3 i wysokości 12.
-![1](img/worldedit/10.png)
+![1](../img/worldedit/10.png)
 
 ### Pędzle
 Pędzle umożliwiają "rysowanie" konkretnymi przedmiotami.

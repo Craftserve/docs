@@ -27,7 +27,7 @@
     - Wyłącz serwer.
     - W folderze `plugins/LogBlock` znajduje się plik `config.yml`. Otwórz go.
     - W pliku znajduje się sekcja `mysql`. Wypełnij ją danymi z panelu Craftserve (zakładka Ustawienia -> MySQL).
-    ![MySQL](img/logblock/logblock_config.png)
+    ![MySQL](../img/logblock/logblock_config.png)
       Wartości `host`, `port`, `requireSSL` oraz `useSSL` są takie same dla każdego serwera na Craftserve - jak na zdjęciu wyżej.
     - Zapisz plik.
     - Uruchom serwer.
@@ -72,7 +72,7 @@ Domyślnie plugin nie zapisuje historii zmian w skrzyniach. Aby to zmienić, wyk
 1. Otwórz plik `world.yml`(plik ten nosi nazwę świata) w folderze `plugins/LogBlock`.
 2. Odnajdź `CHESTACCESS` i ustaw wartość na `true`.
 
-   ![image](img/logblock/logblock_world_config.png)
+   ![image](../img/logblock/logblock_world_config.png)
 3. Zapisz plik.
 4. Uruchom ponownie serwer.
 

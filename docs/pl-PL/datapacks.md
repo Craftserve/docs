@@ -3,15 +3,15 @@
 
 Następnie w plikach serwera otwieramy folder **world**, a w nim folder **datapacks**. Tam wgrywamy nasze datapacki **w formacie .zip**. Żeby to zrobić, należy nacisnąć przycisk **Plik** z zakładki **Wgraj pliki**.
 
-![1](img/datapacki/datapack.png)
+![1](../img/datapacki/datapack.png)
 
 Następnie wybieramy naszego datapacka i klikamy **otwórz**.
 
-![1](img/datapacki/datapack2.png)
+![1](../img/datapacki/datapack2.png)
 
 Nasz datapack po tym powinien pojawić się w panelu serwera.
 
-![1](img/datapacki/datapack3.png)
+![1](../img/datapacki/datapack3.png)
 
 Następnie włączamy serwer i wpisujemy komendę **/minecraft:reload** lub jeśli taka nie istnieje to **/reload**.
 

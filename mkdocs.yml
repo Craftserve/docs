@@ -3,12 +3,19 @@ repo_url: https://github.com/Craftserve/docs/tree/c3
 theme:
   name: material
   custom_dir: theme
-  logo: img/logo.png
+  logo: docs/img/logo.png
 
 extra_css:
   - stylesheets/extra.css
 
 extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: Polski
+      link: /pl-PL/
+      lang: pl
   analytics:
     provider: custom
 

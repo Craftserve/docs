@@ -12,10 +12,10 @@
 ##### To make your project downloadable and visible to users in the add-on gallery, you must first create a new project.
 
 &nbsp;&nbsp;1.1 Go to your server management panel, then navigate to the Add-ons Gallery, and click on the "Create Project" link.  
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_create_project_button.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_create_project_button.png)
 
 &nbsp;&nbsp;1.2 In the project wizard, fill out the respective fields.  
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_create_project.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_create_project.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.1 **Project Name** – Displays in the marketplace, and with this field, users will be able to search for your project by name.
 
@@ -41,10 +41,10 @@ but can beshared via a link.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.6 **Project Category** – Should specify what your package is about. This is used for searching packages in the add-on gallery and determines how your project will be displayed. There are two variants:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Variant for projects **_NOT MARKED_** as "Server Package"  
-&nbsp;&nbsp;&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_row_variant.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_row_variant.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Variant for projects **_MARKED_** as "Server Package"  
-&nbsp;&nbsp;&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_card_variant.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_card_variant.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Note:** When a project is set to "Server Package", if a user attempts to install it, the server will be forced to reinstall and format before installing the target package.  
 <a id="form_fields"></a>
@@ -58,8 +58,8 @@ but can beshared via a link.
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.11 **Detailed Project Description** – Use the user-friendly markdown editor to fully describe your project. Include what your package requires and what it focuses on or what problem it solves.
 
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_project_details.png)  
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_landing.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_project_details.png)  
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_landing.png)
 
 &nbsp;&nbsp;1.3 When your project is complete, click the "Publish" button to confirm the changes.
 
@@ -70,11 +70,11 @@ the search bar.
 
 ###### You already have your project, but it’s missing a version, meaning it lacks the files that will be downloaded when a user wants to install it on their server. To add a version, go to your project and click "Version List."
 
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_project_details_releases.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_project_details_releases.png)
 
 &nbsp;&nbsp;2.1 Click "Add Version"
 
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_add_release_button.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_add_release_button.png)
 
 &nbsp;&nbsp;2.2 The project version wizard consists of the following fields:
 
@@ -92,7 +92,7 @@ the search bar.
 
 > **Example:** My package is a server map with several additional plugins. I know that my plugins require the Paper engine for version 1.12.1. Additionally, I want users to have the above version, as older versions might cause the map to load incorrectly. Therefore, I select:
 
-![image](../img/marketplace_form/provides_list.png)
+![image](./img/marketplace_form/provides_list.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;If you know that your files require, for example, Spigot engine version 1.21.1, select spigot-api version 1.21.1. If you want the dependency to be verified along with the build version, choose the option that ends with "-". Example: paper:1.12.1-97. This will require the user to have the Spigot package in version 1.21.1 with build 97. When the user attempts to install your package, compatibility with their server will be checked based on the selected requirements.
 

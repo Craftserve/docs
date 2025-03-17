@@ -1,8 +1,8 @@
 ## Choosing the Right Engine
 To use Anti-Xray without the need to install additional plugins, you need to install the `Paper` engine or its forks (**such as Purpur**) on your server and select your server version. To do this on the [**Craftserve**](https://craftserve.com/) hosting platform, go to the **Settings** tab in the **Main Panel**, then select `Engine`. From the list of engines, choose the one you need and click `Install`.
 
-![1](../img/antyxray/1.png)
-![2](../img/antyxray/2.png)
+![1](./img/antyxray/1.png)
+![2](./img/antyxray/2.png)
 
 ## Mode Description
 Anti-Xray can operate in two different modes:
@@ -11,10 +11,10 @@ Anti-Xray can operate in two different modes:
 * `engine-mode: 2`: Ores are not hidden; instead, stone, andesite, and diorite are replaced with random ore deposits, making it impossible for a player to distinguish real ores from fake ones. Fake ores turn into real blocks when an air or liquid block is placed next to them. If the server experiences lag, random ores may appear while mining, but players will not be able to mine them.
 
 ### Recommended Modes for the Overworld
-![3](../img/antyxray/3.png)
+![3](./img/antyxray/3.png)
 ### Recommended Modes for the Nether
 
-![4](../img/antyxray/4.png)
+![4](./img/antyxray/4.png)
 
 ## Configuration Files for `1.19`
 There are four files where Anti-Xray is configured:
@@ -291,11 +291,11 @@ anticheat:
 ## Examples of Configured Files
 - `paper-world-defaults` <br>
 
-![p](../img/antyxray/e1.png)
+![p](./img/antyxray/e1.png)
 
 - `paper-world` (Nether example) <br> 
 
-![p2](../img/antyxray/e2.png)
+![p2](./img/antyxray/e2.png)
 
 ## Source
 https://docs.papermc.io/paper/anti-xray

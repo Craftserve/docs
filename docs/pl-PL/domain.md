@@ -10,12 +10,12 @@
 
 1. Otwórz panel zarządzania rekordami DNS swojej domeny.
     - Zazwyczaj panel ten wygląda tak:
-    - ![image](../img/domena/ovh_dns_panel.png)
+    - ![image](./img/domena/ovh_dns_panel.png)
 2. Dodaj nowy rekord typu SRV.
     - Dane do uzupełnienia skopiuj z panelu Craftserve, konkretnie z zakładki **Ustawienia** -> **Domena** -> **Zewnętrzna domena**. Wygląda ona następująco:
-    - ![image](../img/domena/craftserve_domain_panel.png)
+    - ![image](./img/domena/craftserve_domain_panel.png)
     - Przykładowy rekord SRV wygląda następująco:
-    - ![image](../img/domena/ovh_srv_record.png)
+    - ![image](./img/domena/ovh_srv_record.png)
     - W polu subdomena/nazwa należy wpisać nazwę subdomeny na której ma być dostępny serwer. Jeśli chcemy aby serwer działał na domenie głównej, należy pozostawić to pole z wartością `_minecraft._tcp.domena.pl` (czasem końcówka jest dopisywana automatycznie).
 3. Zapisz zmiany, **aktualizacja rekordu może potrwać od kilku minut do kilku godzin**.
 

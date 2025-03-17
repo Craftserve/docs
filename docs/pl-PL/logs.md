@@ -12,7 +12,7 @@ Spis treści
 
 Twój serwer nie chce się uruchomić albo świeżo wgrany plugin lub mod nie działa? Pierwszym miejscem do którego powinieneś się udać są foldery **/logs/** i **/crash-reports/** na Twoim serwerze:
 
-![Logi i crash reporty](../img/logi/logi.png)
+![Logi i crash reporty](./img/logi/logi.png)
 
 Każdy plik w folderze **/logs/** zawiera pełny log z danego uruchomienia Twojego serwera. Najważniejszy jest plik **latest.log** (**fml-server-latest.log** na niektórych wersjach Forge) - zawiera on informacji z najnowszej sesji serwera. **Przy każdym uruchomieniu serwera plik ten jest nadpisywany**, a stary log jest pakowany do archiwum **tar.gz** z nazwą będącą datą uruchomienia serwera.
 

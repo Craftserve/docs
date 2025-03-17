@@ -18,7 +18,7 @@ Głównym zastosowaniem WorldGuarda jest ochrona świata.
 W celu stworzenia regionu, musisz najpierw zaznaczyć teren przy użyciu pluginu WorldEdit.
 Trzymając drewnianą siekierę zaznacz pierwszy punkt klikając LPM i następnie zaznacz drugi punkt klikając PPM. Drewnianą siekierę możesz stworzyć samemu lub otrzymać ją za pomocą komendy `//wand`.
 Zaznaczenie powstanie w wyniku połączenia tych dwóch punktów.
-![1](../img/worldguard/1.png)
+![1](./img/worldguard/1.png)
 
 WorldGuard obsługuje regiony będące wielokątami, więcej informacji na temat użycia WorldEdita znajdziesz w dedykowanym do niego [poradniku](https://github.com/Craftserve/docs/blob/master/worldedit.md).
 
@@ -38,10 +38,10 @@ W celu usunięcie regionu użyj komendy `/rg delete <nazwa regionu>`.
 
 * `/rg info <nazwa regionu>` komenda wyświetli wszystkie informacje na temat konkretnego regionu.
 
-![1](../img/worldguard/2.png)
+![1](./img/worldguard/2.png)
 * `/rg list [-p gracz] [strona]` komenda wyświetli listę wszystkich regionów. Obsługuję flagę `-p gracz` (np. `/rg list -p jahumen`), która umożliwia sprawdzanie listy regionów, do których dodany jest konkretny gracz.
-![1](../img/worldguard/3.png)
-![1](../img/worldguard/4.png)
+![1](./img/worldguard/3.png)
+![1](./img/worldguard/4.png)
 * Trzymając w ręce *domyślnie* skórę, kliknij PPM na dowolny blok - spowoduje to wyświetlenie informacji na temat znajdującego się tam regionu.
 
 ## Członkowie
@@ -112,7 +112,7 @@ Domyślnym priorytetem jest `0`, możesz go zedytować dla konkretnych regionów
 
 Przykładowe wykorzystanie:
 * Utworzenie skrzynki na spawnie, którą gracze mogą otwierać, podczas gdy wszystkie inne są zablokowane. W tym celu utwórz region `skrzynka` obejmujący tylko skrzynkę, następnie ustaw flagę umożliwiającą korzystanie ze skrzynek, `/rg flag skrzynka use allow` i ustaw priorytet tego regionu na wyższy niż w przypadku spawnu, np. `/rg setpriority skrzynka 10`.
-![1](../img/worldguard/5.png)
+![1](./img/worldguard/5.png)
 * Utworzenie strefy PVP na spawnie, gdzie gracze mogą ze sobą walczyć. W tym celu utwórz region `arena` obejmujący arenę, następnie ustaw flagę umożliwiającą walkę graczy `/rg flag arena pvp allow` i ustaw priorytet tego regionu na wyższy niż w przypadku spawnu, np. `/rg setpriority arena 10`.
 
 ## Dziedziczenie (parent)
@@ -124,7 +124,7 @@ W przypadku dziedziczenia określana jest struktura regionów (rodzic <- dziecko
 W celu usunięcia rodzica (odłączenia regionu), po prostu nie podawaj `nazwy regionu rodzica`.
 
 Przykładowe utworzenie hierarchii:
-![1](../img/worldguard/6.png)
+![1](./img/worldguard/6.png)
 1. Utwórz wszystkie zaplanowane regiony i ustaw dla nich odpowiednie flagi.
 2. Ustaw rodzica `miasto` dla regionów `sklep`, `centrum-handlowe`, `dzialki` i `salon`, np. `/rg setparent dzialki miasto`.
 3. Ustaw rodzica `sklep` dla regionów `sklep-1`, `sklep-2`, `sklep-3`, np. `/setparent sklep-1 sklep`.

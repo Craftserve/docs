@@ -12,10 +12,10 @@
 ##### Aby Twój projekt był możliwy do pobrania, oraz aby użytkownicy mogli ją zobaczyć w galerii dodatków należy najpierw utworzyć nowy projekt.
 
 &nbsp;&nbsp;1.1 Wejdź do panelu zarządzania serwerem, następnie w Galerie Dodatków, oraz kliknij odnośnik “Utwórz projekt”
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_create_project_button.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_create_project_button.png)
 
 &nbsp;&nbsp;1.2 W kreatorze projektu wypełnij poszczególne pola
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_create_project.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_create_project.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.1 **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
 
@@ -41,10 +41,10 @@ do udostępnienia przez link.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.6 **Kategoria projektu** – powinna jak najbliżej precyzować czym jest Twoja paczka. Służy do wyszukiwania paczek w galerii dodatków, oraz uzależnia w jakim wariancie wyświetli się Twój projekt. Wyróżniamy dwa warianty.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_NIEOZNACZONYCH_** jako "Paczka serwera"
-&nbsp;&nbsp;&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_row_variant.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_row_variant.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&bull; Wariant dla projektów **_OZNACZONYCH_** jako "Paczka serwera"
-&nbsp;&nbsp;&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_card_variant.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_card_variant.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;**Uwaga:** Gdy projekt ma ustawioną kategorię jako "Paczka serwera" to w przypadku, gdy użytkownik będzie chciał zainstalować dany projekt wymuszona zostanie reinstalacja i formatowanie serwera przed instalacją docelowej paczki.
 <a id="form_fields"></a>
@@ -58,8 +58,8 @@ do udostępnienia przez link.
 
 &nbsp;&nbsp;&nbsp;&nbsp;1.2.11 **Szczegółowy opis projektu** – skorzystaj z przyjaznego edytora markdown, aby w pełni opisać swój projekt. Uwzględnij czego wymaga Twoja paczka, oraz na czym się skupia, lub jaki problem rozwiązuje.
 
-&nbsp;&nbsp;&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_project_details.png)
-&nbsp;&nbsp;&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_landing.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_project_details.png)
+&nbsp;&nbsp;&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_landing.png)
 
 &nbsp;&nbsp;1.3 Gdy uzupełnisz swój projekt, kliknij przycisk “Opublikuj”, aby zatwierdzić zmiany.
 
@@ -70,11 +70,11 @@ wyszukiwarce.
 
 ###### Masz już swój projekt, ale brakuje w nim wersji, czyli brakuje dodanych plików do projektu, które zostaną pobrane w momencie gdy użytkownik będzie chciał ją zainstalować na swoim serwerze. Aby dodać wersję wejdź w swój projekt, następnie kliknij “Lista wersji”
 
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_project_details_releases.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_project_details_releases.png)
 
 &nbsp;&nbsp;2.1 Kliknij “Dodaj wersję”
 
-&nbsp;&nbsp;![image](../img/marketplace_form/marketplace_add_release_button.png)
+&nbsp;&nbsp;![image](./img/marketplace_form/marketplace_add_release_button.png)
 
 &nbsp;&nbsp;2.2 Kreator wersji projektu składa się z następujących pól:
 
@@ -93,7 +93,7 @@ pliki zostaną zainstalowane na serwerze użytkownika, który zainstaluje Twoją
 
 > **Przykład** : Moja paczka to mapa serwera z kilkoma dodatkowymi pluginami. Wiem, że moje pluginy wymagają silnika Paper na wersji 1.12.1. Dodatkowo chciałbym, aby wymagane od użytkownika była powyższa wersja, ponieważ jeśli będzie posiadał starszą to mapa może zostać źle wczytana. Wybieram więc:
 
-![image](../img/marketplace_form/provides_list.png)
+![image](./img/marketplace_form/provides_list.png)
 
 &nbsp;&nbsp;&nbsp;&nbsp;Jeśli wiesz, że Twoje pliki wymagają przykładowo silnika spigot w wersji 1.21.1 to zaznacz spigot-api w wersji 1.21.1. Jeśli natomiast chcesz, aby zależność była weryfikowana razem z wersją builda wybierz opcję która kończy się "-" przykład: paper:1.12.1-97 Wymagane wtedy będzie, aby użytkownik posiadał paczkę spigot w wersji 1.21.1 o buildzie 97. Gdy użytkownik będzie chciał zainstalować Twoją paczkę zostanie sprawdzona kompatybilność z jego serwerem względem tego jakie wymagania zaznaczysz.
 

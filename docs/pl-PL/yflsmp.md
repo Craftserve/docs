@@ -12,11 +12,11 @@
 
    - Możesz to zrobić w zakładce **Dodatki** wyszukując frazę `yfl`.
 
-     ![image](../img/yfl/marketplace_search_yfl.png)
+     ![image](./img/yfl/marketplace_search_yfl.png)
 
    - Po wejściu w odpowiednią paczkę należy kliknąć zielony przycisk **ZAGRAJ TERAZ**.
 
-     ![image](../img/yfl/marketplace_install_version.png)
+     ![image](./img/yfl/marketplace_install_version.png)
 
 2. Uruchom serwer.
 3. Jeśli chciałbyś skorzystać z voicechatu, powiadom o tym support([utwórz nowe zgłoszenie](https://craftserve.com/contact)).
@@ -32,7 +32,7 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
    - Warto wspomnieć, że **wymagana jest wersja Javy dla architektury x64**.
    - W przypadku systemu Windows, należy wybrać tę wersję:
 
-     ![image](../img/bettermc/adoptium.png)
+     ![image](./img/bettermc/adoptium.png)
 3. Uruchom TechnicLauncher i zaloguj się do niego.
 4. W zakładce **Modpacks** w wyszukiwarce wklej poniższy link:
    ```
@@ -40,7 +40,7 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
    ```
 5. Zainstaluj paczkę za pomocą przycisku **Install**.
 
-   ![image](../img/bettermc/yfl_technic.png)
+   ![image](./img/bettermc/yfl_technic.png)
 
 6. Warto upewnić się, że przypisana została odpowiednia ilość pamięci RAM dla paczki.
 
@@ -48,7 +48,7 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
    - W TechnicLauncher, aby zmienić ilość pamięci RAM, należy wybrać **Launcher Options**, a następnie **Java Settings**.
    - W polu **Memory** wybierz odpowiednią wartość.
 
-     ![image](../img/bettermc/yfl_technic_ram.png)
+     ![image](./img/bettermc/yfl_technic_ram.png)
 
    - Przy okazji warto sprawdzić, czy została wybrana odpowiednia wersja Javy. Wybierz tą pobraną w kroku 2.
 
@@ -61,12 +61,12 @@ By można było dołączyć do serwera, gracz musi mieć zainstalowaną paczkę 
 - Crash na etapie ładowania, trzeba pamiętać o ustawieniu zalecanych wartości RAM.
 - Nie działający voice chat (nie słychać innych lub Ciebie), należy skonfigurować PlasmoVoice pod siebie (zobacz niżej).
 - Po wejściu na serwer dźwięk jest cichy, należy w ustawieniach gry zmienić poziom głośności o parę procent.
-  ![image](../img/bettermc/mastervolume.gif)
+  ![image](./img/bettermc/mastervolume.gif)
 
 #### Konfiguracja PlasmoVoice
 
 Domyślnie ustawienia PlasmoVoice są pod przyciskiem `MouseButton4`(dolny boczny przycisk myszy), aby to zmienić należy wejść w menu gry, `Options` -> `Controls` -> `Key Binds` i wyszukać `voice` i zmienić przycisk, na którym mają uruchamiać się ustawienia voice chatu.
-![image](../img/bettermc/keybinds.png)
+![image](./img/bettermc/keybinds.png)
 
 Po otwarciu ustawień voice chatu widoczne jest wiele opcji, które można dostosować do swoich potrzeb. Warto zwrócić uwagę na:
 

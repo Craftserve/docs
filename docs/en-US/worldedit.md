@@ -25,7 +25,7 @@ You can create it in three ways:
 * Type `//hpos1` for the first point and `//hpos2` for the second point. These are created at the locations where you are looking while entering the commands.
 
 The cuboid will be created by connecting these two points.
-![1](../img/worldedit/1.png)
+![1](./img/worldedit/1.png)
 
 #### Editing a Selection
 If you want to edit the previously created cuboid, you can do so in several ways:
@@ -50,7 +50,7 @@ Blocks can be written in the following ways:
 * `25%stone,25%dirt,50%bedrock` - will be replaced with 25% stone, 25% dirt, and 50% bedrock
 
 For example: `//set dirt`, `//set 10%glass,90%stone`, `//set air`
-![1](../img/worldedit/2.png)
+![1](./img/worldedit/2.png)
 
 
 #### Replacing the Selection
@@ -62,22 +62,22 @@ For example, `//replace dirt,stone 20%dirt,20%sand,60%stone` will replace all di
 Using the `//walls <blocks>` command, you create walls around the selection.
 
 For example, `//walls stone,dirt` will create a wall made of random stone and dirt blocks.
-![1](../img/worldedit/3.png)
+![1](./img/worldedit/3.png)
 
 #### Copying and Clipboard
 After selecting the area, using the `//copy` command, you can copy it.
 
 Using the `//paste` command, you can paste it.  
 * **IMPORTANT** It’s important to note where you are standing when typing the `//copy` command — for example, if you were standing 5 blocks in front of a structure, after typing the `//paste` command, the structure will be pasted 5 blocks in front of you.
-![1](../img/worldedit/4.png)
+![1](./img/worldedit/4.png)
 
 Using the `//rotate <degrees>` command, you can rotate the structure in the clipboard.  
 For example: `//copy`, `//rotate 90`, `//paste`.
-![1](../img/worldedit/5.png)
+![1](./img/worldedit/5.png)
 
 Using the `//flip [direction]` command, you can flip the structure in a given direction (e.g., mirror it).  
 For example: `//copy`, `//flip`, `//paste`.
-![1](../img/worldedit/6.png)
+![1](./img/worldedit/6.png)
 
 ### Generating
 There are also commands that allow you to generate certain structures at the location where you are standing without the need for selection.
@@ -85,20 +85,20 @@ There are also commands that allow you to generate certain structures at the loc
 #### Creating Spheres
 Using the `//sphere <blocks> <radius>` command, you will create a sphere with its center at the location where you are standing.  
 For example, `//sphere stone 5` will create a stone sphere with a radius of 5.
-![1](../img/worldedit/7.png)
+![1](./img/worldedit/7.png)
 
 Using the `//hsphere <blocks> <radius>` command, you will create a hollow sphere (empty in the middle) with its center at the location where you are standing.  
 For example, `//hsphere glass 7` will create a hollow glass sphere with a radius of 7.
-![1](../img/worldedit/8.png)
+![1](./img/worldedit/8.png)
 
 #### Creating Cylinders
 Using the `//cyl <blocks> <radius> [height]` command, you will create a cylinder with its center at the location where you are standing, and its height is measured upwards.  
 For example, `//cyl glass 7 10` will create a glass cylinder with a radius of 7 and a height of 10.
-![1](../img/worldedit/9.png)
+![1](./img/worldedit/9.png)
 
 Using the `//hcyl <blocks> <radius> [height]` command, you will create a hollow cylinder (empty in the middle) with its center at the location where you are standing, and its height is measured upwards.  
 For example, `//hcyl stone,dirt 3 12` will create a hollow cylinder made of stone and dirt with a radius of 3 and a height of 12.
-![1](../img/worldedit/10.png)
+![1](./img/worldedit/10.png)
 
 ### Brushes
 Brushes allow you to "draw" with specific items.

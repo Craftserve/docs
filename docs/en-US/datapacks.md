@@ -3,15 +3,15 @@ To upload a datapack to the server, we first need to download it from somewhere.
 
 Next, navigate to the **world** folder in the server files, and then open the **datapacks** folder. Here, you will upload the datapacks **in .zip format**. To do this, click on the **File** button under the **Upload Files** tab.
 
-![1](../img/datapacki/datapack.png)
+![1](./img/datapacki/datapack.png)
 
 Then select your datapack and click **Open**.
 
-![1](../img/datapacki/datapack2.png)
+![1](./img/datapacki/datapack2.png)
 
 After this, the datapack should appear in the server panel.
 
-![1](../img/datapacki/datapack3.png)
+![1](./img/datapacki/datapack3.png)
 
 Next, start the server and type the command **/minecraft:reload**, or if it doesn't exist, use **/reload**.
 

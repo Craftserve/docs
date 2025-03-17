@@ -17,7 +17,7 @@ The main use of WorldGuard is to protect the world.
 To create a region, you must first select the area using the WorldEdit plugin. 
 Hold the wooden axe and click the left mouse button (LMB) to select the first point, then click the right mouse button (RMB) to select the second point. You can create a wooden axe yourself or receive it via the `/wand` command. 
 The selection will be made by connecting these two points.
-![1](../img/worldguard/1.png)
+![1](./img/worldguard/1.png)
 
 WorldGuard supports polygonal regions; more information on using WorldEdit can be found in the dedicated [WorldEdit guide](https://github.com/Craftserve/docs/blob/master/worldedit.md).
 
@@ -37,11 +37,11 @@ To delete a region, use the command `/rg delete <region name>`.
 
 * `/rg info <region name>` - This command will display all information about a specific region.
 
-![1](../img/worldguard/2.png)
+![1](./img/worldguard/2.png)
 
 * `/rg list [-p player] [page]` - This command will display a list of all regions. It supports the `-p player` flag (e.g., `/rg list -p jahumen`), which allows checking the list of regions a specific player is added to.
-![1](../img/worldguard/3.png)
-![1](../img/worldguard/4.png)
+![1](./img/worldguard/3.png)
+![1](./img/worldguard/4.png)
 
 * While holding the *default* skin, right-click on any block — this will display information about the region in that location.
 
@@ -112,7 +112,7 @@ The default priority is `0`. You can edit this for specific regions (both positi
 
 Example use:
 * Creating a chest in the spawn that players can open while all other chests are blocked. To do this, create a `chest` region covering only the chest, then set the flag to allow interacting with chests: `/rg flag chest use allow` and set the priority of this region higher than the spawn region, e.g., `/rg setpriority chest 10`.
-![1](../img/worldguard/5.png)
+![1](./img/worldguard/5.png)
 * Creating a PvP arena in the spawn where players can fight each other. To do this, create an `arena` region covering the arena, set the flag to allow PvP: `/rg flag arena pvp allow`, and set the priority of this region higher than the spawn region, e.g., `/rg setpriority arena 10`.
 
 ## Inheritance (Parent)
@@ -124,7 +124,7 @@ In the case of inheritance, the region structure is defined (parent <- child). I
 To remove a parent (detach a region), simply do not specify the `parent region name`.
 
 Example hierarchy creation:
-![1](../img/worldguard/6.png)
+![1](./img/worldguard/6.png)
 1. Create all planned regions and set the appropriate flags for them.
 2. Set the `city` parent for the regions `shop`, `shopping-center`, `plots`, and `showroom`, e.g., `/rg setparent plots city`.
 3. Set the `shop` parent for the regions `shop-1`, `shop-2`, `shop-3`, e.g., `/setparent shop-1 shop`.

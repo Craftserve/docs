@@ -12,11 +12,11 @@
 
    - You can do this in the **Add-ons** tab by searching for the term `yfl`.
 
-     ![image](../img/yfl/marketplace_search_yfl.png)
+     ![image](./img/yfl/marketplace_search_yfl.png)
 
    - Once you've selected the appropriate package, click the green **PLAY NOW** button.
 
-     ![image](../img/yfl/marketplace_install_version.png)
+     ![image](./img/yfl/marketplace_install_version.png)
 
 2. Start the server.
 3. If you want to use voice chat, notify support ([create a new ticket](https://craftserve.com/contact)).
@@ -32,7 +32,7 @@ To join the server, players must have the YFLsmp package installed. Follow the s
    - It's important to note that **you need the Java version for x64 architecture**.
    - For Windows, select this version:
 
-     ![image](../img/bettermc/adoptium.png)
+     ![image](./img/bettermc/adoptium.png)
 3. Run TechnicLauncher and log in.
 4. In the **Modpacks** tab, paste the following link into the search bar:
    ```
@@ -40,7 +40,7 @@ To join the server, players must have the YFLsmp package installed. Follow the s
    ```
    5. Install the package by clicking the **Install** button.
 
-![image](../img/bettermc/yfl_technic.png)
+![image](./img/bettermc/yfl_technic.png)
 
 6. It’s recommended to ensure that the appropriate amount of RAM is allocated for the package.
 
@@ -48,7 +48,7 @@ To join the server, players must have the YFLsmp package installed. Follow the s
 - In TechnicLauncher, to change the amount of RAM, select **Launcher Options**, then **Java Settings**.
 - In the **Memory** field, select the appropriate value.
 
-  ![image](../img/bettermc/yfl_technic_ram.png)
+  ![image](./img/bettermc/yfl_technic_ram.png)
 
 - Also, make sure the correct version of Java is selected. Choose the one you downloaded in step 2.
 
@@ -61,12 +61,12 @@ To join the server, players must have the YFLsmp package installed. Follow the s
 - Crash during loading, remember to set the recommended RAM values.
 - Voice chat not working (unable to hear others or yourself), configure PlasmoVoice as needed (see below).
 - Low sound after entering the server, change the game volume settings by a few percentage points.
-![image](../img/bettermc/mastervolume.gif)
+![image](./img/bettermc/mastervolume.gif)
 
 #### PlasmoVoice Configuration
 
 By default, PlasmoVoice settings are activated with the `MouseButton4` (lower side mouse button). To change this, go to the game menu, `Options` -> `Controls` -> `Key Binds`, and search for `voice` to change the key binding that activates the voice chat settings.
-![image](../img/bettermc/keybinds.png)
+![image](./img/bettermc/keybinds.png)
 
 Once the voice chat settings are open, you will see many options that you can adjust to your needs. Pay attention to the following:
 

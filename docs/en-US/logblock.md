@@ -27,7 +27,7 @@
  - Shut down the server.
  - In the `plugins/LogBlock` folder, find the `config.yml` file. Open it.
  - In the file, locate the `mysql` section. Fill it with the data from the Craftserve panel (Settings -> MySQL).
- ![MySQL](../img/logblock/logblock_config.png)
+ ![MySQL](./img/logblock/logblock_config.png)
    The values for `host`, `port`, `requireSSL`, and `useSSL` are the same for every server on Craftserve, as shown in the image above.
  - Save the file.
  - Start the server.
@@ -72,7 +72,7 @@ By default, the plugin does not save the history of changes in chests. To change
 1. Open the `world.yml` file (this file is named after the world) in the `plugins/LogBlock` folder.
 2. Find `CHESTACCESS` and set its value to `true`.
 
-   ![image](../img/logblock/logblock_world_config.png)
+   ![image](./img/logblock/logblock_world_config.png)
 3. Save the file.
 4. Restart the server.
 

@@ -12,7 +12,7 @@ Table of Contents
 
 Is your server failing to start, or is a newly uploaded plugin or mod not working? The first place you should check is the **/logs/** and **/crash-reports/** folders on your server:
 
-![Logs and crash reports](../img/logi/logi.png)
+![Logs and crash reports](./img/logi/logi.png)
 
 Each file in the **/logs/** folder contains a full log of a single server session. The most important file is **latest.log** (**fml-server-latest.log** in some Forge versions) – it contains information from the latest server session. **Every time the server is started, this file is overwritten**, and the old log is archived into a **tar.gz** file named after the server's start date.
 

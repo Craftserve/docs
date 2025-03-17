@@ -9,13 +9,13 @@ One of the best programs that support this protocol is WinSCP.
 
 To download it, visit [this page](https://winscp.net/eng/download.php). Then, click **DOWNLOAD**.
 
-![1](../img/ftp/1.png)
+![1](./img/ftp/1.png)
 
 ## Logging into the Server
 
 After installing and launching the program, this window should appear:
 
-![1](../img/ftp/2.png)
+![1](./img/ftp/2.png)
 
 However, if this window does not appear or if we accidentally close it, we can open it by clicking the **New Session** button in the upper left corner of the program.
 
@@ -28,27 +28,27 @@ To connect to our server, we need to:
 - Select port **21**
 Example of a correctly filled-out form:
 
-![1](../img/ftp/3.png)
+![1](./img/ftp/3.png)
 
 After filling out the form, log in by clicking the **Login** button. If everything has been done correctly, we should connect to the server.
 
 ## How to Use
 
 The WinSCP window is split into two parts - one for local files (your computer) and one for remote files (server):
-![1](../img/ftp/4.png)
+![1](./img/ftp/4.png)
 
 In the window marked **1**, you can see the files on your computer. This allows quick access to any folder or drive.
 
 Window **2** contains the server files - each folder with a name consisting of random characters corresponds to a server assigned to the account (this is its ID, e.g., `2ae6dfal6adw1`).
 
 To access the files of a specific server, open the corresponding folder:
-![1](../img/WinSCP_server_example.png)
+![1](./img/WinSCP_server_example.png)
 
 To upload a file to the server, simply drag it from the first window to the second, or from the desktop to the second window.
 
 By double-clicking on a **text file**, we can edit it. After making changes, remember to save the file. You can do this by using the keyboard shortcut **Ctrl + S** or by clicking the button in the upper left corner:
 
-![1](../img/ftp/5.png)
+![1](./img/ftp/5.png)
 
 ## Notes
 

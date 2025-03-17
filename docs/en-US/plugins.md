@@ -10,7 +10,7 @@ Plugins for these engines can be downloaded from [Bukkit.org](https://dev.bukkit
 
 Before downloading a plugin, make sure it works with your version of Minecraft. Once downloaded, the **.jar** plugin files should be copied to the **/plugins/** folder on your server:
 
-![Plugins Folder](../img/pluginy/pluginy.png)
+![Plugins Folder](./img/pluginy/pluginy.png)
 
 ## Sponge
 

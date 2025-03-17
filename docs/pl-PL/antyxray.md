@@ -1,8 +1,8 @@
 ## Wybór odpowiedniego silnika
 Aby używać antyxray'a bez konieczności wgrywania dodatkowych pluginów, należy wgrać na nasz serwer silnik `Paper` lub jego forki (**na przykład Purpur**). oraz wybrać wersję swojego serwera. Aby zrobić to na hostingu [**Craftserve**](https://craftserve.com/), należy przejść do zakładki **Ustawienia** w **Panelu głównym**, a następnie wybrać `Silnik`. Z listy silników wybieramy interesujący nas silnik i klikamy `Zainstaluj`.
 
-![1](../img/antyxray/1.png)
-![2](../img/antyxray/2.png)
+![1](./img/antyxray/1.png)
+![2](./img/antyxray/2.png)
 
 ## Opis trybów
 Antyxray może działać na dwa różne sposoby:
@@ -11,10 +11,10 @@ Antyxray może działać na dwa różne sposoby:
 * `engine-mode: 2`: Rudy nie są ukrywane, lecz kamień, andezyt, dioryt są zamieniane na losowe złoża rud, których gracz nie jest w stanie rozróżnić od tych prawdzinych. Oszukane rudy zamieniają się na bloki prawdziwe, gdy blok obok nich znajdzie się blok powietrza lub cieczy. Gdy na serwerze występują lagi, czasami można odkryć losowe rudy które pojawiają się przy kopaniu, jednak gracz nie będzie w stanie ich wydobyć.
 
 ### Wybrane tryby dla normalnego świata
-![3](../img/antyxray/3.png)
+![3](./img/antyxray/3.png)
 ### Wybrane tryby dla netheru
 
-![4](../img/antyxray/4.png)
+![4](./img/antyxray/4.png)
 
 ## Konfiguracja plików `1.19`
 Istnieją 4 pliki, w których konfiguruje się antyxray'a:
@@ -291,11 +291,11 @@ anticheat:
 ## Przykłady skonfigurowanych plików
 - `paper-world-defaults` <br>
 
-![p](../img/antyxray/e1.png)
+![p](./img/antyxray/e1.png)
 
 - `paper-world` (tutaj nether) <br> 
 
-![p2](../img/antyxray/e2.png)
+![p2](./img/antyxray/e2.png)
 
 ## Źródło
 https://docs.papermc.io/paper/anti-xray

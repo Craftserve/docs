@@ -27,7 +27,7 @@ Aby aktywować MySQL dla swojego serwera, postępuj zgodnie z poniższymi krokam
    </br>
    </br>
 
-<img src="./img/mysql/mysql_1.png" />
+![Mysql tutorial](./img/mysql/mysql_1.png)
 
 ## ⚙️ Dane dostępowe do MySQL
 

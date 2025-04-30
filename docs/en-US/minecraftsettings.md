@@ -7,189 +7,189 @@ ___
 ![MOTD](./img/ustawienia/motd.png)
 
 ## Basic Server Settings
-Settings related to server operation. You can find
+Settings related to server operation. You can find list of them below:
 
-Show command info to ops
+Show command info to ops:
 `broadcast-console-to-ops`
 
-Notify ops of RCON usage
+Notify ops of RCON usage:
 `broadcast-rcon-to-ops`
 
-Run server in diagnostic mode
+Run server in diagnostic mode:
 `debug`
 
-Toggle command blocks
+Toggle command blocks:
 `enable-command-block`
 
-Enable JMX monitoring
+Enable JMX monitoring:
 `enable-jmx-monitoring`
 
-Toggle server info query
+Toggle server info query:
 `enable-query`
 
-Enable RCON access
+Enable RCON access:
 `enable-rcon`
 
-Toggle server status query
+Toggle server status query:
 `enable-status`
 
-Force secure player profiles
+Force secure player profiles:
 `enforce-secure-profile`
 
-Enforce whitelist
+Enforce whitelist:
 `enforce-whitelist`
 
-Entity broadcast range %
+Entity broadcast range %:
 `entity-broadcast-range-percentage`
 
-Force fixed game mode
+Force fixed game mode:
 `force-gamemode`
 
-Min permission for functions
+Min permission for functions:
 `function-permission-level`
 
-Hide online players
+Hide online players:
 `hide-online-players`
 
-Initially disabled packs
+Initially disabled packs:
 `initial-disabled-packs`
 
-Initially enabled packs
+Initially enabled packs:
 `initial-enabled-packs`
 
-Max neighbor updates
+Max neighbor updates:
 `max-chained-neighbor-updates`
 
-Max players
+Max players:
 `max-players`
 
-Server MOTD
+Server MOTD:
 `motd`
 
-Compression threshold
+Compression threshold:
 `network-compression-threshold`
 
-Use official accounts
+Use official accounts:
 `online-mode`
 
-Op permission level
+Op permission level:
 `op-permission-level`
 
-Player idle timeout
+Player idle timeout:
 `player-idle-timeout`
 
-Block proxy/VPN connections
+Block proxy/VPN connections:
 `prevent-proxy-connections`
 
-Server query port
+Server query port:
 `query.port`
 
-Rate limit
+Rate limit:
 `rate-limit`
 
-RCON password
+RCON password:
 `rcon.password`
 
-RCON port
+RCON port:
 `rcon.port`
 
-Server IP address
+Server IP address:
 `server-ip`
 
-Server port
+Server port:
 `server-port`
 
-Sync chunk writes
+Sync chunk writes:
 `sync-chunk-writes`
 
-Text filter config
+Text filter config:
 `text-filtering-config`
 
-Enable native transport
+Enable native transport:
 `use-native-transport`
 
-Whitelist enabled
+Whitelist enabled:
 `white-list`
 
 ## World Settings
 Customize world settings to your needs.
 
-Allow flight
+Allow flight:
 `allow-flight`
 
-Enable Nether access
+Enable Nether access:
 `allow-nether`
 
-World difficulty
+World difficulty:
 `difficulty`
 
-Default game mode
+Default game mode:
 `gamemode`
 
-Toggle structures
+Toggle structures:
 `generate-structures`
 
-Gen settings
+Gen settings:
 `generator-settings`
 
-Hardcore mode
+Hardcore mode:
 `hardcore`
 
-World name
+World name:
 `level-name`
 
-World seed
+World seed:
 `level-seed`
 
-World type
+World type:
 `level-type`
 
-Max tick time
+Max tick time:
 `max-tick-time`
 
-Max world size
+Max world size:
 `max-world-size`
 
-Enable PvP
+Enable PvP:
 `pvp`
 
-Sim distance
+Sim distance:
 `simulation-distance`
 
-Animal spawn
+Animal spawn:
 `spawn-animals`
 
-Monster spawn
+Monster spawn:
 `spawn-monsters`
 
-NPC spawn
+NPC spawn:
 `spawn-npcs`
 
-Spawn protection
+Spawn protection:
 `spawn-protection`
 
-View distance
+View distance:
 `view-distance`
 
 ## Resource Pack Settings
 Add your own resource pack to the server.
 
-Force resource pack usage
+Force resource pack usage:
 `require-resource-pack`
 
-Resource pack URL
+Resource pack URL:
 `resource-pack`
 
-Resource pack prompt
+Resource pack prompt:
 `resource-pack-prompt`
 
-Resource pack SHA1
+Resource pack SHA1:
 `resource-pack-sha1`
 
-Resource pack ID
+Resource pack ID:
 `resource-pack-id`
 
 ## Inne ustawienia
 
-No description
+No description:
 `previews-chat`

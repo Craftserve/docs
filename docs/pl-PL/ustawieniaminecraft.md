@@ -9,187 +9,187 @@ ___
 ## Podstawowe ustawienia serwera
 Ustawienia związane z działaniem serwera. Poniżej znajdziesz ich listę:
 
-Pokaż info o komendach operatorom
+Pokaż info o komendach operatorom:
 `broadcast-console-to-ops`
 
-Informuj adminów o RCON
+Informuj adminów o RCON:
 `broadcast-rcon-to-ops`
 
-Tryb diagnostyczny serwera
+Tryb diagnostyczny serwera:
 `debug`
 
-Włącz/wyłącz bloki komend
+Włącz/wyłącz bloki komend:
 `enable-command-block`
 
-Włącz monitor. JMX
+Włącz monitor JMX:
 `enable-jmx-monitoring`
 
-Włącz/wyłącz info o serwerze
+Włącz/wyłącz info o serwerze:
 `enable-query`
 
-Włącz zdalny RCON
+Włącz zdalny RCON:
 `enable-rcon`
 
-Włącz/wyłącz status serwera
+Włącz/wyłącz status serwera:
 `enable-status`
 
-Wymuś bezpieczne profile
+Wymuś bezpieczne profile:
 `enforce-secure-profile`
 
-Wymuś whitelistę
+Wymuś whitelistę:
 `enforce-whitelist`
 
-Procent zasięgu broadcastu
+Procent zasięgu broadcastu:
 `entity-broadcast-range-percentage`
 
-Wymuś ustalony tryb gry
+Wymuś ustalony tryb gry:
 `force-gamemode`
 
-Min. poziom funkcji
+Min. poziom funkcji:
 `function-permission-level`
 
-Ukryj listę graczy
+Ukryj listę graczy:
 `hide-online-players`
 
 Wyłączone paczki (start)
-`initial-disabled-packs`
+`initial-disabled-packs`:
 
-Włączone paczki (start)
+Włączone paczki (start):
 `initial-enabled-packs`
 
-Max. aktual. cyklicznych
+Max. aktual. cyklicznych:
 `max-chained-neighbor-updates`
 
-Max. liczba graczy
+Max. liczba graczy:
 `max-players`
 
-Wiadomość serwera
+Wiadomość serwera:
 `motd`
 
-Próg kompresji pakietów
+Próg kompresji pakietów:
 `network-compression-threshold`
 
-Wymuś logowanie premium
+Wymuś logowanie premium:
 `online-mode`
 
-Poziom uprawnień operatora
+Poziom uprawnień operatora:
 `op-permission-level`
 
-Limit nieaktywności gracza
+Limit nieaktywności gracza:
 `player-idle-timeout`
 
-Blokuj proxy/VPN
+Blokuj proxy/VPN:
 `prevent-proxy-connections`
 
-Port zapytania serwera
+Port zapytania serwera:
 `query.port`
 
-Limit pakietów
+Limit pakietów:
 `rate-limit`
 
-Hasło RCON
+Hasło RCON:
 `rcon.password`
 
-Port RCON
+Port RCON:
 `rcon.port`
 
-Adres IP serwera
+Adres IP serwera:
 `server-ip`
 
-Port serwera
+Port serwera:
 `server-port`
 
-Synchronizuj zapisy chunków
+Synchronizuj zapisy chunków:
 `sync-chunk-writes`
 
-Konfig. filtra tekstu
+Konfig. filtra tekstu:
 `text-filtering-config`
 
-Włącz nat. optymalizacje sieciowe
+Włącz nat. optymalizacje sieciowe:
 `use-native-transport`
 
-Włącz whitelistę
+Włącz whitelistę:
 `white-list`
 
 ## Ustawienia świata
-Dostosuj ustawienia świata do swoich potrzeb
+Dostosuj ustawienia świata do swoich potrzeb.
 
-Pozwól latać
+Pozwól latać:
 `allow-flight`
 
-Dostęp do Nether
+Dostęp do Nether:
 `allow-nether`
 
-Poziom trudności
+Poziom trudności:
 `difficulty`
 
-Domyślny tryb gry
+Domyślny tryb gry:
 `gamemode`
 
-Generuj struktury
+Generuj struktury:
 `generate-structures`
 
-Ustaw. generatora
+Ustaw. generatora:
 `generator-settings`
 
-Tryb hardcore
+Tryb hardcore:
 `hardcore`
 
-Nazwa świata
+Nazwa świata:
 `level-name`
 
-Ziarno świata
+Ziarno świata:
 `level-seed`
 
-Typ świata
+Typ świata:
 `level-type`
 
-Limit ticka
+Limit ticka:
 `max-tick-time`
 
-Maks. rozmiar świata
+Maks. rozmiar świata:
 `max-world-size`
 
-Włącz PvP
+Włącz PvP:
 `pvp`
 
-Odległość symulacji
+Odległość symulacji:
 `simulation-distance`
 
-Generuj zwierzęta
+Generuj zwierzęta:
 `spawn-animals`
 
-Generuj potwory
+Generuj potwory:
 `spawn-monsters`
 
-Generuj NPC
+Generuj NPC:
 `spawn-npcs`
 
-Ochrona spawnu
+Ochrona spawnu:
 `spawn-protection`
 
-Odległość renderowania
+Odległość renderowania:
 `view-distance`
 
 ## Ustawienia paczki zasobów
-`Dodaj swoją własną paczkę zasobów na serwer`
+Dodaj swoją własną paczkę zasobów na serwer:
 
-Wymuś na graczach korzystanie z określonej paczki zasobów
+Wymuś na graczach korzystanie z określonej paczki zasobów:
 `require-resource-pack`
 
-Adres, pod którym znajduje się paczka zasobów
+Adres, pod którym znajduje się paczka zasobów:
 `resource-pack`
 
-Tekst wyświetlany graczom przy prośbie o pobranie paczki zasobów
+Tekst wyświetlany graczom przy prośbie o pobranie paczki zasobów:
 `resource-pack-prompt`
 
-Skrót SHA1 paczki zasobów
+Skrót SHA1 paczki zasobów:
 `resource-pack-sha1`
 
-Unikalny identyfikator paczki zasobów
+Unikalny identyfikator paczki zasobów:
 `resource-pack-id`
 
 ## Inne ustawienia
 
-Brak opisu
+Brak opisu:
 `previews-chat`

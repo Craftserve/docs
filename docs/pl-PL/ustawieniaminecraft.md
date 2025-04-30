@@ -1,5 +1,5 @@
 # Ustawienia Minecraft
-
+Znajdziesz je w zakładce "Ustawienia Minecraft" w panelu serwera.
 ___
 
 ## Ikona i opis serwera

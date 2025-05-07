@@ -1,10 +1,12 @@
 # 🧠 What is **MySQL**?
 
-**MySQL** is a popular relational database management system. In the context of a Minecraft server, it can be used for:
+<p id="tooltip-data">
+MySQL is a popular relational database management system. In the context of a Minecraft server, it can be used for:
 
 -   Storing player data (e.g., login info, stats, economy systems),
--   Storing plugin configurations,
+-   Storing plugin configurations
 -   Synchronizing data across multiple servers (e.g., using BungeeCord or Velocity).
+</p>
 
 ---
 

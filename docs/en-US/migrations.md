@@ -34,10 +34,9 @@ Don’t worry — the entire process is streamlined and carried out automaticall
 If the standard migration fails:
 
 1. Choose the **“Force Migration”** option.
+    > ⚠️ Warning: This option **may result in the loss of your most recent data** on the server.
 2. **Check the box to agree to the migration**.
 3. **Click the “Migrate” button**, as shown in the illustration below.
-
-> ⚠️ Warning: This option **may result in the loss of your most recent data** on the server.
 
 4. Optional: Select a backup to use in case the latest server data cannot be restored.
 

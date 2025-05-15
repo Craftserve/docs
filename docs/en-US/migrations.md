@@ -1,16 +1,13 @@
 # 🔍 Server migrations
 
 <p id="tooltip-data">
-Migrations are technical operations that involve moving your server to a new infrastructure. Their purpose is to:
+Migration is a process that involves transferring data to a new node, for example, due to infrastructure issues or excessive load. Its purpose is to:
 
 -   improve server performance,
 -   increase stability,
 -   ensure compatibility with the latest technical solutions.
 
 </p>
-
-From a technical perspective, migration may include transferring data to a new disk, switching machines, or updating the file system.
-Don’t worry — the entire process is streamlined and carried out automatically.
 
 ---
 
@@ -23,7 +20,9 @@ Don’t worry — the entire process is streamlined and carried out automaticall
 
 🕒 The migration will take approximately **15 minutes**, during which your server may be temporarily unavailable.
 
-> ✅ This migration process is completely safe. There is no risk of data loss.
+<div style="background-color: #e6ffed; border-left: 4px solid #34c759; padding: 12px; margin: 16px 0; border-radius: 4px; color: #000">
+<strong>✅ This migration process is completely safe.</strong> There is no risk of data loss.
+</div>
 
 ---
 
@@ -32,7 +31,10 @@ Don’t worry — the entire process is streamlined and carried out automaticall
 If the standard migration fails:
 
 1. Choose the **“Force Migration”** option.
-    > ⚠️ Warning: This option **may result in the loss of your most recent data** on the server.
+ <div style="background-color: #fffbe6; border-left: 4px solid #ffcc00; padding: 12px; margin: 16px 0; border-radius: 4px; color: #000">
+ ⚠️ Warning: This option <strong> may result in the loss of your most recent data</strong> on the server
+  </div>
+
 2. **Check the box to agree to the migration**.
 3. **Click the “Migrate” button**, as shown in the illustration below.
 

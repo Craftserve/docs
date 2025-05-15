@@ -1,15 +1,12 @@
 # 🔍 Migracje serwerów
 
 <p id="tooltip-data">
-Migracje to operacje techniczne, które polegają na przeniesieniu Twojego serwera na nową infrastrukturę. Ich celem jest:
+Migracja to proces obejmujący przeniesienie danych na nowy węzeł (ang. node) na przykład w wyniku problemów z infrastrukturą czy zbyt dużym obciążeniem. Ich celem jest:
 
 -   zwiększenie wydajności serwera,
 -   poprawa stabilności,
 -   zapewnienie zgodności z najnowszymi rozwiązaniami technicznymi.
 </p>
-
-Z perspektywy technicznej migracja może obejmować przeniesienie danych na nowy dysk, zmianę maszyny lub aktualizację systemu plików.
-Nie martw się — cały proces jest maksymalnie uproszczony i przeprowadzany automatycznie.
 
 ---
 
@@ -22,7 +19,9 @@ Nie martw się — cały proces jest maksymalnie uproszczony i przeprowadzany au
 
 🕒 Migracja potrwa około **15 minut**, w tym czasie serwer może być tymczasowo niedostępny.
 
-> ✅ Migracja w tej konfiguracji jest całkowicie bezpieczna. Nie grozi Ci utrata danych.
+<div style="background-color: #e6ffed; border-left: 4px solid #34c759; padding: 12px; margin: 16px 0; border-radius: 4px; color: #000">
+<strong>✅ Migracja w tej konfiguracji jest całkowicie bezpieczna.</strong> Nie grozi Ci utrata danych.
+</div>
 
 ---
 
@@ -31,13 +30,16 @@ Nie martw się — cały proces jest maksymalnie uproszczony i przeprowadzany au
 Jeśli standardowa migracja się nie powiedzie:
 
 1. Wybierz opcję **„Wymuś migrację”**.
-    > ⚠️ Uwaga: Ta opcja **może wiązać się z utratą najnowszych danych** na serwerze.
+ <div style="background-color: #fffbe6; border-left: 4px solid #ffcc00; padding: 12px; margin: 16px 0; border-radius: 4px; color: #000">
+ ⚠️ Uwaga: Ta opcja <strong> może wiązać się z utratą najnowszych danych</strong> na serwerze
+ </div>
+
 2. **Zaznacz zgodę na migrację**.
 3. **Kliknij przycisk „Migruj”**, tak jak pokazano na poniższej ilustracji.
 
 4. Opcjonalnie: Zaznacz kopię zapasową, która ma zostać użyta w razie niepowodzenia przywrócenia najnowszych danych z serwera.
 
-    - Jeśli kopii nie wybierzesz — system użyje najnowszej utworzonej do tej pory kopii.
+    - Jeśli nic nie wybierzesz — system użyje najnowszej utworzonej do tej pory kopii.
     - Jeśli wybierzesz - w przypadku niepowodzenia, system użyje wybranej przez Ciebie kopii.'
 
 ![Migracja wymuszona](./img/migrations/2.png)

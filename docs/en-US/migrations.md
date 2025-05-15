@@ -1,13 +1,11 @@
----
-
-## 🔍 What Are Migrations?
+# 🔍 Server migrations
 
 <p id="tooltip-data">
 Migrations are technical operations that involve moving your server to a new infrastructure. Their purpose is to:
 
-* improve server performance,
-* increase stability,
-* ensure compatibility with the latest technical solutions.
+-   improve server performance,
+-   increase stability,
+-   ensure compatibility with the latest technical solutions.
 
 </p>
 

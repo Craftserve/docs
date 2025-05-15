@@ -1,8 +1,4 @@
----
-Migracje to proces, z którym możesz się spotkać podczas korzystania ze swojego serwera Minecraft na Craftserve. Choć może brzmieć technicznie, dzięki nam jest to szybkie, proste i bezpieczne.
----
-
-## 🔍 Czym są migracje?
+# 🔍 Migracje serwerów
 
 <p id="tooltip-data">
 Migracje to operacje techniczne, które polegają na przeniesieniu Twojego serwera na nową infrastrukturę. Ich celem jest:

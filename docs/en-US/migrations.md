@@ -32,7 +32,7 @@ If the standard migration fails:
 
 1. Choose the **“Force Migration”** option.
  <div style="background-color: #fffbe6; border-left: 4px solid #ffcc00; padding: 12px; margin: 16px 0; border-radius: 4px; color: #000">
- ⚠️ Warning: This option <strong> may result in the loss of your most recent data</strong> on the server
+ ⚠️ Warning: This option <strong>may result in the loss of recent data on the server</strong> due to loading the latest or a user-selected backup (see point 4).
   </div>
 
 2. **Check the box to agree to the migration**.

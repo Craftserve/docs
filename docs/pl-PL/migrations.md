@@ -31,7 +31,7 @@ Jeśli standardowa migracja się nie powiedzie:
 
 1. Wybierz opcję **„Wymuś migrację”**.
  <div style="background-color: #fffbe6; border-left: 4px solid #ffcc00; padding: 12px; margin: 16px 0; border-radius: 4px; color: #000">
- ⚠️ Uwaga: Ta opcja <strong> może wiązać się z utratą najnowszych danych</strong> na serwerze
+ ⚠️ Uwaga: Ta opcja <strong> może wiązać się z utratą najnowszych danych</strong> na serwerze na wskutek wczytania ostatniej najnowszej, lub wybranej przez Ciebie (patrz pkt.4) kopii zapasowej.
  </div>
 
 2. **Zaznacz zgodę na migrację**.

@@ -231,57 +231,59 @@ Aby dowiedzieć się więcej na ten temat skorzystaj z
 
     </details>
 
-    <details>
-      <summary>Kliknij tutaj, aby zobaczyć przykładowy manifest paczki</summary>
+<details>
+<summary>Przykładowy manifest paczki</summary>
 
-    ```json
-    {
-        "manifestVersion": "v2",
-        "ManifestHash": "sha256-725770a3ffad4d6335fb6828c65b8bd4c558a1c21b817d3155668267f2d04a52",
-        "name": "paper",
-        "subdir": "/marketplace/paper/sha256-725770a3ffad4d6335fb6828c65b8bd4c558a1c21b817d3155668267f2d04a52",
-        "version": "1.21.3-29",
-        "versionFormat": "semver",
-        "depends": ["java:21"],
-        "provides": [
-            "game-engine",
-            "minecraft-java-server:1.21.3",
-            "minecraft-java-server:1.21.x",
-            "paper-api:1.21.3",
-            "spigot-api:1.21.3",
-            "bukkit-api:1.21.3",
-            "paper:1.21.3",
-            "paper:1.21.x"
-        ],
-        "set-env": [
-            {
-                "key": "MINECRAFT_VERSION",
-                "value": "1.21.3"
-            },
-            {
-                "key": "21",
-                "value": "21"
-            }
-        ],
-        "labels": {
-            "craftserve.com/game": "minecraft-java",
-            "craftserve.com/java/version": "21",
-            "craftserve.com/minecraft-java/version": "1.21.3",
-            "craftserve.com/mod-loader": "paper",
-            "craftserve.com/package/time": "2024-11-15 15:30:09.385604",
-            "craftserve.com/release/time": "2024-11-15 09:09:36.732000",
-            "craftserve.com/type": "mod_loader"
+```json
+{
+    "manifestVersion": "v2",
+    "ManifestHash": "sha256-725770a3ffad4d6335fb6828c65b8bd4c558a1c21b817d3155668267f2d04a52",
+    "name": "paper",
+    "subdir": "/marketplace/paper/sha256-725770a3ffad4d6335fb6828c65b8bd4c558a1c21b817d3155668267f2d04a52",
+    "version": "1.21.3-29",
+    "versionFormat": "semver",
+    "depends": ["java:21"],
+    "provides": [
+        "game-engine",
+        "minecraft-java-server:1.21.3",
+        "minecraft-java-server:1.21.x",
+        "paper-api:1.21.3",
+        "spigot-api:1.21.3",
+        "bukkit-api:1.21.3",
+        "paper:1.21.3",
+        "paper:1.21.x"
+    ],
+    "set-env": [
+        {
+            "key": "MINECRAFT_VERSION",
+            "value": "1.21.3"
         },
-        "fileshash": "k1:ff0ad7f85bab891c2d9174d87602f478dd031e206a7cc029ab132ca089da3e0e",
-        "downloadfiles": [
-            {
-                "name": "minecraft_server.jar",
-                "url": "https://api.papermc.io/v2/projects/paper/versions/1.21.3/builds/29/downloads/paper-1.21.3-29.jar",
-                "hash": "sha256-eb58806b3535646272a2e2ca3b46aae50b7a4ab8f173a493650092f0c1859b89"
-            }
-        ]
-    }
-    ```
+        {
+            "key": "21",
+            "value": "21"
+        }
+    ],
+    "labels": {
+        "craftserve.com/game": "minecraft-java",
+        "craftserve.com/java/version": "21",
+        "craftserve.com/minecraft-java/version": "1.21.3",
+        "craftserve.com/mod-loader": "paper",
+        "craftserve.com/package/time": "2024-11-15 15:30:09.385604",
+        "craftserve.com/release/time": "2024-11-15 09:09:36.732000",
+        "craftserve.com/type": "mod_loader"
+    },
+    "fileshash": "k1:ff0ad7f85bab891c2d9174d87602f478dd031e206a7cc029ab132ca089da3e0e",
+    "downloadfiles": [
+        {
+            "name": "minecraft_server.jar",
+            "url": "https://api.papermc.io/v2/projects/paper/versions/1.21.3/builds/29/downloads/paper-1.21.3-29.jar",
+            "hash": "sha256-eb58806b3535646272a2e2ca3b46aae50b7a4ab8f173a493650092f0c1859b89"
+        }
+    ]
+}
+```
+
+</details>
 
 10. **Szczegółowy opis** : Tutaj możesz opisać dokładnie czego wymaga Twoja wersja, oraz opisać co zmieniło się np. Względem starszej wersji. Pamiętaj, aby dokładnie uzupełniać swoje opisy.
 

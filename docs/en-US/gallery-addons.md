@@ -219,8 +219,9 @@ For more information, see [documentation](https://github.com/Masterminds/semver?
 -   **Labels (optional)** Each package includes its manifest. You can additionally specify which labels must appear in it. For example, you might want the required package not only to satisfy the dependency `paper` in versions `^1.20.1` but also to have in its `labels` field a label with the key `craftserve.com/mod-loader` and value `minecraft-java`.
 
 <details>
-    <summary>Click here to see example package labels</summary>
-    <br/>
+<summary>Click here to see example package labels</summary>
+
+<br>
 
 | Key                                        | Sample value            | Description                                                       |
 | ------------------------------------------ | ----------------------- | ----------------------------------------------------------------- |
@@ -231,7 +232,6 @@ For more information, see [documentation](https://github.com/Masterminds/semver?
 | `"craftserve.com/require-empty-workspace"` | `"yes"`                 | Whether the package requires a clean server instance (`yes`/`no`) |
 
 </details>
-
 <details>
 <summary>Click here to see an example package manifest</summary>
 

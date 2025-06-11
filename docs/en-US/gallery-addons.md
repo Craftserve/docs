@@ -222,13 +222,13 @@ For more information, see [documentation](https://github.com/Masterminds/semver?
     <summary>Click here to see example package labels</summary>
     <br/>
 
-    | Key                                        | Sample value            | Description                                                       |
-    | ------------------------------------------ | ----------------------- | ----------------------------------------------------------------- |
-    | `"craftserve.com/game"`                    | `"minecraft-java"`      | The game for which the addon is intended (here: Minecraft Java)   |
-    | `"craftserve.com/type"`                    | `"plugin"`              | Package type (e.g., `plugin`, `mod`, `map`)                       |
-    | `"craftserve.com/package/time"`            | `"2025-04-11 15:25:15"` | Package creation date and time                                    |
-    | `"craftserve.com/release/time"`            | `"2025-04-11 15:25:15"` | Package publication date and time                                 |
-    | `"craftserve.com/require-empty-workspace"` | `"yes"`                 | Whether the package requires a clean server instance (`yes`/`no`) |
+| Key                                        | Sample value            | Description                                                       |
+| ------------------------------------------ | ----------------------- | ----------------------------------------------------------------- |
+| `"craftserve.com/game"`                    | `"minecraft-java"`      | The game for which the addon is intended (here: Minecraft Java)   |
+| `"craftserve.com/type"`                    | `"plugin"`              | Package type (e.g., `plugin`, `mod`, `map`)                       |
+| `"craftserve.com/package/time"`            | `"2025-04-11 15:25:15"` | Package creation date and time                                    |
+| `"craftserve.com/release/time"`            | `"2025-04-11 15:25:15"` | Package publication date and time                                 |
+| `"craftserve.com/require-empty-workspace"` | `"yes"`                 | Whether the package requires a clean server instance (`yes`/`no`) |
 
 </details>
 

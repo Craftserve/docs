@@ -30,7 +30,7 @@ Here is a proposal for a clear and aesthetic **table of contents** in the style 
 
 #### 1. Go to the server management panel, then to the Addons Gallery, and click the “Create Project” link
 
-<img style="margin: 10px 30px" src="./img/marketplace_form/marketplace_create_project_button.png" alt="Create project" width="700"/>
+![Project creator](./img/marketplace_form/marketplace_create_project_button.png){width="700px"}
 
 <a id="form_fields"></a>
 
@@ -50,7 +50,7 @@ Here is a proposal for a clear and aesthetic **table of contents** in the style 
 
 -   **Public**: Available to everyone; displayed in the package list in the Addons gallery.
 
--   **Unlisted**: Not displayed in the package list in the Addons gallery, but can be shared via a link.
+-   **Non-public**: Not displayed in the package list in the Addons gallery, but can be shared via a link.
 
 -   **Private**: Available only to you.
 
@@ -101,7 +101,7 @@ Remember that if your project is not public or has no version added, **it will n
 #### You already have your project, but it lacks a version—meaning there are no files added to the project that users will download when they install it on their server. To add a version, enter your project, then click “Version List.”
 
 1. Click **“Version List”**
-2. Click **“Add Version”**
+2. Click **Releases list**
 3. Fill in the **Release type** – this field indicates the development stage of the version.
 
     - **Stable** means a stable release that has passed full testing, intended for users who expect a fully functional addon.
@@ -110,7 +110,7 @@ Remember that if your project is not public or has no version added, **it will n
 
 4. Choose the **Installation method**. There are two installation methods:
 
-    - **Wipe server data and install package** – Before installing your addon, we will recommend that the user wipe their server data and then install your addon on a clean instance.
+    - **Erease server data and install package** – Before installing your addon, we will recommend that the user wipe their server data and then install your addon on a clean instance.
     - **Add to existing server** – We will add your package files to the user’s current server state.
 
 5. **Package version** <a id="semver"></a>  
@@ -130,7 +130,7 @@ Remember that if your project is not public or has no version added, **it will n
     - `1.2.1` – minor bug fixes,
     - `2.0.0` – breaking changes introduced.
 
-> **Note:** Using the correct version format helps users recognize the significance of changes in the package and simplifies update management. To learn more about semantic versioning, visit https://semver.org/lang/pl/
+> **Note:** Using the correct version format helps users recognize the significance of changes in the package and simplifies update management. To learn more about semantic versioning, visit [semver documentation](https://semver.org)
 
 6. **Content version** – This value will be displayed to the user as the installed addon version. You can enter the same value as in the **Package version** field, or use your own **custom versioning** (e.g., `beta`, `dev-2025-06-11`, `v2-fixes`, etc.). This field **is not validated**—you can enter any value that best describes the project’s content version from your perspective.
 
@@ -204,7 +204,7 @@ Knowing this theory, we can create the following version requirements:
 -   `~1.20.0` → matches `1.20.1`, `1.20.9`, but **not** `1.21.0`
 -   `=1.20.0` → matches only `1.20.0`
 
-For more information, see https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major
+For more information, see [documentation](https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major)
 
 <a id="advanced"></a>
 

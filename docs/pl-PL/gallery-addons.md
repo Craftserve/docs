@@ -25,27 +25,25 @@ Oto propozycja przejrzystego i estetycznego **spisu treści** w stylu dokumentac
     - 3.1 [🧩 Niestandardowe zależności i tagi](#advanced)
     - 3.2 [🏷️ Etykiety i manifest paczki](#advanced)
 
-## Tworzenie projektu
+## Tworzenie projektu 🔨
 
 #### Aby Twój projekt był możliwy do pobrania, oraz aby użytkownicy mogli go zobaczyć w galerii dodatków należy najpierw utworzyć nowy projekt.
 
 #### 1. Wejdź do panelu zarządzania serwerem, następnie w Galerie Dodatków, oraz kliknij odnośnik “Utwórz projekt”
 
-<img style="margin: 10px 30px" src="./img/marketplace_form/marketplace_create_project_button.png" alt="Tworzenie projektu" width="700"/>
+![Tworzenie projektu](./img/marketplace_form/marketplace_create_project_button.png){width="700px"}
 
 <a  id="form_fields"></a>
 
 #### 2. W kreatorze projektu wypełnij poszczególne pola
 
-<img style="margin: 10px 30px" src="./img/marketplace_form/marketplace_create_project.png" alt="Tworzenie projektu" width="700"/>
-
 -   **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
 
--   **Skrót** &bull; te pole wypełnia się automatycznie względem nazwy którą wypełnisz,odpowiada ono za identyfikacje projektu w linku.
+-   **Skrót** - te pole wypełnia się automatycznie względem nazwy którą wypełnisz,odpowiada ono za identyfikacje projektu w linku.
 
 -   **Krótki opis** – Pojawia się po kliknięciu w projekt nad przyciskiem "Zagraj teraz" lub "Zainstaluj najnowszą wersję" (w zależności od typu projektu). Wyświetla się również w kafelku w liście zainstalowanych paczek w widoku ustawień serwera.
 
--   **Ikona projektu** &bull; przyciąga uwagę i jest niejako wizytówką Twojej paczki! Pojawia się w kafelku w liście zainstalowanych paczek w widoku ustawień, oraz na podstronie "Dodatki", gdy paczka ma inną kategorię projektu niż "Paczka serwera"
+-   **Ikona projektu** - przyciąga uwagę i jest niejako wizytówką Twojej paczki! Pojawia się w kafelku w liście zainstalowanych paczek w widoku ustawień, oraz na podstronie "Dodatki", gdy paczka ma inną kategorię projektu niż "Paczka serwera"
 
 <a  id="visibility"></a> 3. **Widoczność projektu**
 
@@ -70,8 +68,6 @@ do udostępnienia przez link.
 -   **Miniatura** - Wyświetla się na kafelku projektu w galerii dodatków, oraz w widoku wybranego projektu, gdy nie zostało dodane wideo.
 
 -   **Galeria** - Wyświetla się na podstronie Twojego projektu. Możesz skorzystać z galerii jeśli chcesz zamieścić w swoim projekcie np. zrzuty ekranu z swojego dodatku.
-
-Oto zredagowana i uporządkowana wersja Twojego tekstu w stylu dokumentacyjnym Markdown, z zachowaniem struktury listy i poprawnością językową:
 
 <a id="translations"></a>
 
@@ -101,15 +97,20 @@ Oto zredagowana i uporządkowana wersja Twojego tekstu w stylu dokumentacyjnym M
 Aby zobaczyć swój projekt, przejdź do zakładki **„Dodatki”**, a następnie wybierz **„Moje projekty”**.  
 Pamiętaj, że jeśli Twój projekt nie jest publiczny lub nie ma dodanej wersji do zainstalowania, **nie pojawi się w głównym widoku galerii dodatków**. W takim przypadku skorzystaj z zakładki **„Moje projekty”**, gdzie zawsze znajdziesz wszystkie swoje publikacje.
 
-# Tworzenie wersji
+&nbsp;
 
-### Masz już swój projekt, ale brakuje w nim wersji, czyli brakuje dodanych plików do projektu, które zostaną pobrane w momencie gdy użytkownik będzie chciał ją zainstalować na swoim serwerze. Aby dodać wersję wejdź w swój projekt, następnie kliknij “Lista wersji”
+# Tworzenie wersji 📦
 
-1. Kliknij “Lista wersji”
-2. Kliknij "Dodaj wersję"
+#### Masz już swój projekt, ale brakuje w nim wersji, czyli brakuje dodanych plików do projektu, które zostaną pobrane w momencie gdy użytkownik będzie chciał ją zainstalować na swoim serwerze. Aby dodać wersję wejdź w swój projekt, następnie kliknij “Lista wersji”
+
+1. Kliknij **“Lista wersji”**
+2. Kliknij **"Dodaj wersję"**
 3. Uzupełnij **typ wersji** - te pole oznacza w jakiej fazie rozwoju jest dane wydanie wersji. - **Stable** oznacza wersję stabilną, która przeszła pełne testy. Jest ona skierowana do użytkowników którzy oczekują w pełni działającego dodatku. - **Private** oznacza, że wersja jest prywatna, skierowana dla danej grupy odbiorców np. Programistów, lub Twoich testerów. Nie musi być stabilna, może wymagać np. Dodatkowych testów. - **Latest** to najnowsza wersja, może być stabilna lub nie. Kierowana dla użytkowników, którzy chcą najnowszych funkcji.
 
-4. Oto poprawiony i uzupełniony opis punktu **4. Wersja projektu**, zgodny z zasadami semver (versioning):
+4. Wybierz **Sposób instalacji**. Rozróżniamy dwa sposoby instalacji:
+
+    - **Wymaż dane serwera i zainstaluj paczkę** - Przed zainstalowaniem Twojego dodatku domyślnie będziemy rekomendować użytkownikowi wymazanie danych swojego serwera, a następnie na czystej instancji zainstalować Twój dodatek.
+    - **Dodaj do istniejącego serwera** - Dodamy pliki z Twojej paczki do aktualnego stanu serwera użytkownika.
 
 5. **Wersja pakietu** <a  id="semver"></a>
    To pole powinno zawierać numer wersji Twojego projektu w formacie **SemVer** (ang. _Semantic Versioning_), np. `1.2.3`. System instalacji korzysta z tego pola, aby automatycznie rozwiązywać konflikty podczas instalacji projektów.  
@@ -130,7 +131,7 @@ Pamiętaj, że jeśli Twój projekt nie jest publiczny lub nie ma dodanej wersji
     - `1.2.1` – poprawiono drobne błędy,
     - `2.0.0` – wprowadzono zmiany łamiące kompatybilność z wcześniejszą wersją.
 
-> **Uwaga:** Użycie poprawnego formatu wersji pomaga użytkownikom rozpoznać, jak istotna była zmiana w paczce i ułatwia zarządzanie aktualizacjami. Aby dowiedzieć się więcej na temat semantycznego wersjonowania skorzystaj z https://semver.org/lang/pl/
+> **Uwaga:** Użycie poprawnego formatu wersji pomaga użytkownikom rozpoznać, jak istotna była zmiana w paczce i ułatwia zarządzanie aktualizacjami. Aby dowiedzieć się więcej na temat semantycznego wersjonowania skorzystaj z [dokumentacji semver](https://semver.org/lang/pl/)
 
 6.  **Wersja zawartości** - Ta wartość będzie wyświetlać się użytkownikowi jako wersja zainstalowanego dodatku. Możesz wpisać tu taką samą wartość jak w polu **Wersja pakietu**, lub zastosować swoje **niestandardowe wersjonowanie** (np. `beta`, `dev-2025-06-11`, `v2-poprawki`, itp.). Pole to **nie podlega walidacji** – możesz wpisać dowolną wartość, która najlepiej opisuje wersję zawartości projektu z Twojej perspektywy.
 
@@ -186,7 +187,7 @@ Przypominjmy sobie na starcie jak działa semantyczne wersjonowanie:
 -   `1.2.1` – poprawiono drobne błędy,
 -   `2.0.0` – wprowadzono zmiany łamiące kompatybilność z wcześniejszą wersją.
 
-Znając tę teorię możemy używać:
+Znając tę teorię możemy tworzyć następujące wymagania względem wersji paczek:
 
 | Operator           | Znaczenie                                                        | Przykład        | Zakres wersji         |
 | ------------------ | ---------------------------------------------------------------- | --------------- | --------------------- |
@@ -202,7 +203,8 @@ Znając tę teorię możemy używać:
 -   `~1.20.0` → pasuje do `1.20.1`, `1.20.9`, ale **nie** do `1.21.0`
 -   `=1.20.0` → pasuje tylko do `1.20.0`
 
-Aby dowiedzieć się więcej na ten temat skorzystaj z https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major
+Aby dowiedzieć się więcej na ten temat skorzystaj z
+[dokumentacji 📋](https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major)
 
 <a  id="advanced"></a> 9. **Opcje zaawansowane (opcjonalne)** - W tym punkcie będziemy tworzyć niestandardowe zależności do Twojego projektu. Po kliknięciu w **"Pokaż opcje zaawansowane"** pojawi się przycisk "Dodaj zależność". Po kliknięciu masz możliwość **dodania własnej zależności**. Formularz składa się z 3 pól.
 
@@ -283,6 +285,6 @@ Aby dowiedzieć się więcej na ten temat skorzystaj z https://github.com/Master
 
 10. **Szczegółowy opis** : Tutaj możesz opisać dokładnie czego wymaga Twoja wersja, oraz opisać co zmieniło się np. Względem starszej wersji. Pamiętaj, aby dokładnie uzupełniać swoje opisy.
 
-11. Gdy wszystkie pola zostały uzupełnione, kliknij przycisk “ **Dodaj wersję** ”.
+11. Gdy wszystkie pola zostały uzupełnione, kliknij przycisk “**Dodaj wersję**”.
 
 ### Wersja została utworzona i jest teraz dostępna do pobrania. **Gratulacje** 🚀

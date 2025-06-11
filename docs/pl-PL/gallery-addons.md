@@ -29,13 +29,13 @@ Oto propozycja przejrzystego i estetycznego **spisu treści** w stylu dokumentac
 
 #### Aby Twój projekt był możliwy do pobrania, oraz aby użytkownicy mogli go zobaczyć w galerii dodatków należy najpierw utworzyć nowy projekt.
 
-#### 1. Wejdź do panelu zarządzania serwerem, następnie w Galerie Dodatków, oraz kliknij odnośnik “Utwórz projekt”
+1. Wejdź do panelu zarządzania serwerem, następnie w Galerie Dodatków, oraz kliknij odnośnik “Utwórz projekt”
 
 ![Tworzenie projektu](./img/marketplace_form/marketplace_create_project_button.png)
 
 <a  id="form_fields"></a>
 
-#### 2. W kreatorze projektu wypełnij poszczególne pola
+2. W kreatorze projektu wypełnij poszczególne pola
 
 -   **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
 

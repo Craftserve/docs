@@ -281,11 +281,14 @@ For more information, see [documentation](https://github.com/Masterminds/semver?
         }
     ]
 }
+```
 
+</details>
+
+&nbsp;
 
 10. **Detailed version description**: Here you can describe exactly what your version requires and what has changed compared to previous versions. Remember to fill in your descriptions thoroughly.
 
 11. Once all fields are filled in, click the **“Add Version”** button.
 
 ### The version has been created and is now available for download. **Congratulations** 🚀
-```

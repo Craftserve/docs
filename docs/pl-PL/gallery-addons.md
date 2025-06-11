@@ -39,11 +39,11 @@ Oto propozycja przejrzystego i estetycznego **spisu treści** w stylu dokumentac
 
 -   **Nazwa projektu** – Wyświetla się w marketplace, oraz dzięki temu polu użytkownicy będą mogli wyszukiwać Twój projekt po nazwie.
 
--   **Skrót** - te pole wypełnia się automatycznie względem nazwy którą wypełnisz,odpowiada ono za identyfikacje projektu w linku.
+-   **Skrót** - te pole wypełnia się automatycznie względem nazwy którą wypełnisz, odpowiada ono za identyfikacje projektu w linku.
 
 -   **Krótki opis** – Pojawia się po kliknięciu w projekt nad przyciskiem "Zagraj teraz" lub "Zainstaluj najnowszą wersję" (w zależności od typu projektu). Wyświetla się również w kafelku w liście zainstalowanych paczek w widoku ustawień serwera.
 
--   **Ikona projektu** - przyciąga uwagę i jest niejako wizytówką Twojej paczki! Pojawia się w kafelku w liście zainstalowanych paczek w widoku ustawień, oraz na podstronie "Dodatki", gdy paczka ma inną kategorię projektu niż "Paczka serwera"
+-   **Ikona projektu** - przyciąga uwagę i jest niejako wizytówką Twojej paczki! Pojawia się w kafelku w liście zainstalowanych paczek w widoku ustawień.
 
 <a  id="visibility"></a> 3. **Widoczność projektu**
 

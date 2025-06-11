@@ -42,7 +42,7 @@ Here is a proposal for a clear and aesthetic **table of contents** in the style 
 
 -   **Short description** – Appears when clicking on the project, above the “Play Now” or “Install Latest Version” button (depending on the project type). It also appears in the tile in the list of installed packages in the server settings view.
 
--   **Project icon** – Attracts attention and serves as a showcase for your package! Appears in the tile in the list of installed packages in the settings view, and on the “Addons” subpage when the package category is different from “Server package.”
+-   **Project icon** – Attracts attention and serves as a showcase for your package! Appears in the tile in the list of installed packages in the settings view.
 
 <a id="visibility"></a>
 

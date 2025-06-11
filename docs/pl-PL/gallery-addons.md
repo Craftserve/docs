@@ -31,7 +31,7 @@ Oto propozycja przejrzystego i estetycznego **spisu treści** w stylu dokumentac
 
 #### 1. Wejdź do panelu zarządzania serwerem, następnie w Galerie Dodatków, oraz kliknij odnośnik “Utwórz projekt”
 
-![Tworzenie projektu](./img/marketplace_form/marketplace_create_project_button.png){width="700px"}
+![Tworzenie projektu](./img/marketplace_form/marketplace_create_project_button.png)
 
 <a  id="form_fields"></a>
 

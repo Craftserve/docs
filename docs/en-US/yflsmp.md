@@ -19,9 +19,20 @@
      ![image](./img/yfl/marketplace_install_version.png)
 
 2. Start the server.
-3. If you want to use voice chat, notify support ([create a new ticket](https://craftserve.com/contact)).
 
 <a id="client"></a>
+
+### Voice Chat Configuration
+
+The YFL modpack includes a voice chat feature, which is disabled by default.
+
+To enable it:
+
+1. Go to the **Settings** → **Ports** tab.
+2. Create a new port and give it any name, e.g. `PlasmoVoice`.
+3. Copy the newly created port.
+4. Open the `config/plasmovoice/config.toml` file.
+5. In the `[host]` section, paste the copied port into the `port` field.
 
 ### Installation on Player Computers
 

@@ -31,9 +31,11 @@ To enable it:
 1. Go to the **Settings** → **Ports** tab.
 2. Create a new port and give it any name, e.g. `PlasmoVoice`.
 3. Copy the newly created port.
-4. Open the `config/plasmovoice/config.toml` file.
-5. In the `[host]` section, paste the copied port into the `port` field.
-
+![image](../img/yfl/port_settings_yfl.png)
+4. Open the `/config/PlasmoVoice/server.yml` file.
+5. In the `udp` section, paste the copied port into the `port` field.
+![image](../img/yfl/port_config_yfl.png)
+6. Save the file and restart the server.
 ### Installation on Player Computers
 
 To join the server, players must have the YFLsmp package installed. Follow the steps below:

@@ -8,6 +8,9 @@ theme:
 extra_css:
     - stylesheets/extra.css
 
+extra_javascript:
+  - javascript/redirect.js
+
 extra:
     alternate:
         - name: English

@@ -1,29 +1,134 @@
 site_name: Craftserve Docs
 repo_url: https://github.com/Craftserve/docs/tree/c3
+
 theme:
-    name: material
-    custom_dir: theme
-    logo: common/img/logo.png
+  name: material
+  custom_dir: theme
+  logo: common/img/logo.png
+  language: en
 
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
 
 extra_javascript:
   - javascript/redirect.js
 
 extra:
-    alternate:
-        - name: English
-          link: /en-US/
-          lang: en
-        - name: Polski
-          link: /pl-PL/
-          lang: pl
-    analytics:
-        provider: custom
+  alternate:
+    - name: English
+      link: /en-US/
+      lang: en
+    - name: Polski
+      link: /pl-PL/
+      lang: pl
+  analytics:
+    provider: custom
 
 exclude_docs: |
-    todo.md
+  todo.md
 
 plugins:
-    - glightbox
+  - glightbox
+
+nav:
+  - Polski:
+      - Oficjalny zestaw dokumentacji, poradników i zasobów Craftserve: pl-PL/README.md
+
+      - Instalacja i konfiguracja:
+          - Instalacja modpacka: pl-PL/modpack.md
+          - Instalacja modpacka BetterMC (Fabric): pl-PL/bettermc.md
+          - Instalacja paczki YFLsmp: pl-PL/yflsmp.md
+          - Instalacja pluginów: pl-PL/plugins.md
+          - Instalacja datapacków: pl-PL/datapacks.md
+          - SpongeForge: pl-PL/spongeforge.md
+
+      - Administracja i ustawienia serwera:
+          - Silniki: pl-PL/engines.md
+          - Ustawienia: pl-PL/ustawienia.md
+          - Ustawienia Minecraft: pl-PL/ustawieniaminecraft.md
+          - Świat serwerowy: pl-PL/world.md
+          - Serwerowy resource pack: pl-PL/resource-pack.md
+          - Online mode: pl-PL/online-mode.md
+          - Pregenerowanie świata: pl-PL/pregen.md
+          - Ustawianie własnej domeny do serwera Minecraft: pl-PL/domain.md
+
+      - Zarządzanie plikami i danymi:
+          - Poradnik FTP – Łączenie się z Craftserve: pl-PL/ftp.md
+          - Kopie zapasowe, czyli Backupy: pl-PL/backups.md
+          - 📦 Jak stworzyć paczkę na Craftserve Dodatki?: pl-PL/gallery-addons.md
+          - KM Pack – FAQ: pl-PL/kmpack.md
+
+      - Optymalizacja i diagnostyka:
+          - Lagi na serwerze (Timings): pl-PL/timings.md
+          - Forge Debug Profiler oraz jego interpretacja: pl-PL/debugprofiler.md
+          - Logi i raporty z crashy: pl-PL/logs.md
+
+      - Konfiguracja plików konfiguracyjnych:
+          - bukkit.yml – poradnik: pl-PL/bukkit.yml.md
+          - spigot.yml – poradnik: pl-PL/spigot.yml.md
+
+      - Wtyczki i narzędzia administracyjne:
+          - EssentialsX: pl-PL/essentialsx.md
+          - Instalacja i konfiguracja LogBlocka na Craftserve: pl-PL/logblock.md
+          - WorldEdit – kompletny poradnik: pl-PL/worldedit.md
+          - WorldGuard – poradnik: pl-PL/worldguard.md
+
+      - Bazy danych:
+          - 🧠 Czym jest MySQL?: pl-PL/mysql.md
+
+      - Migracje i operacje serwerowe:
+          - 🔍 Migracje serwerów: pl-PL/migrations.md
+
+      - Zabezpieczenia:
+          - AntyXray: pl-PL/antyxray.md
+
+  - English:
+      - Official Documentation, Guides, and Resources for Craftserve: en-US/README.md
+
+      - Installation & configuration:
+          - Modpack installation: en-US/modpack.md
+          - BetterMC (Fabric) installation: en-US/bettermc.md
+          - YFLsmp pack installation: en-US/yflsmp.md
+          - Plugin installation: en-US/plugins.md
+          - Datapack installation: en-US/datapacks.md
+          - SpongeForge: en-US/spongeforge.md
+
+      - Administration & server settings:
+          - Engines: en-US/engines.md
+          - Settings: en-US/settings.md
+          - Minecraft settings: en-US/minecraftsettings.md
+          - Server world: en-US/world.md
+          - Server resource pack: en-US/resource-pack.md
+          - Online mode: en-US/online-mode.md
+          - World pregeneration: en-US/pregen.md
+          - Set a custom domain for your server: en-US/domain.md
+
+      - File & data management:
+          - FTP guide – connect to Craftserve: en-US/ftp.md
+          - Backups: en-US/backups.md
+          - 📦 How to build a Craftserve Addons pack: en-US/gallery-addons.md
+          - KM Pack – FAQ: en-US/kmpack.md
+
+      - Optimization & diagnostics:
+          - Lag (Timings): en-US/timings.md
+          - Forge Debug Profiler and interpretation: en-US/debugprofiler.md
+          - Crash logs & reports: en-US/logs.md
+
+      - Config files:
+          - bukkit.yml – guide: en-US/bukkit.yml.md
+          - spigot.yml – guide: en-US/spigot.yml.md
+
+      - Admin plugins & tools:
+          - EssentialsX: en-US/essentialsx.md
+          - LogBlock – installation & configuration: en-US/logblock.md
+          - WorldEdit – complete guide: en-US/worldedit.md
+          - WorldGuard – guide: en-US/worldguard.md
+
+      - Databases:
+          - 🧠 What is MySQL?: en-US/mysql.md
+
+      - Migrations & server ops:
+          - 🔍 Server migrations: en-US/migrations.md
+
+      - Security:
+          - AntiXray: en-US/antyxray.md

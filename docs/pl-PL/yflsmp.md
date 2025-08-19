@@ -18,10 +18,24 @@
 
      ![image](./img/yfl/marketplace_install_version.png)
 
-2. Uruchom serwer.
-3. Jeśli chciałbyś skorzystać z voicechatu, powiadom o tym support([utwórz nowe zgłoszenie](https://craftserve.com/contact)).
+2. Uruchom serwer
 
 <a id="client"></a>
+
+### Konfiguracja czatu głosowego
+
+Paczka YFL zawiera czat głosowy, który domyślnie jest wyłączony.
+
+Aby go uruchomić:
+
+1. Przejdź do zakładki **Ustawienia** → **Porty**.
+2. Utwórz nowy port, nadając mu dowolną nazwę, np. `PlasmoVoice`.
+3. Skopiuj utworzony port.
+![image](../img/yfl/port_settings_yfl.png)
+4. Przejdź do pliku `/config/PlasmoVoice/server.yml`.
+5. W sekcji `udp`, w polu `port`, wklej wcześniej skopiowaną wartość.
+![image](../img/yfl/port_config_yfl.png)
+6. Zapisz plik i uruchom ponownie serwer.
 
 ### Instalacja na komputerach graczy
 

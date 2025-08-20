@@ -167,6 +167,22 @@ Check the required dependencies if your package needs them. By default, we will 
 -   `Require paper=1.21.5` – requires package `paper` in exactly version `1.21.5`
 -   `No requirements` – your package has no dependencies and can operate standalone
 
+#### Automatic Dependency Installation
+
+Some packages, like Paper, may require Java, which will be installed on the user's server.
+
+-   **Automatic Java Installation:**  
+    If you select Paper, the system will automatically install the appropriate Java version required by Paper.
+
+-   **Java Versions:**  
+    Paper may require Java in a range, e.g., **11–17**. By default, the **latest available version in this range** will be installed (e.g., Java 17). Another compatible version may be installed if another package on the user's server already requires Java in a range, e.g., **11–14**. In this case, **Java 14** will be installed.
+
+-   **Adding a Custom Java Version:**  
+    If you want to use a different Java version (override it), you can do so by adding an **advanced selector**, e.g.:
+    ```bash
+    java~11
+    ```
+
 ---
 
 ### 🔎 What’s the difference between `^`, `=`, and `~`?
@@ -224,7 +240,7 @@ For more information, see [documentation](https://github.com/Masterminds/semver?
       <br/>
 
     | Key                                           | Sample value            | Description                                                         |
-    |-----------------------------------------------|-------------------------|---------------------------------------------------------------------|
+    | --------------------------------------------- | ----------------------- | ------------------------------------------------------------------- |
     | `"craftserve.com/game"`                       | `"minecraft-java"`      | The game for which the addon is intended (here: Minecraft Java)     |
     | `"craftserve.com/type"`                       | `"plugin"`              | Package type (e.g. `plugin`, `mod`)                                 |
     | `"craftserve.com/package/time"`               | `"2025-04-11 15:25:15"` | Package creation date and time                                      |
@@ -239,52 +255,48 @@ For more information, see [documentation](https://github.com/Masterminds/semver?
 
 ```json
 {
-  "manifestVersion":"v3",
-  "ManifestHash":"sha256-5f5f4ce426d77a86581d7e5bd2109981eba1c64df0c226b39684a5f970a228e0",
-  "subdir":"marketplace/paper/sha256-5f5f4ce426d77a86581d7e5bd2109981eba1c64df0c226b39684a5f970a228e0",
-  "name":"paper",
-  "packageVersion":"1.21.8-11",
-  "contentVersion":"1.21.8-11",
-  "dependencies":[
-    "java>=17 <=21"
-  ],
-  "provides":[
-    "game-engine",
-    "minecraft-java-server=1.21.8",
-    "paper-api=1.21.8",
-    "spigot-api=1.21.8",
-    "bukkit-api=1.21.8",
-    "paper=1.21.8"
-  ],
-  "suggestedDependencies":[
-    "java~21"
-  ],
-  "set-env":[
-    {
-      "key":"MINECRAFT_VERSION",
-      "value":"1.21.8"
-    }
-  ],
-  "labels":{
-    "craftserve.com/game":"minecraft-java",
-    "craftserve.com/minecraft-java/version":"1.21.8",
-    "craftserve.com/mod-loader":"paper",
-    "craftserve.com/package/time":"2025-07-23 00:17:40.965514",
-    "craftserve.com/release/time":"2025-07-22 08:54:27.185000",
-    "craftserve.com/require-empty-workspace":"yes",
-    "craftserve.com/suggested-selector":"paper~1.21.8-11",
-    "craftserve.com/type":"mod_loader",
-    "craftserve.com/version-group":"1.21"
-  },
-  "fileshash":"k1:1488116ffdc37691af21a53e7d0eeb9cb1468c9aca3a41b0084705195ad41789",
-  "downloadfiles":[
-    {
-      "name":"minecraft_server.jar",
-      "url":"https://api.papermc.io/v2/projects/paper/versions/1.21.8/builds/11/downloads/paper-1.21.8-11.jar",
-      "hash":"sha256-9457d1279efcc2094e818cacb2f17670d9479e5f6b4ea2517eb93a6a3face51f",
-      "size":0
-    }
-  ]
+    "manifestVersion": "v3",
+    "ManifestHash": "sha256-5f5f4ce426d77a86581d7e5bd2109981eba1c64df0c226b39684a5f970a228e0",
+    "subdir": "marketplace/paper/sha256-5f5f4ce426d77a86581d7e5bd2109981eba1c64df0c226b39684a5f970a228e0",
+    "name": "paper",
+    "packageVersion": "1.21.8-11",
+    "contentVersion": "1.21.8-11",
+    "dependencies": ["java>=17 <=21"],
+    "provides": [
+        "game-engine",
+        "minecraft-java-server=1.21.8",
+        "paper-api=1.21.8",
+        "spigot-api=1.21.8",
+        "bukkit-api=1.21.8",
+        "paper=1.21.8"
+    ],
+    "suggestedDependencies": ["java~21"],
+    "set-env": [
+        {
+            "key": "MINECRAFT_VERSION",
+            "value": "1.21.8"
+        }
+    ],
+    "labels": {
+        "craftserve.com/game": "minecraft-java",
+        "craftserve.com/minecraft-java/version": "1.21.8",
+        "craftserve.com/mod-loader": "paper",
+        "craftserve.com/package/time": "2025-07-23 00:17:40.965514",
+        "craftserve.com/release/time": "2025-07-22 08:54:27.185000",
+        "craftserve.com/require-empty-workspace": "yes",
+        "craftserve.com/suggested-selector": "paper~1.21.8-11",
+        "craftserve.com/type": "mod_loader",
+        "craftserve.com/version-group": "1.21"
+    },
+    "fileshash": "k1:1488116ffdc37691af21a53e7d0eeb9cb1468c9aca3a41b0084705195ad41789",
+    "downloadfiles": [
+        {
+            "name": "minecraft_server.jar",
+            "url": "https://api.papermc.io/v2/projects/paper/versions/1.21.8/builds/11/downloads/paper-1.21.8-11.jar",
+            "hash": "sha256-9457d1279efcc2094e818cacb2f17670d9479e5f6b4ea2517eb93a6a3face51f",
+            "size": 0
+        }
+    ]
 }
 ```
 

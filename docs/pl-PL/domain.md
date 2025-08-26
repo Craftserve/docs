@@ -12,7 +12,7 @@
     - Zazwyczaj panel ten wygląda tak:
     - ![image](./img/domena/ovh_dns_panel.png)
 2. Dodaj nowy rekord typu SRV.
-    - Dane do uzupełnienia skopiuj z panelu Craftserve, konkretnie z zakładki **Ustawienia** -> **Domena** -> **Zewnętrzna domena**. Wygląda ona następująco:
+    - Dane do uzupełnienia skopiuj z panelu Craftserve, konkretnie z zakładki **Ustawienia** -> **Adresy** -> **Zewnętrzna domena**. Wygląda ona następująco:
     - ![image](./img/domena/craftserve_domain_panel.png)
     - Przykładowy rekord SRV wygląda następująco:
     - ![image](./img/domena/ovh_srv_record.png)

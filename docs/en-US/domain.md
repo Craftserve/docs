@@ -12,7 +12,7 @@
     - Typically, this panel looks like this:
     - ![image](./img/domena/ovh_dns_panel.png)
 2. Add a new SRV record.
-    - Copy the necessary information from the Craftserve panel, specifically from the **Settings** -> **Domain** -> **External Domain** tab. It should look like this:
+    - Copy the necessary information from the Craftserve panel, specifically from the **Settings** -> **Adresses** -> **External Domain** tab. It should look like this:
     - ![image](./img/domena/craftserve_domain_panel.png)
     - An example SRV record would look like this:
     - ![image](./img/domena/ovh_srv_record.png)

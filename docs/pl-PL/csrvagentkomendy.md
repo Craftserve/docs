@@ -11,7 +11,7 @@ ___
 
 Umozliwia przywracanie skinów na serwerach offline-mode, co nie jest domyślnym zachowaniem. Prosty zamiennik popularnego pluginu [SkinRestorer](https://craftserve.com/pl/m/skinsrestorer).
 
-**Użycie:**
+### Komendy:
 
 - `/skin` - przywraca skina gracza.
 
@@ -19,7 +19,7 @@ Umozliwia przywracanie skinów na serwerach offline-mode, co nie jest domyślnym
 
 Wymusza rejestrację i logowanie podczas dołączania na serwer, zabezpieczając nieautoryzowany dostęp do kont z wyższymi uprawnieniami na serwerach offline-mode. Prostsza alternatywa dla popularnego [AuthMe](https://craftserve.com/pl/m/authmereloaded).
 
-**Użycie:**
+### Komendy:
 
 - `/register <hasło>` - rejestruje konto na aktualngo gracza ze wskazanym hasłem.
 - `/login <hasło>` - loguje na konto aktualnego gracza z użyciem podanego hasła.
@@ -28,7 +28,7 @@ Wymusza rejestrację i logowanie podczas dołączania na serwer, zabezpieczając
 
 Znana funkcja z wielu serwerów Minecraft w prostej implementacji. Pozwala na tworzenie swoich punktów domowych (tzw. "homes") i teleportację do nich w dowolnym momencie za pomocą komendy.
 
-**Komendy:**
+### Komendy:
 
 - `/home` - teleportuje do ustawionego domu (home). Jeśli żaden dom nie jest ustawiony, powstanie nowy. **Uprawnienie:** `craftserve-agent.home`.
 - `/delhome` - usuwa aktualny dom (home). **Uprawnienie:** `craftserve-agent.home`.
@@ -37,7 +37,7 @@ Znana funkcja z wielu serwerów Minecraft w prostej implementacji. Pozwala na tw
 
 TPA umożliwia wysyłanie próśb o teleportację do innych graczy. Pozwala także na teleportowanie ich do siebie za pomocą próśb.
 
-**Komendy:**
+### Komendy:
 
 - `/tpa <nick>` - wysyła prośbę o teleportację do wskazanego gracza. **Uprawnienie:** `craftserve-agent.tpa.to-others`.
 - `/tpahere <nick>` - wysyła prośbę o teleportację innego gracza do siebie.**Uprawnienie:** `craftserve-agent.tpa.to-me`.
@@ -49,17 +49,16 @@ TPA umożliwia wysyłanie próśb o teleportację do innych graczy. Pozwala tak�
 
 Pozwala na ustawienie spawnu na mapie i teleportację do niego w dowolnym momencie.
 
-**Komendy:**
+### Komendy:
 
 - `/spawn` - teleportuje na spawn. **Uprawnienie:** `craftserve-agent.spawn`.
 - `/setspawn` - ustawia spawn. **Uprawnienie:** `craftserve-agent.spawn.set`.
-
 
 ## Warpy
 
 Warpy to znany od zawsze system pozwalający na ustalenie punktów zainteresowania na mapie (warpów) i teleportację do nich w dowolnym momencie za pomocą komendy.
 
-**Komendy:**
+### Komendy:
 
 - `/warp <nazwa>` teleportuje na warp. **Uprawnienie:** ` craftserve-agent.warp`.
 - `/setwarp <nazwa>` - ustawia warp. **Uprawnienie:** `craftserve-agent.warp.set`.
@@ -69,7 +68,7 @@ Warpy to znany od zawsze system pozwalający na ustalenie punktów zainteresowan
 
 Pozostałe przydatne komendy pluginu CraftserveAgent.
 
-**Komendy:**
+### Komendy:
 
 - `/back` - teleportuje z powrotem do poprzedniej lokacji. **Uprawnienie:** `craftserve-agent.back`.
 - `/slots <liczba>` - zmienia liczbę slotów na serwerze. **Uprawnienie:** `craftserve-agent.slots`.

@@ -46,6 +46,7 @@ nav:
           - Silniki: pl-PL/engines.md
           - Ustawienia: pl-PL/ustawienia.md
           - Ustawienia Minecraft: pl-PL/ustawieniaminecraft.md
+          - Polecenia CraftserveAgent: pl-PL/craftserveagent.md
           - Świat serwerowy: pl-PL/world.md
           - Serwerowy resource pack: pl-PL/resource-pack.md
           - Online mode: pl-PL/online-mode.md
@@ -97,6 +98,7 @@ nav:
           - Engines: en-US/engines.md
           - Settings: en-US/settings.md
           - Minecraft settings: en-US/minecraftsettings.md
+          - CraftserveAgent commands: en-US/craftserveagent.md
           - Server world: en-US/world.md
           - Server resource pack: en-US/resource-pack.md
           - Online mode: en-US/online-mode.md

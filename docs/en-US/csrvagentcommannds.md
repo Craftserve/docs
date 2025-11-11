@@ -8,7 +8,7 @@ Individual Agent's functions are implemented as modules, which you can enable or
 
 ## Skin Restoration
 
-Allows you to restore skins on offline-mode servers, which is not the default behavior. A simple replacement for the popular SkinRestorer plugin.
+Allows you to restore skins on offline-mode servers, which is not the default behavior. A simple replacement for the popular [SkinRestorer](https://craftserve.com/en/m/skinsrestorer) plugin.
 
 **Usage:**
 
@@ -16,7 +16,7 @@ Allows you to restore skins on offline-mode servers, which is not the default be
 
 ## Authentication (Login)
 
-Forces registration and login when joining a server, preventing unauthorized access to accounts with higher privileges on offline-mode servers. A simpler alternative to the popular AuthMe plugin.
+Forces registration and login when joining a server, preventing unauthorized access to accounts with higher privileges on offline-mode servers. A simpler alternative to the popular [AuthMe](https://craftserve.com/en/m/authmereloaded) plugin.
 
 **Usage:**
 

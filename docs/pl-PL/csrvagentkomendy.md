@@ -9,7 +9,7 @@ Poszczególne funkcje Agenta aplikowane są w formie modułów, które możesz w
 
 ## Przywracanie skinów
 
-Umozliwia przywracanie skinów na serwerach offline-mode, co nie jest domyślnym zachowaniem. Prosty zamiennik popularnego pluginu SkinRestorer.
+Umozliwia przywracanie skinów na serwerach offline-mode, co nie jest domyślnym zachowaniem. Prosty zamiennik popularnego pluginu [SkinRestorer](https://craftserve.com/pl/m/skinsrestorer).
 
 **Użycie:**
 
@@ -17,7 +17,7 @@ Umozliwia przywracanie skinów na serwerach offline-mode, co nie jest domyślnym
 
 ## Autoryzacja (logowanie)
 
-Wymusza rejestrację i logowanie podczas dołączania na serwer, zabezpieczając nieautoryzowany dostęp do kont z wyższymi uprawnieniami na serwerach offline-mode. Prostsza alternatywa dla popularnego AuthMe.
+Wymusza rejestrację i logowanie podczas dołączania na serwer, zabezpieczając nieautoryzowany dostęp do kont z wyższymi uprawnieniami na serwerach offline-mode. Prostsza alternatywa dla popularnego [AuthMe](https://craftserve.com/pl/m/authmereloaded).
 
 **Użycie:**
 

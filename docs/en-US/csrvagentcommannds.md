@@ -12,7 +12,6 @@ ___
 Allows you to restore skins on offline-mode servers, which is not the default behavior. A simple replacement for the popular [SkinRestorer](https://craftserve.com/en/m/skinsrestorer) plugin.
 
 **Usage:**
-
 - `/skin` - restores the player's skin.
 
 ## Authentication (Login)
@@ -20,7 +19,6 @@ Allows you to restore skins on offline-mode servers, which is not the default be
 Forces registration and login when joining a server, preventing unauthorized access to accounts with higher privileges on offline-mode servers. A simpler alternative to the popular [AuthMe](https://craftserve.com/en/m/authmereloaded) plugin.
 
 **Usage:**
-
 - `/register <password>` - registers an account for the current player with the specified password.
 - `/login <password>` - logs in to the current player's account using the specified password.
 

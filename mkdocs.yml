@@ -30,107 +30,128 @@ exclude_docs: |
 plugins:
   - glightbox
 
+markdown_extensions:
+  - attr_list
+  - toc:
+      permalink: true
+
 nav:
   - Polski:
       - Oficjalny zestaw dokumentacji, poradników i zasobów Craftserve: pl-PL/README.md
+      - Ogólne:
+          - Ustawienia: pl-PL/Ogólne/ustawienia.md
+          - Poradnik FTP – Łączenie się z Craftserve: pl-PL/Ogólne/ftp.md
+          - Kopie zapasowe, czyli Backupy: pl-PL/Ogólne/backups.md
+          - Czym jest MySQL?: pl-PL/Ogólne/mysql.md
+          - Migracje serwerów: pl-PL/Ogólne/migrations.md
+          - Jak stworzyć paczkę na Craftserve Dodatki?: pl-PL/Ogólne/gallery-addons.md
+      - Minecraft:
+        - Instalacja i konfiguracja:
+            - Instalacja modpacka: pl-PL/minecraft-java/modpack.md
+            - Instalacja modpacka BetterMC (Fabric): pl-PL/minecraft-java/bettermc.md
+            - Instalacja paczki YFLsmp: pl-PL/minecraft-java/yflsmp.md
+            - Instalacja pluginów: pl-PL/minecraft-java/plugins.md
+            - Instalacja datapacków: pl-PL/minecraft-java/datapacks.md
+            - SpongeForge: pl-PL/minecraft-java/spongeforge.md
 
-      - Instalacja i konfiguracja:
-          - Instalacja modpacka: pl-PL/modpack.md
-          - Instalacja modpacka BetterMC (Fabric): pl-PL/bettermc.md
-          - Instalacja paczki YFLsmp: pl-PL/yflsmp.md
-          - Instalacja pluginów: pl-PL/plugins.md
-          - Instalacja datapacków: pl-PL/datapacks.md
-          - SpongeForge: pl-PL/spongeforge.md
+        - Administracja i ustawienia serwera:
+            - Silniki: pl-PL/minecraft-java/engines.md
+            - Ustawienia Minecraft: pl-PL/minecraft-java/ustawieniaminecraft.md
+            - Polecenia CraftserveAgent: pl-PL/minecraft-java/csrvagentkomendy.md
+            - Świat serwerowy: pl-PL/minecraft-java/world.md
+            - Serwerowy resource pack: pl-PL/minecraft-java/resource-pack.md
+            - Online mode: pl-PL/minecraft-java/online-mode.md
+            - Pregenerowanie świata: pl-PL/minecraft-java/pregen.md
+            - Ustawianie własnej domeny do serwera Minecraft: pl-PL/minecraft-java/domain.md
 
-      - Administracja i ustawienia serwera:
-          - Silniki: pl-PL/engines.md
-          - Ustawienia: pl-PL/ustawienia.md
-          - Ustawienia Minecraft: pl-PL/ustawieniaminecraft.md
-          - Polecenia CraftserveAgent: pl-PL/csrvagentkomendy.md
-          - Świat serwerowy: pl-PL/world.md
-          - Serwerowy resource pack: pl-PL/resource-pack.md
-          - Online mode: pl-PL/online-mode.md
-          - Pregenerowanie świata: pl-PL/pregen.md
-          - Ustawianie własnej domeny do serwera Minecraft: pl-PL/domain.md
+        - Zarządzanie plikami i danymi:
+            - KM Pack – FAQ: pl-PL/minecraft-java/kmpack.md
 
-      - Zarządzanie plikami i danymi:
-          - Poradnik FTP – Łączenie się z Craftserve: pl-PL/ftp.md
-          - Kopie zapasowe, czyli Backupy: pl-PL/backups.md
-          - 📦 Jak stworzyć paczkę na Craftserve Dodatki?: pl-PL/gallery-addons.md
-          - KM Pack – FAQ: pl-PL/kmpack.md
+        - Optymalizacja i diagnostyka:
+            - Lagi na serwerze (Timings): pl-PL/minecraft-java/timings.md
+            - Forge Debug Profiler oraz jego interpretacja: pl-PL/minecraft-java/debugprofiler.md
+            - Logi i raporty z crashy: pl-PL/minecraft-java/logs.md
 
-      - Optymalizacja i diagnostyka:
-          - Lagi na serwerze (Timings): pl-PL/timings.md
-          - Forge Debug Profiler oraz jego interpretacja: pl-PL/debugprofiler.md
-          - Logi i raporty z crashy: pl-PL/logs.md
+        - Konfiguracja plików konfiguracyjnych:
+            - bukkit.yml – poradnik: pl-PL/minecraft-java/bukkit.yml.md
+            - spigot.yml – poradnik: pl-PL/minecraft-java/spigot.yml.md
 
-      - Konfiguracja plików konfiguracyjnych:
-          - bukkit.yml – poradnik: pl-PL/bukkit.yml.md
-          - spigot.yml – poradnik: pl-PL/spigot.yml.md
+        - Wtyczki i narzędzia administracyjne:
+            - EssentialsX: pl-PL/minecraft-java/essentialsx.md
+            - Instalacja i konfiguracja LogBlocka na Craftserve: pl-PL/minecraft-java/logblock.md
+            - WorldEdit – kompletny poradnik: pl-PL/minecraft-java/worldedit.md
+            - WorldGuard – poradnik: pl-PL/minecraft-java/worldguard.md
 
-      - Wtyczki i narzędzia administracyjne:
-          - EssentialsX: pl-PL/essentialsx.md
-          - Instalacja i konfiguracja LogBlocka na Craftserve: pl-PL/logblock.md
-          - WorldEdit – kompletny poradnik: pl-PL/worldedit.md
-          - WorldGuard – poradnik: pl-PL/worldguard.md
+        - Zabezpieczenia:
+            - AntyXray: pl-PL/minecraft-java/antyxray.md
 
-      - Bazy danych:
-          - 🧠 Czym jest MySQL?: pl-PL/mysql.md
-
-      - Migracje i operacje serwerowe:
-          - 🔍 Migracje serwerów: pl-PL/migrations.md
-
-      - Zabezpieczenia:
-          - AntyXray: pl-PL/antyxray.md
+      - Hytale:
+          - Przegląd: pl-PL/hytale/README.md
+          - FAQ: pl-PL/hytale/faq.md
+          - Legenda: pl-PL/hytale/legenda.md
+          - Builder Tools: pl-PL/hytale/buildertools.md
+          - NPC: pl-PL/hytale/npc.md
+          - Spawning: pl-PL/hytale/spawning.md
+          - System: pl-PL/hytale/system.md
+          - Teleport: pl-PL/hytale/teleport.md
+          - Świat: pl-PL/hytale/world_hytale.md
 
   - English:
       - Official Documentation, Guides, and Resources for Craftserve: en-US/README.md
+      - General:
+          - Settings: en-US/General/settings.md
+          - FTP guide – connect to Craftserve: en-US/General/ftp.md
+          - Backups: en-US/General/backups.md
+          - What is MySQL?: en-US/General/mysql.md
+          - Server migrations: en-US/General/migrations.md
+          - How to build a Craftserve Addons pack: en-US/General/gallery-addons.md
+      - Minecraft:
+        - Installation & configuration:
+            - Modpack installation: en-US/minecraft-java/modpack.md
+            - BetterMC (Fabric) installation: en-US/minecraft-java/bettermc.md
+            - YFLsmp pack installation: en-US/minecraft-java/yflsmp.md
+            - Plugin installation: en-US/minecraft-java/plugins.md
+            - Datapack installation: en-US/minecraft-java/datapacks.md
+            - SpongeForge: en-US/minecraft-java/spongeforge.md
 
-      - Installation & configuration:
-          - Modpack installation: en-US/modpack.md
-          - BetterMC (Fabric) installation: en-US/bettermc.md
-          - YFLsmp pack installation: en-US/yflsmp.md
-          - Plugin installation: en-US/plugins.md
-          - Datapack installation: en-US/datapacks.md
-          - SpongeForge: en-US/spongeforge.md
+        - Administration & server settings:
+            - Engines: en-US/minecraft-java/engines.md
+            - Minecraft settings: en-US/minecraft-java/minecraftsettings.md
+            - CraftserveAgent commands: en-US/minecraft-java/csrvagentcommands.md
+            - Server world: en-US/minecraft-java/world.md
+            - Server resource pack: en-US/minecraft-java/resource-pack.md
+            - Online mode: en-US/minecraft-java/online-mode.md
+            - World pregeneration: en-US/minecraft-java/pregen.md
+            - Set a custom domain for your server: en-US/minecraft-java/domain.md
 
-      - Administration & server settings:
-          - Engines: en-US/engines.md
-          - Settings: en-US/settings.md
-          - Minecraft settings: en-US/minecraftsettings.md
-          - CraftserveAgent commands: en-US/csrvagentcommands.md
-          - Server world: en-US/world.md
-          - Server resource pack: en-US/resource-pack.md
-          - Online mode: en-US/online-mode.md
-          - World pregeneration: en-US/pregen.md
-          - Set a custom domain for your server: en-US/domain.md
+        - File & data management:
+            - KM Pack – FAQ: en-US/minecraft-java/kmpack.md
 
-      - File & data management:
-          - FTP guide – connect to Craftserve: en-US/ftp.md
-          - Backups: en-US/backups.md
-          - 📦 How to build a Craftserve Addons pack: en-US/gallery-addons.md
-          - KM Pack – FAQ: en-US/kmpack.md
+        - Optimization & diagnostics:
+            - Lag (Timings): en-US/minecraft-java/timings.md
+            - Forge Debug Profiler and interpretation: en-US/minecraft-java/debugprofiler.md
+            - Crash logs & reports: en-US/minecraft-java/logs.md
 
-      - Optimization & diagnostics:
-          - Lag (Timings): en-US/timings.md
-          - Forge Debug Profiler and interpretation: en-US/debugprofiler.md
-          - Crash logs & reports: en-US/logs.md
+        - Config files:
+            - bukkit.yml – guide: en-US/minecraft-java/bukkit.yml.md
+            - spigot.yml – guide: en-US/minecraft-java/spigot.yml.md
 
-      - Config files:
-          - bukkit.yml – guide: en-US/bukkit.yml.md
-          - spigot.yml – guide: en-US/spigot.yml.md
+        - Admin plugins & tools:
+            - EssentialsX: en-US/minecraft-java/essentialsx.md
+            - LogBlock – installation & configuration: en-US/minecraft-java/logblock.md
+            - WorldEdit – complete guide: en-US/minecraft-java/worldedit.md
+            - WorldGuard – guide: en-US/minecraft-java/worldguard.md
 
-      - Admin plugins & tools:
-          - EssentialsX: en-US/essentialsx.md
-          - LogBlock – installation & configuration: en-US/logblock.md
-          - WorldEdit – complete guide: en-US/worldedit.md
-          - WorldGuard – guide: en-US/worldguard.md
+        - Security:
+            - AntiXray: en-US/minecraft-java/antyxray.md
 
-      - Databases:
-          - 🧠 What is MySQL?: en-US/mysql.md
-
-      - Migrations & server ops:
-          - 🔍 Server migrations: en-US/migrations.md
-
-      - Security:
-          - AntiXray: en-US/antyxray.md
+      - Hytale:
+          - Overview: en-US/hytale/README.md
+          - FAQ: en-US/hytale/faq.md
+          - Guide: en-US/hytale/guide.md
+          - Builder Tools: en-US/hytale/buildertools.md
+          - NPC: en-US/hytale/npc.md
+          - Spawning: en-US/hytale/spawning.md
+          - System: en-US/hytale/system.md
+          - Teleport: en-US/hytale/teleport.md
+          - World: en-US/hytale/world.md

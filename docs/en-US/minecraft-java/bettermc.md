@@ -17,7 +17,7 @@
 2. Download BetterMC from [**THIS PAGE**](https://www.curseforge.com/minecraft/modpacks/better-mc-fabric/files). Make sure to download the server version of the pack, labeled "Server Pack."
 
     ![image](./img/bettermc/download_serverpack.png)
-3. Upload the downloaded zip file to the server using [FTP](../General/ftp.md).
+3. Upload the downloaded zip file to the server using [FTP](../panel/ftp.md).
 4. Go to the Craftserve panel and navigate to the **Files** tab.
 5. Locate the uploaded zip file and right-click on it. From the list, select **Unzip**.
     ![image](./img/bettermc/unzip.png)

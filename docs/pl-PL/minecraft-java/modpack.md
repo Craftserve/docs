@@ -20,7 +20,7 @@
 2. Pobierz modpack wersję modpacka przykładowo z [tej strony](https://www.curseforge.com/minecraft/modpacks). Pamiętaj, aby pobrać serwerową wersję paczki, czyli "Server Pack".
 
     ![image](./img/bettermc/download_serverpack.png)
-3. Pobranego zipa wgraj na serwer przy użyciu [FTP](../Ogólne/ftp.md).
+3. Pobranego zipa wgraj na serwer przy użyciu [FTP](../panel/ftp.md).
 4. Przejdź do panelu Craftserve i wybierz zakładkę **Pliki**.
 5. Odszukaj wgrany plik zip i kliknij na niego prawym przyciskiem myszy. Z listy wybierz opcję **Rozpakuj**.
 

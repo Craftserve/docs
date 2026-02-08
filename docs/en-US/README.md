@@ -6,7 +6,7 @@ Here you will find useful guides and resources for installing and configuring yo
 
 ## 🎮 Available Sections
 
-- **General** - Useful information about FTP, MySQL, backups and migrations
+- **Craftserve Panel** - Useful information about FTP, MySQL, backups and migrations
 - **Minecraft** - Complete documentation for managing Minecraft servers
 - **Hytale** - Commands and guides for Hytale servers
 

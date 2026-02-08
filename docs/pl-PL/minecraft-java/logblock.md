@@ -16,7 +16,7 @@
     - [1.16.5](https://www.iani.de/jenkins/job/LogBlock/132/artifact/target/LogBlock.jar)
     - [1.17.1/1.18.2](https://www.iani.de/jenkins/job/LogBlock/161/artifact/target/LogBlock.jar)
     - [1.19](https://www.iani.de/jenkins/job/LogBlock/lastSuccessfulBuild/artifact/target/LogBlock.jar)
-3. Umieść pobrany plugin w folderze `plugins` na serwerze. Możesz skorzystać z [FTP](../Ogólne/ftp.md), lub panelu Craftserve (zakładka Pliki).
+3. Umieś pobrany plugin w folderze `plugins` na serwerze. Możesz skorzystać z [FTP](../panel/ftp.md), lub panelu Craftserve (zakładka Pliki).
 4. Uruchom serwer.
 5. Jeśli nie pojawi się w konsoli komunikat: 
    ```

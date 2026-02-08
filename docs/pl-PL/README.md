@@ -6,7 +6,7 @@ Tutaj znajdziesz przydatne przewodniki i zasoby do instalacji i konfiguracji ser
 
 ## 🎮 Dostępne Sekcje
 
-- **Ogólne** - Przydatne informacje o FTP, MySQL, backupach i migracji
+- **Panel Craftserve** - Przydatne informacje o FTP, MySQL, backupach i migracji
 - **Minecraft** - Kompletna dokumentacja do zarządzania serwerem Minecraft
 - **Hytale** - Komendy i poradniki dla serwerów Hytale
 

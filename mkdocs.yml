@@ -38,13 +38,15 @@ markdown_extensions:
 nav:
   - Polski:
       - Oficjalny zestaw dokumentacji, poradników i zasobów Craftserve: pl-PL/README.md
-      - Ogólne:
-          - Ustawienia: pl-PL/Ogólne/ustawienia.md
-          - Poradnik FTP – Łączenie się z Craftserve: pl-PL/Ogólne/ftp.md
-          - Kopie zapasowe, czyli Backupy: pl-PL/Ogólne/backups.md
-          - Czym jest MySQL?: pl-PL/Ogólne/mysql.md
-          - Migracje serwerów: pl-PL/Ogólne/migrations.md
-          - Jak stworzyć paczkę na Craftserve Dodatki?: pl-PL/Ogólne/gallery-addons.md
+
+      - Panel Craftserve:
+          - Ustawienia: pl-PL/panel/ustawienia.md
+          - Poradnik FTP – Łączenie się z Craftserve: pl-PL/panel/ftp.md
+          - Kopie zapasowe, czyli Backupy: pl-PL/panel/backups.md
+          - Czym jest MySQL?: pl-PL/panel/mysql.md
+          - Migracje serwerów: pl-PL/panel/migrations.md
+          - Jak stworzyć paczkę na Craftserve Dodatki?: pl-PL/panel/gallery-addons.md
+
       - Minecraft:
         - Instalacja i konfiguracja:
             - Instalacja modpacka: pl-PL/minecraft-java/modpack.md
@@ -86,25 +88,27 @@ nav:
             - AntyXray: pl-PL/minecraft-java/antyxray.md
 
       - Hytale:
-          - Przegląd: pl-PL/hytale/README.md
-          - FAQ: pl-PL/hytale/faq.md
-          - Legenda: pl-PL/hytale/legenda.md
-          - Builder Tools: pl-PL/hytale/buildertools.md
-          - NPC: pl-PL/hytale/npc.md
-          - Spawning: pl-PL/hytale/spawning.md
-          - System: pl-PL/hytale/system.md
-          - Teleport: pl-PL/hytale/teleport.md
-          - Świat: pl-PL/hytale/world_hytale.md
+          - Komendy:
+              - Przegląd: pl-PL/hytale/commands/README.md
+              - FAQ: pl-PL/hytale/commands/faq.md
+              - Legenda: pl-PL/hytale/commands/legenda.md
+              - Builder Tools: pl-PL/hytale/commands/buildertools.md
+              - NPC: pl-PL/hytale/commands/npc.md
+              - Spawning: pl-PL/hytale/commands/spawning.md
+              - System: pl-PL/hytale/commands/system.md
+              - Teleport: pl-PL/hytale/commands/teleport.md
+              - Świat: pl-PL/hytale/commands/world_hytale.md
 
   - English:
       - Official Documentation, Guides, and Resources for Craftserve: en-US/README.md
-      - General:
-          - Settings: en-US/General/settings.md
-          - FTP guide – connect to Craftserve: en-US/General/ftp.md
-          - Backups: en-US/General/backups.md
-          - What is MySQL?: en-US/General/mysql.md
-          - Server migrations: en-US/General/migrations.md
-          - How to build a Craftserve Addons pack: en-US/General/gallery-addons.md
+
+      - Craftserve Panel:
+          - Settings: en-US/panel/settings.md
+          - FTP guide – connect to Craftserve: en-US/panel/ftp.md
+          - Backups: en-US/panel/backups.md
+          - What is MySQL?: en-US/panel/mysql.md
+          - Server migrations: en-US/panel/migrations.md
+          - How to build a Craftserve Addons pack: en-US/panel/gallery-addons.md
       - Minecraft:
         - Installation & configuration:
             - Modpack installation: en-US/minecraft-java/modpack.md
@@ -146,12 +150,13 @@ nav:
             - AntiXray: en-US/minecraft-java/antyxray.md
 
       - Hytale:
-          - Overview: en-US/hytale/README.md
-          - FAQ: en-US/hytale/faq.md
-          - Guide: en-US/hytale/guide.md
-          - Builder Tools: en-US/hytale/buildertools.md
-          - NPC: en-US/hytale/npc.md
-          - Spawning: en-US/hytale/spawning.md
-          - System: en-US/hytale/system.md
-          - Teleport: en-US/hytale/teleport.md
-          - World: en-US/hytale/world.md
+          - Commands:
+              - Overview: en-US/hytale/commands/README.md
+              - FAQ: en-US/hytale/commands/faq.md
+              - Guide: en-US/hytale/commands/guide.md
+              - Builder Tools: en-US/hytale/commands/buildertools.md
+              - NPC: en-US/hytale/commands/npc.md
+              - Spawning: en-US/hytale/commands/spawning.md
+              - System: en-US/hytale/commands/system.md
+              - Teleport: en-US/hytale/commands/teleport.md
+              - World: en-US/hytale/commands/world.md

@@ -8,7 +8,7 @@ W panelu serwera przejdź do zakładki **Pliki** i kliknij przycisk **Połączen
 
 Powinno się otworzyć okno, w którym znajdziesz dane:
 
-1. **HOST** – np. `sftp://smart-gray-squid.craftserve.com`
+1. **HOST** – np. `sftp://smart-gray-squid.csrv.gg`
 2. **PORT** – zazwyczaj `22`
 3. **NAZWA UŻYTKOWNIKA** – unikalny login do SFTP
 4. **HASŁO** – aktualne hasło (jeśli nie znasz, wygeneruj nowe)
@@ -39,7 +39,7 @@ Jeżeli nie wiesz od czego zacząć, wykorzystaj tę dokumentację oraz jeden z 
 1. Otwórz WinSCP i wybierz **Nowa sesja/Nowa karta**.
 2. W polu **Protokół pliku** wybierz **SFTP**.
 3. Wypełnij pola:
-   - Nazwa hosta: wartości z panelu (np. `smart-gray-squid.craftserve.com`)
+   - Nazwa hosta: wartości z panelu (np. `smart-gray-squid.csrv.gg`)
    - Numer portu: `22`
    - Nazwa użytkownika: wartość z panelu
    - Hasło: wygenerowane hasło

@@ -8,7 +8,7 @@ In the server panel, go to the **Files** section and click **SFTP connection**.
 
 You should see:
 
-1. **HOST** – e.g. `sftp://smart-gray-squid.craftserve.com`
+1. **HOST** – e.g. `sftp://smart-gray-squid.csrv.gg`
 2. **PORT** – usually `22`
 3. **USER NAME**
 4. **PASSWORD**
@@ -39,7 +39,7 @@ If you are unsure where to begin, use this documentaion and one of the recommend
 1. Open WinSCP and choose **New Session/New tab**.
 2. Select **File protocol** = **SFTP**.
 3. Enter credentials from panel:
-   - Host name: value from panel (e.g., `smart-gray-squid.craftserve.com`)
+   - Host name: value from panel (e.g., `smart-gray-squid.csrv.gg`)
    - Port number: `22`
    - User name: value from panel
    - Password: generated password

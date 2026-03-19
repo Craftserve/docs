@@ -16,7 +16,7 @@ Migration is a process that involves transferring data to a new node, for exampl
 1. **Check the box to agree to the migration** (this will be visible in the notification).
 2. **Click the “Migrate” button**, as shown in the illustration below.
 
-![Basic migration](../minecraft-java/img/migrations/1.png)
+![Basic migration](../panel/img/migrations/1.png)
 
 🕒 The migration will take approximately **15 minutes**, during which your server may be temporarily unavailable.
 
@@ -43,7 +43,7 @@ If the standard migration fails:
     - If you don’t select a backup — the system will use the most recent one available.
     - If you do select one — in case of failure, the system will use the backup you chose.
 
-![Forced migration](../minecraft-java/img/migrations/2.png)
+![Forced migration](../panel/img/migrations/2.png)
 
 ---
 

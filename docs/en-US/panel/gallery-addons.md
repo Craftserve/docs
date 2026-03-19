@@ -30,7 +30,7 @@ Here is a proposal for a clear and aesthetic **table of contents** in the style 
 
 #### 1. Go to the server management panel, then to the Addons Gallery, and click the “Create Project” link
 
-![Project creator](../minecraft-java/img/marketplace_form/marketplace_create_project_button.png)
+![Project creator](../panel/img/gallery-addons/marketplace_create_project_button.png)
 
 <a id="form_fields"></a>
 

@@ -22,9 +22,9 @@ Ta operacja trwale usuwa pliki bez możliwości ich przywrócenia. Przed formato
 **Adres podstawowy**
 Ustaw adres łączenia z Twoim serwerem z poziomu gry
 
-![Adresy](../minecraft-java/img/ustawienia/adres.png)
+![Adresy](../panel/img/ustawienia/adres.png)
 
 ## Ustawienia silnika
 W tym miejscu zmienisz obecny silnik gry na inny. Wybierz jeden spośród dostępnych. Przed zmianą zostanie wykonana kopia zapasowa.
 
-![Silniki](../minecraft-java/img/silniki/3.png)
+![Silniki](../panel/img/silniki/3.png)

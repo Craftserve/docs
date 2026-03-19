@@ -119,7 +119,7 @@ Wszystkie komendy podążają za schematem. Naucz się symboli:
 
 ## 🔗 Powiązana Dokumentacja
 
-- **[Docs Serwera Minecraft](../README.md)** - Główna dokumentacja serwera
+- **[Dokumentacja Craftserve](../../README.md)** - Główna dokumentacja Craftserve
 - **[Oficjalna Hytale](https://hytale.com)** - Oficjalna strona Hytale
 - **[FAQ](faq.md)** - Odpowiedzi na popularne pytania
 

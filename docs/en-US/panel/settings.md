@@ -22,9 +22,9 @@ This operation permanently deletes files without the possibility of recovery. Cr
 **Basic address**
 The connection address for your server from within the game.
 
-![Adresses](../minecraft-java/img/ustawienia/adress.png)
+![Adresses](../panel/img/ustawienia/adress.png)
 
 ## Ustawienia silnika
 Here you can change the current game engine to another one. Choose from available engines. Before changing the engine, backup will be created.
 
-![Engines](../minecraft-java/img/silniki/3.png)
+![Engines](../panel/img/silniki/3.png)

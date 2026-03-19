@@ -11,10 +11,10 @@ Nie zrobimy za Ciebie kopii ważnych plików na Twoim komputerze (a warto!), ale
 ## Gdzie znajdę moje kopie zapasowe? {#gdzie-znajdę-moje-kopie-zapasowe}
 
 W panelu Twojego serwera, na pasku po lewej stronie, znajdziesz zakładkę **"Kopie zapasowe"**.
-![1](../minecraft-java/img/backupy/1.png)
+![1](../panel/img/backupy/1.png)
 
 Po otwarciu tej zakładki, ujrzysz listę swoich backupów.
-![2](../minecraft-java/img/backupy/2.png)
+![2](../panel/img/backupy/2.png)
 
 ## Jak zrobić kopię zapasową?
 
@@ -27,11 +27,11 @@ Możesz jednak wykonać kopię manualnie kiedy tylko zechcesz. W tym celu, przej
 1. Przejdź do zakładki **Kopie zapasowe**.
 2. Ustal z jakiej daty i godziny potrzebujesz backupu. Kiedy doszło do griefu na serwerze? Kiedy zostały uszkodzone pliki? Spójrz na listę dostępnych kopii i wybierz tę, która Ci odpowiada. Jeśli nie wiesz, możesz spróbować kilka. Wtedy przywracaj po 1 kopii, sprawdzaj czy to ta właściwa, a jeśli nie, powtórz to z następną.
 3. Gdy już wiesz, którą kopię przywrócić, po prostu kliknij przycisk **Przywróć** po prawej stronie. Zostanie wykonana automatyczna kopia przed przywróceniem, a następnie wgrany zostanie wybrany backup.
-   ![3](../minecraft-java/img/backupy/3.png)
+   ![3](../panel/img/backupy/3.png)
 
 ## Jak mogę pobrać pliki serwera na swój komputer?
 
 1. Przejdź do zakładki **Kopie zapasowe**.
 2. Ustal z jakiej daty i godziny chcesz pobrać pliki. Spójrz na listę dostępnych kopii i wybierz tę, która Ci odpowiada.
 3. Kliknij przycisk **Pobierz** obok wybranej kopii.
-   ![4](../minecraft-java/img/backupy/4.png)
+   ![4](../panel/img/backupy/4.png)

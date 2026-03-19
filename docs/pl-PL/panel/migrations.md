@@ -15,7 +15,7 @@ Migracja to proces obejmujący przeniesienie danych na nowy węzeł (ang. node) 
 1. **Zaznacz zgodę na migrację** (będzie widoczna w komunikacie).
 2. **Kliknij przycisk „Migruj”**, tak jak pokazano na poniższej ilustracji.
 
-![Migracja podstawowa](../minecraft-java/img/migrations/1.png)
+![Migracja podstawowa](../panel/img/migrations/1.png)
 
 🕒 Migracja potrwa około **15 minut**, w tym czasie serwer może być tymczasowo niedostępny.
 
@@ -42,7 +42,7 @@ Jeśli standardowa migracja się nie powiedzie:
     - Jeśli nic nie wybierzesz — system użyje najnowszej utworzonej do tej pory kopii.
     - Jeśli wybierzesz - w przypadku niepowodzenia, system użyje wybranej przez Ciebie kopii.'
 
-![Migracja wymuszona](../minecraft-java/img/migrations/2.png)
+![Migracja wymuszona](../panel/img/migrations/2.png)
 
 ---
 

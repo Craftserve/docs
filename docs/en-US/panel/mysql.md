@@ -35,7 +35,7 @@ To enable MySQL for your server:
 
 ---
 
-![Enabling MySQL](../minecraft-java/img/mysql/mysql_1.png)
+![Enabling MySQL](../panel/img/mysql/mysql_1.png)
 
 ---
 
@@ -60,7 +60,7 @@ To connect to the MySQL database, you’ll need a client. We recommend the free 
 
 3. Click **Open** to connect.
 
-![MySQL Connection](../minecraft-java/img/mysql/mysql_2.png)
+![MySQL Connection](../panel/img/mysql/mysql_2.png)
 
 ---
 

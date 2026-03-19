@@ -119,7 +119,7 @@ All commands follow a pattern. Learn the symbols:
 
 ## 🔗 Related Documentation
 
-- **[Minecraft Server Docs](../README.md)** - Main server documentation
+- **[Craftserve Docs](../../README.md)** - Main Craftserve documentation
 - **[Hytale Official](https://hytale.com)** - Official Hytale website
 - **[FAQ](faq.md)** - Common questions answered
 

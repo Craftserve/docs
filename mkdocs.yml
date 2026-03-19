@@ -42,6 +42,7 @@ nav:
       - Panel Craftserve:
           - Ustawienia: pl-PL/panel/ustawienia.md
           - Poradnik FTP – Łączenie się z Craftserve: pl-PL/panel/ftp.md
+          - Połączenie SFTP: pl-PL/panel/sftp.md
           - Kopie zapasowe, czyli Backupy: pl-PL/panel/backups.md
           - Czym jest MySQL?: pl-PL/panel/mysql.md
           - Migracje serwerów: pl-PL/panel/migrations.md
@@ -105,6 +106,7 @@ nav:
       - Craftserve Panel:
           - Settings: en-US/panel/settings.md
           - FTP guide – connect to Craftserve: en-US/panel/ftp.md
+          - SFTP connection: en-US/panel/sftp.md
           - Backups: en-US/panel/backups.md
           - What is MySQL?: en-US/panel/mysql.md
           - Server migrations: en-US/panel/migrations.md

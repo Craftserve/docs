@@ -33,7 +33,7 @@ Aby aktywować MySQL dla swojego serwera:
 
 ---
 
-![Włączanie MySQL](../minecraft-java/img/mysql/mysql_1.png)
+![Włączanie MySQL](../panel/img/mysql/mysql_1.png)
 
 ---
 
@@ -58,7 +58,7 @@ Do połączenia się z bazą danych MySQL potrzebny będzie klient. Polecamy dar
 
 3. Kliknij **Otwórz**, aby nawiązać połączenie.
 
-![Połączenie z MySQL](../minecraft-java/img/mysql/mysql_2.png)
+![Połączenie z MySQL](../panel/img/mysql/mysql_2.png)
 
 ---
 

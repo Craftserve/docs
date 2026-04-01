@@ -82,3 +82,5 @@ Proces ten należy powtórzyć dla każdego świata na serwerze.
 
 * [Dokumentacja pluginu](https://github.com/LogBlock/LogBlock/wiki)
 * [Strona pluginu na spigotmc.org](https://www.spigotmc.org/resources/logblock.67333/)
+
+

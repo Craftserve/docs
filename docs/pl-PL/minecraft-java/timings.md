@@ -41,3 +41,5 @@ Metoda ta prawie nie różni się od tej wymienionej powyżej. Diagnozowanie lag
 
 [**Jak samemu interpretować Spark Profiler** - Spark Docs](https://spark.lucko.me/docs/Using-the-viewer)
 
+
+

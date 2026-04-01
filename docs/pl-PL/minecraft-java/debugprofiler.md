@@ -15,6 +15,7 @@ przydaje się to w szczególności modderom, jak także administratorom serweró
 <a name="Jak_używać_debugera"><h2>Jak używać profilera</h2></a>
 
 Profiler jest banalnie prosty w obsłudze:
+
 - `/debug start` włącza nam Profiler (z konsoli*, lub bezpośrednio w grze**)
 - `/debug stop` zatrzymuje nam Proflier, oraz generuje jego raport (z konsoli*, lub bezpośrednio w grze**)
 
@@ -52,3 +53,5 @@ Małe wyjaśnienie:
 ##### * w konsoli komendy wpisujemy bez `/`
 ##### ** musisz posiadać operatora
 ##### *** rodzic to o jeden wyżej w hierarchii element(o jeden tabulator mniej)
+
+

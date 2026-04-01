@@ -14,3 +14,5 @@
 6. Click the **Format and Reinstall Server** button.
 7. Wait for the process to complete.
 8. Done!
+
+

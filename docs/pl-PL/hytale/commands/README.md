@@ -29,17 +29,20 @@ Witaj w oficjalnej dokumentacji komend serwera Hytale. Tutaj znajdziesz kompleks
 
 ### Dla Administratorów Serwerów
 Jeśli zarządzasz serwerem, skoncentruj się na:
+
 - [🛑 Komendy Systemu](system.md) - Niezbędne zarządzanie serwerem
 - [🧬 System Spawowania](spawning.md) - Optymalizacja zachowania NPC
 - [🌎 Świat i Pogoda](world_hytale.md) - Konfiguracja świata
 
 ### Dla Budowniczych
 Jeśli tworzysz struktury, sprawdź:
+
 - [🎨 Narzędzia Budowniczego](buildertools.md) - Komendy edycji terenu
 - [🌍 Teleportacja](teleport.md) - Nawigacja podczas budowania
 
 ### Dla Twórców Treści
 Jeśli tworzysz eventy lub zawartość, zobacz:
+
 - [🤖 NPC i Postacie](npc.md) - Twórz interaktywne NPC
 - [🛑 Komendy Systemu](system.md) - Zarządzanie graczami i efektami
 
@@ -142,3 +145,5 @@ Wszystkie komendy podążają za schematem. Naucz się symboli:
 - Szukasz konkretnej funkcji? Użyj wyszukiwarki lub przeglądaj dostępne kategorie powyżej
 
 **Miłej gry!** 🎮
+
+

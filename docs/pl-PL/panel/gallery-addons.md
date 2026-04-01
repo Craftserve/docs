@@ -305,3 +305,5 @@ Aby dowiedzieć się więcej na ten temat skorzystaj z
 11. Gdy wszystkie pola zostały uzupełnione, kliknij przycisk “**Dodaj wersję**”.
 
 ### Wersja została utworzona i jest teraz dostępna do pobrania. **Gratulacje** 🚀
+
+

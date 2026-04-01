@@ -63,3 +63,5 @@ To move a world from the server to your computer, follow these steps:
 * Add the **DIM-1** and **DIM1** folders to the world
 
 ![1](./img/world/8.png)
+
+

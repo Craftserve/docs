@@ -28,3 +28,4 @@
 ### Notes
 - Players can only join the server if they have the same version of the BetterMC modpack installed on their client (not the server version, but the regular "client" version).
 - If you encounter issues starting the server, ensure that the Fabric engine version matches the BetterMC modpack version.
+

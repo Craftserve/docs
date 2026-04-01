@@ -112,15 +112,18 @@ Gdy ujrzysz `[--argument=domyślna]`, oznacza to:
 
 ## Wskazówki
 
-✅ **Tab do autouzupełniania** - Wciśnij Tab po wpisaniu części komendy
-✅ **Błędy są przyjazne** - Jeśli zrobisz błąd, serwer powie Ci czego brakuje
-✅ **Sprawdź uprawnienia** - Jeśli komenda nie działa, możliwe że nie masz uprawnień
+* ✅ **Tab do autouzupełniania** - Wciśnij Tab po wpisaniu części komendy
+* ✅ **Błędy są przyjazne** - Jeśli zrobisz błąd, serwer powie Ci czego brakuje
+* ✅ **Sprawdź uprawnienia** - Jeśli komenda nie działa, możliwe że nie masz uprawnień
 
 ---
 
 **Gotowy do zaglądania do konkretnych komend?**
+
 - [🛑 System](system.md) - Komendy serwerowe
 - [🌍 Teleportacja](teleport.md) - Podróżowanie
 - [🤖 NPC](npc.md) - Postacie
 - [🌎 Świat](world_hytale.md) - Świat i pogoda
 - [🎨 BuilderTools](buildertools.md) - Edycja terenu
+
+

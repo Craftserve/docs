@@ -15,6 +15,7 @@ It is particularly beneficial for modders, as well as server administrators, who
 <a name="how-to-use-the-debugger"><h2>How to Use the Profiler</h2></a>
 
 The profiler is extremely easy to use:
+
 - `/debug start` starts the profiler (from the console*, or directly in the game**)
 - `/debug stop` stops the profiler and generates its report (from the console*, or directly in the game**)
 
@@ -52,3 +53,5 @@ A brief explanation:
 ##### * commands in the console are entered without `/`
 ##### ** you must have operator permissions
 ##### *** parent is the element one level higher in the hierarchy (one tab less)
+
+

@@ -38,10 +38,12 @@ W celu usunięcie regionu użyj komendy `/rg delete <nazwa regionu>`.
 
 * `/rg info <nazwa regionu>` komenda wyświetli wszystkie informacje na temat konkretnego regionu.
 
-![1](./img/worldguard/2.png)
+    ![1](./img/worldguard/2.png)
+    
 * `/rg list [-p gracz] [strona]` komenda wyświetli listę wszystkich regionów. Obsługuję flagę `-p gracz` (np. `/rg list -p jahumen`), która umożliwia sprawdzanie listy regionów, do których dodany jest konkretny gracz.
-![1](./img/worldguard/3.png)
-![1](./img/worldguard/4.png)
+    ![1](./img/worldguard/3.png)
+    ![1](./img/worldguard/4.png)
+    
 * Trzymając w ręce *domyślnie* skórę, kliknij PPM na dowolny blok - spowoduje to wyświetlenie informacji na temat znajdującego się tam regionu.
 
 ## Członkowie
@@ -111,6 +113,7 @@ W pewnych miejscach może znajdować się równocześnie więcej niż jeden regi
 Domyślnym priorytetem jest `0`, możesz go zedytować dla konkretnych regionów (zarówno na wartości dodatnie jak i ujemne).
 
 Przykładowe wykorzystanie:
+
 * Utworzenie skrzynki na spawnie, którą gracze mogą otwierać, podczas gdy wszystkie inne są zablokowane. W tym celu utwórz region `skrzynka` obejmujący tylko skrzynkę, następnie ustaw flagę umożliwiającą korzystanie ze skrzynek, `/rg flag skrzynka use allow` i ustaw priorytet tego regionu na wyższy niż w przypadku spawnu, np. `/rg setpriority skrzynka 10`.
 ![1](./img/worldguard/5.png)
 * Utworzenie strefy PVP na spawnie, gdzie gracze mogą ze sobą walczyć. W tym celu utwórz region `arena` obejmujący arenę, następnie ustaw flagę umożliwiającą walkę graczy `/rg flag arena pvp allow` i ustaw priorytet tego regionu na wyższy niż w przypadku spawnu, np. `/rg setpriority arena 10`.
@@ -124,6 +127,7 @@ W przypadku dziedziczenia określana jest struktura regionów (rodzic <- dziecko
 W celu usunięcia rodzica (odłączenia regionu), po prostu nie podawaj `nazwy regionu rodzica`.
 
 Przykładowe utworzenie hierarchii:
+
 ![1](./img/worldguard/6.png)
 1. Utwórz wszystkie zaplanowane regiony i ustaw dla nich odpowiednie flagi.
 2. Ustaw rodzica `miasto` dla regionów `sklep`, `centrum-handlowe`, `dzialki` i `salon`, np. `/rg setparent dzialki miasto`.
@@ -132,6 +136,7 @@ Przykładowe utworzenie hierarchii:
 
 
 Przykładowe wykorzystanie:
+
 * Stworzenie sklepów na terenie centrum handlowego, z których mogą korzystać tylko konkretni gracze, jednak zarząd centrum powinien mieć także dostęp do wszystkich znajdujących się tam sklepów. W tym celu utwórz najpierw region `centrum-handlowe`, ustaw odpowiednie flagi i dodaj do niego członków zarządu. Następnie stwórz na jego terenie mniejsze regiony, obejmujące konkretne sklepy `sklep-1`, `sklep-2` i tak dalej. Dodaj właścicieli sklepów do konkretnych regionów i ustaw odpowiednie flagi. Przyporządkuj regiony sklepów jako dzieci centrum handlowego - `/rg setparent sklep-1 centrum-handlowe`, `/rg setparent sklep-2 centrum-handlowe` itp.
 * Utworzenie działek dla graczy na terenie miasta, do których powinni mieć dostęp osoby zajmujące się miastem - sposób postępowania jak wyżej.
 
@@ -145,4 +150,7 @@ Istnieje region `__global__`, który obejmuje cały świat. Domyślnie nie ma ż
 Możesz go wykorzystać gdy chcesz zabronić graczom walczyć lub budować na konkretnym świecie, np. `/rg flag __global__ pvp deny`, `/rg flag __global__ build deny`.
 
 Przykładowe wykorzystanie:
+
 * Zablokowanie wybuchów spowodowanych przez creepery na świecie `world`. W tym celu przeteleportuj się na świat `world` i użyj komendy `/rg flag __global__ creeper-explosion deny`.
+
+

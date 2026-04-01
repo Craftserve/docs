@@ -108,3 +108,5 @@ Jeśli występują problemy z dźwiękiem, należy włączyć i wyłączyć `HRT
   /kill @e[type=deeperdarker:stalker]
   ```
 - Nie można respić Poltergaista, jeśli go zrespimy niektóre chunki mogą przywrócić się do stanu pierwotnego
+
+

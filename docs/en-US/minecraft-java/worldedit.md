@@ -559,3 +559,5 @@ Replaces dirt with grass within the specified radius.
 Extinguishes fire within the specified radius.
 * `//butcher [-pngabtfl] [radius]`
 Allows you to remove specific entities within a given radius. Flags include: `-p` (kills tamed animals), `-n` (kills NPCs), `-g` (kills golems), `-a` (kills animals), `-b` (kills passive mobs), `-t` (kills mobs with tags), `-f` (combines all above flags), `-r` (removes armor stands).
+
+

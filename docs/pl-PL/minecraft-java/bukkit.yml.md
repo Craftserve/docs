@@ -154,3 +154,5 @@ Sekcja ta służy do ustawiania danych dostępowych bazy danych dla pluginów, k
 Sekcja ta służy do konfigurowania ustawień światów, które domyślnie są ładowane przez silnik. Jako, że można to równie dobrze skonfigurować w pliku server.properties, to nie bedziemy omawiać tej sekcji.
 
 ###### źródło: https://bukkit.gamepedia.com/Bukkit.yml
+
+

@@ -30,6 +30,7 @@ Powinno się otworzyć okno, w którym znajdziesz dane:
 ## Polecane klienty i szybki start
 
 Jeżeli nie wiesz od czego zacząć, wykorzystaj tę dokumentację oraz jeden z polecanych klientów SFTP (może być dowolny inny!):
+
 - FileZilla: https://filezilla-project.org/download.php
 - WinSCP: https://winscp.net/eng/download.php
 - Dokumentacja SFTP w panelu (ten poradnik)
@@ -83,3 +84,5 @@ Jeżeli nie znasz hasła lub chcesz je zmienić, kliknij przycisk **Wygeneruj no
 - Błąd logowania: sprawdź czy hasło jest bez spacji i kopiowane poprawnie.
 - Połączenie zerwane: sprawdź czy używasz SFTP (nie FTP) i port 22.
 - Brak uprawnień: konto może mieć dostęp tylko do katalogu przypisanego do serwera.
+
+

@@ -22,3 +22,5 @@
 ### Notes
 - Please note that domain configuration may vary depending on the service where the domain was purchased. For other services, search for the appropriate DNS management panel.
 - To connect to the server, enter your domain in the Minecraft server address field. For the main domain, enter `domain.com`, and for a subdomain, enter `subdomain.domain.com`.
+
+

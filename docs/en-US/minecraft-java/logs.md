@@ -153,3 +153,5 @@ We uploaded a plugin to the server, but it doesn't want to load. In the logs, we
 <h3>Conclusion</h3>
 
 As we saw in the examples, troubleshooting issues with logs is not difficult. All you need is a basic knowledge of English, and if we have a problem, it is almost certain that someone else has already faced it, and **by copying the error line into Google**, we can find the solution. If you encounter difficulties, feel free to share the **latest.log** file on the **Craftserve** Discord.
+
+

@@ -38,6 +38,7 @@ Komendy do zarządzania światem i jego właściwościami. Zawarte w pluginie Wo
 
 ### Zarządzanie Światami
 Tworzenie i zarządzanie światami:
+
 - `/world list` - Pokaż światy
 - `/world add <nazwa>` - Utwórz nowy
 - `/world remove <nazwa>` - Usuń świat
@@ -47,6 +48,7 @@ Tworzenie i zarządzanie światami:
 
 ### Pora Dnia
 Kontrola upływu czasu:
+
 - `/time` - Pokaż bieżący czas
 - `/time set <godzina>` - Ustaw czas (0-24)
 - `/time dawn` - Świt
@@ -55,6 +57,7 @@ Kontrola upływu czasu:
 
 ### Pogoda
 Zmiana warunków pogodowych:
+
 - `/weather get` - Pokaż pogodę
 - `/weather set <typ>` - Ustaw pogodę
   - `clear` - Słonecznie
@@ -63,17 +66,20 @@ Zmiana warunków pogodowych:
 
 ### Chunki i Teren
 Zarządzanie chunkach (porcjach terenu):
+
 - `/chunk info` - Informacje o chunk'u
 - `/chunk regenerate` - Przywróć oryginalny teren
 - `/chunks` - Zaawansowane operacje
 
 ### Bloki
 Pojedyncze operacje na blokach:
+
 - `/block set <blok>` - Postaw blok
 - `/block get` - Informacje o bloku
 
 ### Oświetlenie {#oswietlenie-1}
 Zarządzanie oświetleniem:
+
 - `/lighting info` - Informacje
 - `/lighting invalidate` - Przebuduj mapę światła
 
@@ -140,3 +146,5 @@ Zarządzanie oświetleniem:
 ---
 
 **Dalej:** Wybierz kategorię powyżej aby zobaczyć pełne szczegóły.
+
+

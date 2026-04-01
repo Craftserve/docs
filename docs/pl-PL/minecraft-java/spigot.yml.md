@@ -605,3 +605,5 @@ Opcja ta odpowiada za ilość ticków która musi upłynąć między dwoma pełn
 * Domyślną wartością jest **20**.
 
 ###### źródło: https://www.spigotmc.org/wiki/spigot-configuration/
+
+

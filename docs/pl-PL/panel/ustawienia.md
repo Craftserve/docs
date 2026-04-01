@@ -28,3 +28,4 @@ Ustaw adres łączenia z Twoim serwerem z poziomu gry
 W tym miejscu zmienisz obecny silnik gry na inny. Wybierz jeden spośród dostępnych. Przed zmianą zostanie wykonana kopia zapasowa.
 
 ![Silniki](../panel/img/silniki/3.png)
+

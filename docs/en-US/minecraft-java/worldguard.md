@@ -147,3 +147,5 @@ You can use it when you want to prevent players from fighting or building in a s
 Example usage:
 * Preventing creeper explosions in the `world` world. To do this, teleport to the `world` world and use the command `/rg flag __global__ creeper-explosion deny`.
 
+
+

@@ -32,3 +32,5 @@ Once you have the link, go to the server file **server.properties**. This file i
 
 # IMPORTANT
 If you are using Dropbox, you need to change the **0** at the end of the link to **1**.
+
+

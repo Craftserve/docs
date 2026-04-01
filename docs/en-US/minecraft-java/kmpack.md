@@ -177,3 +177,5 @@ For fast item gathering from farms on the latest package version, it's possible 
 
 
 #### We wish you great gameplay and unforgettable adventures with your friends on the Kwadratowa Masakra pack!
+
+

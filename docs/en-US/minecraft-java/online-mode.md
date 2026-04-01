@@ -20,3 +20,5 @@ If you want your server to remain non-premium, [this plugin](https://www.spigotm
 Online Mode Server
 ---
 However, if you have a [purchased version of Minecraft](https://minecraft.net), we recommend changing the `online-mode: false` option to `online-mode: true`. This way, no skin plugin is needed, the whitelist and operator list will always work as they should, and there is no need for any password-based authentication plugin (e.g., AuthMe).
+
+

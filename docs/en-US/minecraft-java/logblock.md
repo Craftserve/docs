@@ -82,3 +82,5 @@ This process must be repeated for each world on the server.
 
 * [Plugin documentation](https://github.com/LogBlock/LogBlock/wiki)
 * [Plugin page on spigotmc.org](https://www.spigotmc.org/resources/logblock.67333/)
+
+

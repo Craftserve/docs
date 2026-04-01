@@ -1,14 +1,15 @@
 # Świat serwerowy {#świat-serwerowy}
 ## Spis treści {#spis-treści}
-- [Świat serwerowy](#świat-serwerowy)
-  - [Spis treści](#spis-treści)
-  - [Tworzenie nowego świata](#tworzenie-nowego-świata)
-  - [Wgrywanie własnej mapy](#wgrywanie-własnej-mapy)
-  - [Ustawienie własnego seedu](#ustawienie-własnego-seedu)
-  - [Przenoszenie świata z serwera na singleplayer](#przenoszenie-świata-z-serwera-na-singleplayer)
+- [Świat serwerowy {#świat-serwerowy}](#świat-serwerowy-świat-serwerowy)
+  - [Spis treści {#spis-treści}](#spis-treści-spis-treści)
+  - [Tworzenie nowego świata {#tworzenie-nowego-świata}](#tworzenie-nowego-świata-tworzenie-nowego-świata)
+- [Wgrywanie własnej mapy {#wgrywanie-własnej-mapy}](#wgrywanie-własnej-mapy-wgrywanie-własnej-mapy)
+  - [Ustawienie własnego seedu {#ustawienie-własnego-seedu}](#ustawienie-własnego-seedu-ustawienie-własnego-seedu)
+  - [Przenoszenie świata z serwera na singleplayer {#przenoszenie-świata-z-serwera-na-singleplayer}](#przenoszenie-świata-z-serwera-na-singleplayer-przenoszenie-świata-z-serwera-na-singleplayer)
 
 ## Tworzenie nowego świata {#tworzenie-nowego-świata}
 Aby utworzyć nową mapę należy:
+
 * Wyłączyć serwer
 * Wejść w pliki serwera
 * Usunąć obecny świat na serwerze, usuwając foldery **world**, **world_nether** oraz **world_the_end**. Jeśli nazwa świata została zmieniona w pliku **server.properties**, to usuwamy foldery **<c. nazwa>**, **<c. nazwa>_nether** oraz **<c. nazwa>_the_end**. (Jeżeli chcemy zachować mapę, to najlepiej będzie ją pobrać na nasz komputer najlepiej za pomocą **[FTP](https://github.com/Craftserve/docs/blob/master/ftp.md)**).
@@ -20,6 +21,7 @@ Aby utworzyć nową mapę należy:
 
 # Wgrywanie własnej mapy {#wgrywanie-własnej-mapy}
 Aby wgrać swój własny świat należy:
+
 * Wyłączyć serwer
 * Wejść w pliki serwera
 * Usunąć stary świat (Informacje jak to zrobić znajdują sie powyżej)
@@ -37,6 +39,7 @@ Aby wgrać swój własny świat należy:
 
 ## Ustawienie własnego seedu {#ustawienie-własnego-seedu}
 Aby ustawić własny seed należy:
+
 * Wyłączyć serwer
 * Wejść do głównego katalogu serwera
 * Otworzyć plik **server.properties**
@@ -50,6 +53,7 @@ Aby ustawić własny seed należy:
 
 ## Przenoszenie świata z serwera na singleplayer {#przenoszenie-świata-z-serwera-na-singleplayer}
 Aby przenieść świat z serwer na swój komputer należy:
+
 * Pobrać nasz świat
 * Wejść w folder netheru, a następnie pobrać folder **DIM-1**
 * Wejść w folder endu, a następnie pobrać folder **DIM1**
@@ -59,3 +63,5 @@ Aby przenieść świat z serwer na swój komputer należy:
 * Wrzucić do niego foldery **DIM-1** oraz **DIM1**
 
 ![1](./img/world/8.png)
+
+

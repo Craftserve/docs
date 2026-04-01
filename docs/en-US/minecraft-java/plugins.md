@@ -21,3 +21,5 @@ Unfortunately, the Sponge plugin library is significantly smaller than that of B
 ## Installation
 
 To manage files, you can use the **Files** tab in the Craftserve panel or the **FTP** protocol with a compatible client, such as **[WinSCP](https://github.com/Craftserve/docs/blob/master/ftp.md)**.
+
+

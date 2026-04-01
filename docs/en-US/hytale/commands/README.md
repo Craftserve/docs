@@ -29,17 +29,20 @@ Welcome to the official Hytale server commands documentation. Here you'll find c
 
 ### For Server Administrators
 If you manage a server, focus on:
+
 - [🛑 System Commands](system.md) - Essential server management
 - [🧬 Spawning System](spawning.md) - Optimize NPC behavior
 - [🌎 World & Weather](world.md) - World configuration
 
 ### For Builders
 If you create structures, check:
+
 - [🎨 Builder Tools](buildertools.md) - Terrain editing commands
 - [🌍 Teleportation](teleport.md) - Navigate while building
 
 ### For Content Creators
 If you create events or content, see:
+
 - [🤖 NPCs & Characters](npc.md) - Create interactive NPCs
 - [🛑 System Commands](system.md) - Manage players and effects
 
@@ -142,3 +145,5 @@ All commands follow a pattern. Learn the symbols:
 - Looking for specific feature? Use the search or browse by category above
 
 **Happy playing!** 🎮
+
+

@@ -27,3 +27,5 @@ Allows you to check from where a particular player is logging in.
 
 ### Installation
 Upload the main module (EssentialsX) to the plugins folder, then add the add-ons you need. You can download the full set of modules [here](https://www.spigotmc.org/resources/essentialsx.9089), each individual module can be downloaded [here](https://essentialsx.cf/downloads.html), and here are the [developer versions](https://ci.ender.zone/job/EssentialsX).
+
+

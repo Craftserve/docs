@@ -35,6 +35,7 @@ Commands for traveling the world. Included in TeleportPlugin.
 
 ### Basic Teleportation
 Teleport anywhere:
+
 - `/tp <x> <y> <z>` - To coordinates
 - `/tp <player>` - To player
 - `/tp all <x> <y> <z>` - All players to one place
@@ -42,6 +43,7 @@ Teleport anywhere:
 
 ### Home and Spawn
 Respawn points:
+
 - `/spawn` - Teleport to main spawn
 - `/spawn set` - Set your own spawn
 - `/spawn default` - Reset spawn
@@ -49,12 +51,14 @@ Respawn points:
 
 ### Teleport History
 Undo teleportations:
+
 - `/tp back [number]` - Go back to previous position
 - `/tp forward [number]` - Redo undone teleportation
 - `/tp history` - Show history
 
 ### Warps
 Saved locations:
+
 - `/warp go <name>` - Teleport to warp
 - `/warp set <name>` - Create new warp
 - `/warp remove <name>` - Remove warp
@@ -102,3 +106,5 @@ Saved locations:
 ---
 
 **Next:** Select category above to see full details.
+
+

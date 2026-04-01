@@ -35,3 +35,5 @@ Możesz jednak wykonać kopię manualnie kiedy tylko zechcesz. W tym celu, przej
 2. Ustal z jakiej daty i godziny chcesz pobrać pliki. Spójrz na listę dostępnych kopii i wybierz tę, która Ci odpowiada.
 3. Kliknij przycisk **Pobierz** obok wybranej kopii.
    ![4](../panel/img/backupy/4.png)
+
+

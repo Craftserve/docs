@@ -28,3 +28,4 @@ The connection address for your server from within the game.
 Here you can change the current game engine to another one. Choose from available engines. Before changing the engine, backup will be created.
 
 ![Engines](../panel/img/silniki/3.png)
+

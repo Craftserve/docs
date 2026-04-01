@@ -38,6 +38,7 @@ Komendy do zarządzania postaciami niezależnymi (NPC). Zawarte w pluginie NPCPl
 
 ### Spawnowanie NPC
 Tworzenie nowych postaci:
+
 - `/npc spawn <rola>` - Spawnuj NPC
 - `/npc spawn <rola> --count=liczba` - Wiele na raz
 - `/npc spawn <rola> --radius=liczba` - W promieniu
@@ -47,6 +48,7 @@ Tworzenie nowych postaci:
 
 ### Kontrola NPC
 Zarządzanie już istniejącymi NPC:
+
 - `/npc freeze` - Zatrzymaj wszystkie
 - `/npc thaw` - Wznów ruch
 - `/npc clean` - Usuń wszystkich
@@ -54,11 +56,13 @@ Zarządzanie już istniejącymi NPC:
 
 ### Wygląd NPC
 Zmiana wyglądu postaci:
+
 - `/npc appearance <model>` - Zmień wygląd
 - `/npc role <rola>` - Zmień rolę
 
 ### AI i Zachowanie
 Zaawansowana kontrola AI:
+
 - `/npc path` - Ustaw ścieżkę ruchu
 - `/npc flock` - Zachowanie grupowe
 - `/npc blackboard` - Dane AI
@@ -67,12 +71,14 @@ Zaawansowana kontrola AI:
 
 ### Komunikacja
 Interakcja z NPC:
+
 - `/npc message <wiadomość>` - Wysłij wiadomość nad głowę
 - `/npc give <przedmiot>` - Daj przedmiot do trzymania
 - `/npc give nothing` - Usuń przedmiot
 
 ### Debugowanie NPC
 Narzędzia dla zaawansowanych użytkowników:
+
 - `/npc debug` - Flagi debugowania
 - `/npc dump --json` - Format JSON
 - `/npc benchmark` - Test wydajności
@@ -108,6 +114,7 @@ Wszystkie NPC pokażą tę wiadomość.
 ## 📚 Dostępne Role NPC
 
 Poniżej znajduje się przykładowa lista dostępnych ról:
+
 - `Goblin` - Zielone małe potwory
 - `Orc` - Duże zielone potwory
 - `Wolf` - Wilki
@@ -129,3 +136,5 @@ Pełną listę zobaczysz wpisując `/npc spawn` w grze.
 ---
 
 **Dalej:** Wybierz kategorię powyżej aby zobaczyć pełne szczegóły.
+
+

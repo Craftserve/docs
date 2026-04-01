@@ -51,7 +51,7 @@ If the standard migration fails:
 
 If none of the above steps work, contact our technical support team:
 
-📧 **[support@craftserve.pl](mailto:support@craftserve.pl)**
+📧 **[support@craftserve.com](mailto:support@craftserve.com)**
 
 ## ✅ Key Information at a Glance:
 
@@ -61,3 +61,5 @@ If none of the above steps work, contact our technical support team:
 | Forced Migration   | about 15 minutes | Possible data loss |
 
 ---
+
+

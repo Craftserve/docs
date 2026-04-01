@@ -41,6 +41,7 @@ Zaawansowane komendy do edycji terenu i budownictwa. Zawarte w pluginie BuilderT
 
 ### Zaznaczanie Obszarów
 Definiowanie co chcesz edytować:
+
 - `/pos1` - Pierwszy róg
 - `/pos2` - Drugi róg
 - `/expand <liczba>` - Powiększ
@@ -49,6 +50,7 @@ Definiowanie co chcesz edytować:
 
 ### Wypełnianie i Zamiana {#wypelnianie-i-zamiana}
 Operacje zbiorowe na blokach:
+
 - `/setBlocks <blok>` - Wypełnij całość
 - `/fillBlocks <wzór>` - Wzór wypełniający
 - `/replace [z] <na>` - Zamień bloki
@@ -57,6 +59,7 @@ Operacje zbiorowe na blokach:
 
 ### Schowek
 Wytnij, kopiuj, wklej:
+
 - `/copy` - Skopiuj
 - `/cut` - Wytnij
 - `/paste` - Wklej
@@ -65,6 +68,7 @@ Wytnij, kopiuj, wklej:
 
 ### Transformacje
 Modyfikuj strukturę:
+
 - `/move <kierunek> <liczba>` - Przesuń
 - `/stack <liczba>` - Duplikuj wiele razy
 - `/rotate <stopnie>` - Obróć
@@ -74,12 +78,14 @@ Modyfikuj strukturę:
 
 ### Prefaby
 Gotowe struktury:
+
 - `/prefab` - Przeglądaj prefaby
 - `/editprefab` - Edytuj prefaby
 - `/path` - Zarządzaj ścieżkami
 
 ### Pędzle
 Zaawansowane narzędzia:
+
 - `/scriptedbrushes` - Ładuj pędzle skryptowe
 
 ## 💡 Praktyczne Przykłady
@@ -168,6 +174,7 @@ Zaawansowane narzędzia:
 ## 🎨 Bloki Popularne
 
 Najczęściej używane w zaznaczeniach:
+
 - `stone` - Kamień
 - `dirt` - Ziemia
 - `grass_block` - Trawa
@@ -192,6 +199,7 @@ Najczęściej używane w zaznaczeniach:
 ## 💡 Wskazówka Pro
 
 Możesz łączyć operacje:
+
 1. Zaznacz i skopiuj
 2. Wklej wiele razy (`/stack`)
 3. Obróć (`/rotate`)
@@ -201,3 +209,5 @@ Możesz łączyć operacje:
 ---
 
 **Dalej:** Wybierz kategorię powyżej aby zobaczyć pełne szczegóły.
+
+

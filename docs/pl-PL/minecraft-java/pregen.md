@@ -104,3 +104,5 @@ Ostatecznie jeżeli chcesz wygenerować wszystko na terenie wyznaczonym przez wo
 `chunky start` - zaczyna generację
 
 Ostrożnie z ilością bloków!
+
+

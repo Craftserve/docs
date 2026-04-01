@@ -38,6 +38,7 @@ Commands for managing the world and its properties. Included in WorldPlugin.
 
 ### World Management
 Create and manage worlds:
+
 - `/world list` - Show worlds
 - `/world add <name>` - Create new
 - `/world remove <name>` - Remove world
@@ -47,6 +48,7 @@ Create and manage worlds:
 
 ### Time of Day
 Control time flow:
+
 - `/time` - Show current time
 - `/time set <hour>` - Set time (0-24)
 - `/time dawn` - Dawn
@@ -55,6 +57,7 @@ Control time flow:
 
 ### Weather
 Change weather conditions:
+
 - `/weather get` - Show weather
 - `/weather set <type>` - Set weather
   - `clear` - Clear
@@ -63,17 +66,20 @@ Change weather conditions:
 
 ### Chunks and Terrain
 Manage terrain chunks:
+
 - `/chunk info` - Chunk information
 - `/chunk regenerate` - Restore original terrain
 - `/chunks` - Advanced operations
 
 ### Blocks
 Single block operations:
+
 - `/block set <block>` - Place block
 - `/block get` - Block information
 
 ### Lighting
 Manage lighting:
+
 - `/lighting info` - Information
 - `/lighting invalidate` - Rebuild light map
 
@@ -140,3 +146,5 @@ Manage lighting:
 ---
 
 **Next:** Select category above to see full details.
+
+

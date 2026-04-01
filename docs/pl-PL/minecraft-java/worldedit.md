@@ -106,6 +106,7 @@ Pędzle umożliwiają "rysowanie" konkretnymi przedmiotami.
 Trzymając w ręce np. patyk i używając komendy `//br <typ pędzla>` aktywujesz konkretny pędzel na patyku. Po kliknięciu PPM, w miejscu na które wskazujesz, wykona się konkretna zmiana, w zależności od pędzla.
 
 Przykładowe pędzle:
+
 * `//br sphere <bloki> <promień>` tworzy kulę w miejscu na które wskazujesz.
 * `//br cyl <bloki> <promień> [wysokość]` tworzy cylinder w miejscu na które wskazujesz.
 * `//br clipboard` wkleja obiekt ze schowka (skopiowany za pomocą `//copy`) w miejscu na które wskazujesz.
@@ -218,6 +219,7 @@ Dla przykładu jeśli chcesz zmienić tylko bloki stone znajdujące się nad pow
 ### Zaznaczanie
 
 Zaznaczanie punktów może odbywać się na trzy różne sposoby:
+
 * Trzymając drewnianą siekierę zaznacz pierwszy punkt klikając LPM i następnie zaznacz drugi punkt klikając PPM. Drewnianą siekierę można stworzyć samemu lub otrzymać ją za pomocą komendy `//wand`.
 * Wpisując `//pos1` dla punktu pierwszego, `//pos2` dla punktu drugiego. Są one tworzone w miejscach gdzie stoisz w czasie wpisywania komend.
 * Wpisując `//hpos1` dla punktu pierwszego, `//hpos2` dla punktu drugiego. Są one tworzone w miejscach gdzie patrzysz w czasie wpisywania komend.
@@ -365,6 +367,7 @@ Kopiowanie obiektów do schowka umozliwia wpisaniu dwóch komend (po zaznaczeniu
 **WAŻNE** zapamiętywana jest twoja pozycja względem kopiowanego regionu, więc jeśli stoisz 5 kratek przed wejściem do domu i go skopiujesz, po wklejeniu w innym miejscu drzwi pojawią się 5 kratek przed tobą. Jest to bardzo istotny aspekt przy wykonywaniu operacji na schowku.
 
 Obie komendy pozwalają na użycie trzech dodatkowych flag:
+
 * `-e` pozwala także uwzględnić w kopiowaniu lub wycinaniu entity (moby, leżące przedmioty itp.). Dla przykładu `//copy -e`.
 * `-b` pozwala także uwzględnić biomy (w przypadku wycinania biomy w dalszym ciągu zostaną pozostawione w miejscu wyciętego obiektu). Dla przykładu `//copy -b`.
 * `-m <mask>` pozwala także uwzględnić konkretną maskę w przypadku kopiowania lub wycinania. Wszystkie bloki, które nie należą do maski będą reprezentowane jako powietrze w twoim schowku (nie skopiują się). Dla przykładu `//copy -m !stone` skopiuje wszystkie bloki oprócz kamienia.
@@ -375,6 +378,7 @@ Wklejanie obiektów (po wcześniejszym skopiowaniu lub wycięciu).
 Ponieważ zapamiętywana jest twoja pozycja, jeśli skopiowałeś wieże stojąc na jej szczycie, po wklejeniu będzie znajdowała się bezpośrednio pod tobą.
 
 Podobnie jak przy kopiowaniu komenda pozwala na użycie trzech flag:
+
 * `-e` pozwala uwzględnić także skopiowane entity przy wklejaniu (jeśli jakieś są).
 * `-b` pozwala uwzględnić także skopiowane biomy przy wklejaniu (jeśli jakieś są).
 * `-m <mask>` pozwala uwzględnić konkretne bloki ze schowka, które mają zostać wklejone.
@@ -559,3 +563,5 @@ Zamienia ziemię na trawę w danym promieniu.
 Gasi ogień w danym promieniu.
 * `//butcher [-pngabtfl] [promień]`
 Pozwala na usunięcie konkretnych entity w danym promieniu, `-p`	zabija oswojone zwierzęta, `-n`	zabija NPC, `-g`	zabija golemy, `-a`	zabija zwierzęta, `-b`	zabija moby pasywne, `-t`	zabija moby z tagami, `-f`	łączy wszystkie powyższe flagi, `-r`	usuwa stojaki na zbroje.
+
+

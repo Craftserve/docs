@@ -54,11 +54,13 @@ Główną cechą logów jest ich czytelność - dobrze skonstruowane mają być 
 <h3>Słowa kluczowe</h3>
 
 W poszukiwaniu przyczyny naszych problemów przydają się **słowa kluczowe** poprzedzające **każdy wpis** do dziennika. Jak to jest pokazane w **przykładzie 1.** każdy wpis poprzedzony jest tagami: `[17:31:33] [Server thread/INFO] [FML]`.
+
 * `[17:31:33]` - to oczywiście godzina, o której dane zdarzenie miało miejsce. Czasami podawana jest również data.
 * `[FML]` - pojawia się tylko w logach serwerów Forge - oznacza Forge Mod Loader.
 * `[Server thread/INFO]` - najważniejszy z tagów, `Server thread` określa proces, a `INFO` **to rodzaj wpisu do dziennika**.
 
 **Znając typy wpisów łatwo znajdziemy powód problemu!**
+
 * `INFO` - to wpis informacyjny. Zazwyczaj informuje nas, że dana akcja przebiegła pomyślnie. Dlatego w większości przypadków będziemy pomijać linijki **INFO** przy troubleshootingu.
 * `WARN` - to inaczej ostrzeżenie. Najczęściej taka linijka pojawi się w momencie, gdy serwer napotka jakiś wyjątek, ale może działać dalej (patrz **przykład 2.** - Authme - protectInventory).
 * `ERROR` - serwer napotkał błąd który uniemożliwił jego (lub pluginu) dalsze działanie (patrz **przykłady 4. oraz 5.**).
@@ -153,3 +155,5 @@ Wgraliśmy plugin na serwer, ale ten nie chce się załadować. W logach znajduj
 <h3>Zakończenie</h3>
 
 Jak zobaczyliśmy w przykładach, diagnostyka problemów z pomocą logów nie jest trudna. Wystarczy znać podstawy angielskiego, a jeśli mamy jakiś problem, jest niemal pewne, że ktoś już go wcześniej miał oraz, że **kopiując linijkę błędu do Google**, znajdziemy rozwiązanie. A w razie trudności, zapraszamy z plikiem **latest.log** na Discord **Craftserve**.
+
+

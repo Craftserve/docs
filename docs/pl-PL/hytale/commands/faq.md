@@ -80,6 +80,7 @@ Ustawi nowy spawn.
 
 ### P: Jakie są dostępne tryby?
 **O:** 
+
 - `Adventure` - Normalny tryb gry
 - `Creative` - Budowanie bez ograniczeń
 - `Survival` - Trudny tryb survival
@@ -491,11 +492,13 @@ Ustawi nowy spawn.
 
 ## 💡 Wskazówki Pro
 
-✅ **Używaj Tab** - Wciśnij Tab aby autouzupełnić komendy
-✅ **Cofaj zmiany** - Zawsze możesz użyć `/undo`
-✅ **Czytaj błędy** - Serwer powie Ci co nie tak
-✅ **Eksperymentuj** - Większość rzeczy się nie psuje na stałe
+* ✅ **Używaj Tab** - Wciśnij Tab aby autouzupełnić komendy
+* ✅ **Cofaj zmiany** - Zawsze możesz użyć `/undo`
+* ✅ **Czytaj błędy** - Serwer powie Ci co nie tak
+* ✅ **Eksperymentuj** - Większość rzeczy się nie psuje na stałe
 
 ---
 
 **Nie znalazłeś odpowiedzi?** Skontaktuj się z administracją serwera!
+
+

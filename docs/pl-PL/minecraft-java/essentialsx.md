@@ -27,3 +27,5 @@ Pozwala sprawdzić skąd loguje dany gracz.
 
 ### Instalacja
 Główny moduł (EssentialsX) wgrywamy do folderu plugins, a następnie dodajemy dodatki które potrzebujemy. Cały zestaw modułów możemy pobrać [tutaj](https://www.spigotmc.org/resources/essentialsx.9089), [tutaj](https://essentialsx.cf/downloads.html) można pobrać każdy moduł z osobna, a tutaj znajdują się wersje [deweloperskie](https://ci.ender.zone/job/EssentialsX).
+
+

@@ -18,3 +18,5 @@ Next, start the server and type the command **/minecraft:reload**, or if it does
 
 
 ## Datapacks can also be uploaded using [FTP](https://github.com/Craftserve/docs/blob/master/ftp.md). Most people find this method of file uploading more convenient.
+
+

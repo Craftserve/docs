@@ -38,6 +38,7 @@ Commands for managing non-player characters (NPCs). Included in NPCPlugin.
 
 ### Spawning NPCs
 Create new characters:
+
 - `/npc spawn <role>` - Spawn NPC
 - `/npc spawn <role> --count=number` - Multiple at once
 - `/npc spawn <role> --radius=number` - Within radius
@@ -47,6 +48,7 @@ Create new characters:
 
 ### NPC Control
 Manage existing NPCs:
+
 - `/npc freeze` - Stop all
 - `/npc thaw` - Resume movement
 - `/npc clean` - Remove all
@@ -54,11 +56,13 @@ Manage existing NPCs:
 
 ### NPC Appearance
 Change character appearance:
+
 - `/npc appearance <model>` - Change appearance
 - `/npc role <role>` - Change role
 
 ### AI and Behavior
 Advanced AI control:
+
 - `/npc path` - Set movement path
 - `/npc flock` - Group behavior
 - `/npc blackboard` - AI data
@@ -67,12 +71,14 @@ Advanced AI control:
 
 ### Communication
 Interact with NPCs:
+
 - `/npc message <message>` - Send message above head
 - `/npc give <item>` - Give item to hold
 - `/npc give nothing` - Remove item
 
 ### NPC Debugging
 Tools for advanced users:
+
 - `/npc debug` - Debug flags
 - `/npc dump --json` - JSON format
 - `/npc benchmark` - Performance test
@@ -108,6 +114,7 @@ All NPCs will show this message.
 ## 📚 Available NPC Roles
 
 Below is an example list of available roles:
+
 - `Goblin` - Green small creatures
 - `Orc` - Large green creatures
 - `Wolf` - Wolves
@@ -129,3 +136,5 @@ See the full list by typing `/npc spawn` in-game.
 ---
 
 **Next:** Select category above to see full details.
+
+

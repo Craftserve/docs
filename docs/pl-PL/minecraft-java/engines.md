@@ -14,3 +14,5 @@
 6. Kliknij przycisk **Formatuj i reinstaluj serwer**.
 7. Poczekaj do końca procesu.
 8. Gotowe!
+
+

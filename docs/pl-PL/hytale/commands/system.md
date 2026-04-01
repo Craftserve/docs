@@ -47,6 +47,7 @@ Komendy zawsze dostępne na serwerze. Zarządzają ogólnymi aspektami serwera i
 
 ### Kontrola Serwera
 Zarządzanie podstawowymi funkcjami serwera:
+
 - `/stop` - Wyłącz serwer
 - `/version` - Pokaż wersję
 - `/backup` - Utwórz kopię
@@ -56,6 +57,7 @@ Zarządzanie podstawowymi funkcjami serwera:
 
 ### Zarządzanie Graczami
 Operacje na graczach:
+
 - `/gamemode` - Zmień tryb gry
 - `/kill` - Zabij gracza
 - `/damage` - Zadaj obrażenia
@@ -68,6 +70,7 @@ Operacje na graczach:
 
 ### Dostęp i Uprawnienia
 Kontrola dostępu do serwera:
+
 - `/ban` - Banuj gracza
 - `/unban` - Odblanuj gracza
 - `/whitelist` - Lista białych
@@ -76,18 +79,21 @@ Kontrola dostępu do serwera:
 
 ### Komunikacja
 Wysyłanie wiadomości:
+
 - `/notify` - Notyfikacja dla wszystkich
 - `/say` - Wiadomość publiczna
 - `/eventtitle` - Tytuł zdarzenia
 
 ### Statystyki Gracza
 Zarządzanie danymi gracza:
+
 - `/player stats` - Czytaj/pisz statystyki
 - `/player effect` - Nakładaj efekty
 - `/player camera` - Zmień perspektywę
 
 ### Bytości
 Zarządzanie NPC i zwierzętami:
+
 - `/entity remove` - Usuń bytość
 - `/entity clone` - Klonuj bytość
 - `/entity dump` - Pokaż dane
@@ -96,6 +102,7 @@ Zarządzanie NPC i zwierzętami:
 
 ### Debugowanie
 Narzędzia programistyczne:
+
 - `/debug shape` - Rysuj kształty
 - `/hitbox` - Pokaż granice kolizji
 - `/log` - Logging
@@ -114,3 +121,5 @@ Te komendy są **zawsze dostępne** i nie można ich wyłączyć. Są one kluczo
 ---
 
 **Dalej:** Przejdź do konkretnej kategorii powyżej, aby zobaczyć pełne szczegóły każdej komendy.
+
+

@@ -243,6 +243,7 @@ Will set a new spawn.
 
 ### Q: I can't teleport
 **A:** Possible reasons:
+
 - You don't have permission
 - The destination is blocked
 - There's a protection zone
@@ -255,3 +256,5 @@ Will set a new spawn.
 - [🤖 NPC](npc.md) - Characters
 - [🌎 World](world.md) - World and weather
 - [🎨 BuilderTools](buildertools.md) - Terrain editing
+
+

@@ -6,6 +6,7 @@ Aby używać antyxray'a bez konieczności wgrywania dodatkowych pluginów, nale�
 
 ## Opis trybów
 Antyxray może działać na dwa różne sposoby:
+
 * `engine-mode: 1`: Rudy zostają zamienione na kamień, ale tylko te, które nie sąsiadują z blokiem powietrza lub cieczą (wodą lub lawą). Po włączeniu x-ray'a widać tylko te rudy, które nie mogły zostać ukryte przez bloki stojące obok.
 
 * `engine-mode: 2`: Rudy nie są ukrywane, lecz kamień, andezyt, dioryt są zamieniane na losowe złoża rud, których gracz nie jest w stanie rozróżnić od tych prawdzinych. Oszukane rudy zamieniają się na bloki prawdziwe, gdy blok obok nich znajdzie się blok powietrza lub cieczy. Gdy na serwerze występują lagi, czasami można odkryć losowe rudy które pojawiają się przy kopaniu, jednak gracz nie będzie w stanie ich wydobyć.
@@ -299,5 +300,7 @@ anticheat:
 
 ## Źródło
 https://docs.papermc.io/paper/anti-xray
+
+
 
 

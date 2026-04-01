@@ -35,3 +35,5 @@ However, you can manually create a backup whenever you like. To do this, go to t
 2. Choose the backup date and time of the files you want to download. Look through the available backups and select the one that suits you best.
 3. Click the **Download** button next to the selected backup.  
    ![4](../panel/img/backupy/4.png)
+
+

@@ -26,7 +26,8 @@ Jeśli jednak takie okno się nie wyświetli lub przypadkowo je zamkniemy, nale�
 -   Wpisać w **Nazwa użytkownika**: adres e-mail naszego konta Craftserve
 -   Wpisać w **Hasło**: hasło do naszego konta Craftserve
 -   Wybrać port **21**
-    Przykład poprawnego uzupełnienia:
+    
+Przykład poprawnego uzupełnienia:
 
 ![3](../panel/img/ftp/3.png)
 
@@ -57,3 +58,5 @@ Klikając dwa razy na **plik tekstowy** możemy go edytować. Po zmianach trzeba
 Aby pobrać plik z serwera na nasz komputer trzeba zaznaczyć plik i kliknąć **F5** - to przerzuci zaznaczony plik do katalogu otwartego w lewej części WinSCP. Bardziej intuicyjną jest też możliwość przeciągnięcia danego pliku na nasz pulpit lub do jakiegoś folderu.
 
 **UWAGA** Wgrywanie własnego silnika zakończy się niepowodzeniem. Craftserve zezwala wyłącznie na używanie silników znajdujących się w zakładce **Ustawienia/Silnik**. Jeśli potrzebny jest silnik, którego nie ma w tej zakładce, można napisać do supportu z prośbą o wgranie go, a zostanie zweryfikowana możliwość dodania takiego silnika.
+
+

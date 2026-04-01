@@ -23,3 +23,5 @@ Jeśli jednak masz [zakupioną wersję Minecrafta](https://minecraft.net), to za
 
 
 
+
+

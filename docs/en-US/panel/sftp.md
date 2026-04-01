@@ -30,6 +30,7 @@ You should see:
 ## Recommended clients and quick start
 
 If you are unsure where to begin, use this documentaion and one of the recommended SFTP clients (or any other one!):
+
 - FileZilla: https://filezilla-project.org/download.php
 - WinSCP: https://winscp.net/eng/download.php
 - Panel SFTP docs (this page)
@@ -83,3 +84,5 @@ If you don’t know the password or want to rotate it, click **Generate new pass
 - Login error: ensure no trailing spaces and correct password.
 - Connection closed: verify SFTP protocol and port 22.
 - Permission issue: account may only access your server folder.
+
+

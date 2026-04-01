@@ -35,6 +35,7 @@ Komendy do podróżowania po świecie. Zawarte w pluginie TeleportPlugin.
 
 ### Podstawowa Teleportacja
 Teleportuj się wszędzie:
+
 - `/tp <x> <y> <z>` - Do współrzędnych
 - `/tp <gracz>` - Do gracza
 - `/tp all <x> <y> <z>` - Wszystkie graczy na jedno miejsce
@@ -42,6 +43,7 @@ Teleportuj się wszędzie:
 
 ### Dom i Spawn
 Punkty respawnu:
+
 - `/spawn` - Teleport na główny spawn
 - `/spawn set` - Ustaw własny spawn
 - `/spawn default` - Reset spawnu
@@ -49,12 +51,14 @@ Punkty respawnu:
 
 ### Historia Teleportacji
 Cofaj teleportacje:
+
 - `/tp back [liczba]` - Wróć do poprzedniej pozycji
 - `/tp forward [liczba]` - Ponów cofniętą teleportację
 - `/tp history` - Pokaż historię
 
 ### Warp'y
 Zapisane lokalizacje:
+
 - `/warp go <nazwa>` - Teleport do warpu
 - `/warp set <nazwa>` - Utwórz nowy warp
 - `/warp remove <nazwa>` - Usuń warp
@@ -102,3 +106,5 @@ Zapisane lokalizacje:
 ---
 
 **Dalej:** Wybierz kategorię powyżej aby zobaczyć pełne szczegóły.
+
+

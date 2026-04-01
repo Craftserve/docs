@@ -20,14 +20,18 @@
 2. Pobierz modpack wersję modpacka przykładowo z [tej strony](https://www.curseforge.com/minecraft/modpacks). Pamiętaj, aby pobrać serwerową wersję paczki, czyli "Server Pack".
 
     ![image](./img/bettermc/download_serverpack.png)
+
 3. Pobranego zipa wgraj na serwer przy użyciu [FTP](../panel/ftp.md).
 4. Przejdź do panelu Craftserve i wybierz zakładkę **Pliki**.
 5. Odszukaj wgrany plik zip i kliknij na niego prawym przyciskiem myszy. Z listy wybierz opcję **Rozpakuj**.
 
     ![image](./img/bettermc/unzip.png)
+    
 6. Po rozpakowaniu możesz usunąć plik zip.
-7.  Uruchom serwer i poczekaj na jego uruchomienie.
+7. Uruchom serwer i poczekaj na jego uruchomienie.
 
 ### Uwagi
 - Wejście na serwer możliwe jest tylko jeśli gracz ma wgraną u siebie w grze tę samą (ale nie serwerową, tylko tradycjną, "clientową") wersję modpacka. 
 - W przypadku problemów z uruchomieniem serwera, sprawdź czy wersja silnika Fabric/Forge jest zgodna z wersją modpacka.
+
+

@@ -9,15 +9,19 @@
 
 Jeśli chcemy wgrać na serwer własną paczkę zasobów, to trzeba ją przesłać na dowolny serwis, ale musi on udostępniać możliwość bezpośredniego permalinku do pobrania. Można skorzystać np. z [Dropboxa](https://www.dropbox.com/). 
 Żeby to zrobić należy:
+
 * Przeciągnąć naszego resource packa na środek strony lub kliknąć przycisk **prześlij**
 
 ![1](./img/resourcepack/2.png)
+
 * Wybrać **pliki**
 
 ![1](./img/resourcepack/3.png)
+
 * Szukamy interesującej nas paczki
 
 ![1](./img/resourcepack/4.png)
+
 * Następnie naciskamy **otwórz**
 
 Teraz kopiujemy link do naszej paczki klikając przycisk **kopiuj łączę**.
@@ -32,3 +36,5 @@ Szukamy linijki **resource-pack=** i tam go wklejamy.
 
 # WAŻNE
 Jeśli korzystamy z Dropboxa, to na końcu linku trzeba zamienić **0** na **1**.
+
+

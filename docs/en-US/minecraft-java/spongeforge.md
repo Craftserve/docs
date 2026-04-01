@@ -17,3 +17,5 @@ If the plugin uses **MIXIN**, it must be placed in the **/mods/** folder.
 Installation
 ------------
 You can manage files through the **Files** tab in the Craftserve panel or using the **FTP** protocol with an FTP client, such as **FileZilla**.
+
+

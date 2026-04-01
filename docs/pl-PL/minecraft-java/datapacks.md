@@ -13,8 +13,9 @@ Nasz datapack po tym powinien pojawić się w panelu serwera.
 
 ![1](./img/datapacki/datapack3.png)
 
-Następnie włączamy serwer i wpisujemy komendę **/minecraft:reload** lub jeśli taka nie istnieje to **/reload**.
+Następnie włączamy serwer i wpisujemy komendę **/minecraft:reload** lub jeśli taka nie jest dostępna, używamy **/reload** oraz uruchamiamy ponownie serwer.
 
 
+## 💡 Datapacki można również wgrać za pomocą [FTP](https://github.com/Craftserve/docs/blob/master/ftp.md). Większość osób uważa tę formę wgrywania plików za wygodniejszą.
 
-## Datapacki można również wgrać za pomocą [FTP](https://github.com/Craftserve/docs/blob/master/ftp.md). Większość osób uważa tę formę wgrywania plików za wygodniejszą.
+

@@ -72,3 +72,5 @@ Pozostałe przydatne komendy pluginu CraftserveAgent.
 
 - `/back` - teleportuje z powrotem do poprzedniej lokacji. **Uprawnienie:** `craftserve-agent.back`.
 - `/slots <liczba>` - zmienia liczbę slotów na serwerze. **Uprawnienie:** `craftserve-agent.slots`.
+
+

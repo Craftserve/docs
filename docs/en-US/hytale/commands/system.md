@@ -47,6 +47,7 @@ Always available commands on the server. Manage general aspects of server and pl
 
 ### Server Control
 Manage basic server functions:
+
 - `/stop` - Shutdown server
 - `/version` - Show version
 - `/backup` - Create backup
@@ -56,6 +57,7 @@ Manage basic server functions:
 
 ### Player Management
 Operations on players:
+
 - `/gamemode` - Change game mode
 - `/kill` - Kill player
 - `/damage` - Deal damage
@@ -68,6 +70,7 @@ Operations on players:
 
 ### Access and Permissions
 Control server access:
+
 - `/ban` - Ban player
 - `/unban` - Unban player
 - `/whitelist` - Whitelist
@@ -76,18 +79,21 @@ Control server access:
 
 ### Communication
 Send messages:
+
 - `/notify` - Notification for all
 - `/say` - Public message
 - `/eventtitle` - Event title
 
 ### Player Statistics
 Manage player data:
+
 - `/player stats` - Read/write statistics
 - `/player effect` - Apply effects
 - `/player camera` - Change perspective
 
 ### Entities
 Manage NPCs and animals:
+
 - `/entity remove` - Remove entity
 - `/entity clone` - Clone entity
 - `/entity dump` - Show data
@@ -96,6 +102,7 @@ Manage NPCs and animals:
 
 ### Debugging
 Developer tools:
+
 - `/debug shape` - Draw shapes
 - `/hitbox` - Show collision bounds
 - `/log` - Logging
@@ -114,3 +121,5 @@ These commands are **always available** and cannot be disabled. They are crucial
 ---
 
 **Next:** Go to specific category above to see full details of each command.
+
+

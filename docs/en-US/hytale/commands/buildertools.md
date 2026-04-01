@@ -41,6 +41,7 @@ Advanced commands for terrain editing and building. Included in BuilderToolsPlug
 
 ### Area Selection
 Define what you want to edit:
+
 - `/pos1` - First corner
 - `/pos2` - Second corner
 - `/expand <number>` - Expand
@@ -49,6 +50,7 @@ Define what you want to edit:
 
 ### Fill and Replace
 Bulk operations on blocks:
+
 - `/setBlocks <block>` - Fill entire area
 - `/fillBlocks <pattern>` - Pattern fill
 - `/replace [from] <to>` - Replace blocks
@@ -57,6 +59,7 @@ Bulk operations on blocks:
 
 ### Clipboard
 Cut, copy, paste:
+
 - `/copy` - Copy
 - `/cut` - Cut
 - `/paste` - Paste
@@ -65,6 +68,7 @@ Cut, copy, paste:
 
 ### Transformations
 Modify structure:
+
 - `/move <direction> <number>` - Move
 - `/stack <number>` - Duplicate multiple times
 - `/rotate <degrees>` - Rotate
@@ -74,12 +78,14 @@ Modify structure:
 
 ### Prefabs
 Ready-made structures:
+
 - `/prefab` - Browse prefabs
 - `/editprefab` - Edit prefabs
 - `/path` - Manage paths
 
 ### Brushes
 Advanced tools:
+
 - `/scriptedbrushes` - Load scripted brushes
 
 ## 💡 Practical Examples
@@ -168,6 +174,7 @@ Advanced tools:
 ## 🎨 Popular Blocks
 
 Most commonly used in selections:
+
 - `stone` - Stone
 - `dirt` - Dirt
 - `grass_block` - Grass
@@ -201,3 +208,5 @@ You can combine operations:
 ---
 
 **Next:** Select category above to see full details.
+
+

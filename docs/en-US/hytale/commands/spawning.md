@@ -125,3 +125,5 @@ Shows spawning statistics.
 ---
 
 **Back:** [🧬 NPC Spawning System](spawning.md)
+
+

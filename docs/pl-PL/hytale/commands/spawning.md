@@ -125,3 +125,5 @@ Wyświetla statystyki spawowania.
 ---
 
 **Wróć:** [🧬 System Spawowania](spawning.md)
+
+

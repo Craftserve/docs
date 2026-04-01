@@ -1,0 +1,3695 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../migrations/">
+      
+      
+        <link rel="next" href="../../minecraft-java/modpack/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>How to build a Craftserve Addons pack - Craftserve Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <script async src="https://umami.craftserve.com/script.js" data-website-id="4cfb66a9-3bcf-4bd4-a61c-7892b7d9ed7b"></script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+   <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-create-your-own-add-on-on-craftserve-addons" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Craftserve Docs" class="md-header__button md-logo" aria-label="Craftserve Docs" data-md-component="logo">
+      
+  <img src="../../../common/img/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Craftserve Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              How to build a Craftserve Addons pack
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en-US/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/pl-PL/" hreflang="pl" class="md-select__link">
+              Polski
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Craftserve/docs/tree/c3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Craftserve Docs" class="md-nav__button md-logo" aria-label="Craftserve Docs" data-md-component="logo">
+      
+  <img src="../../../common/img/logo.png" alt="logo">
+
+    </a>
+    Craftserve Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Craftserve/docs/tree/c3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Polski
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Polski
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oficjalny zestaw dokumentacji, poradników i zasobów Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Panel Craftserve
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Panel Craftserve
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/ustawienia/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ustawienia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/ftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Połączenie FTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/sftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Połączenie SFTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/backups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kopie zapasowe, czyli Backupy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/mysql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Czym jest MySQL?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/migrations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migracje serwerów
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/panel/gallery-addons/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jak stworzyć paczkę na Craftserve Dodatki?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Minecraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            Minecraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_1" id="__nav_1_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Instalacja i konfiguracja
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Instalacja i konfiguracja
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/modpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja modpacka
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/bettermc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja modpacka BetterMC (Fabric)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/yflsmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja paczki YFLsmp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja pluginów
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/datapacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja datapacków
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/spongeforge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SpongeForge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_2" id="__nav_1_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Administracja i ustawienia serwera
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Administracja i ustawienia serwera
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/engines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Silniki
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/ustawieniaminecraft/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ustawienia Minecraft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/csrvagentkomendy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Polecenia CraftserveAgent
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Świat serwerowy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/resource-pack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Serwerowy resource pack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/online-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Online mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/pregen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pregenerowanie świata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ustawianie własnej domeny do serwera Minecraft
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_3" id="__nav_1_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Zarządzanie plikami i danymi
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Zarządzanie plikami i danymi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/kmpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KM Pack – FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_4" id="__nav_1_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Optymalizacja i diagnostyka
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Optymalizacja i diagnostyka
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/timings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lagi na serwerze (Timings)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/debugprofiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forge Debug Profiler oraz jego interpretacja
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Logi i raporty z crashy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_5" id="__nav_1_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Konfiguracja plików konfiguracyjnych
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Konfiguracja plików konfiguracyjnych
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/bukkit.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bukkit.yml – poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/spigot.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    spigot.yml – poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_6" id="__nav_1_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Wtyczki i narzędzia administracyjne
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Wtyczki i narzędzia administracyjne
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/essentialsx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EssentialsX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/logblock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Instalacja i konfiguracja LogBlocka na Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/worldedit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldEdit – kompletny poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/worldguard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldGuard – poradnik
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_7" id="__nav_1_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Zabezpieczenia
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Zabezpieczenia
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/minecraft-java/antyxray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AntyXray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hytale
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Hytale
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4_1" id="__nav_1_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Komendy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Komendy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Przegląd
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/legenda/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Legenda
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/buildertools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Builder Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/npc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/spawning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spawning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/teleport/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teleport
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pl-PL/hytale/commands/world_hytale/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Świat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    English
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            English
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Official Documentation, Guides, and Resources for Craftserve
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Craftserve Panel
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Craftserve Panel
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FTP connection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sftp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SFTP connection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Backups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mysql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    What is MySQL?
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../migrations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server migrations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    How to build a Craftserve Addons pack
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    How to build a Craftserve Addons pack
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a project 🔨
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a project 🔨">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-make-your-project-downloadable-and-visible-in-the-addons-gallery-you-must-first-create-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      To make your project downloadable and visible in the Addons gallery, you must first create a new project.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-go-to-the-server-management-panel-then-to-the-addons-gallery-and-click-the-create-project-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Go to the server management panel, then to the Addons Gallery, and click the “Create Project” link
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-in-the-project-creator-fill-in-the-following-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. In the project creator, fill in the following fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#done" class="md-nav__link">
+    <span class="md-ellipsis">
+      Done! 🚀
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Minecraft
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Minecraft
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Installation & configuration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Installation & configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/modpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modpack installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/bettermc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    BetterMC (Fabric) installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/yflsmp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YFLsmp pack installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/plugins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugin installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/datapacks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Datapack installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/spongeforge/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SpongeForge
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Administration & server settings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Administration & server settings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/engines/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Engines
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/minecraftsettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Minecraft settings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/csrvagentcommands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CraftserveAgent commands
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server world
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/resource-pack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Server resource pack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/online-mode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Online mode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/pregen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    World pregeneration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/domain/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set a custom domain for your server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_3" id="__nav_2_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    File & data management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            File & data management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/kmpack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    KM Pack – FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_4" id="__nav_2_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Optimization & diagnostics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Optimization & diagnostics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/timings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lag (Timings)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/debugprofiler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Forge Debug Profiler and interpretation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/logs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crash logs & reports
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_5" id="__nav_2_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Config files
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Config files
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/bukkit.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bukkit.yml – guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/spigot.yml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    spigot.yml – guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_6" id="__nav_2_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Admin plugins & tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Admin plugins & tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/essentialsx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EssentialsX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/logblock/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LogBlock – installation & configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/worldedit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldEdit – complete guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/worldguard/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WorldGuard – guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_7" id="__nav_2_3_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../minecraft-java/antyxray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AntiXray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hytale
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Hytale
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Commands
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Commands
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/faq/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/buildertools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Builder Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/npc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NPC
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/spawning/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Spawning
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/system/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/teleport/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Teleport
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hytale/commands/world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    World
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 Table of Contents
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a project 🔨
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a project 🔨">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-make-your-project-downloadable-and-visible-in-the-addons-gallery-you-must-first-create-a-new-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      To make your project downloadable and visible in the Addons gallery, you must first create a new project.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-go-to-the-server-management-panel-then-to-the-addons-gallery-and-click-the-create-project-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Go to the server management panel, then to the Addons Gallery, and click the “Create Project” link
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-in-the-project-creator-fill-in-the-following-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. In the project creator, fill in the following fields
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#done" class="md-nav__link">
+    <span class="md-ellipsis">
+      Done! 🚀
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="how-to-create-your-own-add-on-on-craftserve-addons">📦 How to create your own add-on on Craftserve Addons?<a class="headerlink" href="#how-to-create-your-own-add-on-on-craftserve-addons" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>Note: Creating projects and versions requires a purchased service.<br />
+Purchase the service now at <a href="https://craftserve.com/#offers">craftserve.com</a></p>
+</blockquote>
+<p>Here is a proposal for a clear and aesthetic <strong>table of contents</strong> in the style of technical documentation, which you can add at the beginning of the document (e.g., right below the title):</p>
+<h2 id="table-of-contents">📚 Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><a href="#creating-project">🔧 Creating a new project</a></p>
+<ul>
+<li>1.1 <a href="#form_fields">📋 Form fields, icons and media</a></li>
+<li>1.2 <a href="#visibility">🌐 Visibility and category</a></li>
+<li>1.3 <a href="#translations">📝 Description and translations</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#creating-version">📦 Creating a version</a></p>
+<ul>
+<li>2.1 <a href="#files">📁 Adding files and choosing a server</a></li>
+<li>2.2 <a href="#semver">🔢 Versioning and semver</a></li>
+<li>2.3 <a href="#depends_on">📎 Dependency selection</a></li>
+<li>2.4 <a href="#selectors">⚙️ Version operators: <code>^</code>, <code>~</code>, <code>=</code></a></li>
+</ul>
+</li>
+<li>
+<p><a href="#advanced">🧪 Advanced options</a></p>
+<ul>
+<li>3.1 <a href="#advanced">🧩 Custom dependencies and tags</a></li>
+<li>3.2 <a href="#advanced">🏷️ Labels and package manifest</a></li>
+</ul>
+</li>
+</ol>
+<h2 id="creating-project">Creating a project 🔨<a class="headerlink" href="#creating-project" title="Permanent link">&para;</a></h2>
+<h4 id="to-make-your-project-downloadable-and-visible-in-the-addons-gallery-you-must-first-create-a-new-project">To make your project downloadable and visible in the Addons gallery, you must first create a new project.<a class="headerlink" href="#to-make-your-project-downloadable-and-visible-in-the-addons-gallery-you-must-first-create-a-new-project" title="Permanent link">&para;</a></h4>
+<h4 id="1-go-to-the-server-management-panel-then-to-the-addons-gallery-and-click-the-create-project-link">1. Go to the server management panel, then to the Addons Gallery, and click the “Create Project” link<a class="headerlink" href="#1-go-to-the-server-management-panel-then-to-the-addons-gallery-and-click-the-create-project-link" title="Permanent link">&para;</a></h4>
+<p><a class="glightbox" href="../img/gallery-addons/marketplace_create_project_button.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Project creator" src="../img/gallery-addons/marketplace_create_project_button.png" /></a></p>
+<p><a id="form_fields"></a></p>
+<h4 id="2-in-the-project-creator-fill-in-the-following-fields">2. In the project creator, fill in the following fields<a class="headerlink" href="#2-in-the-project-creator-fill-in-the-following-fields" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Project name</strong> – Displayed in the marketplace, and users will be able to search for your project by this name.</p>
+</li>
+<li>
+<p><strong>Slug</strong> – This field is auto-generated based on the name you enter and serves to identify the project in the URL.</p>
+</li>
+<li>
+<p><strong>Short description</strong> – Appears when clicking on the project, above the “Play Now” or “Install Latest Version” button (depending on the project type). It also appears in the tile in the list of installed packages in the server settings view.</p>
+</li>
+<li>
+<p><strong>Project icon</strong> – Attracts attention and serves as a showcase for your package! Appears in the tile in the list of installed packages in the settings view.</p>
+</li>
+</ul>
+<p><a id="visibility"></a></p>
+<ol>
+<li>
+<p><strong>Project visibility</strong></p>
+</li>
+<li>
+<p><strong>Public</strong>: Available to everyone; displayed in the package list in the Addons gallery.</p>
+</li>
+<li>
+<p><strong>Non-public</strong>: Not displayed in the package list in the Addons gallery, but can be shared via a link.</p>
+</li>
+<li>
+<p><strong>Private</strong>: Available only to you.</p>
+</li>
+</ol>
+<blockquote>
+<p>To find an unlisted or private project, use the “My Projects” button in the <a href="https://craftserve.com/m">Addons gallery</a>. The button is available after logging into your account.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Project category</strong> – Should precisely define what your package is. It helps users search for packages in the Addons gallery.</p>
+</li>
+<li>
+<p><strong>Game</strong> – Specifies which game your package is intended for.</p>
+</li>
+<li>
+<p><strong>Video</strong> (optional) – Plays when hovering over the project tile, and when clicking on the project. Should be in WebM format, maximum 720p resolution, max 30fps, and file size should not exceed 50 MiB.</p>
+</li>
+<li>
+<p><strong>Thumbnail</strong> – Displayed on the project tile in the Addons gallery, and in the selected project view if no video is added.</p>
+</li>
+<li>
+<p><strong>Gallery</strong> – Displayed on your project’s subpage. Use the gallery if you want to include screenshots or other images of your addon.</p>
+</li>
+</ol>
+<p><a id="translations"></a></p>
+<ul>
+<li>
+<p><strong>Detailed project description</strong></p>
+<ul>
+<li>
+<p><strong>Translations</strong><br />
+     On Craftserve, we offer two ways to translate package descriptions into other languages:</p>
+<ol>
+<li><strong>Manual translation</strong> – Select the desired language by clicking the corresponding button, then edit the content in that language. You can switch between languages and add translations manually.</li>
+<li><strong>AI-powered automatic translation</strong> – Simply prepare the description in the project’s default language. Within 30 minutes after publication, translations will be automatically generated and updated each time you update the project. To change the source language for translations, use the <strong>“Default project language”</strong> option available under the translation input fields.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Automatic translations will only be generated for languages where the translation field is empty. If any character has been entered in a given language (e.g., English, Polish, or German), the translation will not be overwritten.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>Crafting the description</strong><br />
+     In the description, include:</p>
+<ul>
+<li>The requirements of your package,</li>
+<li>The features and capabilities it offers.</li>
+</ul>
+<p>If you are creating a mods package, also add installation instructions for the user—so that after installing the package on their server, users can easily join.<br />
+ Try to write in an accessible manner so that non-technical users can install it without issues.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Once you have completed your project, click the “Publish” button to confirm the changes.</p>
+</li>
+</ul>
+<h3 id="done">Done! 🚀<a class="headerlink" href="#done" title="Permanent link">&para;</a></h3>
+<p>To view your project, go to the <strong>“Addons”</strong> tab, then select <strong>“My Projects”</strong>.<br />
+Remember that if your project is not public or has no version added, <strong>it will not appear in the main view of the Addons gallery</strong>. In that case, use the <strong>“My Projects”</strong> tab, where you will always find all your publications.</p>
+<p>&nbsp;</p>
+<h1 id="creating-version">Creating a version 📦<a class="headerlink" href="#creating-version" title="Permanent link">&para;</a></h1>
+<h4 id="you-already-have-your-project-but-it-lacks-a-versionmeaning-there-are-no-files-added-to-the-project-that-users-will-download-when-they-install-it-on-their-server-to-add-a-version-enter-your-project-then-click-version-list">You already have your project, but it lacks a version—meaning there are no files added to the project that users will download when they install it on their server. To add a version, enter your project, then click “Version List.”<a class="headerlink" href="#you-already-have-your-project-but-it-lacks-a-versionmeaning-there-are-no-files-added-to-the-project-that-users-will-download-when-they-install-it-on-their-server-to-add-a-version-enter-your-project-then-click-version-list" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Click <strong>“Version List”</strong></li>
+<li>Click <strong>Releases list</strong></li>
+<li>
+<p>Fill in the <strong>Release type</strong> – this field indicates the development stage of the version.</p>
+<ul>
+<li><strong>Stable</strong> means a stable release that has passed full testing, intended for users who expect a fully functional addon.</li>
+<li><strong>Private</strong> means the version is private, targeted to a specific audience (e.g., developers or your testers). It does not have to be stable and may require additional testing.</li>
+<li><strong>Latest</strong> is the newest version, which may or may not be stable, for users who want the latest features.</li>
+</ul>
+</li>
+<li>
+<p>Choose the <strong>Installation method</strong>. There are two installation methods:</p>
+<ul>
+<li><strong>Erease server data and install package</strong> – Before installing your addon, we will recommend that the user wipe their server data and then install your addon on a clean instance.</li>
+<li><strong>Add to existing server</strong> – We will add your package files to the user’s current server state.</li>
+</ul>
+</li>
+<li>
+<p><strong>Package version</strong> <a id="semver"></a><br />
+   This field should contain your project’s version number in <strong>SemVer</strong> (<em>Semantic Versioning</em>) format, e.g., <code>1.2.3</code>. The installation system uses this field to automatically resolve conflicts during project installations.<br />
+   The format consists of three numbers separated by dots:</p>
+<p><strong>MAJOR.MINOR.PATCH</strong>, meaning:</p>
+<ul>
+<li><code>1</code> – <strong>MAJOR</strong>: changes when you introduce incompatible changes (e.g., remove or alter existing features),</li>
+<li><code>2</code> – <strong>MINOR</strong>: changes when you add new, backwards-compatible features,</li>
+<li><code>3</code> – <strong>PATCH</strong>: changes when you fix bugs without adding new features or changing behavior.</li>
+</ul>
+<p><strong>Examples of valid versions</strong>:</p>
+<ul>
+<li><code>1.0.0</code> – first release,</li>
+<li><code>1.2.0</code> – new features added,</li>
+<li><code>1.2.1</code> – minor bug fixes,</li>
+<li><code>2.0.0</code> – breaking changes introduced.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Using the correct version format helps users recognize the significance of changes in the package and simplifies update management. To learn more about semantic versioning, visit <a href="https://semver.org">semver documentation</a></p>
+</blockquote>
+<ol>
+<li><strong>Content version</strong> – This value will be displayed to the user as the installed addon version. You can enter the same value as in the <strong>Package version</strong> field, or use your own <strong>custom versioning</strong> (e.g., <code>beta</code>, <code>dev-2025-06-11</code>, <code>v2-fixes</code>, etc.). This field <strong>is not validated</strong>—you can enter any value that best describes the project’s content version from your perspective.</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> This field is optional and only serves to additionally label content changes—it does not affect the package’s technical functionality.</p>
+</blockquote>
+<p><a id="files"></a></p>
+<ol>
+<li><strong>Server</strong><br />
+   Choose the server from which you want to share the files for your package. These files will be installed on the user’s server when they install your package.<ul>
+<li>Depending on the package type:<ul>
+<li>If you are creating a <strong>mod package</strong>, select the files to be installed on the user’s server (e.g., mods, plugins).</li>
+<li>If you want to share a <strong>game world</strong>, select the appropriate world folder.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Pay special attention to the directory structure when selecting files.<br />
+Example: if you select only <code>.jar</code> files from the <code>plugins</code> folder, they will be installed in the server’s root directory.<br />
+To install them correctly in the <code>plugins</code> folder, also select the <code>plugins</code> folder itself with its contents. Your target file paths on the server must match the correct file paths.</p>
+</blockquote>
+<hr />
+<h3 id="8-select-packages">8. <strong>Select packages</strong><a class="headerlink" href="#8-select-packages" title="Permanent link">&para;</a></h3>
+<p><a id="depends_on"></a></p>
+<p>Select other packages that should be automatically installed <strong>before</strong> your package. The system will automatically detect which packages you have installed on the server from which you are uploading files.</p>
+<p>Check the required dependencies if your package needs them. By default, we will show dependencies used by your other addons—you can select them by clicking the package name, which will expand the options list.</p>
+<h4 id="examples">Examples:<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>Require paper^1.21</code> – requires <strong>Paper</strong> version <strong><code>&gt;= 1.21.0</code> and <code>&lt; 2.0.0</code></strong></li>
+<li><code>Require game-engine</code> – requires <strong>any game engine</strong>, regardless of version or platform</li>
+<li><code>Require minecraft-java-server</code> – requires <strong>any Minecraft Java server engine</strong>, regardless of version</li>
+<li><code>Require paper-api=1.20.1</code> – requires any package that provides <code>paper-api</code> in exactly version <code>1.20.1</code></li>
+<li><code>Require paper=1.21.5</code> – requires package <code>paper</code> in exactly version <code>1.21.5</code></li>
+<li><code>No requirements</code> – your package has no dependencies and can operate standalone</li>
+</ul>
+<h4 id="automatic-dependency-installation">Automatic Dependency Installation<a class="headerlink" href="#automatic-dependency-installation" title="Permanent link">&para;</a></h4>
+<p>Some packages, like Paper, may require Java, which will be installed on the user's server.</p>
+<ul>
+<li>
+<p><strong>Automatic Java Installation:</strong><br />
+    If you select Paper, the system will automatically install the appropriate Java version required by Paper.</p>
+</li>
+<li>
+<p><strong>Java Versions:</strong><br />
+    Paper may require Java in a range, e.g., <strong>11–17</strong>. By default, the <strong>latest available version in this range</strong> will be installed (e.g., Java 17). Another compatible version may be installed if another package on the user's server already requires Java in a range, e.g., <strong>11–14</strong>. In this case, <strong>Java 14</strong> will be installed.</p>
+</li>
+<li>
+<p><strong>Adding a Custom Java Version:</strong><br />
+    If you want to use a different Java version (override it), you can do so by adding an <strong>advanced selector</strong>, e.g.:
+    <code>bash
+    java~11</code></p>
+</li>
+</ul>
+<hr />
+<h3 id="whats-the-difference-between-and">🔎 What’s the difference between <code>^</code>, <code>=</code>, and <code>~</code>?<a class="headerlink" href="#whats-the-difference-between-and" title="Permanent link">&para;</a></h3>
+<p><a id="selectors"></a></p>
+<p>Let’s recall how semantic versioning works:</p>
+<p><strong>MAJOR.MINOR.PATCH</strong>, meaning:</p>
+<ul>
+<li><code>1</code> – <strong>MAJOR</strong>: changes when you introduce incompatible changes (e.g., remove or alter existing features),</li>
+<li><code>2</code> – <strong>MINOR</strong>: changes when you add new, backwards-compatible features,</li>
+<li>
+<p><code>3</code> – <strong>PATCH</strong>: changes when you fix bugs without adding new features or changing behavior.</p>
+<p><strong>Examples of valid versions</strong>:</p>
+</li>
+<li>
+<p><code>1.0.0</code> – first release,</p>
+</li>
+<li><code>1.2.0</code> – new features added,</li>
+<li><code>1.2.1</code> – minor bug fixes,</li>
+<li><code>2.0.0</code> – breaking changes introduced.</li>
+</ul>
+<p>Knowing this theory, we can create the following version requirements:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Meaning</th>
+<th>Example</th>
+<th>Version range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code> (caret)</td>
+<td><strong>Backward-compatible updates</strong> within the same major version</td>
+<td><code>^1.2.3</code></td>
+<td><code>&gt;=1.2.3 &lt;2.0.0</code></td>
+</tr>
+<tr>
+<td><code>~</code> (tilde)</td>
+<td><strong>Patch updates</strong> within the same minor version</td>
+<td><code>~1.2.3</code></td>
+<td><code>&gt;=1.2.3 &lt;1.3.0</code></td>
+</tr>
+<tr>
+<td><code>=</code> (equals)</td>
+<td><strong>Exact version</strong></td>
+<td><code>=1.2.3</code></td>
+<td>only <code>1.2.3</code></td>
+</tr>
+<tr>
+<td><code>*</code> (asterisk)</td>
+<td><strong>Any version</strong></td>
+<td><code>*</code></td>
+<td>matches everything</td>
+</tr>
+<tr>
+<td><code>-</code> (hyphen range)</td>
+<td><strong>Range from–to (inclusive)</strong></td>
+<td><code>1.2.3 - 1.4.0</code></td>
+<td><code>&gt;=1.2.3 &lt;=1.4.0</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="example">Example:<a class="headerlink" href="#example" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>^1.20.0</code> → matches <code>1.20.1</code>, <code>1.21.0</code>, <code>1.99.99</code>, but <strong>not</strong> <code>2.0.0</code></li>
+<li><code>~1.20.0</code> → matches <code>1.20.1</code>, <code>1.20.9</code>, but <strong>not</strong> <code>1.21.0</code></li>
+<li><code>=1.20.0</code> → matches only <code>1.20.0</code></li>
+</ul>
+<p>For more information, see <a href="https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major">documentation</a></p>
+<p><a id="advanced"></a></p>
+<ol>
+<li>
+<p><strong>Advanced options (optional)</strong> – In this section, we will create custom dependencies for your project. After clicking <strong>“Show advanced options”</strong>, a “Add dependency” button will appear. Clicking it allows you to <strong>add your own dependency</strong>. The form consists of 3 fields.</p>
+</li>
+<li>
+<p>All fields are related. The dependency will be constructed based on <code>NAME+TAG</code>.</p>
+</li>
+<li>
+<p><strong>Name</strong> – Should specify the dependency name for which you will configure custom requirements, e.g., <code>paper-api</code> or <code>paper</code>.</p>
+</li>
+<li>
+<p><strong>Tag</strong> – Used to determine a custom selector. If you know your addon will require paper (the value from the <strong>Name</strong> field) in a custom range, e.g., <code>paper^1.20.1</code>, then use <code>^1.20.1</code> for this field’s value. Filling in <strong>Name</strong> and <strong>Tag</strong> yields: <code>paper^1.20.1</code>.</p>
+</li>
+<li>
+<p><strong>Labels (optional)</strong> Each package includes its manifest. You can additionally specify which labels must appear in it. For example, you might want the required package not only to satisfy the dependency <code>paper</code> in versions <code>^1.20.1</code> but also to have in its <code>labels</code> field a label with the key <code>craftserve.com/mod-loader</code> and value <code>minecraft-java</code>.</p>
+</li>
+<li>
+<p><details>
+      <summary>Click here to see example package labels</summary></p>
+<p><br/></p>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Sample value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"craftserve.com/game"</code></td>
+<td><code>"minecraft-java"</code></td>
+<td>The game for which the addon is intended (here: Minecraft Java)</td>
+</tr>
+<tr>
+<td><code>"craftserve.com/type"</code></td>
+<td><code>"plugin"</code></td>
+<td>Package type (e.g. <code>plugin</code>, <code>mod</code>)</td>
+</tr>
+<tr>
+<td><code>"craftserve.com/package/time"</code></td>
+<td><code>"2025-04-11 15:25:15"</code></td>
+<td>Package creation date and time</td>
+</tr>
+<tr>
+<td><code>"craftserve.com/release/time"</code></td>
+<td><code>"2025-04-11 15:25:15"</code></td>
+<td>Package publication date and time</td>
+</tr>
+<tr>
+<td><code>"craftserve.com/require-empty-workspace"</code></td>
+<td><code>"yes"</code></td>
+<td>Whether the package requires a clean server instance (<code>yes</code> / <code>no</code>)</td>
+</tr>
+<tr>
+<td><code>"craftserve.com/suggested-install-selector"</code></td>
+<td><code>"forge=1.21.8-58.0.0"</code></td>
+<td>Suggested selector used when creating a modpack</td>
+</tr>
+</tbody>
+</table>
+</details>
+</li>
+</ol>
+<details>
+<summary>Click here to see an example package manifest</summary>
+
+
+<pre><code class="language-json">{
+    &quot;manifestVersion&quot;: &quot;v3&quot;,
+    &quot;ManifestHash&quot;: &quot;sha256-5f5f4ce426d77a86581d7e5bd2109981eba1c64df0c226b39684a5f970a228e0&quot;,
+    &quot;subdir&quot;: &quot;marketplace/paper/sha256-5f5f4ce426d77a86581d7e5bd2109981eba1c64df0c226b39684a5f970a228e0&quot;,
+    &quot;name&quot;: &quot;paper&quot;,
+    &quot;packageVersion&quot;: &quot;1.21.8-11&quot;,
+    &quot;contentVersion&quot;: &quot;1.21.8-11&quot;,
+    &quot;dependencies&quot;: [&quot;java&gt;=17 &lt;=21&quot;],
+    &quot;provides&quot;: [
+        &quot;game-engine&quot;,
+        &quot;minecraft-java-server=1.21.8&quot;,
+        &quot;paper-api=1.21.8&quot;,
+        &quot;spigot-api=1.21.8&quot;,
+        &quot;bukkit-api=1.21.8&quot;,
+        &quot;paper=1.21.8&quot;
+    ],
+    &quot;suggestedDependencies&quot;: [&quot;java~21&quot;],
+    &quot;set-env&quot;: [
+        {
+            &quot;key&quot;: &quot;MINECRAFT_VERSION&quot;,
+            &quot;value&quot;: &quot;1.21.8&quot;
+        }
+    ],
+    &quot;labels&quot;: {
+        &quot;craftserve.com/game&quot;: &quot;minecraft-java&quot;,
+        &quot;craftserve.com/minecraft-java/version&quot;: &quot;1.21.8&quot;,
+        &quot;craftserve.com/mod-loader&quot;: &quot;paper&quot;,
+        &quot;craftserve.com/package/time&quot;: &quot;2025-07-23 00:17:40.965514&quot;,
+        &quot;craftserve.com/release/time&quot;: &quot;2025-07-22 08:54:27.185000&quot;,
+        &quot;craftserve.com/require-empty-workspace&quot;: &quot;yes&quot;,
+        &quot;craftserve.com/suggested-selector&quot;: &quot;paper~1.21.8-11&quot;,
+        &quot;craftserve.com/type&quot;: &quot;mod_loader&quot;,
+        &quot;craftserve.com/version-group&quot;: &quot;1.21&quot;
+    },
+    &quot;fileshash&quot;: &quot;k1:1488116ffdc37691af21a53e7d0eeb9cb1468c9aca3a41b0084705195ad41789&quot;,
+    &quot;downloadfiles&quot;: [
+        {
+            &quot;name&quot;: &quot;minecraft_server.jar&quot;,
+            &quot;url&quot;: &quot;https://api.papermc.io/v2/projects/paper/versions/1.21.8/builds/11/downloads/paper-1.21.8-11.jar&quot;,
+            &quot;hash&quot;: &quot;sha256-9457d1279efcc2094e818cacb2f17670d9479e5f6b4ea2517eb93a6a3face51f&quot;,
+            &quot;size&quot;: 0
+        }
+    ]
+}
+</code></pre>
+
+
+</details>
+
+<p>&nbsp;</p>
+<ol>
+<li>
+<p><strong>Detailed version description</strong>: Here you can describe exactly what your version requires and what has changed compared to previous versions. Remember to fill in your descriptions thoroughly.</p>
+</li>
+<li>
+<p>Once all fields are filled in, click the <strong>“Add Version”</strong> button.</p>
+</li>
+</ol>
+<h3 id="the-version-has-been-created-and-is-now-available-for-download-congratulations">The version has been created and is now available for download. <strong>Congratulations</strong> 🚀<a class="headerlink" href="#the-version-has-been-created-and-is-now-available-for-download-congratulations" title="Permanent link">&para;</a></h3>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../../javascript/redirect.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

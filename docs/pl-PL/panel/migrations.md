@@ -44,7 +44,7 @@ Jeśli bezpieczna migracja się nie powiedzie:
 
     ![Migracja wymuszona](../panel/img/migrations/2.png)
 
-3. W następnym kroku **Zaznacz zgodę na migrację i Kliknij przycisk „Migruj”**.
+3. W następnym kroku **Zaznacz zgodę na migrację i kliknij przycisk „Migruj”**.
 
 ---
 

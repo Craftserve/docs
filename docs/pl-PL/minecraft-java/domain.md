@@ -1,9 +1,9 @@
-# Ustawianie własnej domeny do serwera minecraft
+# Ustawianie własnej domeny do serwera Minecraft
 
 ### Wymagania
 
   * Własna zakupiona domena na jednym z dostępnych serwisów (np. [OVH](https://www.ovhcloud.com/pl/domains/))
-  * Serwer minecraft
+  * Serwer Minecraft
 
 
 ### Kroki

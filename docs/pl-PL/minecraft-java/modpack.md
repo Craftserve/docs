@@ -7,13 +7,10 @@
 ### Instalacja
 
 1. Wybierz zalecaną przez autora paczki wersję silnika Forge lub Fabric.
-   - Silnik Forge możesz ustawić w zakładce **Ustawienia** -> **Silnik** -> **Forge** panelu Craftserve.
+   - Silnik Forge lub Fabric możesz ustawić w zakładce **Ustawienia** -> **Silnik** -> **Minecraft: Java Edition** -> **Chcę wgrywać modyfikacje**.
    
      ![image](./img/modpack/select_engine_forge.png)
-   - Silniki Fabric znajdują się w zakładce **Ustawienia** -> **Silnik** -> **Fabric** panelu Craftserve.
-   
-     ![image](./img/bettermc/select_engine.png)
-   - Potwierdź formatowanie serwera, aby zapewnić brak problemów w dalszym toku instalacji. Jeśli naprawdę potrzebujesz zapisać jakieś pliki, 
+   - Potwierdź formatowanie serwera, aby zapewnić brak problemów w dalszym toku instalacji. Jeśli naprawdę potrzebujesz zapisać jakieś pliki, możesz to zrobić na tym etapie.
    *Uwaga: Formatowanie serwera spowoduje utratę wszystkich plików, w tym wszystkich elementów zapisanych na mapie.*
    
      ![image](./img/bettermc/save_engine.png)

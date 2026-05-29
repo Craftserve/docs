@@ -14,6 +14,9 @@ Wyłącz lub włącz bazę danych MySQL na tym serwerze.
 **RCON**
 RCON jest domyślnie wyłączony. Aby go włączyć, skontaktuj się z supportem poprzez formularz.
 
+**Ignoruj ostrzeżenie o zatrzymaniu serwera**
+Pozwala na automatyczne wymuszanie zamknięcia serwera przy wykonywaniu w panelu operacji tego wymagających.
+
 **Formatowanie serwera**
 Ta operacja trwale usuwa pliki bez możliwości ich przywrócenia. Przed formatowaniem stwórz kopie zapasową, kopie nie zostaną usunięte.
 

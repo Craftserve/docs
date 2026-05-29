@@ -7,7 +7,7 @@
 ### Instalacja
 
 1. Wybierz odpowiedni silnik Fabric dla wersji modpacka BetterMC (w tym przypadku: 1.19.2).
-   - Silnik Fabric możesz ustawić w zakładce **Ustawienia** -> **Silnik** -> **Fabric** panelu Craftserve.
+   - Silnik Fabric możesz ustawić w zakładce **Ustawienia** -> **Silnik** -> **Minecraft: Java Edition** -> **Chcę wgrywać modyfikacje**  -> **Fabric** panelu Craftserve.
    
      ![image](./img/bettermc/select_engine.png)
    - Potwierdź formatowanie serwera, aby zapewnić brak problemów w dalszym toku instalacji. Jeśli naprawdę potrzebujesz zapisać jakieś pliki, 

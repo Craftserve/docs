@@ -15,7 +15,7 @@ KM Pack jest oparty o silnik Paper 1.15.2, więc nie można jej zmienić.
 ### Czy mogę dodać własne pluginy?
 
 Tak, jednak polecamy to robić tylko jeśli znasz się na tym.
-W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **pliki**, a następnie wejść w folder `plugins`. Korzystając z menu **wgraj plik** wgraj odpowiedni plugin z rozszerzeniem `.jar`. Włącz serwer.
+W tym celu musisz wyłączyć serwer, przejść w panelu do zakładki **Pliki**, a następnie wejść w folder `plugins`. Korzystając z opcji **Prześlij plik** wgraj odpowiedni plugin z rozszerzeniem `.jar`. Włącz serwer.
 
 ### Jak zmienić mapę na własną?
 

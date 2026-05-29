@@ -4,7 +4,7 @@
 
 * Serwer Minecraft wspierający pluginy (Spigot, Paper, Purpur, etc.)
 * Plugin LogBlock
-* Stworzona baza danych MySQL (panel Craftserve -> Ustawienia -> MySQL -> Utwórz)
+* Stworzona baza danych MySQL (panel Craftserve -> Ustawienia -> MySQL -> przełącznik włączony)
 
 ### Instalacja oraz podłączenie do bazy danych
 
@@ -26,7 +26,7 @@
 6. Jeśli nadal nie pojawia się komunikat z punktu 5, to znaczy, że plugin nie został skonfigurowany automatycznie. Skonfiguruj go ręcznie:
     - Wyłącz serwer.
     - W folderze `plugins/LogBlock` znajduje się plik `config.yml`. Otwórz go.
-    - W pliku znajduje się sekcja `mysql`. Wypełnij ją danymi z panelu Craftserve (zakładka Ustawienia -> MySQL).
+    - W pliku znajduje się sekcja `mysql`. Wypełnij ją danymi z panelu Craftserve (zakładka Ustawienia -> Podstawowe -> MySQL).
     ![MySQL](./img/logblock/logblock_config.png)
       Wartości `host`, `port`, `requireSSL` oraz `useSSL` są takie same dla każdego serwera na Craftserve - jak na zdjęciu wyżej.
     - Zapisz plik.

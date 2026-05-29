@@ -5,7 +5,7 @@ Jeśli na Twoim serwerze nie wyświetlają się skiny graczy premium lub nie dos
 Jeśli chcesz by serwer pozostał non-premium, [ten plugin](https://www.spigotmc.org/resources/skinsrestorer.2124/) pozwoli graczom mieć swoje skiny. Komendy oraz listę uprawnień znajdziesz [tutaj](https://github.com/SkinsRestorer/SkinsRestorerX/wiki/cmds-&-perms).
 #### Instalacja na Bukkit/Spigot/Paperspigot
 1. Wgraj plik **SkinsRestorer.jar** do folderu `plugins`.
-2. Zrestartuj serwer w panelu, bądź komendami `/restart` lub `/stop`. Używanie komendy `/reload` **nie jest zalecane** ponieważ może spowodować różne błędy lub niektóre pluginy mogą się źle załadować.
+2. Zrestartuj serwer w panelu. Używanie komendy `/reload` **nie jest zalecane**, ponieważ może spowodować różne błędy lub niektóre pluginy mogą się źle załadować.
 3. I gotowe! Jeśli plugin jest widoczny pod komendą `/plugins` na serwerze, oznacza to że został poprawnie załadowany.
 #### Instalacja na BungeeCord/Waterfall
 1. Wgraj plik **SkinsRestorer.jar** do folderu `plugins` **w każdym serwerze ze spigotem**.

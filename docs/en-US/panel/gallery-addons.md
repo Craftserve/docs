@@ -19,6 +19,7 @@ Here is a proposal for a clear and aesthetic **table of contents** in the style 
     - 2.2 [🔢 Versioning and semver](#semver)
     - 2.3 [📎 Dependency selection](#depends_on)
     - 2.4 [⚙️ Version operators: `^`, `~`, `=`](#selectors)
+    - 2.5 [✅ How to create version ranges without surprises?](#ranges_best_practices)
 
 3. [🧪 Advanced options](#advanced)
     - 3.1 [🧩 Custom dependencies and tags](#advanced)
@@ -167,6 +168,8 @@ Check the required dependencies if your package needs them. By default, we will 
 -   `Require paper=1.21.5` – requires package `paper` in exactly version `1.21.5`
 -   `No requirements` – your package has no dependencies and can operate standalone
 
+> **Recommendation:** When selecting dependencies, pick names like `paper-api` rather than the package names themselves like `paper`. Why? We explain it in the [How to create version ranges without surprises?](#ranges_best_practices) section.
+
 #### Automatic Dependency Installation
 
 Some packages, like Paper, may require Java, which will be installed on the user's server.
@@ -221,6 +224,54 @@ Knowing this theory, we can create the following version requirements:
 -   `=1.20.0` → matches only `1.20.0`
 
 For more information, see [documentation](https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major)
+
+---
+
+### ✅ How to create version ranges without surprises?
+
+<a id="ranges_best_practices"></a>
+
+Two simple rules that make sure the user's server gets exactly the version you expect.
+
+#### 1. Pick names ending with `-api` (e.g., `paper-api`), not package names (e.g., `paper`)
+
+When creating a dependency, pick names like `paper-api`, `purpur-api`, or `minecraft-java-server` instead of the package names themselves (`paper`, `purpur`). These are the so-called `provides` names — the engine package "exposes" them together with its game version.
+
+**Why does it matter?** Versions of packages like `paper` have an extra number after a hyphen at the end, e.g., `1.20.6-151` (this is the number of a specific Paper release). The system that compares versions treats everything after the hyphen as a "preview version" — meaning it considers `1.20.6-151` to be **earlier (lower)** than `1.20.6`. Sounds strange, but that's how the versioning standard works. Because of this, a range can include versions you never intended.
+
+**Example:**
+
+Let's say your package works on versions from `1.20.1` to `1.20.5`, so you create a "lower than 1.20.6" range:
+
+```
+paper>=1.20.1-0 <1.20.6
+```
+
+Unfortunately, version `1.20.6-151` fits inside this range — the system considers it lower than `1.20.6`. As a result, the user may end up with e.g. `paper=1.20.6-22` installed — exactly the version you wanted to exclude!
+
+Names like `paper-api` have no number after a hyphen (the package simply exposes `paper-api=1.20.6`), so the range works exactly as you expect:
+
+```
+paper-api>=1.20.1 <1.20.6
+```
+
+#### 2. Write range bounds as "up to and including" (`>=` and `<=`), not "lower/greater than" (`<` and `>`)
+
+Instead of writing "lower than 1.20.6" (`<1.20.6`), say directly "at most 1.20.5" (`<=1.20.5`). So instead of:
+
+```
+paper>=1.20.1-0 <1.20.6     ❌
+```
+
+write:
+
+```
+paper>=1.20.1-0 <=1.20.5    ✅
+```
+
+This way it's immediately clear what the last allowed version is, and you avoid the trap described in rule 1.
+
+> **Note:** The system does not enforce this rule — ranges written with `>` and `<` will be accepted too. It's simply a good practice that will save you from surprises.
 
 <a id="advanced"></a>
 

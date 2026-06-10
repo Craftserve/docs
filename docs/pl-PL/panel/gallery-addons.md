@@ -20,6 +20,7 @@ Oto propozycja przejrzystego i estetycznego **spisu treści** w stylu dokumentac
     - 2.2 [🔢 Wersjonowanie i semver](#semver)
     - 2.3 [📎 Wybór zależności](#depends_on)
     - 2.4 [⚙️ Operatory wersji: `^`, `~`, `=`](#selectors)
+    - 2.5 [✅ Jak tworzyć zakresy wersji, żeby uniknąć niespodzianek?](#ranges_best_practices)
 
 3. [🧪 Opcje zaawansowane](#advanced)
     - 3.1 [🧩 Niestandardowe zależności i tagi](#advanced)
@@ -167,6 +168,8 @@ Zaznacz wymagane zależności, jeśli Twoja paczka ich potrzebuje. Domyślnie po
 -   `Nie wymagaj`
     – Twoja paczka nie ma żadnych zależności i może działać samodzielnie
 
+> **Zalecenie:** Wybierając zależności, korzystaj z nazw takich jak `paper-api`, a nie z nazw samych paczek jak `paper`. Dlaczego? Wyjaśniamy to w sekcji [Jak tworzyć zakresy wersji, żeby uniknąć niespodzianek?](#ranges_best_practices)
+
 #### Automatyczne instalowanie zależności:
 
 Niektóre paczki jak np. Paper mogą wymagać Javy, która zostanie zainstalowana na serwerze użytkownika.
@@ -221,6 +224,54 @@ Znając tę teorię możemy tworzyć następujące wymagania względem wersji pa
 
 Aby dowiedzieć się więcej na ten temat skorzystaj z
 [dokumentacji 📋](https://github.com/Masterminds/semver?tab=readme-ov-file#caret-range-comparisons-major)
+
+---
+
+### ✅ Jak tworzyć zakresy wersji, żeby uniknąć niespodzianek?
+
+<a id="ranges_best_practices"></a>
+
+Dwie proste zasady, dzięki którym na serwerze użytkownika zainstaluje się dokładnie taka wersja, jakiej oczekujesz.
+
+#### 1. Wybieraj nazwy z końcówką `-api` (np. `paper-api`), a nie nazwy paczek (np. `paper`)
+
+Tworząc zależność, wybieraj nazwy takie jak `paper-api`, `purpur-api` czy `minecraft-java-server` zamiast nazw samych paczek (`paper`, `purpur`). Są to tzw. nazwy z pola `provides` — paczka silnika "udostępnia" je razem ze swoją wersją gry.
+
+**Dlaczego to ważne?** Wersje paczek takich jak `paper` mają na końcu dodatkowy numer po myślniku, np. `1.20.6-151` (to numer konkretnego wydania Papera). System porównujący wersje traktuje wszystko, co stoi po myślniku, jako "wersję wstępną" — czyli uznaje, że `1.20.6-151` jest **wcześniejsza (mniejsza)** niż `1.20.6`. Brzmi dziwnie, ale tak właśnie działa standard wersjonowania. Przez to zakres może objąć wersje, których wcale nie chciałeś.
+
+**Przykład:**
+
+Załóżmy, że Twoja paczka działa na wersjach od `1.20.1` do `1.20.5`, więc tworzysz zakres "mniejsze niż 1.20.6":
+
+```
+paper>=1.20.1-0 <1.20.6
+```
+
+Niestety, wersja `1.20.6-151` mieści się w tym zakresie — system uznaje ją za mniejszą niż `1.20.6`. W efekcie użytkownikowi może zainstalować się np. `paper=1.20.6-22`, czyli dokładnie ta wersja, którą chciałeś wykluczyć!
+
+Nazwy takie jak `paper-api` nie mają numeru po myślniku (paczka udostępnia po prostu `paper-api=1.20.6`), więc zakres działa dokładnie tak, jak się spodziewasz:
+
+```
+paper-api>=1.20.1 <1.20.6
+```
+
+#### 2. Podawaj granice zakresu "włącznie" (`>=` i `<=`), a nie "mniejsze/większe niż" (`<` i `>`)
+
+Zamiast pisać "mniejsze niż 1.20.6" (`<1.20.6`), napisz wprost "co najwyżej 1.20.5" (`<=1.20.5`). Czyli zamiast:
+
+```
+paper>=1.20.1-0 <1.20.6     ❌
+```
+
+napisz:
+
+```
+paper>=1.20.1-0 <=1.20.5    ✅
+```
+
+Dzięki temu od razu widać, jaka jest ostatnia dozwolona wersja, i unikasz pułapki opisanej w punkcie 1.
+
+> **Uwaga:** System nie pilnuje tej zasady — zakresy zapisane z `>` i `<` też zostaną przyjęte. To po prostu dobra praktyka, która oszczędzi Ci niespodzianek.
 
 <a  id="advanced"></a> 9. **Opcje zaawansowane (opcjonalne)** - W tym punkcie będziemy tworzyć niestandardowe zależności do Twojego projektu. Po kliknięciu w **"Pokaż opcje zaawansowane"** pojawi się przycisk "Dodaj zależność". Po kliknięciu masz możliwość **dodania własnej zależności**. Formularz składa się z 3 pól.
 

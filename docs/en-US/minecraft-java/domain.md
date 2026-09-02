@@ -19,8 +19,11 @@
     - In the subdomain/name field, enter the name of the subdomain where the server will be available. If you want the server to run on the main domain, leave this field with the value `_minecraft._tcp.domain.com` (sometimes the suffix is automatically added).
 3. Save the changes. **The record update may take from a few minutes to several hours**.
 
+### Verify the address
+
+After DNS has updated, test the public address in Minecraft. You can also use an independent Minecraft protocol check such as [ServerBuddy's server status checker](https://serverbuddy.net/tools/minecraft-server-status). It follows Java SRV records and checks the final target and port. This helps distinguish DNS propagation from an unreachable port or an invalid Minecraft response.
+
 ### Notes
 - Please note that domain configuration may vary depending on the service where the domain was purchased. For other services, search for the appropriate DNS management panel.
 - To connect to the server, enter your domain in the Minecraft server address field. For the main domain, enter `domain.com`, and for a subdomain, enter `subdomain.domain.com`.
-
 

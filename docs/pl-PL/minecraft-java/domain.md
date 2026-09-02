@@ -19,8 +19,11 @@
     - W polu subdomena/nazwa należy wpisać nazwę subdomeny na której ma być dostępny serwer. Jeśli chcemy aby serwer działał na domenie głównej, należy pozostawić to pole z wartością `_minecraft._tcp.domena.pl` (czasem końcówka jest dopisywana automatycznie).
 3. Zapisz zmiany, **aktualizacja rekordu może potrwać od kilku minut do kilku godzin**.
 
+### Sprawdź adres
+
+Po zaktualizowaniu DNS przetestuj publiczny adres w grze Minecraft. Możesz także użyć niezależnego testu protokołu Minecraft, takiego jak [narzędzie ServerBuddy do sprawdzania statusu serwera](https://serverbuddy.net/tools/minecraft-server-status). Narzędzie odczytuje rekordy SRV dla Java Edition i sprawdza docelowy host oraz port. Pozwala to odróżnić trwającą propagację DNS od niedostępnego portu lub nieprawidłowej odpowiedzi Minecraft.
+
 ### Uwagi
 - Należy zauważyć, że konfiguracja domeny może być różna w zależności od serwisu, w którym została zakupiona. W przypadku innych serwisów należy poszukać odpowiedniego panelu zarządzania DNS.
 - By połączyć się z serwerem należy wpisać swoją domenę w polu adresu serwera w Minecraft. W przypadku domeny głównej należy wpisać `domena.pl`, w przypadku subdomeny `subdomena.domena.pl`.
-
 
